@@ -1,0 +1,10 @@
+/* Show the details content when printing */
+@media print {
+  details {
+    display: block !important;
+  }
+  
+  summary {
+    display: none;
+  }
+}
