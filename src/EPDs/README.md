@@ -1,1 +1,0 @@
-# Environmental Product Declarations (EPDs)
