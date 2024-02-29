@@ -1,3 +1,4 @@
 *.bak
-mdbook*
+mdbook.exe
+mdbook
 /book
