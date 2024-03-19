@@ -46,6 +46,7 @@
 	- [Model graph](prod_sys/model_graph.md)
 	- [Advanced product systems features](prod_sys/nested.md)
 	- [Calculating a product system](prod_sys/calculating.md)
+	- [Exporting product systems](prod_sys/exporting.md)
 - [LCIA methods and categories](lcia_methods/README.md)
    	- [Importing LCIA methods and categories into openLCA](lcia_methods/importing_lcia_methods.md)
    	- [Creating a new impact assessment method and category](lcia_methods/creating_new_impact_assessment_method.md)

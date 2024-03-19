@@ -10,11 +10,17 @@ When a process involves several products, you have to assign how much of the imp
 
 There are three allocation by partitioning methods in openLCA:
 
--   Physical allocation: partitioning based on the physical relationships between the products in terms of, for example, mass. 
+-   **Physical allocation**: partitioning based on the physical relationships between the products in terms of, for example, mass. 
 
--   Causal allocation: partitioning based on assumptions or former research on the relative impact of different products.
+-   **Causal allocation**: partitioning based on assumptions or former research on the relative impact of different products.
 
--   Economic allocation: partitioning based on the economic (cost or revenue) relationships between products. Consequently, an economic property in terms of cost/revenue has to be added for this to be applicable. 
+-   **Economic allocation**: partitioning based on the economic (cost or revenue) relationships between products. Consequently, an economic property in terms of cost/revenue has to be added for this to be applicable. 
+
+Moreover, we also provide the following technical solutions:
+
+-   **As defined in processes**: this option will perform allocation according to the method used in each individual process along the supply chain.
+
+- **None**: if none is selected, no allocation will be applied, even for multifunctional processes.
 
 Below is an example illustrating how the three different methods are applied in openLCA. In this example, 1 kg of wood and 0.3 kg of bark are produced from 1 kg of saw log (measured as solid wood under bark).
 

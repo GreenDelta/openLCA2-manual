@@ -38,7 +38,14 @@ _Selecting the destination and the data set for the ILCD export_
 
 - **SimaPRo CSV**: You can choose between exporting LCIA methods or processes in SimaPro CSV. Then click on "Next" to select the elements you whant to export, select a recipient folder for the CSV and and eventually click on "Finish".
 
-- **JSON-LD:** Select "JSON-LD" in the export wizard. Choose an export directory and the database elements to export, then click "Finish". For details about JSONLD click [here](<https://www.greendelta.com/wp-content/uploads/2017/03/LCA_XV_JSON-LD_final.pdf>).
+- **JSON-LD:** openLCA allows to export your database as JSON-LD. This allows you to efficiently export selected datasets (processes, product systems etc even on a folder level). Also, you can export the default provider for product inputs and waste outputs. For this, select "JSON-LD" in the export wizard. Choose an export directory and the database elements to export, then click "Finish". 
+
+![](../media/jsonld_export.png)
+_Selecting the dataset/s and destination for the JSON-LD export_
+
+<br>For details about JSONLD click [here](<https://www.greendelta.com/wp-content/uploads/2017/03/LCA_XV_JSON-LD_final.pdf>).
+
+
 
 ## Copy function
 

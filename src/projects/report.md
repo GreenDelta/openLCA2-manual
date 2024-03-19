@@ -2,7 +2,7 @@
 
 In the report tab you will find the calculated results in the template you chose beforehand. It is generated as an html file with interactive elements based on Java. **The following is directly extracted from a report (_Java elements can not be displayed in this manual_):**
 
-_**Note**_: If you report is not displayed correctly, make sure you have WebView2 installed on your device.
+_**Note**_: If you report is not displayed correctly, make sure you have WebView2 (for Windows) or WebKit (for Linux) installed on your device.
 
 
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
