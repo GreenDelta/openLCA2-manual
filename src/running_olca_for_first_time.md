@@ -38,7 +38,7 @@ The following options are available under **File**:
 			![](./media/settings_collaboration.png)  
 			_Preferences Collaboration_
 
-	More information about the Collaboration Server can be found in the respective [chapter](./collaboserver.md).
+		More information about the Collaboration Server can be found in the respective [chapter](./collaboserver.md).
 	 
 	 -  **Configuration:** Here you can choose among eleven available languages (Arabic, Bulgarian, Catalan, Chinese, English, French, German, Italian, Portuguese, Spanish or Turkish). You can also select the maximum memory usage (see [chapter](./installation/memory.md))
 		

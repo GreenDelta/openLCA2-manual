@@ -19,4 +19,10 @@ However, with openLCA it is also possible to combine multiple databases, by merg
 
 _**Note:**_ It is considered good practice to work with **one database for each case study/LCA project** performed in openLCA. 
 
+_**New!**_ Now in openLCA 2 you are able to sort your databases in folders. Right-click on a database and then click on "Set folder", and create your new folder:
+
+![](../media/set_folder_database.png)
+
+After your folder is created you can add also other databases in it just dragging and dropping them.
+
 </div>
