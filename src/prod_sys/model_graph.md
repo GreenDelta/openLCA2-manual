@@ -34,6 +34,8 @@ A pop-up window will appear with a list of all possible providers for that flow.
 ![](../media/model_graph_search_providers_connect.png)
 <br>_Model graph - Search providers - Connect_
 
+**_Note_**: If you add processes with this function, the full supply chain will be NOT added. You have to manually add it afterwards, using the "Build flow supply chain" function (see below).
+ 
 Moreover, if you want to create/edit the product system graphically, you can **drag and drop processes** from the navigation panel into the model graph void area. Then you can drag a flow to the corresponding one in the provider/receiver process to create the connections between the flows. To connect the newly added process to its supply chain, right-click on it and then select "Build supply chain".
 
 ![](../media/drag_drop_after.png)
@@ -163,6 +165,8 @@ A pop-up window will appear with a list of all possible providers for that flow.
 
 ![](../media/model_graph_search_providers_connect.png)
 <br>_Model graph - Search providers - Connect_
+
+**_Note_**: If you add processes with this function, the full supply chain will be NOT added. You have to manually add it afterwards, using the "Build flow supply chain" function (see below).
 
 Otherwise, you can also draw connections by dragging from one flow to another flow! To do that, you need to have the respective processes expanded, then click on the provider flow and drag it to the receiver flow:
 

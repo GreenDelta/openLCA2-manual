@@ -88,7 +88,7 @@ You can enter the amount of the flow as values, formulas, and/or parameters.
 
 **_Note:_**
 - When a formula and/or parameter is typed in the "Amount" field, the software will calculate the value for the amount automatically.
-- Complex formulas must adhere to a specific format (e.g., Tan(a), trunc(c), etc.).
+- Complex formulas must adhere to a specific format (e.g., Tan(a), trunc(c), etc.). Have a look in ['Constants, operators and functions for formulas in openLCA'](../advanced_top/formulas_in_openlca.md) chapter.
 - You can use the formula interpreter, accessible under "Tools" → "Formula Interpreter", to identify errors within your formulas. 
 
 </details>

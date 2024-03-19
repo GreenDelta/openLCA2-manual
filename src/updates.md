@@ -2,6 +2,12 @@
 
 In this section you can check what the major manual updates were about and when they were released.
 
+## 19.03.2024
+
+- Added ["Exporting product systems"](./prod_sys/exporting.md) section.
+- Added ["Constants, operators and functions for formulas in openLCA"](./advanced_top/formulas_in_openlca.md) section.
+- Minor updates
+
 ## 15.02.2024
 
 - Added note on ILCD import in EPD section
