@@ -76,7 +76,7 @@
 	- [Life Cycle Costing](advanced_top/LCC.md)
 	- [Data Quality](advanced_top/data_quality.md)
 	- [Social aspects](advanced_top/social_aspects.md)
-	- [Formula interpreter](advanced_top/formulas_in_openlca.md)	
+	- [Constants, operators and functions for formulas in openLCA](advanced_top/formulas_in_openlca.md)	
 - [Environmental Product Declarations (EPDs)](epds/README.md)
 	- [Creating new processes for target products](epds/create_processes_for_target_products.md)
 	- [Create product systems from your processes](epds/create_product_systems_from_processess.md)
