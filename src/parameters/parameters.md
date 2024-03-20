@@ -43,7 +43,7 @@ To create an **Input and Dependent parameter**:
 1. Open the "Parameters" tab of an open process.
 2. Select the "+" at the top right-hand corner of the input/dependent parameters section.
 3. Assign a name, value, uncertainty (for an input parameter) and description.
-4. In case of a dependent parameters, a formula can be used linking it to the parameters it is dependent on.
+4. In case of a dependent parameters, a formula can be used linking it to the parameters it is dependent on. To write a correct formula, you can check the accepted constants, operators and functions in this [chapter](../advanced_top/formulas_in_openlca.md).
 
 **_Note:_** An input/dependent parameter can be converted into a global parameter by right clicking on it and selecting "convert to global parameter" (**_new!_**).
 
@@ -58,6 +58,6 @@ _**Note:**_ Use the **formula interpreter** ("Tools" section in "[Running openLC
 
 - When you edit a parameter name or value, it will now be automatically updated throughout the database, e.g. if the parameter is used in a formula of a dependent parameter, it will automatically change. 
 
-- Parameter sets: create some parameters, assign values meant for different scenarios and then save those scenarios and choose them within the same product system. An example is provided in the parameter section of the sectio [Product systems](../prod_sys/index.html). 
+- Parameter sets: create some parameters, assign values meant for different scenarios and then save those scenarios and choose them within the same product system. An example is provided in the parameter section of the section [Product systems](../prod_sys/index.html). 
 
 </div>

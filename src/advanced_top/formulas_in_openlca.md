@@ -14,7 +14,7 @@ When you add a formula in openLCA (e.g. in the amount cell of Inputs/Outputs tab
 ## Operators
 
 | Precedence | Operator | Description     | Example        |
-|------------|----------|-----------------|----------------|
+|:-----------|:---------|:----------------|:---------------|
 | 7          | - (unary)| negation        | -1 #> -1       |
 | 6          | ^        | exponentiation  | 2^3 #> 8      |
 | 5          | *        | multiplication  | 2*2 #> 4      |
