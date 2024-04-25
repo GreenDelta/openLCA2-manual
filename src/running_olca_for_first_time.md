@@ -48,6 +48,8 @@ The following options are available under **File**:
 	_**Note**_: You need to restart openLCA to activate configuration changes.
 	
 	Furthermore, you can reset your window settings if you encounter a bug or if you found yourself lost with the number of open windows.
+
+	**Dark mode**: Our dark mode seamlessly follows the mode set for your entire system. To enable the dark mode in openLCA you need to select it on your operating system.
 		
     - **Experimental features:** These features are still in development, but you can already access them by checking this box. We welcome any feedback to further refine them.
 		

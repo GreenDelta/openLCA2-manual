@@ -51,4 +51,6 @@ _Setup screen for installation in Windows_
 
 Follow the installation steps to the end and you can begin working with openLCA.
 
+_**Note:**_ If you encounter any issue with Windows Defender preventing you on installing openLCA, please have a look here (https://support.bemopro.com/hc/en-us/articles/11450999280531-Microsoft-Defender-SmartScreen-blocking-program-installation).
+
 </div>

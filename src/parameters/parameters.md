@@ -36,14 +36,14 @@ _Global parameter - general information_
 ![](../media/parameters_tools.png)
 ![](../media/editing_uncertainty_in_the_global_parameter_table_2.png)
 ![](../media/editing_uncertainty_in_the_global_parameter_table.png)
-_View and edit Parameters under Database &#8594; Content_
+<br>_View and edit Parameters under Database &#8594; Content_
 
 To create an **Input and Dependent parameter**:
 
 1. Open the "Parameters" tab of an open process.
 2. Select the "+" at the top right-hand corner of the input/dependent parameters section.
 3. Assign a name, value, uncertainty (for an input parameter) and description.
-4. In case of a dependent parameters, a formula can be used linking it to the parameters it is dependent on. To write a correct formula, you can check the accepted constants, operators and functions in this [chapter](../advanced_top/formulas_in_openlca.md).
+4. In case of a dependent parameter, a formula can be used to link it to the parameters it is dependent on. To write a correct formula, you can check the accepted constants, operators and functions in this [chapter](../advanced_top/formulas_in_openlca.md).
 
 **_Note:_** An input/dependent parameter can be converted into a global parameter by right clicking on it and selecting "convert to global parameter" (**_new!_**).
 
