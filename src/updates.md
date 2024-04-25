@@ -2,6 +2,10 @@
 
 In this section you can check what the major manual updates were about and when they were released.
 
+## 25.04.2024
+
+- Minor updates
+
 ## 19.03.2024
 
 - Added ["Exporting product systems"](./prod_sys/exporting.md) section.

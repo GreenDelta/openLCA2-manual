@@ -9,9 +9,9 @@ For manual-related inquiries, you can reach us at <a href="mailto:manual-feedbac
 ![](./media/greendelta.png)
 
 GreenDelta GmbH\
-Kaiserdamm 13\
-14057 Berlin, Germany\
-Tel. +49 30 62 924 - 319\
+Alt-Moabit 130\
+10557 Berlin, Germany\
+Tel. +49 30 4849 6030\
 Fax +49 30 48 496 - 991\
 <a href="mailto:gd@greendelta.com">gd@greendelta.com</a>\
 [www.greendelta.com](http://www.greendelta.com)
