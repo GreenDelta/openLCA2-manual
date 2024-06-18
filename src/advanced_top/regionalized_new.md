@@ -6,9 +6,9 @@ With openLCA you can perform regionalized impact assessment, accounting for spec
 
 ## How to perform regionalized LCA-step by step 
 
-_**Note:**_ regionalized calculation is an advanced form of impact calculation. It is more resource consuming that a normal impact calculation and it is needed to be handled carefully. We advise to allocate enough memory for the calculations, to perform it using a regionalized method (that uses locations as entities), and to check that the locations of processes are the intended ones along the whole supply chain.
+_**Note:**_ regionalized calculation is an advanced form of impact calculation. It is more resource consuming that a normal impact calculation and it is needed to be handled carefully. We advise to allocate enough memory for the calculations, to perform it using a regionalized method (that uses locations as entities), and to check that the locations of processes are the intended ones along the whole supply chain (check section "Assign locations to processes and exchanges" below for more details). 
 
-At the moment, we offer two methods that are regionalized using locations as entities: **EF 3.1 (adapted)** available in openLCA method package 2.4.0 and **LC-Impact** available in Nexus as standalone (compatible with the same databases as our method pack). For LC-Impact we provide also regionalization setups in json format, where the flow-binding has already been set. However, in this chapter you can learn how to calculate yourself characterization factors for specific locations, which works both for  methods already regionalized and method that are not yet updated, but which provide geographic information for their impact factors.
+At the moment, we offer two methods that are regionalized using locations as entities: **EF 3.1 (adapted)** available in openLCA method package from v2.4.0 upward, and **LC-Impact** available in Nexus as standalone (compatible with the same databases as our method pack). For LC-Impact we provide also regionalization setups in json format, where the flow-binding has already been set. However, in this chapter you can learn how to calculate yourself characterization factors for specific locations, which works both for  methods already regionalized and method that are not yet updated, but which provide geographic information for their impact factors.
 
 ### Check locations in openLCA
 
@@ -47,7 +47,7 @@ _Regionalized calculation_
 
 Each imported parameter can be visualized in a map by selecting the parameter and clicking on the "world" icon in the GeoJSON Parameters section.
 
-![](../media/regionalized_parameters.png)  
+![](../media/regionalized_parameters_new.png)  
 _Visualization of parameters_
 
 ### Binding regional characteristics (GeoJSON files) to flows
@@ -83,15 +83,17 @@ _Adding an impact category to the tab "General information"_
 
 ### Assign locations to processes and exchanges
 
-To perform regionalized LCIA, make sure to assign a location to your processes and/or exchanges. You can do this by going to the "geography" section in the "general information" tab of a process and selecting your desired location. 
+To perform regionalized LCIA, make sure to assign a location to your processes and/or exchanges. You can do this by going to the "geography" section in the "General information" tab of a process and selecting your desired location. 
 
 ![](../media/regionalized_locations_processes.png)  
 _Assigning locations to processes_
 
-Location can be assigned to exchanges in processes by adding them to the "location" field for each flow in inputs and outputs. 
+Location can be assigned to exchanges in processes by adding them to the "Location" field for each flow in inputs and outputs. 
 
 ![](../media/regionalized_locations_exchanges.png)  
 _Assining locations to exchanges_
+
+_**Note:**_ The location specified for exchanges will take precedence over the location specified for the overall process, if they differ. For instance, if a process is assigned "Italy" as its location but some of its exchanges are designated with more specific regions (e.g., Sicily or a particular water basin), the impact will be calculated based on the exchange location. If no specific location is given for an exchange, the impact will then be calculated using the process location.
 
 ### Run regionalized LCIA of a product system
 
