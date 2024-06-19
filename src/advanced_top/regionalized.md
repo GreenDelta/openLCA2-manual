@@ -1,14 +1,18 @@
 # Regionalized LCA
 
-<div style='text-align: justify;'>
+<div style="text-align: justify;">
 
-With openLCA you can perform regionalized impact assessment, accounting for specific conditions and characteristics of the location where the processes occur. With parameters, you can define regional characteristics affecting the imcts. Regional characteristics and information about geographic locations are contained in GeoJSON files that can be imported into openLCA
+With openLCA you can perform regionalized impact assessment, accounting for specific conditions and characteristics of the location where the processes occur. With parameters, you can define regional characteristics affecting the impacts. Regional characteristics and information about geographic locations are contained in GeoJSON files that can be imported into openLCA
 
 ## How to perform regionalized LCA-step by step 
 
+_**Note:**_ regionalized calculation is an advanced form of impact calculation. It is more resource consuming that a normal impact calculation and it is needed to be handled carefully. We advise to allocate enough memory for the calculations (check "File" section of chapter ["Running openLCA for the first time"](../running_olca_for_first_time.md)), to perform it using a regionalized method (that uses locations as entities), and to check that the locations of processes are the intended ones along the whole supply chain (check section "Assign locations to processes and exchanges" below for more details). 
+
+At the moment, we offer two methods that are regionalized using locations as entities: **EF 3.1 (adapted)** available in openLCA method package from v2.4.0 upward, and **LC-Impact** available in Nexus as standalone (compatible with the same databases as our method pack). For LC-Impact we provide also regionalization setups in json format, where the flow-binding has already been set. However, in this chapter you can learn how to calculate yourself characterization factors for specific locations, which works both for  methods already regionalized and method that are not yet updated, but which provide geographic information for their impact factors.
+
 ### Check locations in openLCA
 
-A regionalised LCA needs to understand locations. In openLCA 2, available locations in a database are shown in the navigation tab under Database  &#8594; Background data &#8594; Locations.
+A regionalized LCA needs to understand locations. In openLCA 2, available locations in a database are shown in the navigation tab under Database  &#8594; Background data &#8594; Locations.
 
 ![](../media/regionalized_presence_locations.png)  
 _Available locations in a database_
@@ -43,17 +47,23 @@ _Regionalized calculation_
 
 Each imported parameter can be visualized in a map by selecting the parameter and clicking on the "world" icon in the GeoJSON Parameters section.
 
-![](../media/regionalized_parameters.png)  
+![](../media/regionalized_parameters_new.png)  
 _Visualization of parameters_
 
 ### Binding regional characteristics (GeoJSON files) to flows
 
 Flows for which you want to calculate geo-spatial based CFs need to bound to the regional characteristics contained in GeoJSON files, so that the CFs can vary based on the selected location for exchanges and processes. In the "flow bindings" section under "regionalized calculation" in the open impact category, add the flows that you want to regionalize (use the "+" icon") and parametrize the "formula" field using the parameters extracted during the regional characteristics import and available under "GeoJSON parameters". In regionalized assessment, the parameter value derived from the GeoJSON file is used for the formula evaluation. Instead, if you apply non-regionalized LCIA or no location is available for exchanges and processes, the default CF value will be used in the calculations.
 
+In "Formula" field, you can chose the parameter of your geoJSON that you want to use for the calculation of the CF of the flow you chose. You can treat that field as any other formula in openLCA. For instance, if you have a water flow expressed in Kg and the parameter of your geoJSON is in m<sup>3</sup>, you can se
+
+
+In the "Range" field, you can view the minimum and maximum values for each parameter. The "Aggregation Type" field allows you to choose the aggregation type for the calculation of your CFs: "Weighted Average" (N.B.: area-weighted average), "Average," "Minimum," or "Maximum." The "Default Value" displays the value derived from the selected aggregation type performed for each parameter on your entire map.
+
 ![](../media/regionalized_flows.png)  
 _Example of flow binding and parameterization_
 
 Currently, openLCA cannot store the GeoJSON parameters and flow bindings, but you can save and export your setup by clicking on "save". You can import this configuration again at any time by clicking on "open" and selecting the exported setup.
+The calculated CFs instead (see below) can be saved and therefore permanently stored in the impact category of choice-
 
 ![](../media/regionalized_saving_setup.png)  
 _Saving geojson parameters and flow bindings_
@@ -63,7 +73,7 @@ _Saving geojson parameters and flow bindings_
 The last step to set-up the regionalized LCIA method, is to link process locations and LCIA methods spatial units. Therefore, the intersection between GeoJSON file features and process geometries (stored in "Locations") is calculated by the software, thus resulting in dedicated CFs for locations selected by the user. By clicking on the "calculate" icon in the "flow bindings" section, the user defines the locations for which CFs are to be calculated for the flows added in the "flow bindings" section. 
 
 ![](../media/regionalized_defining_location.png)
-_Defining the location for which the characterization factors are calculated_
+<br/>_Defining the location for which the characterization factors are calculated_
 
 The resulting CFs for the selected locations and flows are available in the tab "characterization factors" for the open impact category. A flow for each selected location and the same flow without a specific location are created and assigned with a CF depending on the location, or with the default CF value for the case of the flow without a specific location.
 
@@ -79,15 +89,17 @@ _Adding an impact category to the tab "General information"_
 
 ### Assign locations to processes and exchanges
 
-To perform regionalized LCIA, make sure to assign a location to your processes and/or exchanges. You can do this by going to the "geography" section in the "general information" tab of a process and selecting your desired location. 
+To perform regionalized LCIA, make sure to assign a location to your processes and/or exchanges. You can do this by going to the "geography" section in the "General information" tab of a process and selecting your desired location. 
 
 ![](../media/regionalized_locations_processes.png)  
 _Assigning locations to processes_
 
-Location can be assigned to exchanges in processes by adding them to the "location" field for each flow in inputs and outputs. 
+Location can be assigned to exchanges in processes by adding them to the "Location" field for each flow in inputs and outputs. 
 
 ![](../media/regionalized_locations_exchanges.png)  
 _Assining locations to exchanges_
+
+_**Note:**_ The location specified for exchanges will take precedence over the location specified for the overall process, if they differ. For instance, if a process is assigned "Italy" as its location but some of its exchanges are designated with more specific regions (e.g., Sicily or a particular water basin), the impact will be calculated based on the exchange location. If no specific location is given for an exchange, the impact will then be calculated using the process location.
 
 ### Run regionalized LCIA of a product system
 
