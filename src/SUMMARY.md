@@ -86,6 +86,7 @@
 	- [Adding EPD results from various sources](epds/adding_results_3rd_sources.md)
 	- [Get EPDs from EC3](epds/ec3.md)
 	- [Using results of EPDs in life cycle models](epds/life_cycle_models.md)
+	- [Using soda4LCA](epds/soda4lca.md)
 - [Collaboration in Teams](collaboserver.md)
 - [openLCA cheat sheet](cheat/README.md)
 	- [Usage](cheat/usage.md)
