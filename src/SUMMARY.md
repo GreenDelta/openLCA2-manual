@@ -52,6 +52,7 @@
    	- [Creating a new impact assessment method and category](lcia_methods/creating_new_impact_assessment_method.md)
    	- [Methods tabs](lcia_methods/impact_methods_tab_contents.md)
 	- [Category tabs](lcia_methods/impact_categories_tab_contents.md)
+	- [Overview impact methods](lcia_methods/impact_methods_overview.md)
 - [Calculation and Result Analysis](res_analysis/README.md)
 	- [Lazy vs Eager calculation](res_analysis/lazy_eager.md)
 	- [Result analysis](res_analysis/analysis.md)

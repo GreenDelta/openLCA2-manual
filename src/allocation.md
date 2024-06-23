@@ -60,4 +60,6 @@ It is important that a process providing the avoided product flow exists. This p
 ![](./media/avoided_example_model_graph.png)
 <br>_The model graph where heat is accounted for as avoided and has a respective provider besides it is an output of the process_
 
+Note that the flow which is avoided is displayed in the process but also in the product system italic. In complex models this can help you to differentiate between common flows and avoided flows.
+
 </div>

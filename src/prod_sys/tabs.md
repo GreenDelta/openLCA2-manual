@@ -11,11 +11,11 @@ In the following we will describe each tab of a product system in openLCA:
 
 The general information tab is split into "General information" and "Reference". 
 
-![](../media/product_system_general_information_tab.png)
+![](../media/product_system_general_information_tab_2.png)
 
 _Product system - General information tab_
 	
-- _**General Information:**_ Here you can change the name of the product system and optionally add a description. Below the "[Add a tag](../cheat/tags.md)", button, the "Calculate" button starts the impact calculations (you can achieve the same clicking on the green "Calculate results" icon above of the navigation panel).
+- _**General Information:**_ Here you can change the name of the product system and optionally add a description. Below the "[Add a tag](../cheat/tags.md)", button, the "Calculate" button starts the impact calculations (you can achieve the same clicking on the green "Calculate results" icon above of the navigation panel). The "Update" button (circular arrow) to the top right corner allows you to reset the connections between processes. This is helpful if you performed any changes to the processes being involved in the product system. You can also do this in the model graph.
 
 - _**Reference:**_ Here you can see the reference process of the product system and editing the reference product, the flow property, the unit, and the target amount. **The target amount should be chosen in accordance with your functional unit**. 
 
