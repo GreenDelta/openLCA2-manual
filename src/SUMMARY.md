@@ -49,7 +49,7 @@
 	- [Exporting product systems](prod_sys/exporting.md)
 - [LCIA methods and categories](lcia_methods/README.md)
    	- [Importing LCIA methods and categories into openLCA](lcia_methods/importing_lcia_methods.md)
-   	- [Creating a new impact assessment method and category](lcia_methods/creating_new_impact_assessment_method.md)
+   	- [Creating a new impact assessment method, category and characterization factor](lcia_methods/creating_new_impact_assessment_method.md)
    	- [Methods tabs](lcia_methods/impact_methods_tab_contents.md)
 	- [Category tabs](lcia_methods/impact_categories_tab_contents.md)
 	- [Overview impact methods](lcia_methods/impact_methods_overview.md)
