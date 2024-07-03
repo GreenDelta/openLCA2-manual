@@ -50,7 +50,7 @@ _**Note:**_ When a currency is unavailable, a new currency can be created under 
 
 #### Allocation for Recycling
 
-Be reminded that also recycling processes are multi-output processes as they treat waste and produce recycled material and **require allocation**. It is necessary to use allocation to distribute the impacts according to the linked process. A short example on how to model recycling in openLCA is displayed below:
+Be reminded that also recycling processes are multi-output processes as they treat waste and produce recycled material hence they **require allocation**. It is necessary to use allocation to distribute the impacts according to the linked process. A short example on how to model recycling in openLCA is displayed below:
 
 ![](./media/recycling_model_graph.png)
 <br>_The model graph for a recycling scenario_
