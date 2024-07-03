@@ -200,6 +200,8 @@ _Activated "Link with Editor" option_
 
 This option is helpfful if you are looking for a flows/processes/product systems in a database with the option activated it will automatically open the respective folder structure in the navigation panel. Once found, you can deactivate the option again.
 
+Moreover, if you click on the three dots next to the editor you will also find the "Refresh" function. It refreshes the "Navigator". For example, when creating data sets in a Python script or via the IPC server, they won't show up in the "Navigator" if you do not refresh it.
+
 </details>
 
 <details>
