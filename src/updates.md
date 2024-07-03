@@ -2,6 +2,16 @@
 
 In this section you can check what the major manual updates were about and when they were released.
 
+## 03.07.2024
+
+- Novel ["soda4LCA"](./epds/soda4lca.md) feature is described now in the EPD section
+- Updated the ["Regionalization"](./advanced_top/regionalized.md) section
+- Added a description on how to model and use allocation for recycling
+- Added an explanation on the existing LCIA methods and their scope
+- Added a description on how to add characterisation factors
+
+
+
 ## 25.04.2024
 
 - Minor updates
