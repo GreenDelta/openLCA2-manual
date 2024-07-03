@@ -48,6 +48,19 @@ _**Note:**_ For allocation to work, the main product and the by-products need to
 
 _**Note:**_ When a currency is unavailable, a new currency can be created under "Currencies" under the "Background data" in the Navigation plane. A conversion factor can be added according to whatever reference currency is set.
 
+#### Allocation for Recycling
+
+Be reminded that also recycling processes are multi-output processes as they treat waste and produce recycled material and **require allocation**. It is necessary to use allocation to distribute the impacts according to the linked process. A short example on how to model recycling in openLCA is displayed below:
+
+![](./media/recycling_model_graph.png)
+<br>_The model graph for a recycling scenario_
+
+![](./media/allocation_recycling.png)
+<br>_As the recycling process is a multi-output process allocation is needed! Here, physical allocation was applied._
+
+
+
+
 ### System Expansion
 
 Applying system expansion means that the process you are modeling is credited with the impact that is avoided by supplying the by-product. For example: if a process produces electricity and has heat as a by-product, it can be credited with the load that would appear if this heat was supplied from elsewhere. In openLCA, this can be performed by checking the box of "Avoided product" for the by-product.
