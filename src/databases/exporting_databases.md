@@ -19,6 +19,7 @@ To export data from openLCA, follow these steps:
 
 ![](../media/export_data.png)  
 ![](../media/export_wizard.png)  
+
 _Exporting data from an active database_
 
 3. Here we provide specific instructions for exporting different data types:
@@ -27,6 +28,7 @@ _Exporting data from an active database_
 "EcoSpold". Select the destination directory and the datasets to export, then click "Finish".
 
 ![](../media/export_ecospold_process.png)  
+
 _Selecting data/processes to be exported_
 
 - **Excel:** To export processes as Excel files, select "Processes" after clicking on "Excel". Specify the export directory and the processes to export, then click "Finish". Each process will be saved as an individual Excel file.
@@ -34,6 +36,7 @@ _Selecting data/processes to be exported_
 - **ILCD ZIP-file:** Select "ILCD Zip-File" in the export wizard. Choose an export directory and the database elements to export in ILCD format. Click "Finish".
 
 ![](../media/export_ilcd.png)  
+
 _Selecting the destination and the data set for the ILCD export_ 
 
 - **SimaPRo CSV**: You can choose between exporting LCIA methods or processes in SimaPro CSV. Then click on "Next" to select the elements you whant to export, select a recipient folder for the CSV and and eventually click on "Finish".
@@ -41,7 +44,10 @@ _Selecting the destination and the data set for the ILCD export_
 - **JSON-LD:** openLCA allows to export your database as JSON-LD. This allows you to efficiently export selected datasets (processes, product systems etc even on a folder level). Also, you can export the default provider for product inputs and waste outputs. For this, select "JSON-LD" in the export wizard. Choose an export directory and the database elements to export, then click "Finish". 
 
 ![](../media/jsonld_export.png)
+
 _Selecting the dataset/s and destination for the JSON-LD export_
+
+_**Note**:_ The option "Export default providers of product inputs and waste outputs" will not only export the provider link but also the linked processes. This is important if you only export the processes but not the whole database.
 
 <br>For details about JSONLD click [here](<https://www.greendelta.com/wp-content/uploads/2017/03/LCA_XV_JSON-LD_final.pdf>).
 

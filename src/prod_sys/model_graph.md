@@ -91,7 +91,7 @@ By right-clicking on the background in the model graph, the following options wi
 ![](../media/model_graph_sticky_note.png)
 <br>_Model graph - Sticky note_
 
-- Update: With "Update" you can reset the connections between processes. In the popup window, you have the option to choose between the same "provider selection" and "preferred process type" options that are available when calculating a product system. Additionally, you can select "Keep all existing links" and "Prefer links within the same location."
+- **Update**: With "Update" you can reset the connections between processes. In the popup window, you have the option to choose between the same "provider selection" and "preferred process type" options that are available when calculating a product system. Additionally, you can select "Keep all existing links" and "Prefer links within the same location."
 
 - **Focus**: Positions the reference process in the middle of the view window. 
 
