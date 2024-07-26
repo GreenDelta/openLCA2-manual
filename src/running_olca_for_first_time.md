@@ -51,7 +51,7 @@ The following options are available under **File**:
 
 	**Dark mode**: Our dark mode seamlessly follows the mode set for your entire system. To enable the dark mode in openLCA you need to select it on your operating system.
 		
-    - **Experimental features:** These features are still in development, but you can already access them by checking this box. We welcome any feedback to further refine them.
+    - **Experimental features:** These features are still in development, but you can already access them by checking this box. We welcome any feedback to further refine them. Here you can activate the novel social impact assessment feature.
 		
 		![](./media/settings_experimental_features.png)  
 		_Preferences Experimental Features_
@@ -152,7 +152,7 @@ _Options under **Show views, Other**_
 	To find out more details on scripting in openLCA, see "[Scripting in openLCA](./scripting.md)" chapter.
 
 - **Bulk-replace:** It is a tool that allows the replacement of a flow or product
-    provider with another flow or provider.
+    provider with another flow or provider. To find out more details on bulk-replace see "[Using mapping files in openLCA](../database/mapping_validation.md)" chapter.
 	
 - **Flow mapping (experimental):** Still under development but already available for you!
 

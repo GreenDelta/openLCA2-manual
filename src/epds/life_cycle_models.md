@@ -25,7 +25,7 @@ target flow to the results element.
 
 4.	After all connections are established and the target amounts are set, it is important to save all changes prior performing the impact assessment. Then, the results can be analyzed as usual.
 
-<br>_**Notes:**_: 
+<br>_**Notes:**_ 
 
 **For users using the Ecoinvent v3.9 EN15804+A2 add-on database or previous versions:** EPDs imported via ILCD formats cannot be integrated into the results of the EPD when utilized as part of a product system that is created on openLCA. Therefore, you must [manually add the EPD results](./adding_results_3rd_sources.md#adding-epds-manually) OR map the impact categories of the EPD results by creating a new process and adding suitable elementary flows representing each impact category. 
 
