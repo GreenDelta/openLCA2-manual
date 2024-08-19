@@ -4,7 +4,7 @@
 openLCA is developed and managed by GreenDelta in Berlin. If you have any
 feedback, comments, questions, please let us know. 
 
-For manual-related inquiries, you can reach us at <a href="mailto:manual-feedback@greendelta.com">manual-feedback@greendelta.com</a>.
+For **manual-related inquiries**, you can reach us at <a href="mailto:manual-feedback@greendelta.com">manual-feedback@greendelta.com</a>. For **openLCA-related questions** please refer to our [askopenLCA User Forum](https://ask.openlca.org/).
 
 ![](./media/greendelta.png)
 
