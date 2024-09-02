@@ -26,7 +26,7 @@ The table below provides information about the most commonly used databases avai
 
 After downloading one or more of these method packs, you can import the  file into an active openLCA database. **Do not extract JSON-LD's .zip files before importing!**
 
-**_Note for macOS users:_** If you are using Safari, the browser will automatically unzip your downloaded zip files. However, you need the zipped file for import in openLCA (e.g. when you want to import JSON-LD, methods packages, ILCD...). You can solve this issue in two ways: 
+**_Note for macOS users:_** If you are using Safari, the browser will automatically unzip your downloaded zip files. However, you need the zipped file for import in openLCA (e.g., when you want to import JSON-LD, methods packages, ILCD...). You can solve this issue in three ways: 
 
 1. Go to the settings of Safari and unselect the default option "Open "safe" files after downloading".
 
