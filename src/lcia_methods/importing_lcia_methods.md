@@ -28,9 +28,11 @@ After downloading one or more of these method packs, you can import the  file in
 
 **_Note for macOS users:_** If you are using Safari, the browser will automatically unzip your downloaded zip files. However, you need the zipped file for import in openLCA (e.g. when you want to import JSON-LD, methods packages, ILCD...). You can solve this issue in two ways: 
 
-1. Use another browser for downloads, where the zip-files are not automatically unpacked after successful download.
+1. Go to the settings of Safari and unselect the default option "Open "safe" files after downloading".
 
-2. Zip the archives again by using a third-party tool, because the build-in archive tool from Apple will add additional resources to the zip-file that can create issues when importing the file in openLCA.
+2. Use another browser for downloads, where the zip-files are not automatically unpacked after successful download.
+
+3. Zip the archive again by using a third-party tool, because the build-in archive tool from Apple will add additional resources to the zip-file that can create issues when importing the file in openLCA.
 
 ### Importing LCIA methods into openLCA
 
