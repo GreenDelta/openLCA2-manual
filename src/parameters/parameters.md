@@ -6,7 +6,7 @@ In openLCA you can find three types of parameters:
 
 - "Global" parameters can be found and are valid on all levels. 
 - "Input" parameters are parameters that are only valid for the process/LCIA method/Product system in which they are saved. 
-- ""Dependent" parameters are parameters that include input or global parameters in their formula. The figure below illustrates the view on openLCA for an example.
+- "Dependent" parameters are parameters that include input or global parameters in their formula. The figure below illustrates the view on openLCA for an example.
 
 **_New!_** Global, input and dependent parameters can be created within a process or impact assessment method. These are then also available in product systems and projects in which the process or impact assessment method is used. It is not possible to create a new parameter on the product system or project level.
 
@@ -19,7 +19,7 @@ To create a **Global parameter**:
 
  1. Right-click on "Global parameters" in the "Indicators and Parameters" section in the Navigation panel.
  2.	select "New parameter". 
- 3. Enter the name, description (optional), type (input or dependent parameter) and amount, then click on "Finish". 
+ 3. Enter the name (see rules below), description (optional), type (input or dependent parameter) and amount, then click on "Finish". 
 
 ![](../media/create_global_parameter.png)  
 _Creation of a global parameter_
@@ -53,6 +53,24 @@ _Conversion of an input/dependent parameter into a global parameter_
 The _use of parameters_ within a database can be checked via the "usage view" feature (right-click on a parameter and select "usage").
 
 _**Note:**_ Use the **formula interpreter** ("Tools" section in "[Running openLCA for the first time](../welcome_to_openLCA.md)") to check the functions you want to include in dependent parameters.
+
+
+### Parameters Rules
+
+- **Parameter names**:
+  - Must be one word, underscores (`_`) are allowed.
+  - Cannot contain special characters.
+  - Cannot have more than 255 characters.
+
+- **Parameter formulas**:
+  - Can contain single values, simple equations, or complex functions including logical expressions ("[Constants, operators and functions for formulas in openLCA](../advanced_top/formulas_in_openlca.md)")
+  - Do not contain units, so please add them in the comment field.
+  - Cannot have more than 255 characters.
+
+- The amount of parameters is, theoretically, not limited.
+
+- Use a point (`.`) instead of a comma (`,`) for decimal numbers.
+
 
 ### New features in openLCA 2
 
