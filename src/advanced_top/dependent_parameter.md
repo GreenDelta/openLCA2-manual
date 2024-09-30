@@ -3,7 +3,7 @@
 <div style='text-align: justify;'>
 
 Dependent parameters in openLCA are useful for dynamically adjusting LCI data based on specific scenarios. They allow users to create complex models where results update automatically as input parameters change. 
-Users can use the constants, operators and functions listed below to create formulas for dependent parameters. This is particularly useful when users wish to connect openLCA to external tools where input parameters may be initialised by or dependent upon user inputs. 
+Users can use the [constants, operators and functions ](../cheat/formulas_in_openLCA.md) listed below to create formulas for dependent parameters. This is particularly useful when users wish to connect openLCA to external tools where input parameters may be initialised by or dependent upon user inputs. 
 
 | **Function/Operator/Constant*- | **Description*-                       | **Examples with values*-                | **Usage in a Dependent Formula*- |
 |---------------------------------|---------------------------------------|-----------------------------------------|---------------------------------|
@@ -39,7 +39,7 @@ Users can use the constants, operators and functions listed below to create form
 | exp(x)                          | Euler's number e raised to power x   | `exp(2) = 7.389`                        | `growth_factor = exp(rate - time)` |
 
 
-**_Note_**: Often the length of the formula field allowed by the software (150 characters) is insufficient for the formulas users wish to enter. The length of the formulas can be extended using the SQL command below in the SQL query browser, which can be found under (select the green icon), users may save this formula under Tools>developer tools>SQL. You may save the script under the ‘scripts’ database elements folder in order to apply it in each new database they work with on openLCA
+**_Note_**: Often the length of the formula field allowed by the software (150 characters) is insufficient for the formulas users wish to enter. The length of the formulas can be extended using the SQL command below in the SQL query browser of openLCA, which can be found under (select the green icon), users may save this formula under Tools>developer tools>SQL. You may save the script under the ‘scripts’ database elements folder in order to apply it in each new database they work with on openLCA.
 
 ```
 ALTER TABLE tbl_exchanges
