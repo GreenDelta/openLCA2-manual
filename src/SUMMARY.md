@@ -31,7 +31,7 @@
 	- [Creating a new empty database](databases/create_database.md)
 	- [Restoring a database](databases/restore_database.md)
 	- [Database update](databases/database_update.md)
-	- [Importing and combining databases](databases/importing_and_combining_databases.md)
+	- [Importing data and combining databases](databases/importing_and_combining_databases.md)
 	- [Using mapping files and validate databases](databases/mapping_validation.md)
 	- [Exporting databases](databases/exporting_databases.md)
 - [Flows](flows/README.md)
