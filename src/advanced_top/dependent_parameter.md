@@ -3,7 +3,7 @@
 <div style='text-align: justify;'>
 
 Dependent parameters in openLCA are useful for dynamically adjusting LCI data based on specific scenarios. They allow users to create complex models where results update automatically as input parameters change. 
-Users can use the [constants, operators and functions ](../cheat/formulas_in_openLCA.md) listed below to create formulas for dependent parameters. This is particularly useful when users wish to connect openLCA to external tools where input parameters may be initialised by or dependent upon user inputs. 
+Users can use the [constants, operators and functions ](../cheat/formulas_in_openlca.md) listed below to create formulas for dependent parameters. This is particularly useful when users wish to connect openLCA to external tools where input parameters may be initialised by or dependent upon user inputs. 
 
 | **Function/Operator/Constant*- | **Description*-                       | **Examples with values*-                | **Usage in a Dependent Formula*- |
 |---------------------------------|---------------------------------------|-----------------------------------------|---------------------------------|
