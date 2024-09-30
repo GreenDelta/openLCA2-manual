@@ -85,7 +85,7 @@ Here some notes on specific formats, be aware that this is not an exhaustive gui
 
 - For SimaPro CSV files, add a flow in the window and select a [flow mapping file](./mapping_validation.md). If you are importing multiple CSV files without a mapping file, import all the CSV files together to ensure correct mapping.
 
-![](../media/import_csv_file.png)  
+![](../media/import_csv_file_new.png)  
 _Import CSV file_
 
 - For ILCD files, select the import file from the directory. ILCD databases have to be in zip format to be imported.

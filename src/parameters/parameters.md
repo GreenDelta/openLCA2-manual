@@ -34,7 +34,7 @@ _Global parameter - general information_
 6. The global parameters can also be viewed and edited by clicking on "Parameters" under "Database" &#8594; "Content". This opens up the window below which as a (**_new!_**) feature allows editing of uncertainty by double-clicking in the "Uncertainty cell".
 
 ![](../media/parameters_tools.png)
-![](../media/editing_uncertainty_in_the_global_parameter_table_2.png)
+![](../media/editing_uncertainty_in_the_global_parameter_table_2_new.png)
 ![](../media/editing_uncertainty_in_the_global_parameter_table.png)
 <br>_View and edit Parameters under Database &#8594; Content_
 
