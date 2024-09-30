@@ -35,7 +35,7 @@ _Adding uncertainty to flows_
 
 Likewise, it is also possible to define uncertainty data for parameters as well as for LCIA characterisation factors or to derive the uncertainty values from the respective data quality.
 
-Luckily some databases, e.g. ecoinvent, already provide uncertainty values for flows as visualized below (editing uncertainty as described above in the Input/Output tab of a Process):
+Luckily some databases, e.g. ecoinvent, already provide uncertainty values for flows as visualized below (editing uncertainty as described above in the "Input/Output" tab of a "Process"):
 
 ![](../media/MC_example.png)  
    
@@ -45,7 +45,7 @@ These are mostly based on a certain base uncertainty which is merged by with an 
 
 ### Deriving uncertainty from Data Quality Pedigree Matrices
 
-An alternative approach to setting exchange uncertainties is to make us of the data quality pedigree matrices that come with the openLCA reference data. The predefined data quality pedigree matrices can be used to set the uncertainty of processes according to the confidence in collected data. To use this feature, the flow data quality has to be defined according to section XX.X. Following that, the button ‘use as uncertainty value’ makes it possible to use the documented data quality uncertainty by ecoinvent or by Weidema/Müller.
+An alternative approach to setting exchange uncertainties is to make us of the data quality pedigree matrices that come with the openLCA reference data. The predefined data quality pedigree matrices can be used to set the uncertainty of processes according to the confidence in collected data. To use this feature, the flow data quality has to be defined see "[Data Quality](../advanced_top/data_quality)". Following that the button "use as uncertainty value" makes it possible to use the documented data quality uncertainty as defined in the data quality system (ecoinvent or Weida/Müller/Ciroth/Lesage).
 
 This uncertainty value will be set in logarithmic normal distribution and use the values defined in the pedigree matrix window. 
 

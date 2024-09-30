@@ -53,6 +53,7 @@ You can access existing data quality system in the folder "Data quality system" 
 ![](../media/quality_score.png)  
 _Data quality systems, indicators and scores_
 
+As visualized above, adding uncertainty values allows to perform "[Monte Carlo Simulations](../advanced_top/monte_carlo.md)" in openLCA.
 
 ### Setup
 

@@ -73,10 +73,10 @@
 # The advanced knowledge base
 - [Advanced Topics](advanced_top/README.md)
 	- [Regionalized LCA](advanced_top/regionalized.md)
-	- [Monte Carlo simulation](advanced_top/monte_carlo.md)
 	- [Life Cycle Costing](advanced_top/LCC.md)
-	- [Data Quality](advanced_top/data_quality.md)
 	- [Social aspects](advanced_top/social_aspects.md)
+	- [Data Quality](advanced_top/data_quality.md)
+	- [Monte Carlo simulation](advanced_top/monte_carlo.md)
 	- [Constants, operators and functions for formulas in openLCA](advanced_top/formulas_in_openlca.md)	
 - [Environmental Product Declarations (EPDs)](epds/README.md)
 	- [Creating new processes for target products](epds/create_processes_for_target_products.md)
