@@ -13,7 +13,8 @@ After opening a flow in openLCA, you will find tabs at the bottom of the window 
 
 - **General information:** Here you can view and modify the flow's name, add a description, additional details or [tags](../cheat/tags.md), and create a process using the flow as reference.
 
-![](../media/versioning.png)  
+  ![](../media/versioning.png)  
+
 
   _**Note on "Version":**_ openLCA performs versioning for you. Every time you save the flow, the version will be updated automatically. Additionally, you can also manually higher the version by clicking on either on "Update major version" or "Update minor version". The version can't be reset or modified downwards within openLCA to keep track of changes.
   
