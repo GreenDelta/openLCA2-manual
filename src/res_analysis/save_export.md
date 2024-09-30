@@ -46,4 +46,6 @@ You can then choose the export configuration that best suits your needs:
 
 ![](../media/export_options.png)
 
+At the current state the results can not be exported as ILCD data but openLCA allows to export the results as JSONLD data.
+
 </div>
