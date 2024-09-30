@@ -68,6 +68,9 @@ _Starting a Monte Carlo Simulation_
 ### Monte Carlo Results
 
 The results will be display live and provide you information about:
+
+![](../media/MC_result.png)  
+
 - **Results**: Number of iterations
 - **Mean**: The arithmetic mean of the results obtained in the total number of iterations performed so far, signified by one of the central red lines in the graph.
 - **Standard deviation**: The standard deviation associated with the mean of the data set of results produced so far. This describes how dispersed the produced results are around the mean value.
@@ -75,16 +78,11 @@ The results will be display live and provide you information about:
 - **95% percentile**: The upper boundary value, which demarks the area of results produced by only 5% of iterations. It is marked with the rightmost line in the graph.
 - **Median**: The center value of the distribution of iterations. For different types of distributions, this can differ considerably from the mean. This value is marked by the second one of the central lines in the graph.
 
+**The accuracy of the results is strongly depending on the number of iterations performed!**
 
-![](../media/MC_result.png)  
-_Monte carlo simulation results with highlighted parameters_
-
-Depending strongly on the number of iterations performed. However, all results can be exported directly as an Excel document to further assessment. Simply click on the Excel icon on the right-hand side of the editor (see above).
-
+However, all results can be exported directly as an Excel document to further assessment. Simply click on the Excel icon on the right-hand side of the editor (see above).
 
 _**Note:**_ Depending on the type of uncertainty distribution most prevalent in the product system, the resulting mean may not match the value calculated in LCIA through regular product system result calculation. This results from a cumulative effect of skewed product system uncertainty distribution types propagating to the reference flow.
-
-
 
 ### Pinning of Monte Carlo Simulation results
 
