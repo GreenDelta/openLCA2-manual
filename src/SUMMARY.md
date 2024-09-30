@@ -77,7 +77,7 @@
 	- [Social aspects](advanced_top/social_aspects.md)
 	- [Data Quality](advanced_top/data_quality.md)
 	- [Monte Carlo simulation](advanced_top/monte_carlo.md)
-	- [Constants, operators and functions for formulas in openLCA](advanced_top/formulas_in_openlca.md)	
+	- [Dependent parameters](advanced_top/Dependent_parameters.md)	
 - [Environmental Product Declarations (EPDs)](epds/README.md)
 	- [Creating new processes for target products](epds/create_processes_for_target_products.md)
 	- [Create product systems from your processes](epds/create_product_systems_from_processess.md)
@@ -98,6 +98,7 @@
 	- [Direct impact calculations in processes](cheat/direct.md)
 	- [openLCA and Excel](cheat/import_export.md)
 	- [Tags](cheat/tags.md)
+	- [Constants, operators and functions for formulas in openLCA](cheat/formulas_in_openlca.md)	
 
 -----------	
 -----------	
