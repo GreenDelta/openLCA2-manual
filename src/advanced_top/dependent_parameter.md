@@ -38,6 +38,8 @@ Users can use the [constants, operators and functions ](../cheat/formulas_in_ope
 | max(x1;x2;...;xN)               | Returns the maximum of x1            | `max(1;2;3) = 3`                        | `maximum_value = max(value1; value2; value3)` |
 | exp(x)                          | Euler's number e raised to power x   | `exp(2) = 7.389`                        | `growth_factor = exp(rate - time)` |
 
+### Extending the formula field character allowance
+
 
 **_Note_**: Often the length of the formula field allowed by the software (150 characters) is insufficient for the formulas users wish to enter. The length of the formulas can be extended using the SQL command below in the SQL query browser of openLCA, which can be found under (select the green icon), users may save this formula under Tools>developer tools>SQL. You may save the script under the ‘scripts’ database elements folder in order to apply it in each new database they work with on openLCA.
 
