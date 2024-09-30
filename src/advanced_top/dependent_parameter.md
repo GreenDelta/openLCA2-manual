@@ -53,7 +53,7 @@ SET DATA TYPE VARCHAR(15000);
 
 ![](../media/SQL_para.png)  
 
-Below are some examples using global parameters that users can try out. In each of these examples, the input parameters are created first as described in [parameter](../parameters/parameters.md) section, so that they can be used in the dependent parameters where the formulas are added. Dependent parameter formulas can also use other dependent parameters. 
+Below are some examples using global parameters that users can try out. In each of these examples, the input parameters are created first as described in the [parameter](../parameters/parameters.md) section, so that they can be used in the dependent parameters where the formulas are added. Dependent parameter formulas can also use other dependent parameters. 
 
 ## Example 1: The amount of concrete required depends on both the area and the height of the building.
 
