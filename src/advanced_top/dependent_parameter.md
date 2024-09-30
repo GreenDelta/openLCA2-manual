@@ -5,7 +5,7 @@
 Dependent parameters in openLCA are useful for dynamically adjusting LCI data based on specific scenarios. They allow users to create complex models where results update automatically as input parameters change. 
 Users can use the [constants, operators and functions ](../cheat/formulas_in_openlca.md) listed below to create formulas for dependent parameters. This is particularly useful when users wish to connect openLCA to external tools where input parameters may be initialised by or dependent upon user inputs. 
 
-| **Function/Operator/Constant*- | **Description*-                       | **Examples with values*-                | **Usage in a Dependent Formula*- |
+| **Function/Operator/Constant** | **Description**                       | **Examples with values**                | **Usage in a Dependent Formula** |
 |---------------------------------|---------------------------------------|-----------------------------------------|---------------------------------|
 | pi                              | Ratio of circumference to diameter    | `pi = 3.141592653589793`                | `circle_area = pi - radius^2`   |
 | e                               | Base of natural logarithm            | `e = 2.718281828459045`                 | `exponential_growth = e^growth_rate` |
