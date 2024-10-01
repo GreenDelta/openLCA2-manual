@@ -4,9 +4,9 @@
 
 When integrating databases from different LCA software that use different names for elementary flows, mapping files become essential for importing these databases into openLCA. These files describe the correspondence between flows in the source system and those in openLCA, facilitating the matching of elementary flow references. By using mapping files, you can align the elementary flow reference system of another data format with that of openLCA during the database import process. Mapping files are in .csv format, containing the necessary data for accurate mapping.
 
-For your convenience, mapping files for the most common formats are included in databases with complete reference data, see section "[Creating a new empty database](./create_database.md)".
+For your convenience, openLCA holds mapping files for the most common formats (ILCD, SimaPro, EcoSpold1) are included when creating a database with complete reference data, see section "[Creating a new empty database](./create_database.md)".
 
-The database just created has a section "mapping files" under Background data, where you can find the mapping files for SimaPro, EcosPold1 or ILCD:
+The database just created has a section "mapping files" under Background data, where you can find the mapping files for SimaPro, EcoSpold1 or ILCD:
 
 ![](../media/mapping_1.png)  
 _Location of mapping files in the navigation panel_
