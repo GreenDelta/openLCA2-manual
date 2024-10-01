@@ -99,13 +99,13 @@ Here some notes on specific formats, be aware that this is not an exhaustive gui
 
 ![](../media/lcia_methods_zip.png)  
 
-Here you have three options:
+Here you have three options for the case of already existing data sets:
 
-- **Never update a data set that already exists**: While importing, openLCA will analyze if the UUID of an exchange is already used. If so, there will be no change to the existing data set.
+- **Never update a data set that already exists**: While importing, openLCA will analyze if the data set is already present. If so, there will be no change to the existing data set.
 
-- **Update data sets with newer versions**: With this option, openLCA will update existing exchanges with the same UUID with the data to be imported. (Preferred for [importing LCIA methods](../lcia_methods/importing_lcia_methods.md))
+- **Update data sets with newer versions**: With this option, openLCA will update existing data sets if the version (or last change) of the to be imported data is more recent. (Preferred for [importing LCIA methods](../lcia_methods/importing_lcia_methods.md))
 
-- **Overwrite all existing data sets**: This option will lead overwrite data sets even if existing and imported exchanges hold the same UUID.
+- **Overwrite all existing data sets**: This option will lead to overwriting data sets if they are already existing.
 
 
 5. Click "Finish" to initiate the data import process. 
