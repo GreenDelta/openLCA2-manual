@@ -82,7 +82,7 @@ By following these steps, you can import databases in various formats into exist
 3. Navigate to the "File" menu and select "Import". Choose "Other" from the options.
 4. Select the specific format of the database you want to import (e.g., Ecospold, Excel, ILCD, SimaPro CSV, or JSON-LD).
 
-Here some notes on specific formats, be aware that this is not an exhaustive guidance but provides just some key aspects:
+Here are some notes on specific formats, be aware that this is not an exhaustive guidance but provides just some key aspects:
 
 - For **SimaPro CSV files**, add a flow in the window and optionally select a [flow mapping file](./mapping_validation.md). If you are importing multiple CSV files without a mapping file, import all the CSV files together to ensure correct mapping.
 
@@ -103,7 +103,7 @@ Here you have three options for the case of already existing data sets:
 
 - **Never update a data set that already exists**: While importing, openLCA will analyze if the data set is already present. If so, there will be no change to the existing data set.
 
-- **Update data sets with newer versions**: With this option, openLCA will update existing data sets if the version (or last change) of the to be imported data is more recent. (Preferred for [importing LCIA methods](../lcia_methods/importing_lcia_methods.md))
+- **Update data sets with newer versions**: With this option, openLCA will update existing data sets if the version (or last change) of the to-be imported data is more recent. (Preferred for [importing LCIA methods](../lcia_methods/importing_lcia_methods.md))
 
 - **Overwrite all existing data sets**: This option will lead to overwriting data sets if they are already existing.
 
@@ -116,7 +116,7 @@ The duration of the import may vary depending on the size and complexity of the 
 <details>
 <summary><b>Importing GeoJSON files </b></summary>
 
-In openLCA 2, we introduced a new feature that allows to import GeoJSON files, so you can incorporate geographic information for existing locations in the database. The feature compares attributes like name, UUID, or code of the locations in the database with the features specified in the corresponding GeoJSON file. This helps to find and assign the appropriate location. For example, you can use this method to import the GeoJSON file of ecoinvent locations available at [Geography ecoinvent](<https://geography.ecoinvent.org/>) using this method.
+In openLCA 2, we introduced a new feature that allows you to import GeoJSON files, so you can incorporate geographic information for existing locations in the database. The feature compares attributes like name, UUID, or code of the locations in the database with the features specified in the corresponding GeoJSON file. This helps to find and assign the appropriate location. For example, you can use this method to import the GeoJSON file of ecoinvent locations available at [Geography ecoinvent](<https://geography.ecoinvent.org/>) using this method.
 
 Within the database, GeoJSON data is stored in a compressed binary format. This approach reduces storage requirements and ensures fast loading of the data.
 
