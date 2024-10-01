@@ -36,6 +36,7 @@ Under the "Import" section, you can find the following options:
 - **Other:** This option allows you to manually specify the format of the import, in the picture below you can see the wizard. 
 
 ![](../media/import_wizard.png)  	
+
 _Import Wizard_
 
 The details for each option are displayed below:
@@ -83,18 +84,18 @@ By following these steps, you can import databases in various formats into exist
 
 Here some notes on specific formats, be aware that this is not an exhaustive guidance but provides just some key aspects:
 
-- For SimaPro CSV files, add a flow in the window and optionally select a [flow mapping file](./mapping_validation.md). If you are importing multiple CSV files without a mapping file, import all the CSV files together to ensure correct mapping.
+- For **SimaPro CSV files**, add a flow in the window and optionally select a [flow mapping file](./mapping_validation.md). If you are importing multiple CSV files without a mapping file, import all the CSV files together to ensure correct mapping.
 
 ![](../media/import_csv_file_new.png)  
 
 
-- For ILCD files, select the import file from the directory and optionally a [flow mapping file](./mapping_validation.md). ILCD databases have to be in zip format to be imported.
+- **For ILCD files**, select the import file from the directory and optionally a [flow mapping file](./mapping_validation.md). ILCD databases have to be in .zip format to be imported.
 
 ![](../media/import_ilcd.png)  
 
 
-- For Ecospold1 files, ensure to check and assign units using a [flow mapping file](./mapping_validation.md).
-- JSON-LD is the in-house format for openLCA. You can import entire databases, LCIA methods or any other database element to import.
+- **For Ecospold1 files**, ensure to check and assign units using a [flow mapping file](./mapping_validation.md).
+- **JSON-LD** is the in-house format for openLCA. You can import entire databases, LCIA methods or any other database element to import. JSON-LD data has to be in .zip format.
 
 ![](../media/lcia_methods_zip.png)  
 
