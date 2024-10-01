@@ -9,7 +9,7 @@ _Tabs of the process window_
 
 Let's explore the contents of these tabs in detail (click on the arrow to expand the text):
 
-<details open>
+<details>
 <summary><b>General information</b></summary>
 
 ![](../media/general_information_process.png)  
@@ -67,7 +67,13 @@ _**Note:**_ A waste can also be designed as an input covering recycling approach
 <details>
 <summary><b>Flow</b></summary>
 
-Product, elementary, and waste flows can be added as inputs or outputs to the process in several ways. You can drag and drop them from the navigation panel, double-click on an empty flow cell, or click on the green plus icon. A pop-up wizard will appear in which you can manually select the flows from the drop-down list or utilize the filter option to narrow down the choices. Moreover, you can also drag and drop processes into the input/output section. This will automatically add the respective reference flow to the table with the selected process as a provider.
+Product, elementary, and waste flows can be added as inputs or outputs to the process in several ways. You can drag and drop them from the navigation panel, double-click on an empty flow cell, or click on the green plus icon. A pop-up wizard will appear in which you can manually select the flows from the drop-down list or utilize the filter option to narrow down the choices. The option "instant search" allows you to select/deselect that openLCA runs the search function directly while you type. You can deselect this option if the live search slows down your operating system massively.
+
+![](../media/adding_flows.png)  
+
+
+
+Moreover, you can also drag and drop processes into the input/output section. This will automatically add the respective reference flow to the table with the selected process as a provider.
 
 </details>
 
