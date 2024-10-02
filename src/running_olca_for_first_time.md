@@ -49,7 +49,7 @@ The following options are available under **File**:
 
 	**Graphical editor theme**: You can change now the theme for the model graph namingly: Dark, Light, Nord Dark, Nord Light, Poimardres. However, to access the dark mode for the whole application, you need to select it on your operating system.
 		
-		![](./media/editor_theme.png)  
+	![](./media/editor_theme.png)  
 		
 	**Download calculation libraries**: This option allows you to integrated fast calculation libraries for openLCA. This function is still developed currently.
     
