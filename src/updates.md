@@ -3,7 +3,7 @@
 In this section you can check what the major manual updates were about and when they were released.
 
 
-## 01.10.2024
+## 08.10.2024
 
 - Adapted to changes coming along with the release of openLCA 2.3
 - Novel chapter on ["Dependent Parameters"](./advanced_top/dependent_parameter.md)
