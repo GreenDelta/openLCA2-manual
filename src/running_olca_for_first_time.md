@@ -45,13 +45,13 @@ The following options are available under **File**:
            
 	_**Note**_: You need to restart openLCA to activate configuration changes.
 	
-	Furthermore, you can reset your window settings if you encounter a bug or if you found yourself lost with the number of open windows.
+	**Reset window layout:** Furthermore, you can reset your window settings if you encounter a bug or if you found yourself lost with the number of open windows.
 
-	**Graphical editor theme**: You can change now the theme for the model graph namingly: Dark, Light, Nord Dark, Nord Light, Poimardres. However, to access the dark mode for the whole application, you need to select it on your operating system.
+	**Graphical editor theme:** You can change now the theme for the model graph namingly: Dark, Light, Nord Dark, Nord Light, Poimardres. However, to access the dark mode for the whole application, you need to select it on your operating system.
 		
 	![](./media/editor_theme.png)  
 		
-	**Download calculation libraries**: This option allows you to integrated fast calculation libraries for openLCA. This function is still developed currently.
+	**Download calculation libraries:** This option allows you to integrated fast calculation libraries for openLCA. This function is still developed currently.
     
 	- **Experimental features:** These features are still in development, but you can already access them by checking this box. We welcome any feedback to further refine them. Here you can activate the novel social impact assessment feature.
 		
