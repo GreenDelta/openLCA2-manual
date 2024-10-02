@@ -153,7 +153,7 @@ _Options under **Show views, Other**_
     -   _Python_: openLCA supports the possibility to run Python programs directly in openLCA. With this feature, you can automate calculations in openLCA, write your own data imports or exports, perform sensitivity analysis calculations by varying parameter values, and much more.
     -   _IPC Server_: Inter-Process Communication is a platform-independent data exchange interface via _HTTP_. _IPC_ Server allows running openLCA services via Python’s standard library
 
-	To find out more details on scripting in openLCA, see "[Scripting in openLCA](./scripting.md)" chapter.
+	To find out more details on scripting in openLCA, see "[Scripting in openLCA](./scripting.md)" chapter. However, to run the scripts use the respective button (green arrow) in the tool bar.
 
 - **Bulk-replace:** It is a tool that allows the replacement of a flow or product
     provider with another flow or provider. To find out more details on bulk-replace see "[Using mapping files in openLCA](../database/mapping_validation.md)" chapter.
