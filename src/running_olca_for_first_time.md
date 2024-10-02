@@ -40,19 +40,21 @@ The following options are available under **File**:
 	 
 	 -  **Configuration:** Here you can choose among eleven available languages (Arabic, Bulgarian, Catalan, Chinese, English, French, German, Italian, Portuguese, Spanish or Turkish). You can also select the maximum memory usage (see [chapter](./installation/memory.md)).
 	 
-				![](./media/settings_configuration.png)  
+		![](./media/settings_configuration.png)  
+		
 		_Preferences Configuration_
 		
-		- **Reset window layout:** Furthermore, you can reset your window settings if you encounter a bug or if you find yourself lost with the number of open windows.
-
 		- **Graphical editor theme:** You can change now the theme for the model graph namely: Dark, Light, Nord Dark, Nord Light, Poimardres. However, to access the dark mode for the whole application, you need to select it on your operating system.
+		
+		![](./media/editor_theme.png)  
+		
+		- **Reset window layout:** Furthermore, you can reset your window settings if you encounter a bug or if you find yourself lost with the number of open windows.
+				
+		- **Download calculation libraries:** This option allows you to integrate fast calculation libraries for openLCA. This function is still developed currently.
 	
 		_**Note**_: You need to restart openLCA to activate configuration changes.         
 	
-		![](./media/editor_theme.png)  
-		
-	**Download calculation libraries:** This option allows you to integrate fast calculation libraries for openLCA. This function is still developed currently.
-    
+		   
 	- **Experimental features:** These features are still in development, but you can already access them by checking this box. We welcome any feedback to further refine them. Here you can activate the novel social impact assessment feature.
 		
 		![](./media/settings_experimental_features.png)  
