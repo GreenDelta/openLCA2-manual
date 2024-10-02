@@ -3,9 +3,9 @@
 In this section you can check what the major manual updates were about and when they were released.
 
 
-## 30.09.2024
+## 01.10.2024
 
-- Adapted to openLCA 2.3
+- Adapted to changes coming along with the release of openLCA 2.3
 - Novel chapter on ["Dependent Parameters"](./advanced_top/dependent_parameter.md)
 - Expanded the ["Tags"](./cheat/tags.md) chapter and their use for result analysis
 - Expanded the ["Monte Carlo Simulation"](./advanced_top/monte_carlo.md) chapter and the connection to data quality
