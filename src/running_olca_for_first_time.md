@@ -39,17 +39,17 @@ The following options are available under **File**:
 		More information about the Collaboration Server can be found in the respective [chapter](./collaboserver.md).
 	 
 	 -  **Configuration:** Here you can choose among eleven available languages (Arabic, Bulgarian, Catalan, Chinese, English, French, German, Italian, Portuguese, Spanish or Turkish). You can also select the maximum memory usage (see [chapter](./installation/memory.md)).
-		
-		![](./media/settings_configuration.png)  
+	 
+				![](./media/settings_configuration.png)  
 		_Preferences Configuration_
-           
-	_**Note**_: You need to restart openLCA to activate configuration changes.
-	
-	**Reset window layout:** Furthermore, you can reset your window settings if you encounter a bug or if you find yourself lost with the number of open windows.
-
-	**Graphical editor theme:** You can change now the theme for the model graph namely: Dark, Light, Nord Dark, Nord Light, Poimardres. However, to access the dark mode for the whole application, you need to select it on your operating system.
 		
-	![](./media/editor_theme.png)  
+		- **Reset window layout:** Furthermore, you can reset your window settings if you encounter a bug or if you find yourself lost with the number of open windows.
+
+		- **Graphical editor theme:** You can change now the theme for the model graph namely: Dark, Light, Nord Dark, Nord Light, Poimardres. However, to access the dark mode for the whole application, you need to select it on your operating system.
+	
+		_**Note**_: You need to restart openLCA to activate configuration changes.         
+	
+		![](./media/editor_theme.png)  
 		
 	**Download calculation libraries:** This option allows you to integrate fast calculation libraries for openLCA. This function is still developed currently.
     
