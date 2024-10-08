@@ -2,7 +2,7 @@
 
 <div style='text-align: justify;'>
 
-When you add a formula in openLCA (e.g. in the amount cell of Inputs/Outputs tab) The formula interpreter allows you to use these constants, operators and functions.
+When you add a formula in openLCA (e.g. in the amount cell of Inputs/Outputs tab), the formula interpreter allows you to use these constants, operators and functions.
 
 ## Constants
 

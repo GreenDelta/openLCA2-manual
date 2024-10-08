@@ -9,7 +9,7 @@ _Tabs of the process window_
 
 Let's explore the contents of these tabs in detail (click on the arrow to expand the text):
 
-<details open>
+<details>
 <summary><b>General information</b></summary>
 
 ![](../media/general_information_process.png)  
@@ -67,7 +67,13 @@ _**Note:**_ A waste can also be designed as an input covering recycling approach
 <details>
 <summary><b>Flow</b></summary>
 
-Product, elementary, and waste flows can be added as inputs or outputs to the process in several ways. You can drag and drop them from the navigation panel, double-click on an empty flow cell, or click on the green plus icon. A pop-up wizard will appear in which you can manually select the flows from the drop-down list or utilize the filter option to narrow down the choices. Moreover, you can also drag and drop processes into the input/output section. This will automatically add the respective reference flow to the table with the selected process as a provider.
+Product, elementary, and waste flows can be added as inputs or outputs to the process in several ways. You can drag and drop them from the navigation panel, double-click on an empty flow cell, or click on the green plus icon. A pop-up wizard will appear in which you can manually select the flows from the drop-down list or utilize the filter option to narrow down the choices. The option "instant search" allows you to select/deselect that openLCA runs the search function directly while you type. You can deselect this option if the live search slows down your operating system massively.
+
+![](../media/adding_flows.png)  
+
+
+
+Moreover, you can also drag and drop processes into the input/output section. This will automatically add the respective reference flow to the table with the selected process as a provider.
 
 </details>
 
@@ -283,14 +289,13 @@ Check out the "[Social aspects](../advanced_top/social_aspects.md)" section.
 
 </details>
 <details>
-<summary><b>Impact analysis</b></summary>
+<summary><b>Direct impacts</b></summary>
 
-In the "Impact Analysis" tab of a process, the process's direct impact is calculated. Hence, only elementary flows present in this process (no upstream impacts) will be considered. You can choose the impact assessment method directly within the tab and the results will dynamically update accordingly. Check out the "[Direct calculation](../cheat/direct.md#direct-calculations-in-the-impact-analysis-tab)" section. 
-
+In the "Direct impacts" tab of a process, the process's direct impact is calculated. Hence, only elementary flows present in this process (no upstream impacts) will be considered. You can choose the impact assessment method directly within the tab and the results will dynamically update accordingly. This option is advantageous in "System Process" databases, e.g. GaBi, Environmental Footprint.
 ![](../media/impact_analysis.png)  
 _Impact analysis of a process_
 
-_**Note**_:  The "impact Analysis" tab only provides you with the impacts of this particular process. Hence, the overall impacts are displayed only in the case of using system processes. In case of using a unit process-based database, only the direct impacts (elementary flows used in this process) will be calculated.
+_**Note**_:  The "Direct impacts" tab only provides you with the impacts of this particular process. Hence, the overall impacts are displayed only in the case of using system processes. In case of using a unit process-based database, only the direct impacts (elementary flows used in this process) will be calculated using "[regionalized calculation](../advanced_top/regionalized.md)". To fastly calculate the **overall impacts** including the whole supply chain, check out the "[Direct calculation](../cheat/direct.md#direct-calculations-in-the-impact-analysis-tab)" section. 
 
 To dive deeper into the subject of LCA calculations, you can explore the sections "[LCIA methods and categories](../lcia_methods/importing_lcia_methods.md)" and
 "[Calculation and Result Analysis](../res_analysis/index.html)".

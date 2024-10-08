@@ -36,6 +36,7 @@ Under the "Import" section, you can find the following options:
 - **Other:** This option allows you to manually specify the format of the import, in the picture below you can see the wizard. 
 
 ![](../media/import_wizard.png)  	
+
 _Import Wizard_
 
 The details for each option are displayed below:
@@ -72,29 +73,40 @@ In openLCA, an existing database refers to a database that has already been impo
 </details>
 
 <details>
-<summary><b>Importing databases as Ecospold, Excel, ILCD, SimaPro CSV, and JSON-LD</b></summary>
+<summary><b>Importing databases and data sets as Ecospold, Excel, ILCD, SimaPro CSV, and JSON-LD</b></summary>
 
 By following these steps, you can import databases in various formats into existing openLCA databases, allowing you to expand and enhance your data resources:
 
-1. If needed, create a new empty database in openLCA.
+1. If needed, create a new empty database in openLCA to also import the respective reference system (elementary flows, units etc.) from the database/data set.
 2. Double-click on the target database to activate it before importing the data.
 3. Navigate to the "File" menu and select "Import". Choose "Other" from the options.
 4. Select the specific format of the database you want to import (e.g., Ecospold, Excel, ILCD, SimaPro CSV, or JSON-LD).
 
-Here some notes on specific formats, be aware that this is not an exhaustive guidance but provides just some key aspects:
+Here are some notes on specific formats, be aware that this is not an exhaustive guidance but provides just some key aspects:
 
-- For SimaPro CSV files, add a flow in the window and select a [flow mapping file](./mapping_validation.md). If you are importing multiple CSV files without a mapping file, import all the CSV files together to ensure correct mapping.
+- For **SimaPro CSV files**, add a flow in the window and optionally select a [flow mapping file](./mapping_validation.md). If you are importing multiple CSV files without a mapping file, import all the CSV files together to ensure correct mapping.
 
-![](../media/import_csv_file.png)  
-_Import CSV file_
+![](../media/import_csv_file_new.png)  
 
-- For ILCD files, select the import file from the directory. ILCD databases have to be in zip format to be imported.
+
+- **For ILCD files**, select the import file from the directory and optionally a [flow mapping file](./mapping_validation.md). ILCD databases have to be in .zip format to be imported.
 
 ![](../media/import_ilcd.png)  
-_Import of a zip file with ILCD data sets_
 
-- For Ecospold1 files, ensure to check and assign units using a [flow mapping file](./mapping_validation.md).
-- JSON-LD is the in-house format for openLCA. You can import entire databases or select specific product systems or any other database element to import.
+
+- **For Ecospold1 files**, ensure to check and assign units using a [flow mapping file](./mapping_validation.md).
+- **JSON-LD** is the in-house format for openLCA. You can import entire databases, LCIA methods or any other database element to import. JSON-LD data has to be in .zip format.
+
+![](../media/lcia_methods_zip.png)  
+
+Here you have three options for the case of already existing data sets:
+
+- **Never update a data set that already exists**: While importing, openLCA will analyze if the data set is already present. If so, there will be no change to the existing data set.
+
+- **Update data sets with newer versions**: With this option, openLCA will update existing data sets if the version (or last change) of the to-be imported data is more recent. (Preferred for [importing LCIA methods](../lcia_methods/importing_lcia_methods.md))
+
+- **Overwrite all existing data sets**: This option will lead to overwriting data sets if they are already existing.
+
 
 5. Click "Finish" to initiate the data import process. 
 The duration of the import may vary depending on the size and complexity of the data.
@@ -104,7 +116,7 @@ The duration of the import may vary depending on the size and complexity of the 
 <details>
 <summary><b>Importing GeoJSON files </b></summary>
 
-In openLCA 2, we introduced a new feature that allows to import GeoJSON files, so you can incorporate geographic information for existing locations in the database. The feature compares attributes like name, UUID, or code of the locations in the database with the features specified in the corresponding GeoJSON file. This helps to find and assign the appropriate location. For example, you can use this method to import the GeoJSON file of ecoinvent locations available at [Geography ecoinvent](<https://geography.ecoinvent.org/>) using this method.
+In openLCA 2, we introduced a new feature that allows you to import GeoJSON files, so you can incorporate geographic information for existing locations in the database. The feature compares attributes like name, UUID, or code of the locations in the database with the features specified in the corresponding GeoJSON file. This helps to find and assign the appropriate location. For example, you can use this method to import the GeoJSON file of ecoinvent locations available at [Geography ecoinvent](<https://geography.ecoinvent.org/>) using this method.
 
 Within the database, GeoJSON data is stored in a compressed binary format. This approach reduces storage requirements and ensures fast loading of the data.
 

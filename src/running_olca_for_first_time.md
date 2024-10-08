@@ -12,7 +12,7 @@ The Welcome page provides quick links to openLCA Nexus, instructional videos, ca
 Here, we describe the available toolbar functions, and provide guidance on using openLCA’s basic features:
 
 ![](./media/toolbar_short.png)
-_openLCA toolbar_
+<br>_openLCA toolbar_
 
 Click on the &#x25B6; to expand the respective tab:
 
@@ -29,8 +29,6 @@ The following options are available under **File**:
 
     -   **Collaboration:** Here, you can select your preferred configurations for working with the collaboration server. 
 
-		- _Check restrictions before commit_: this option will be deprecated in the upcoming 2.1.1 release o openLCA.
-
 		- _Check referenced changes_: if this is checked, openLCA will scan - after selecting datasets for a commit - the database for changes in datasets that are referenced by the selected datasets and suggests to also commit them. E.g. if you want to commit a process dataset, and you have added a newly created flow to the input table, the flow is considered a referenced change.
 
 		- _Enable comments_: if this is checked, openLCA loads comments that were added to data sets on the LCA Collaboration Server and displays them in the model editors.
@@ -40,18 +38,24 @@ The following options are available under **File**:
 
 		More information about the Collaboration Server can be found in the respective [chapter](./collaboserver.md).
 	 
-	 -  **Configuration:** Here you can choose among eleven available languages (Arabic, Bulgarian, Catalan, Chinese, English, French, German, Italian, Portuguese, Spanish or Turkish). You can also select the maximum memory usage (see [chapter](./installation/memory.md))
-		
+	 -  **Configuration:** Here you can choose among eleven available languages (Arabic, Bulgarian, Catalan, Chinese, English, French, German, Italian, Portuguese, Spanish or Turkish). You can also select the maximum memory usage (see [chapter](./installation/memory.md)).
+	 
 		![](./media/settings_configuration.png)  
-		_Preferences Configuration_
-           
-	_**Note**_: You need to restart openLCA to activate configuration changes.
-	
-	Furthermore, you can reset your window settings if you encounter a bug or if you found yourself lost with the number of open windows.
-
-	**Dark mode**: Our dark mode seamlessly follows the mode set for your entire system. To enable the dark mode in openLCA you need to select it on your operating system.
 		
-    - **Experimental features:** These features are still in development, but you can already access them by checking this box. We welcome any feedback to further refine them.
+		_Preferences Configuration_
+		
+		- **Graphical editor theme:** You can change now the theme for the model graph and Sankey diagram namely: Dark, Light, Nord Dark, Nord Light, Poimandres. However, to access the dark mode for the whole application, you need to select it on your operating system.
+		
+		![](./media/editor_theme.png)  
+		
+		- **Reset window layout:** Furthermore, you can reset your window settings if you encounter a bug or if you find yourself lost with the number of open windows.
+				
+		- **Download calculation libraries:** This option allows you to integrate fast calculation libraries for openLCA. This function is still developed currently.
+	
+		_**Note**_: You need to restart openLCA to activate configuration changes.         
+	
+		   
+	- **Experimental features:** These features are still in development, but you can already access them by checking this box. We welcome any feedback to further refine them. Here you can activate the novel social impact assessment feature.
 		
 		![](./media/settings_experimental_features.png)  
 		_Preferences Experimental Features_
@@ -149,14 +153,20 @@ _Options under **Show views, Other**_
     -   _Python_: openLCA supports the possibility to run Python programs directly in openLCA. With this feature, you can automate calculations in openLCA, write your own data imports or exports, perform sensitivity analysis calculations by varying parameter values, and much more.
     -   _IPC Server_: Inter-Process Communication is a platform-independent data exchange interface via _HTTP_. _IPC_ Server allows running openLCA services via Python’s standard library
 
-	To find out more details on scripting in openLCA, see "[Scripting in openLCA](./scripting.md)" chapter.
+	However, to run the scripts use the respective button (green arrow) in the tool bar.
 
 - **Bulk-replace:** It is a tool that allows the replacement of a flow or product
-    provider with another flow or provider.
+    provider with another flow or provider. To find out more details on bulk-replace see "[Using mapping files in openLCA](./databases/mapping_validation.md)" chapter.
 	
 - **Flow mapping (experimental):** Still under development but already available for you!
 
 - **Library export (experimental):** Still under development but already available for you!
+
+- **Parameter analysis (experimental):** Still under development but already available for you!
+
+- **soda4LCA:** See [soda4LCA](./epds/soda4lca.md) chapter.
+
+- **CS Servers:** See [the collaboration server manual](<https://manuals.openlca.org/lca-collaboration-server/>).
 
 - **Get EPDs from EC3:** With openLCA 2 it is now possible to download or download EPDs from EC3 (Embodied Carbon in Construction Calculator) by [Building Transparency](<https://www.buildingtransparency.org/>). This requires access to the Building Transparancy server. Also an upload is possible.
 

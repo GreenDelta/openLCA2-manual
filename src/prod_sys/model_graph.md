@@ -95,7 +95,7 @@ By right-clicking on the background in the model graph, the following options wi
 
 - **Focus**: Positions the reference process in the middle of the view window. 
 
-![](../media/model_graph_focus.png)
+![](../media/model_graph_focus_new.png)
 <br>_Model graph - Focus_
 
 
@@ -108,7 +108,7 @@ By right-clicking on the background in the model graph, the following options wi
 
 - **Maximize or Minimize**: Maximize allows to see the input and output flows, the corresponding amount and unit. The quantitative reference is in bold. Minimize will collapse the information beside the process name. A double-click on the process name either maximize or minimize it.
 
-![](../media/model_graph_min_max.png)
+![](../media/model_graph_min_max_new.png)
 <br>_Model graph - Maximize_
 
 - **Settings**: In the settings pop-up window, you can personalize the graph's theme, choosing between dark or light mode, adjust the shape of connection lines, enable the display of elementary flows, and activate in-graph process editing.

@@ -94,7 +94,7 @@ _Analysis - Contribution tree tab, cost category_
 <details>
 <summary><b>Grouping</b></summary>
 
-In openLCA, it is possible to group products to see the cumulative values of these grouped products. The values shown in the "Grouping" tab are the direct impacts (i.e. upstream values are not included).
+In openLCA, it is possible to group products to see the cumulative values of these grouped products. This is very helpful if you want to group your impacts according to categories like **"Transport", "Electricity", "Production" or even by life cycle stage**. The values shown in the "Grouping" tab are the direct impacts (i.e. upstream values are not included).
 
 To create a new group, select the green "+" icon in the right-hand corner of the editor. Then name the new group.
 
@@ -111,12 +111,14 @@ Once you have created groups and added product / waste flows to them, their cont
 ![](../media/grouping_3.png)  
 _Grouping, results_
 
-You can save groups in the Grouping tab by clicking on the "Save" icon located in the top right-hand corner of the Grouping editor. Give the group a name and press "OK". These groups will be available in the results editor each time you carry out a direct or classical calculation for any product system.
+Once the grouping is done, openLCA allowes to save the grouping for also other result analysis. **This option is extremly helpful if you want to harmonize the way various calculation results are analyzed!** You can save groups in the Grouping tab by clicking on the "Save" icon located in the top right-hand corner of the Grouping editor. Give the group a name and press "OK". These groups will be available in the results editor each time you carry out a direct or classical calculation for any product system.
 
 To open saved groups, click on the folder icon in the top right-hand corner of the Grouping tab.
 
 ![](../media/grouping_4.png)  
 _Saving and opening saved groups_
+
+
 
 </details>
 

@@ -2,6 +2,16 @@
 
 In this section you can check what the major manual updates were about and when they were released.
 
+
+## 08.10.2024
+
+- Adapted to changes coming along with the release of openLCA 2.3
+- Novel chapter on ["Dependent Parameters"](./advanced_top/dependent_parameter.md)
+- Expanded the ["Tags"](./cheat/tags.md) chapter and their use for result analysis
+- Expanded the ["Monte Carlo Simulation"](./advanced_top/monte_carlo.md) chapter and the connection to data quality
+- Rescaled figures
+
+
 ## 03.07.2024
 
 - Novel ["soda4LCA"](./epds/soda4lca.md) feature is described now in the EPD section
