@@ -164,7 +164,7 @@ _Options under **Show views, Other**_
 
 - **Parameter analysis (experimental):** Still under development but already available for you!
 
-- **soda4LCA:** See [soda4LCA](<https://manuals.openlca.org/openLCA2-manual/epds/soda4lca.html>) chapter.
+- **soda4LCA:** See [soda4LCA](<https://manuals.openlca.org/openLCA2-manual/epds/soda4lca.html/>) chapter.
 
 - **CS Servers:** See [the collaboration server manual](<https://manuals.openlca.org/lca-collaboration-server/>).
 
