@@ -6,7 +6,7 @@ The manual is created using [mdBook](https://rust-lang.github.io/mdBook/index.ht
 openLCA is developed and managed by GreenDelta in Berlin. If you have any
 feedback, comments, questions, please let us know. 
 
-For **manual-related inquiries**, you can reach us at <a href="mailto:manual-feedback@greendelta.com">manual-feedback@greendelta.com</a>. For **openLCA software-related questions** please refer to our [askopenLCA User Forum](https://ask.openlca.org/).
+For **manual-related inquiries**, you can reach us at <a href="mailto:manual-feedback(at)greendelta.com">manual-feedback(at)greendelta.com</a>. For **openLCA software-related questions** please refer to our [askopenLCA User Forum](https://ask.openlca.org/).
 
 ![](./media/greendelta.png)
 
