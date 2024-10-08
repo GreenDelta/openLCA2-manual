@@ -44,7 +44,7 @@ The following options are available under **File**:
 		
 		_Preferences Configuration_
 		
-		- **Graphical editor theme:** You can change now the theme for the model graph namely: Dark, Light, Nord Dark, Nord Light, Poimardres. However, to access the dark mode for the whole application, you need to select it on your operating system.
+		- **Graphical editor theme:** You can change now the theme for the model graph and Sankey diagram namely: Dark, Light, Nord Dark, Nord Light, Poimandres. However, to access the dark mode for the whole application, you need to select it on your operating system.
 		
 		![](./media/editor_theme.png)  
 		
