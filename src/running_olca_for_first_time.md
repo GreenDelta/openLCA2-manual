@@ -162,7 +162,7 @@ _Options under **Show views, Other**_
 
 - **Library export (experimental):** Still under development but already available for you!
 
-- - **Parameter analysis (experimental):** Still under development but already available for you!
+- **Parameter analysis (experimental):** Still under development but already available for you!
 
 - **soda4LCA:** See "[Using mapping files in openLCA](../epds/soda4lca.md)" chapter.
 
