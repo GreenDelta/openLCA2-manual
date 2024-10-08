@@ -1,6 +1,8 @@
 # Contact
 <div style='text-align: justify;'>
 
+The manual is created using [mdBook](https://rust-lang.github.io/mdBook/index.html) and can be browsed on its Github page: https://greendelta.github.io/openLCA2-manual/.
+
 openLCA is developed and managed by GreenDelta in Berlin. If you have any
 feedback, comments, questions, please let us know. 
 
