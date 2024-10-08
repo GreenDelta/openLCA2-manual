@@ -63,7 +63,7 @@ _**Note:**_ Use the **formula interpreter** ("Tools" section in "[Running openLC
   - Cannot have more than 255 characters.
 
 - **Parameter formulas**:
-  - Can contain single values, simple equations, or complex functions including logical expressions ("[Constants, operators and functions for formulas in openLCA](../advanced_top/formulas_in_openlca.md)")
+  - Can contain single values, simple equations, or complex functions including logical expressions ("[Constants, operators and functions for formulas in openLCA](../cheat/formulas_in_openlca.md)")
   - Do not contain units, so please add them in the comment field.
   - Cannot have more than 255 characters.
 
