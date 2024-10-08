@@ -156,7 +156,7 @@ _Options under **Show views, Other**_
 	However, to run the scripts use the respective button (green arrow) in the tool bar.
 
 - **Bulk-replace:** It is a tool that allows the replacement of a flow or product
-    provider with another flow or provider. To find out more details on bulk-replace see "[Using mapping files in openLCA](../databases/mapping_validation.md)" chapter.
+    provider with another flow or provider. To find out more details on bulk-replace see "[Using mapping files in openLCA](../src/databases/mapping_validation.md)" chapter.
 	
 - **Flow mapping (experimental):** Still under development but already available for you!
 
