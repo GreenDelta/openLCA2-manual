@@ -12,7 +12,7 @@ The Welcome page provides quick links to openLCA Nexus, instructional videos, ca
 Here, we describe the available toolbar functions, and provide guidance on using openLCA’s basic features:
 
 ![](./media/toolbar_short.png)
-_openLCA toolbar_
+<br>_openLCA toolbar_
 
 Click on the &#x25B6; to expand the respective tab:
 
