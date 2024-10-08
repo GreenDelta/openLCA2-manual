@@ -10,7 +10,7 @@ _In openLCA 2 you can save results or even create a system process based on the 
 **Save as result:** 
 
 - This option creates the folder "Results" in the navigation panel.
-- The tab "Results" displays general information, Impact assessments results and Inventory results (Inputs & Outputs).
+- The tab "Results" displays general information, Impact assessment results and Inventory results (Inputs & Outputs).
 - Saving your results as a "result" allows you to easily access your results without the need to re-calculate them. In addition, it can serve as an easy way to compare calculations e.g. change of LCIA method. They can also be direclty used in product systems (see next paragraph).
  
 ![](../media/save_export_results_2.png)  
@@ -37,7 +37,7 @@ This option is particularly helpful when working with EPDs. Check ["Using result
 
 ## Export Results
 
-The "Export to Excel" option in the General information tab or the "Excel" icon above the navigation panel enables you to export your results as an .xlsx file.
+The "Export to Excel" option in the "General information" tab or the "Excel" icon above the navigation panel enables you to export your results as an .xlsx file.
 
 ![](../media/save_export_results_1.png)  
 _Saving and exporting results_
@@ -46,6 +46,6 @@ You can then choose the export configuration that best suits your needs:
 
 ![](../media/export_options.png)
 
-At the current state the results can not be exported as ILCD data but openLCA allows to export the results as JSONLD data.
+_**Note:**_ At the current state the results can not be exported as ILCD data but openLCA allows to export the results as JSON-LD data.
 
 </div>
