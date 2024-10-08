@@ -162,6 +162,12 @@ _Options under **Show views, Other**_
 
 - **Library export (experimental):** Still under development but already available for you!
 
+- - **Parameter analysis (experimental):** Still under development but already available for you!
+
+- **soda4LCA:** See "[Using mapping files in openLCA](../epds/soda4lca.md)" chapter.
+
+- **CS Servers:** See our [the collaboration server manual](<https://manuals.openlca.org/lca-collaboration-server/>).
+
 - **Get EPDs from EC3:** With openLCA 2 it is now possible to download or download EPDs from EC3 (Embodied Carbon in Construction Calculator) by [Building Transparency](<https://www.buildingtransparency.org/>). This requires access to the Building Transparancy server. Also an upload is possible.
 
 - **Formula interpreter:** Use this interpreter to check if your formulas are correct. More information on the interpreter is accessible by opening the formula interpreter and typing "help" in the command line.
