@@ -127,7 +127,7 @@ _Changing flow units within a process editor_
 <details>
 <summary><b>Cost/Revenue</b></summary>
 
-openLCA has the capability to assign costs and revenues to processes, which enables conducting [Life Cycle Costing](../res_analysis/lcc.md) studies.
+openLCA has the capability to assign costs and revenues to processes, which enables conducting [Life Cycle Costing](../advanced_top/LCC.md) studies.
 
 To add or modify a cost/revenue value, follow these steps:
 
@@ -181,7 +181,7 @@ Avoided waste occurs in a situation where the waste from a process becomes a res
 <details>
 <summary><b>Provider</b></summary>
 
-In openLCA, a "provider" refers to the process that supplies a specific flow (the source or origin of a particular input or output flow). Output "providers" are waste treatment processes, taking the waste generated in a process. You see that the name does not perfectly fit here but we did not set up a new name. The provider information helps to establish the relationships and dependencies between different processes and flows within the LCA model, and makes the input / ouput unique. It can be overwritten in a product system, meaning that you can select a new, different connecting process in a product system.
+In openLCA, a "provider" refers to the process that supplies a specific flow (the source or origin of a particular input or output flow). Output "providers" are waste treatment processes, taking the waste generated in a process. You see that the name does not perfectly fit here but we did not set up a new name. The provider information helps to establish the relationships and dependencies between different processes and flows within the LCA model, and makes the input / output unique. It can be overwritten in a product system, meaning that you can select a new, different connecting process in a product system.
 
 To choose a provider for a flow, follow these steps:
 
