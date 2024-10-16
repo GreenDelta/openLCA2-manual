@@ -21,7 +21,7 @@ To start the calculation for a product system, have the product system open, and
 
 - **Regionalized:** Check this box if you want to calculate the results in dependence of regions using geoJSON files. Check [Regionalized Calculation](../advanced_top/regionalized.md) section below for details.
 
-- **Include cost calculation:** This option additionally performs cost calculation. Check [Life Cycle Cost Calculation](../advanced_top/lcc.md) section for details.
+- **Include cost calculation:** This option additionally performs cost calculation. Check [Life Cycle Cost Calculation](../advanced_top/LCC.md) section for details.
 
 - **Access data quality:** If you've included data quality information in your processes, this option will calculate the data quality for your results. Be sure to define the details of the data quality assessment by clicking "next" before proceeding with the calculation. Especially, the data quality system specified here must be referenced by the processes. Check [Data Quality](../advanced_top/data_quality.md) section for details. 
 
