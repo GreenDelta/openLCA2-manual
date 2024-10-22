@@ -41,7 +41,7 @@ Users can use the [constants, operators and functions ](../cheat/formulas_in_ope
 ### Extending the formula field character allowance
 
 
-**_Note_**: Often the length of the formula field allowed by the software (150 characters) is insufficient for the formulas users wish to enter. The length of the formulas can be extended using the SQL command below in the SQL query browser of openLCA, which can be found under (select the green icon), users may save this formula under Tools>developer tools>SQL. You may save the script under the ‘scripts’ database elements folder as this script has to be allowed to each new database in openLCA.
+**_Note_**: Often the length of the formula field allowed by the software (150 characters) is insufficient for the formulas users wish to enter. The length of the formulas can be extended using the SQL command below in the SQL query browser of openLCA, found under Tools>developer tools>SQL (select the green icon to run). Users may save this formula under the ‘scripts’ database elements folder as this script has to be applied to each new database in openLCA as it is only used in the active database.
 
 ```
 ALTER TABLE tbl_exchanges
