@@ -59,6 +59,19 @@ _Calculation results window_
 
 Check the ["LCIA methods and categories"](../lcia_methods/index.html) and ["Calculation and Results Analysis"](../res_analysis/index.html) sections to learn more.
 
+<details>
+<summary><b>If you are interested to display impacts per life cycle stage click here</b></summary>
+
+For a detailed analysis of the impacts of the individual life cycle stages in openLCA, you have to slightly modify the modelling approach which will lead to the following model graph:
+
+![](../media/lifecycleoatmodel.png)
+
+This will allow you to assess the impacts per life cycle stage as displayed here:
+
+![](../media/lifecycleoatGWP.png)
+
+</details>
+
 ## Comparing life cycle models using projects
 
 Comparing life cycle model results, i.e. product systems, can provide valuable insights into their relative environmental performance. In openLCA, this is done via **projects**.
