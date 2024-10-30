@@ -49,7 +49,7 @@ An alternative approach to setting exchange uncertainties is to make us of the d
 
 This uncertainty value will be set in logarithmic normal distribution and use the values defined in the pedigree matrix window. 
 
-![](../media/MC_DQ_matrix.png)  
+![](../media/MC_DQ_matrix_1.png)  
    
 _Example exchange data quality, highlighting the function of using the data quality matrix for the determination of uncertainty values_
 
