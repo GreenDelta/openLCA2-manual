@@ -66,16 +66,13 @@ For a detailed analysis of the impacts of the individual life cycle stages in op
 
 ![](../media/lifecycleoatmodel.png)
 
-This will allow you to assess the impacts per life cycle stage as displayed here:
+This will allow you to assess the impacts per life cycle stage as displayed in the Sankey diagram here:
 
 ![](../media/lifecycleoatGWP.png) 
 
-And in a similar fashion in the contribution tree:
+And in a similar fashion in the Contribution tree:
 
 ![](../media/lifecycleoatcontribution.png)
-
-
-
 
 
 </details>
