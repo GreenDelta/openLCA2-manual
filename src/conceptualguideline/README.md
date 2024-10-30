@@ -68,7 +68,15 @@ For a detailed analysis of the impacts of the individual life cycle stages in op
 
 This will allow you to assess the impacts per life cycle stage as displayed here:
 
-![](../media/lifecycleoatGWP.png)
+![](../media/lifecycleoatGWP.png) ![](../media/lifecycleoatcontribution.png)
+
+In a similar fashion in the contribution tree:
+
+
+
+
+
+
 
 </details>
 
