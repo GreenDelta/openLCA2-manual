@@ -3,6 +3,12 @@
 In this section you can check what the major manual updates were about and when they were released.
 
 
+## 31.10.2024
+
+- Minor updates
+- Addition of a life cycle stage modeling approach to the ["conception guide"](./conceptualguideline/index.html)
+- Note about flow locations and update of the ["Regionalization"](./advanced_top/regionalized.md) section
+
 ## 08.10.2024
 
 - Adapted to changes coming along with the release of openLCA 2.3
