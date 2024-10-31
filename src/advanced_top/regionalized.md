@@ -119,7 +119,7 @@ _Exchange with Norway as assigned location_
 
 Mind that **the locations of exchanges will have priority over the location of the process, if they differ**. For instance, if a process has "Italy" assigned as its location, but some of its exchanges are designated with more specific regions (e.g., Sicily or a particular water basin), the impact will be calculated based on the exchange locations. If no specific location is given for an exchange, the impact will then be calculated using the process location (therefore, it's not mandatory to specify locations for every exchange).
 
-_**Note:**_ Otherwise, locations specified in flows (if any) are **not considered** in the regionalized impact calculation! These locations mainly apply to product or waste flows and are not relevant to regionalized impact calculations, which only account for process or exchange locations. See below:
+_**Note:**_ Instead, locations specified in flows (if any) are **not considered** in the regionalized impact calculation! These locations mainly apply to product or waste flows and are not relevant to regionalized impact calculations, which only account for process or exchange locations. See below:
 
 ![](../media/regionalized_locations_flows.png)
 <br>_If a location is specified at this level, it won't be taken into account during the regionalized impact calculation_
