@@ -5,8 +5,8 @@ In this section you can check what the major manual updates were about and when 
 
 ## 31.10.2024
 
-- Minor updates
-- Addition of a life cycle stage modeling approach to the LCA case study
+- Minor updates 
+- Addition of a life cycle stage modeling approach to the ["LCA case study"](https://github.com/GreenDelta/openLCA2-manual/blob/November-update/src/conceptualguideline/README.md#calculating-the-life-cycle-inventory-lci-and-life-cycle-impact-assessment-lcia)
 - Note about flow locations and update of the ["Regionalization"](./advanced_top/regionalized.md) section
 
 ## 08.10.2024
