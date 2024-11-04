@@ -3,6 +3,9 @@
 In this section you can check what the major manual updates were about and when they were released.
 
 
+## x.12.2014
+- Chapters in the sidebar are now collapsible
+
 ## 31.10.2024
 
 - Addition of a life cycle stage modeling approach to the LCA case study
