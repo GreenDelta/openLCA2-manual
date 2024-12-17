@@ -35,7 +35,7 @@ Under the "Import" section, you can find the following options:
 - **From Git:** This option enables you to establish a connection to a Git repository for importing data (what we do not do for now).
 - **Other:** This option allows you to manually specify the format of the import, in the picture below you can see the wizard. 
 
-![](../media/import_wizard.png)  	
+    ![](../media/import_wizard.png)  	
 
 _Import Wizard_
 
@@ -86,12 +86,12 @@ Here are some notes on specific formats, be aware that this is not an exhaustive
 
 - For **SimaPro CSV files**, add a flow in the window and optionally select a [flow mapping file](./mapping_validation.md). If you are importing multiple CSV files without a mapping file, import all the CSV files together to ensure correct mapping.
 
-![](../media/import_csv_file_new.png)  
+    ![](../media/import_csv_file_new.png)  
 
 
 - **For ILCD files**, select the import file from the directory and optionally a [flow mapping file](./mapping_validation.md). ILCD databases have to be in .zip format to be imported.
 
-![](../media/import_ilcd.png)  
+    ![](../media/import_ilcd.png)  
 
 
 - **For Ecospold1 files**, ensure to check and assign units using a [flow mapping file](./mapping_validation.md).
