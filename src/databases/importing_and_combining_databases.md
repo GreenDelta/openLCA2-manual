@@ -95,17 +95,19 @@ Here are some notes on specific formats, be aware that this is not an exhaustive
 
 
 - **For Ecospold1 files**, ensure to check and assign units using a [flow mapping file](./mapping_validation.md).
-- **JSON-LD** is the in-house format for openLCA. You can import entire databases, LCIA methods or any other database element to import. JSON-LD data has to be in .zip format.
+- **JSON-LD** is the in-house format for openLCA. You can import entire databases, LCIA methods or any other database element to import. JSON-LD data has to be in .zip format.  
 
-![](../media/lcia_methods_zip.png)  
+    When importing JSON files, you have three options for the case of already existing datasets:
 
-Here you have three options for the case of already existing data sets:
+    ![](../media/lcia_methods_zip.png)
 
-- **Never update a data set that already exists**: While importing, openLCA will analyze if the data set is already present. If so, there will be no change to the existing data set.
+- **Never update a data set that already exists**: The system will check for matching UUIDs. If a match is found, the existing dataset will remain as it is.
 
-- **Update data sets with newer versions**: With this option, openLCA will update existing data sets if the version (or last change) of the to-be imported data is more recent. (Preferred for [importing LCIA methods](../lcia_methods/importing_lcia_methods.md))
+- **Update data sets with newer versions**: If matching UUIDs are found, the system will update the existing datasets only if the imported version is newer (the version can be checked in the "General information" tab of every dataset).
 
-- **Overwrite all existing data sets**: This option will lead to overwriting data sets if they are already existing.
+- **Overwrite all existing data sets**: If matching UUIDs are found, the system will replace the existing datasets automatically with the imported ones irrespective of versioning. Preferred for [importing the openLCA LCIA methods pack](../lcia_methods/importing_lcia_methods.md).
+
+    Datasets with UUIDs that are not present in the current database will be imported anyway, regardless of the option you choose.
 
 
 5. Click "Finish" to initiate the data import process. 
