@@ -6,6 +6,7 @@ In this section you can check what the major manual updates were about and when 
 - Chapters in the sidebar are now collapsible
 - Updated "Calculate CFs for selected locations" section in "Regionalized LCIA" section
 - Updated importing JSON-LD options description
+- Minor updates
 
 ## 31.10.2024
 
