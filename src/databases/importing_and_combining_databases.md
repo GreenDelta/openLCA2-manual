@@ -105,9 +105,11 @@ Here are some notes on specific formats, be aware that this is not an exhaustive
 
 - **Update data sets with newer versions**: If matching UUIDs are found, the system will update the existing datasets only if the imported version is newer (the version can be checked in the "General information" tab of every dataset).
 
-- **Overwrite all existing data sets**: If matching UUIDs are found, the system will replace the existing datasets automatically with the imported ones irrespective of versioning. Preferred for [importing the openLCA LCIA methods pack](../lcia_methods/importing_lcia_methods.md).
+- **Overwrite all existing data sets**: If matching UUIDs are found, the system will replace the existing datasets automatically with the imported ones irrespective of versioning.
 
     Datasets with UUIDs that are not present in the current database will be imported anyway, regardless of the option you choose.
+
+    In [this chapter](../lcia_methods/importing_lcia_methods.md) you can find more details about importing LCIA methods in JSON format into openLCA, as the [openLCA LCIA methods pack](https://nexus.openlca.org/database/openLCA%20LCIA%20methods).
 
 
 5. Click "Finish" to initiate the data import process. 
