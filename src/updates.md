@@ -2,6 +2,11 @@
 
 In this section you can check what the major manual updates were about and when they were released.
 
+## 18.12.2014
+- Chapters in the sidebar are now collapsible
+- Updated "Calculate CFs for selected locations" section in "Regionalized LCIA" section
+- Updated importing JSON-LD options description
+- Minor updates
 
 ## 31.10.2024
 
@@ -17,7 +22,6 @@ In this section you can check what the major manual updates were about and when 
 - Expanded the ["Monte Carlo Simulation"](./advanced_top/monte_carlo.md) chapter and the connection to data quality
 - Rescaled figures
 
-
 ## 03.07.2024
 
 - Novel ["soda4LCA"](./epds/soda4lca.md) feature is described now in the EPD section
@@ -25,8 +29,6 @@ In this section you can check what the major manual updates were about and when 
 - Added a description on how to model and use allocation for recycling
 - Added an explanation on the existing LCIA methods and their scope
 - Added a description on how to add characterisation factors
-
-
 
 ## 25.04.2024
 

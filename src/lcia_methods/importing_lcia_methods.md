@@ -36,9 +36,16 @@ After downloading one or more of these method packs, you can import the  file in
 
 ### Importing LCIA methods into openLCA
 
-To import a method pack, click on "Import" &#8594; "Others", then click on **"Linked Data (JSON-LD)"** and "Next". In the next window, browse for the file. The program will ask you if you want to overwrite existing data. You can choose to update existing data sets. Then finally click on "Finish". 
+To import a method pack, click on "Import" &#8594; "Others", then click on **"Linked Data (JSON-LD)"** and "Next". In the next window, browse for the file. The program will ask you how do you want to handle the import. You can:
+1. **Never update a dataset that already exists**: The system will check for matching UUIDs. If a match is found, the existing dataset will remain as it is.
+2. **Updated datasets with newer versions**: If matching UUIDs are found, the system will update the existing datasets only if the imported version is newer (the version can be checked in the "General information" tab of every dataset)
+3. **Overwrite all existing datasets**: If matching UUIDs are found, the system will replace the existing datasets automatically with the imported ones irrespective of versioning. This is the option we recommend when importing an updated version of the [openLCA LCIA methods pack](https://nexus.openlca.org/database/openLCA%20LCIA%20methods).
 
-![](../media/lcia_methods_zip.png)  
+Datasets with UUIDs that are not present in the current database will be imported anyway, regardless of the option you choose. 
+
+Eventually, click on "Finish". 
+
+![](../media/lcia_methods_zip.png)
 
 The import will then start automatically and may take a few minutes. When it is finished, the LCIA methods will be available in the database, under "Indicators and parameters", as shown below.
 

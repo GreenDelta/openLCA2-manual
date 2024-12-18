@@ -21,7 +21,7 @@
 	- [ask.openlCA](resources/ask_openlca.md)
 -----------	
 # Welcome to openLCA!
-- [openLCA key features with an LCA case study](conceptualguideline/README.md)
+- [openLCA key features with an LCA case study](conceptual_guideline.md)
 
 -----------	
 # The basics for openLCA

@@ -50,7 +50,7 @@ _Changing the currency of a flow_
   
  ![](../media/lcc_navigation.png)
  
-_Under background data you can find the avaiable currency or add your own_ 
+_Under background data you can find the available currency or add your own_ 
   
 The reference currency can be changed within one currency (click on "set as reference currency?"). 
   
@@ -58,7 +58,7 @@ The reference currency can be changed within one currency (click on "set as refe
 
 _General information on a currency_
   
-When changing the reference currency, all open currency editors will be closed for   updating the conversion factors, and the editor of the new reference currency will be opened again. 
+When changing the reference currency, all open currency editors will be closed for updating the conversion factors, and the editor of the new reference currency will be opened again. 
 
 ### Multi-output processes (Allocation of costs)
 
@@ -73,7 +73,7 @@ are applied to the exchanges and the by-product cost is not considered; on the
 contrary, if no allocation is selected all costs are calculated excluding those
 from the by-products.
 
-In case of multi-output processes in the database it is important to know what happens to the costs of by-products during the calculation of a product system. You have different options for setting the allocation method in the calculation properties.
+In case of multi-output processes in the database, it is important to know what happens to the costs of by-products during the calculation of a product system. You have different options for setting the allocation method in the calculation properties.
 
 ![](../media/lcc_calculation.png)
 
@@ -97,7 +97,7 @@ When allocation is selected (e.g. "As defined in processes"), the following form
  
 		- Added value = Price Reference_Product +Allocation_factor*(– Price elementary flows/inputs – Price ByProduct – Added value of avoided supply chain) 
 
-As you can define an economic flow property and hold an cost/revenue entry in the process, it is assumed that the process-specific information is more precise and the following rule is applied:
+As you can define an economic flow property and hold a cost/revenue entry in the process, it is assumed that the process-specific information is more precise and the following rule is applied:
  
 When economic allocation is selected and all output products have an economic value (revenue) defined in the process editor, those values will be taken. However, in the case that not all output products have a revenue defined, then the economic flow properties will be used for the calculation (if there are any). 
 
@@ -237,7 +237,7 @@ When the product system is calculated, several summaries of results for costs an
 _Value added and net-costs in the process contributions tab_
 
 For the production of the chair, for example, net costs are (5 + 10) € - 25 € = -10€; for 5 chairs required in the product system, the amount is -50 €. 
-In the contributi0n tree, value added and life cycle costs are available as new section, in addition to LCIA categories and elementary flows. 
+In the contribution tree, value added and life cycle costs are available as new section, in addition to LCIA categories and elementary flows. 
 
 **_openLCA offers a detailed document on how to conduct LCC studies in openLCA free [here](<https://www.openlca.org/wp-content/uploads/2016/08/Life-Cycle-Costing-in-openLCA.pdf>). The database with the case study is available for download [here](http://www.openlca.org/case_studies)_**
 
