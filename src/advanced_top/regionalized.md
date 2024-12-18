@@ -91,13 +91,15 @@ The last step to set-up the regionalized LCIA method, is to link process locatio
 ![](../media/regionalized_defining_location.png)
 <br/>_Defining the location for which the characterization factors are calculated_
 
-A window will open with the resulting characterization factors. The system will calculate, using the aggregation type you choose (see the above section) two values: 1) **a value based on the geometry of the specific location you select**; 2) **a default value representing a global factor** (what was called "default value" in the GeoJSON Parameters table) without a specific location, useful for instance when the location of a process is unknown. <br>You can choose between two saving options: 
+A window will open with the resulting characterization factors. The system will calculate, using the aggregation type you choose (see the above section) two values: 1) **a value based on the geometry of the specific location you select**; 2) **a default value representing a global factor** (what was called "default value" in the GeoJSON Parameters table) without a specific location, useful for instance when the location of a process is unknown. 
+
+![](../media/regionalized_add_cfs.png)  
+_Example results of newly calculated Characterization Factors_
+
+You can choose between two saving options: 
 
 - **Keep existing**: This option preserves any existing CFs. For example, if the method you're using already includes a global default value, selecting this option ensures it remains unchanged.
 - **Replace existing**: This option overwrites all values. It will add or replace both the specific CF for the selected location and the default global value.
-
-    ![](../media/regionalized_add_cfs.png)  
-    _Example results of newly calculated Characterization Factors_
 
 Eventually click on "Add new factors". The resulting CFs for the selected locations and flows are available in the tab "characterization factors" for the open impact category. A flow for each selected location and the same flow without a specific location are created and assigned with a CF depending on the location, or with the default CF value for the case of the flow without a specific location.
 

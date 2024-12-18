@@ -89,7 +89,7 @@ Here are some notes on specific formats, be aware that this is not an exhaustive
     ![](../media/import_csv_file_new.png)  
 
 
-- **For ILCD files**, select the import file from the directory and optionally a [flow mapping file](./mapping_validation.md). ILCD databases have to be in .zip format to be imported.
+- For **ILCD files**, select the import file from the directory and optionally a [flow mapping file](./mapping_validation.md). ILCD databases have to be in .zip format to be imported.
 
     ![](../media/import_ilcd.png)  
 
@@ -109,7 +109,7 @@ Here are some notes on specific formats, be aware that this is not an exhaustive
 
     Datasets with UUIDs that are not present in the current database will be imported anyway, regardless of the option you choose.
 
-    In [this chapter](../lcia_methods/importing_lcia_methods.md) you can find more details about importing LCIA methods in JSON format into openLCA, as the [openLCA LCIA methods pack](https://nexus.openlca.org/database/openLCA%20LCIA%20methods).
+    On the [dedicated chapter](../lcia_methods/importing_lcia_methods.md), you can find more details about importing LCIA methods in JSON-LD format into openLCA, as the [openLCA LCIA methods pack](https://nexus.openlca.org/database/openLCA%20LCIA%20methods).
 
 
 5. Click "Finish" to initiate the data import process. 

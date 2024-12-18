@@ -39,7 +39,7 @@ After downloading one or more of these method packs, you can import the  file in
 To import a method pack, click on "Import" &#8594; "Others", then click on **"Linked Data (JSON-LD)"** and "Next". In the next window, browse for the file. The program will ask you how do you want to handle the import. You can:
 1. **Never update a dataset that already exists**: The system will check for matching UUIDs. If a match is found, the existing dataset will remain as it is.
 2. **Updated datasets with newer versions**: If matching UUIDs are found, the system will update the existing datasets only if the imported version is newer (the version can be checked in the "General information" tab of every dataset)
-3. **Overwrite all existing datasets**: If matching UUIDs are found, the system will replace the existing datasets automatically with the imported ones irrespective of versioning. This is the option we recommend when importing an updated version of the ['openLCA LCIA methods pack'](https://nexus.openlca.org/database/openLCA%20LCIA%20methods).
+3. **Overwrite all existing datasets**: If matching UUIDs are found, the system will replace the existing datasets automatically with the imported ones irrespective of versioning. This is the option we recommend when importing an updated version of the [openLCA LCIA methods pack](https://nexus.openlca.org/database/openLCA%20LCIA%20methods).
 
 Datasets with UUIDs that are not present in the current database will be imported anyway, regardless of the option you choose. 
 
