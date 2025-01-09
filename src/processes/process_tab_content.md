@@ -4,10 +4,12 @@
 
 After opening a process in openLCA, you will find tabs at the bottom of the window, that provide access to different information and settings relevant to the process.
 
-![](../media/general_information_process_cut.png)  
+![](../media/process_window.png)  
 _Tabs of the process window_
 
-Let's explore the contents of these tabs in detail (click on the arrow to expand the text):
+In the sub-chapters that follow we'll explore every tab in details.
+
+**AFTER THE RESTRUCTURING IS COMPLETE, DELETE ALL THE SECTIONS BELOW.**
 
 <details>
 <summary><b>General information</b></summary>

@@ -4,6 +4,8 @@
 
 As we’ve seen, a process encompasses all the inputs and outputs associated with an operation. Let's look at the setup of an Input/Output table of a process in openLCA.
 
+CHANGE IMAGE
+
 ![](../media/inputs_outputs.png)  
 _Inputs/outputs tab window with highlighting on the tools to the right top corner_ 
 
@@ -66,7 +68,7 @@ Units are assigned to the flows based on the flow property defined in the "[Flow
 
 **_Note:_** openLCA allows users to create **custom/new units**. This can also be done in the "[Flow properties tab](../flows/flow_tabs_contents.md)".
 
-![](../media/change_unit.png)   
+![](../media/change_unit_new.png)   
 _Changing flow units within a process editor_
 
 </details>
