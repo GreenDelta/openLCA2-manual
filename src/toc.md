@@ -1,7 +1,6 @@
 # Summary
 
 [How to use this manual](how-to-use.md)
-<br>[Latest manual updates](updates.md)
 <br>[Table of content](toc.md)
 -----------
 # WELCOME - Manual openLCA 2
@@ -56,9 +55,9 @@
 	- [Calculating a product system](prod_sys/calculating.md)
 	- [Exporting product systems](prod_sys/exporting.md)
 - [LCIA methods and categories](lcia_methods/README.md)
-   	- [Importing LCIA methods and categories into openLCA](lcia_methods/importing_lcia_methods.md)
-   	- [Creating a new impact assessment method, category and characterization factor](lcia_methods/creating_new_impact_assessment_method.md)
-   	- [Methods tabs](lcia_methods/impact_methods_tab_contents.md)
+	- [Importing LCIA methods and categories into openLCA](lcia_methods/importing_lcia_methods.md)
+	- [Creating a new impact assessment method, category and characterization factor](lcia_methods/creating_new_impact_assessment_method.md)
+	- [Methods tabs](lcia_methods/impact_methods_tab_contents.md)
 	- [Category tabs](lcia_methods/impact_categories_tab_contents.md)
 	- [Overview impact methods](lcia_methods/impact_methods_overview.md)
 - [Calculation and Result Analysis](res_analysis/README.md)
@@ -108,6 +107,8 @@
 	- [Tags](cheat/tags.md)
 	- [Constants, operators and functions for formulas in openLCA](cheat/formulas_in_openlca.md)	
 
+-----------	
+[Latest manual updates](updates.md)
 -----------	
 -----------	
 [Contact](./contact.md)
