@@ -1,7 +1,6 @@
 # Summary
 
 [How to use this manual](how-to-use.md)
-<br>[Latest manual updates](updates.md)
 <br>[Table of content](toc.md)
 -----------
 # WELCOME - Manual openLCA 2
@@ -108,6 +107,9 @@
 	- [Tags](cheat/tags.md)
 	- [Constants, operators and functions for formulas in openLCA](cheat/formulas_in_openlca.md)	
 
+-----------	
+-----------	
+[Latest manual updates](updates.md)
 -----------	
 -----------	
 [Contact](./contact.md)
