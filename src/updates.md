@@ -2,7 +2,13 @@
 
 In this section you can check what the major manual updates were about and when they were released.
 
+## x.01.2025
+
+- [Processes](./processes/README.md) chapter restructured and updated
+- Added [Table of content](./toc.md)
+
 ## 18.12.2014
+
 - Chapters in the sidebar are now collapsible
 - Updated "Calculate CFs for selected locations" section in "Regionalized LCIA" section
 - Updated importing JSON-LD options description

@@ -1,7 +1,8 @@
 # Summary
 
 [How to use this manual](how-to-use.md)
-[Latest manual updates](updates.md)
+<br>[Latest manual updates](updates.md)
+<br>[Table of content](toc.md)
 -----------
 # WELCOME - Manual openLCA 2
 - [Introduction](introduction/README.md)
