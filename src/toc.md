@@ -1,6 +1,7 @@
 # Summary
 
 [How to use this manual](how-to-use.md)
+<br>[Latest manual updates](updates.md)
 <br>[Table of content](toc.md)
 -----------
 # WELCOME - Manual openLCA 2
@@ -28,8 +29,8 @@
 - [Running openLCA for the first time](./running_olca_for_first_time.md)
 - [Databases](databases/README.md)
 	- [Database elements](databases/database_elements.md)
-	- [Creating a new empty database](databases/create_database.md)
-	- [Restoring a database](databases/restore_database.md)
+	- [Creating a new database from scratch](databases/create_database.md)
+	- [Creating a new database loading it from file](databases/restore_database.md)
 	- [Database update](databases/database_update.md)
 	- [Importing data and combining databases](databases/importing_and_combining_databases.md)
 	- [Using mapping files and validate databases](databases/mapping_validation.md)
@@ -107,8 +108,6 @@
 	- [Tags](cheat/tags.md)
 	- [Constants, operators and functions for formulas in openLCA](cheat/formulas_in_openlca.md)	
 
------------	
-[Latest manual updates](updates.md)
 -----------	
 -----------	
 [Contact](./contact.md)

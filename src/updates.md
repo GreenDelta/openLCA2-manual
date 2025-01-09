@@ -4,6 +4,8 @@ In this section you can check what the major manual updates were about and when 
 
 ## x.01.2025
 
+- Updated sections affected by the release of openLCA new version 2.4:
+    - [Databases](./databases/README.md)
 - [Processes](./processes/README.md) chapter restructured and updated
 - Added [Table of content](./toc.md)
 

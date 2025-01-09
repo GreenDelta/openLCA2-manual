@@ -7,8 +7,8 @@ In openLCA, a "database" functions as a container that organizes and stores inte
 ![](../media/database_elements_new.png)  
 _Database elements. The direction of the arrow represents the direction in which the information flows._
 
-After launching openLCA for the first time, you will notice that the navigation section is empty. To start working with openLCA, you have two options: [creating a new empty database](./create_database.md) 
-or [restoring an existing one](./restore_database.md) (e.g. one you might have downloaded from [openLCA Nexus](<https://nexus.openlca.org/>), in this case follow the instructions for "Accessing databases from openLCA Nexus" on [openLCA Nexus](../resources/nexus.md) section).
+After launching openLCA for the first time, you will notice that the navigation section is empty. To start working with openLCA, you can either [create a database from scratch](./create_database.md) 
+or [load one from an existing file](./restore_database.md) (e.g. one you might have downloaded from [openLCA Nexus](<https://nexus.openlca.org/>), in this case follow the instructions for "Accessing databases from openLCA Nexus" on [openLCA Nexus](../resources/nexus.md) section). You can also load a database from a GitHub repository("New database" > "From repository...").
 
 ![](../media/empty_navigation_window.png)  
 _Empty Navigation window following openLCA installation_
@@ -21,7 +21,7 @@ _**Note:**_ It is considered good practice to work with **one database for each 
 
 _**New!**_ Now in openLCA 2 you are able to sort your databases in folders. Right-click on a database and then click on "Set folder", and create your new folder:
 
-![](../media/set_folder_database.png)
+![](../media/set_folder_database.png) TO CHANGE
 
 After your folder is created you can add also other databases in it just dragging and dropping them.
 

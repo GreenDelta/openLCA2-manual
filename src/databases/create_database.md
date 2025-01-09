@@ -1,10 +1,10 @@
-# Creating a new empty database
+# Creating a new database from scratch
 
 <div style='text-align: justify;'>
 
 To create a new database in openLCA, follow these steps:
 
-1. Right-click in the navigation window and select "New database".
+1. Right-click in the navigation window and select "New database" and then "From scratch...".
 
 ![](../media/new_database_step1.png)  
 _Step 1: Creating a new database_
