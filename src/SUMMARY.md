@@ -3,6 +3,7 @@
 [How to use this manual](how-to-use.md)
 <br>[Latest manual updates](updates.md)
 <br>[Table of content](toc.md)
+
 -----------
 # WELCOME - Manual openLCA 2
 - [Introduction](introduction/README.md)
@@ -20,6 +21,7 @@
 	- [openLCA.org](resources/openlca.org.md)
 	- [openLCA Nexus](resources/nexus.md)
 	- [ask.openlCA](resources/ask_openlca.md)
+
 -----------	
 # Welcome to openLCA!
 - [openLCA key features with an LCA case study](conceptual_guideline.md)
@@ -77,6 +79,7 @@
 	- [Parameter hierarchy](parameters/hierarchy.md)
 	- [Parameter sets](parameters/parameter_sets.md)
 - [Background data](background.md)	
+
 -----------	
 # The advanced knowledge base
 - [Advanced Topics](advanced_top/README.md)
