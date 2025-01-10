@@ -7,6 +7,7 @@ In this section you can check what the major manual updates were about and when 
 - Updated sections affected by the release of openLCA new version 2.4:
     - [Databases](./databases/README.md)
 - [Processes](./processes/README.md) chapter restructured and updated
+- [Calculation and Result Analysis](./res_analysis/README.md) chapter restructured
 - Added [Table of content](./toc.md)
 
 ## 18.12.2014

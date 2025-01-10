@@ -46,7 +46,7 @@ The following options are available under **File**:
 		
 		- **Graphical editor theme:** You can change now the theme for the model graph and Sankey diagram namely: Dark, Light, Nord Dark, Nord Light, Poimandres. However, to access the dark mode for the whole application, you need to select it on your operating system.
 		
-		![](./media/editor_theme.png)  
+			![](./media/editor_theme.png)  
 		
 		- **Reset window layout:** Furthermore, you can reset your window settings if you encounter a bug or if you find yourself lost with the number of open windows.
 				
