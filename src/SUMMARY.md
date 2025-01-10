@@ -66,6 +66,7 @@
 - [Calculation and Result Analysis](res_analysis/README.md)
 	- [Lazy vs Eager calculation](res_analysis/lazy_eager.md)
 	- [Result analysis](res_analysis/analysis.md)
+		- [General information](res_analysis/tab_general_info.md)
 		- [Inventory result](res_analysis/res_inventory_result.md)
 		- [Impact analysis](res_analysis/res_impact_analysis.md)
 		- [Process results](res_analysis/res_process_results.md)
