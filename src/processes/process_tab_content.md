@@ -9,6 +9,14 @@ _Tabs of the process window_
 
 In the sub-chapters that follow we'll explore every tab in details.
 
+- [General information](./tab_general_info.md)
+- [Inputs/Outputs](./tab_inputs_outputs.md)
+- [Documentation](./tab_documentation.md)
+- [Parameters](./tab_parameters.md)
+- [Allocation](./tab_allocation.md)
+- [Social aspects](./tab_slca.md)
+- [Direct impacts](./tab_direct_impacts.md)
+
 **AFTER THE RESTRUCTURING IS COMPLETE, DELETE ALL THE SECTIONS BELOW.**
 
 <details>
