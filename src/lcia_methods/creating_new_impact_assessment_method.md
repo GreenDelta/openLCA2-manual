@@ -38,9 +38,9 @@ To do so:
 
 To see how to add impact categories in the impact assessment method window, characterization factors, etc, see the section below.
 
-### Creating and addung characterization factors
+### Creating and adding characterization factors
 
-In some methods maybe the characterization factors of an substance are missing. Hence you can add (or modify existing) characterization factors (CFs) in a LCIA method.
+In some methods maybe the characterization factors of a substance are missing. Hence you can add (or modify existing) characterization factors (CFs) in a LCIA method.
 
 To add a CF to a LCIA method:
 

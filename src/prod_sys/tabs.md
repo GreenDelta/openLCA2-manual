@@ -28,7 +28,7 @@ _Product system - General information tab_
 
 	
 At the product system level, you can add "[Parameters](../parameters/parameters.md)"
-by selecting the green "+" button at the end of the "Parameters" bar. It is not possible to create new parameters on the product system level, but you can add parameters that are already defined in processes You can customize the parameters you add by selecting one and then and change the amount, the uncertainty or the description. To select multiple parameters at once use your keyboard's "Shift" button. The amounts saved in a product system will override those saved in a process, for the given product system. However, the values saved in the process will not change.
+by selecting the green "+" button at the end of the "Parameters" bar. It is not possible to create new parameters on the product system level, but you can add parameters that are already defined in processes. You can customize the parameters you add by selecting one and then change the amount, the uncertainty or the description. To select multiple parameters at once use your keyboard's "Shift" button. The amounts saved in a product system will override those saved in a process, for the given product system. However, the values saved in the process will not change.
 
 </details>
 
