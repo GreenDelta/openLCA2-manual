@@ -1,8 +1,8 @@
 # Summary
 
-[How to use this manual](how-to-use.md)
-<br>[Latest manual updates](updates.md)
-<br>[Table of content](toc.md)
+[Table of content](toc.md)
+<br>[How to use this manual](how-to-use.md)
+
 -----------
 # WELCOME - Manual openLCA 2
 - [Introduction](introduction/README.md)
@@ -20,6 +20,7 @@
 	- [openLCA.org](resources/openlca.org.md)
 	- [openLCA Nexus](resources/nexus.md)
 	- [ask.openlCA](resources/ask_openlca.md)
+
 -----------	
 # Welcome to openLCA!
 - [openLCA key features with an LCA case study](conceptual_guideline.md)
@@ -64,6 +65,15 @@
 - [Calculation and Result Analysis](res_analysis/README.md)
 	- [Lazy vs Eager calculation](res_analysis/lazy_eager.md)
 	- [Result analysis](res_analysis/analysis.md)
+		- [General information](res_analysis/res_general_info.md)
+		- [Inventory result](res_analysis/res_inventory_result.md)
+		- [Impact analysis](res_analysis/res_impact_analysis.md)
+		- [Process results](res_analysis/res_process_results.md)
+		- [Contribution tree](res_analysis/res_contribution_tree.md)
+		- [Grouping](res_analysis/res_grouping.md)
+		- [Locations](res_analysis/res_locations.md)
+		- [Sankey diagram](res_analysis/res_sankey.md)
+		- [LCIA checks](res_analysis/res_lcia_checks.md)
 	- [Save and export results](res_analysis/save_export.md)
 - [Projects](projects/README.md)
 	- [Creating a new Project](projects/new_proj.md)
@@ -77,6 +87,7 @@
 	- [Parameter hierarchy](parameters/hierarchy.md)
 	- [Parameter sets](parameters/parameter_sets.md)
 - [Background data](background.md)	
+
 -----------	
 # The advanced knowledge base
 - [Advanced Topics](advanced_top/README.md)
@@ -109,5 +120,9 @@
 	- [Constants, operators and functions for formulas in openLCA](cheat/formulas_in_openlca.md)	
 
 -----------	
------------	
+# Manual updates
+- [Latest manual updates](updates.md)
+
+-----------
+-----------
 [Contact](./contact.md)
