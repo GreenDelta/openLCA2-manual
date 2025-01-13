@@ -73,6 +73,7 @@
 		- [Grouping](res_analysis/res_grouping.md)
 		- [Locations](res_analysis/res_locations.md)
 		- [Sankey diagram](res_analysis/res_sankey.md)
+		- [Analysis groups](res_analysis/res_analysis_groups.md)
 		- [LCIA checks](res_analysis/res_lcia_checks.md)
 	- [Save and export results](res_analysis/save_export.md)
 - [Projects](projects/README.md)
