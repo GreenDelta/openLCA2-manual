@@ -25,7 +25,7 @@ Previously we have described the function "[Creating a new database loading it f
 
 ## Importing data
 
-To import data into openLCA, click on "File" and then "Import", or right-click on the Navigation Window and choose "Import".
+To import data into openLCA, click on "File" and then "Import", or right-click on an active database in the Navigation Window and choose "Import".
 
 ![](../media/import_database.png)  
 
@@ -50,8 +50,8 @@ The fastest way to open a zolca-format database in openLCA, is outlined in the "
 3. Choose the option "From exported zolca-File" in the import wizard.
 4. Locate the desired zolca file in your file browser and select "Open". Then, click "Finish".
 
-![](../media/import_from_zolca.png)  
-_Import from exported zolca-File_ 
+    ![](../media/import_from_zolca.png)  
+    _Import from exported zolca-File_ 
 
 After importing it, the database will be "inactive". To activate it and gain access to its flows, processes, and other components, simply double-click on it.
 

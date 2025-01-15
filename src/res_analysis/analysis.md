@@ -16,6 +16,7 @@ In the following chapters we'll explore every tab in details.
 - [Grouping](../res_analysis/res_grouping.md)
 - [Locations](../res_analysis/res_locations.md)
 - [Sankey diagram](../res_analysis/res_sankey.md)
+- [Analysis groups](../res_analysis/res_analysis_groups.md)
 - [LCIA checks](../res_analysis/res_lcia_checks.md)
 
 </div>

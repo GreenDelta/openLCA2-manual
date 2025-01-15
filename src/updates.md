@@ -10,7 +10,9 @@ In this section you can check what the major manual updates were about and when 
 - Chapters restructured:
     - [Processes](./processes/README.md) (also updated)
     - [Calculation and Result Analysis](./res_analysis/README.md)
+- The chapters in the sidebar are now collapsed bu default at the first level when opening the manual. They can be expanded manually or browsed in the new TOC (see point below).
 - Added [Table of content](./toc.md)
+- [Latest manual updates](./updates.md) section can now be fount a the bottom of the of the manual. 
 
 ## 18.12.2014
 

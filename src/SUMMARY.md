@@ -34,7 +34,7 @@
 	- [Toolbar: Help](running_olca/toolbar_help.md)
 	- [openLCA search function](running_olca/search_function.md)
 	- [Using the editor function](running_olca/editor_function.md)
-	- [Working with tabs](runing_olca/working_with_tabs.md)
+	- [Working with tabs](running_olca/working_with_tabs.md)
 
 - [Databases](databases/README.md)
 	- [Database elements](databases/database_elements.md)

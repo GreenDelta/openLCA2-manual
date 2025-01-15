@@ -8,7 +8,7 @@ To restore a complete database follow these steps:
 
 1. Right-click on the navigation window and choose "New database" and then "From file...".
 
-![](../media/restore_database_cg.png) 
+    ![](../media/restore_database_cg.png) 
 
 2. Select the zolca-format database file from you want to load.
 

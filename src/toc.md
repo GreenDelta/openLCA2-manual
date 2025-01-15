@@ -27,7 +27,15 @@
 
 -----------	
 # The basics for openLCA
-- [Running openLCA for the first time](./running_olca_for_first_time.md)
+- [Running openLCA for the first time](running_olca/README.md)
+	- [Toolbar: File](running_olca/toolbar_file.md)
+	- [Toolbar: Database](running_olca/toolbar_database.md)
+	- [Toolbar: Tools](running_olca/toolbar_tools.md)
+	- [Toolbar: Help](running_olca/toolbar_help.md)
+	- [openLCA search function](running_olca/search_function.md)
+	- [Using the editor function](running_olca/editor_function.md)
+	- [Working with tabs](running_olca/working_with_tabs.md)
+
 - [Databases](databases/README.md)
 	- [Database elements](databases/database_elements.md)
 	- [Creating a new database from scratch](databases/create_database.md)
@@ -73,6 +81,7 @@
 		- [Grouping](res_analysis/res_grouping.md)
 		- [Locations](res_analysis/res_locations.md)
 		- [Sankey diagram](res_analysis/res_sankey.md)
+		- [Analysis groups](res_analysis/res_analysis_groups.md)
 		- [LCIA checks](res_analysis/res_lcia_checks.md)
 	- [Save and export results](res_analysis/save_export.md)
 - [Projects](projects/README.md)

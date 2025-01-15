@@ -1,6 +1,6 @@
 <div style='text-align: justify;'>
 
-# Tools
+# Toolbar: Tools
 
 The following options are available under "**Tools**":
 

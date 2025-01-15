@@ -31,8 +31,8 @@ You can access the "Setting of the Sankey diagram" wizard by clicking on the "Fi
 
 -   Design settings: theme, orientation, shape of the connections
 
-![](../media/sankey_2.png)  
-_Sankey Setting wizard_
+    ![](../media/sankey_2.png)  
+    _Sankey Setting wizard_
 
 Next to the "Filter" icon you can open the product system and the impact assessment method. See the current set "Min. contribution share" and "Max. number of processes".
 

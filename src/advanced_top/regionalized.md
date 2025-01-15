@@ -16,7 +16,7 @@ _Flow-based regionalization_
 
 # How to perform regionalized LCA-step by step 
 
-_**Note:**_ regionalized calculation is an advanced form of impact calculation. It is more resource consuming that a normal impact calculation and it is needed to be handled carefully. We advise to allocate enough memory for the calculations (check "File" section of chapter ["Running openLCA for the first time"](../running_olca_for_first_time.md)), to perform it using a location-based regionalized method, and to check that the locations of processes are the intended ones along the whole supply chain (check section "Assign locations to processes and exchanges" below for more details). 
+_**Note:**_ regionalized calculation is an advanced form of impact calculation. It is more resource consuming that a normal impact calculation and it is needed to be handled carefully. We advise to allocate enough memory for the calculations (check how to do it under Preferences > Configuration in ["Toolbar: File"](../running_olca/toolbar_file.md)), to perform it using a location-based regionalized method, and to check that the locations of processes are the intended ones along the whole supply chain (check section "Assign locations to processes and exchanges" below for more details). 
 
 At the moment, these are the methods we offer that are location-based regionalized: 
 - **EF 3.1 (adapted)**: available in openLCA method package from v2.4.0 upward. Regionalized in "hybrid" format (meaning that can be used with the new regionalization tool, but it's still compatible with traditional flow-based regionalized databases).

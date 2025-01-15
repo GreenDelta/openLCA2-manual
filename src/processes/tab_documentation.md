@@ -6,8 +6,6 @@
 
 The "Modeling and validation" tab is where you can input or find details on modeling and data and process validation.
 
-CHANGE IMAGE - CHECK ALSO COMPLETENESS OF INFO
-
 ![](../media/sources_1.png) 
 _Modeling and validation tab_
 
