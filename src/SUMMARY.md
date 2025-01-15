@@ -27,13 +27,14 @@
 
 -----------	
 # The basics for openLCA
-- [Running openLCA for the first time](running_olca_for_first_time.md)
-	- [Toolbar: File](toolbar/README.md)
-	- [Toolbar: Database](toolbar/tool_database.md)
-	- [Toolbar: Tools](toolbar/tool_tools.md)
-	- [Toolbar: Help](toolbar/tool_help.md)
-	- [openLCA search function](toolbar/search_function.md)
-	- [Using the editor function](toolbar/)
+- [Running openLCA for the first time](running_olca/README.md)
+	- [Toolbar: File](running_olca/toolbar_file.md)
+	- [Toolbar: Database](running_olca/toolbar_database.md)
+	- [Toolbar: Tools](running_olca/toolbar_tools.md)
+	- [Toolbar: Help](running_olca/toolbar_help.md)
+	- [openLCA search function](running_olca/search_function.md)
+	- [Using the editor function](running_olca/editor_function.md)
+	- [Working with tabs](runing_olca/working_with_tabs.md)
 
 - [Databases](databases/README.md)
 	- [Database elements](databases/database_elements.md)
