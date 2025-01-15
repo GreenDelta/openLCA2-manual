@@ -4,7 +4,7 @@
 
 To create a new life cycle impact assessment method:
 
-1. Right-click on the "Impact assessment methods" child category.
+1. Right-click on the "Impact assessment methods" category.
 2. Select "New LCIA method". 
 
 ![](../media/new_lcia_method.png)
@@ -22,10 +22,9 @@ Moreover, you can also create impact assessment categories. This might be helpfu
 
 To do so:
 
-1. Right-click on the "Impact assessment categories" child category.
+1. Right-click on the "Impact assessment categories" category.
 
-
-2. Select "New LCIA method".
+2. Select "New impact category".
 
 ![](../media/create_impact_category_1.png)
 
@@ -38,7 +37,7 @@ To do so:
 
 To see how to add impact categories in the impact assessment method window, characterization factors, etc, see the section below.
 
-### Creating and addung characterization factors
+### Creating and adding characterization factors
 
 In some methods maybe the characterization factors of an substance are missing. Hence you can add (or modify existing) characterization factors (CFs) in a LCIA method.
 

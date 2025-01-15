@@ -14,7 +14,7 @@ If you open the model graph tab, you will see the reference process of the produ
 
 To show elementary flows and adding or removing flows directly within the graph, right-click on the graph, click on "Settings" and then check "Show elementary flows" and "Enable process editing".
 
-![](../media/graph_settings.jpg)
+![](../media/graph_settings.png)
 <br>_Activated settings in the model graph._
 
 Connections between processes are visualized as lines. Those connections or the processes themselves can be deleted. Note, that alterations to the model have an influence on the entire product system and that only connected processes will contribute to the product system's calculation.
@@ -111,12 +111,12 @@ By right-clicking on the background in the model graph, the following options wi
 ![](../media/model_graph_min_max_new.png)
 <br>_Model graph - Maximize_
 
-- **Settings**: In the settings pop-up window, you can personalize the graph's theme, choosing between dark or light mode, adjust the shape of connection lines, enable the display of elementary flows, and activate in-graph process editing.
+- **Settings**: In the settings pop-up window, you can adjust the shape of connection lines, enable the display of elementary flows, and activate in-graph process editing.
 
-![](../media/model_graph_settings.png)
+![](../media/graph_settings.png)
 
 
-_**Note**:_ As we’ve seen, you can use the model graph "settings" to switch between a light and a dark theme. Themes can also be modified by editing the .css files under /openLCAdata-1.4/graph-themes. To reset the themes to the original one, simply delete (or rename) this folder before launching openLCA. In addition, the colours of the model graph elements marked with #model (note that #sankey, refers to the Sankey diagram) can be modified by changing the hexadecimal colour codes (using Google colour selector for example). It is very important to keep the same syntax of the document (no changes can be made outside of the bracket {}).
+_**Note**:_ Themes can be modified by editing the .css files under /openLCAdata-1.4/graph-themes. To reset the themes to the original one, simply delete (or rename) this folder before launching openLCA. In addition, the colours of the model graph elements marked with #model (note that #sankey, refers to the Sankey diagram) can be modified by changing the hexadecimal colour codes (using Google colour selector for example). It is very important to keep the same syntax of the document (no changes can be made outside of the bracket {}).
 
 - **Save as image**: Saves an image of the model graph as .png file
 
