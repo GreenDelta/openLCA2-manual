@@ -2,16 +2,11 @@
 
 # Toolbar: Database
 
-_**Note**_: Almost all the functions described here can also be accessed via right click with mouse on the navigation panel.
+_**Note**_: Almost all the functions described here can also be accessed via right click with mouse on the active databases in the navigation panel.
 
 The following options are available under "**Database**" when a database is opened:
 
--   **New Database**: For creating a new database, see section "[Creating a new empty database](../databases/create_database.md)" for details.
-It is also
-    possible to activate the "New Database" function by right-clicking the
-    navigation window.
-
--   **Restore Database:** For restoring a database, see section "[Restoring a database](../databases/restore_database.md)" for details. 
+-   **New Database**: For creating a new database, either from scratch or loading it from file. Access the respective sections for details: [Creating a new database from scratch](../databases/create_database.md) section "[Creating a new database loading it from file](../databases/restore_database.md)" for details. It is also    possible to activate both functions by right-clicking on the navigation window.
 
 -   **Backup Database:** Copy the database into an archive file to save it.
 

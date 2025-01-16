@@ -14,13 +14,13 @@ After the product system is created, you can calculate the impact results choosi
 
 1. To include the results in the EPD, the product systems must be calculated. To do so, go to the "General information" tab of the product systems and right click on "Calculate". This must be performed individually for each product systems that you want to include in your EPD.
 
-![](../media/epd_general_information_product_system.png)
-_"General information" tab of product system_
+    ![](../media/epd_general_information_product_system.png)
+    _"General information" tab of product system_
 
 2.	After clicking on "Calculate", you will see the interface depicted below. Here, you must now choose the set of indicators you would like to calculate and select the calculation type "Eager/All". After this, the results will appear automatically.
 
-![](../media/epd_selction_iam_product_system.png)
-_Selection of Impact Assessment Methods in the calculation of a product system_
+    ![](../media/epd_selction_iam_product_system.png)
+    _Selection of Impact Assessment Methods in the calculation of a product system_
 
 ## Calculating the results using lifecycle stages as product systems
 

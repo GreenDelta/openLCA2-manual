@@ -23,5 +23,5 @@ All the rows and columns between the initial and final selection will be highlig
 4. Right-click within the selected area.
 5. Choose "Copy selection" from the context menu.
 
-![](../media/copy_selection.png)  
-_Copying data from openLCA tables_
+    ![](../media/copy_selection.png)  
+    _Copying data from openLCA tables_
