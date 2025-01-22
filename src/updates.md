@@ -4,8 +4,9 @@ In this section you can check what the major manual updates were about and when 
 
 ## x.01.2025
 
-- Updated sections affected by the release of openLCA new version 2.4:
+- Updated/added sections affected by the release of openLCA new version 2.4:
     - [Databases](./databases/README.md)
+    - [Analysis groups](./res_analysis/res_analysis_groups.md) newly added
     - [Check Ebyan files]
 - Chapters restructured:
     - [Processes](./processes/README.md) (also updated)
