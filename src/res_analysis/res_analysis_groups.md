@@ -2,7 +2,7 @@
 
 # _New!_ Analysis groups
 
-In openLCA v2.4, you can conveniently categorize your LCA product system results into various categories, such as the EN15804+A2 modules. Instead of setting up specific processes, you can easily group results. 
+Since openLCA v2.4, you can conveniently categorize your product system's processes into various categories allowing later to easily group results. This is particularly helpful if you assign groups according to the EN15804+A2 modules as used for EPDs. Moreover, it allows us to analyze life cycle stages without changing the connectivity within the model graph. 
 
 After creating the product system, you can hover over a process in the model graph, right-click, and choose the desired option as seen below:
 
@@ -12,7 +12,7 @@ A pop-up window will appear, allowing you to set up a new analysis group by clic
 
 ![](../media/analysis_groups_2.png)
 
-If you select "add EN 15804 modules", a pop-up window will appear allowing you to assign the selected process under any category. You can delete any group by clicking the x sign next to it. 
+If you select "add EN 15804 modules", a pop-up window will appear allowing you to assign the selected process under any category. You can delete any group by clicking the "x" sign next to it. 
 
 ![](../media/analysis_groups_3.png)
 
@@ -24,15 +24,15 @@ It is also possible to set colors, by clicking on the color box in front of any 
 
 ![](../media/analysis_groups_5.png)
 
-The chosen colours are then visible in the model graph respective to the group.
+The chosen colors are then visible in the model graph respective to the group.
 
 ![](../media/analysis_groups_6.png)
 
-After saving the work, you can perform the calculation and view the group analysis results in the “analysis groups” tab below of the results window. You can also investigate results contribution per flow and impact categories as seen in the lower side of the window. You can click on any impact category and copy paste the entire table of impact assessment results into excel. 
+After saving the work, you can perform the calculation and view the group analysis results in the “analysis groups” tab below the results window. You can also investigate results contribution per flow and impact categories as seen in the lower side of the window. Further, you can click on any impact category and copy-paste the entire table of impact assessment results into Excel. 
 
 ![](../media/analysis_groups_7.png)
 
-If you selected the EN 15804 module group initially or followed such structure, it's also possible create an EPD by clicking on the EPD icon at the top right of the window. A pop-up window will appear, where you can click "OK".
+If you selected the EN15804 module group initially or followed such a structure, it's also possible to directly create an EPD by clicking on the EPD icon at the top right of the window. A pop-up window will appear, where you can click "OK".
 
 ![](../media/analysis_groups_8.png)
 
