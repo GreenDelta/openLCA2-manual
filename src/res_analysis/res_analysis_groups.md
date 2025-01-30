@@ -2,7 +2,7 @@
 
 # _New!_ Analysis groups
 
-Since openLCA v2.4, you can conveniently categorize your product system's processes into various categories allowing later to easily group results. This is particularly helpful if you assign groups according to the EN15804+A2 modules as used for EPDs. Moreover, it allows us to analyze life cycle stages without changing the connectivity within the model graph. 
+Since openLCA v2.4, you can conveniently categorize your product system's processes into various categories allowing later to group results. This is particularly helpful if you assign groups according to the EN15804+A2 modules as used for EPDs. Moreover, it allows us to analyze life cycle stages without changing the connectivity within the model graph. 
 
 After creating the product system, you can hover over a process in the model graph, right-click, and choose the desired option as seen below:
 
