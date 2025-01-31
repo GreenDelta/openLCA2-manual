@@ -7,7 +7,8 @@ In this section you can check what the major manual updates were about and when 
 - Updated/added sections affected by the release of openLCA new version 2.4:
     - [Analysis groups](./res_analysis/res_analysis_groups.md) newly added
     - [Databases](./databases/README.md) updated
-    - [Model graph](./prod_sys/model_graph.md)
+    - [Model graph](./prod_sys/model_graph.md) updated
+    - Other minor updates (e.g. "child categories" are now called "categories" and new screenshots reflect this change)
 - Chapters restructured:
     - [Running openLCA for the first time](./running_olca/README.md)
     - [Processes](./processes/README.md)
