@@ -8,7 +8,7 @@ In this section you can check what the major manual updates were about and when 
     - [Analysis groups](./res_analysis/res_analysis_groups.md) newly added
     - [Databases](./databases/README.md) updated
     - [Model graph](./prod_sys/model_graph.md) updated
-    - Other minor updates (e.g. "child categories" are now called "categories" and new screenshots reflect this change)
+    - Other updates (e.g. "child categories" are now called "categories" and new screenshots reflect this change)
 - Chapters restructured:
     - [Running openLCA for the first time](./running_olca/README.md)
     - [Processes](./processes/README.md)
