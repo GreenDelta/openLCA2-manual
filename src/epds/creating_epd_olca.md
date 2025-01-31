@@ -2,7 +2,7 @@
 
 <div style='text-align: justify;'>
 
-An EPD structure can be created in order to store the information using the official nomenclature of the life cycle stages. In openLCA 2.4 there are two ways to create an EPD, the first way is explained below in this section, while the the second way is described in the 
+An EPD structure can be created in order to store the information using the official nomenclature of the life cycle stages. In openLCA 2.4 there are two ways to create an EPD, the first way is explained below in this section, while the the second way is described in the [Analysis group section](../res_analysis/res_analysis_groups.md).
 
 1.	To create a new EPD you can now right-click on the folder "EPDs" and select "New EPD". In the window that opens, please name the EPD.
 
