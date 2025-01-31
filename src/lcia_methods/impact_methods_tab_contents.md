@@ -5,9 +5,7 @@ In openLCA versions from 1.x to the latest release, you could edit and create im
 
 <details open><summary><b> General information </b></summary>
 
-In this section you can:
-
-Here you can view and modify the name of the method, add a description, additional details or [tags](../cheat/tags.md), along with:
+Here you can view and modify the name of the method, add a description, additional details or [tags](../cheat/tags.md), as well as:
 
 - Adding a source from the sources in the database. If unavailable, create a new source as described in "[Database elements](../databases/database_elements.md)".
 - Adding a code (i.e., a short name for the category, useful in result views).

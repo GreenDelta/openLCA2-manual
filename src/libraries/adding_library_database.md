@@ -7,7 +7,7 @@ To do so:
 1.	right-click on the database you wish to add a library to 
 2.	select "Add a library". 
 
-![](../media/library_right_click_menu_2.PNG)
+    ![](../media/library_right_click_menu_2.PNG)
 
 _Right-click menu data appear in openLCA 2.0 when you click on an existing database_
 

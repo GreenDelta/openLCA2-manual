@@ -2,7 +2,7 @@
 
 <div style='text-align: justify;'>
 
-Previously we have described the "[Restoring a database](./restore_database.md)" function, which is specifically intended for zolca files. As working with data, in particular during the life cycle inventory data collection phase, is rather complex, openLCA supports various data formats to work with.
+Previously we have described the function "[Creating a new database loading it from file](./restore_database.md)", which is specifically intended for zolca files. As working with data, in particular during the life cycle inventory data collection phase, is rather complex, openLCA supports various data formats to work with.
 
 ### Supported Import and Export formats:
 - EcoSpold1
@@ -25,14 +25,13 @@ Previously we have described the "[Restoring a database](./restore_database.md)"
 
 ## Importing data
 
-To import data into openLCA, click on "File" and then "Import", or right-click on the Navigation Window and choose "Import".
+To import data into openLCA, click on "File" and then "Import", or right-click on an active database in the Navigation Window and choose "Import".
 
 ![](../media/import_database.png)  
 
 Under the "Import" section, you can find the following options:
 
 - **File:** This option allows you to import data in various formats, including zolca, EcoSpold 1, Excel, HSC Sim Flow (experimental), ILCD, and SimaPro CSV. The import format is detected automatically.
-- **From Git:** This option enables you to establish a connection to a Git repository for importing data (what we do not do for now).
 - **Other:** This option allows you to manually specify the format of the import, in the picture below you can see the wizard. 
 
     ![](../media/import_wizard.png)  	
@@ -44,15 +43,15 @@ The details for each option are displayed below:
 <details>
 <summary><b>Importing a database from an exported zolca file</b></summary>
 
-The fastest way to open a zolca-format database in openLCA, is outlined in the "[Restoring a database](./restore_database.md)" section. Alternatively, you can use the "Import" function with the following steps:
+The fastest way to open a zolca-format database in openLCA, is outlined in the "[Creating a new database loading it from file](./restore_database.md)" section. Alternatively, you can use the "Import" function with the following steps:
 
 1. Click on "File" and then "Import".
 2. Select "Import entire database" and then click on "Next".
 3. Choose the option "From exported zolca-File" in the import wizard.
 4. Locate the desired zolca file in your file browser and select "Open". Then, click "Finish".
 
-![](../media/import_from_zolca.png)  
-_Import from exported zolca-File_ 
+    ![](../media/import_from_zolca.png)  
+    _Import from exported zolca-File_ 
 
 After importing it, the database will be "inactive". To activate it and gain access to its flows, processes, and other components, simply double-click on it.
 
@@ -140,7 +139,7 @@ In openLCA, it is possible to merge multiple databases into a single one. The da
 
 To combine databases, follow these steps:
 
-1. Begin by restoring/importing the first database. It is recommended to import the largest database first to minimize compilation time.
+1. Begin by creating/importing the first database. It is recommended to import the largest database first to minimize compilation time.
 2. Activate the imported database by double-clicking on it.
 3. Now, you can proceed to import the remaining databases by right-clicking on the active database, choose "Import" then "Other...".
 4. Select "Import entire database", click on "Next" and eventually choose the database to import from databases that are already present in openLCA or from an exported zolca file (see picture below). Click on "Finish" to combine the databases.

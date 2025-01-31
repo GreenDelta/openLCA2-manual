@@ -18,11 +18,9 @@ The contents of the impact categories window will be explained in the following.
 
 <details open><summary><b> General information</b></summary>
 
-In this section you can:
+Here you can view and modify the name of the category, add a description, a reference unit, additional details or [tags](../cheat/tags.md), as well as:
 
-Here you can view and modify the name of the category, add a description, a reference unit, additional details or [tags](../cheat/tags.md), along with:
-
-- Adding a source from the sources in the database (see "[database elements](../databases/database_elements.md)")
+- Adding a source in the database (see "[database elements](../databases/database_elements.md)")
 - Adding a code (i.e., a short name for the category, useful in result views)
 - Choosing an impact direction
 
