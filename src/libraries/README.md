@@ -9,7 +9,6 @@ Additionally, libraries allow for a better overview when using the graphical edi
 the accuracy of the impact calculations. 
 
 ![](../media/Library_example.png)
-
 _Example of a library product system displayed in the graphical editor of openLCA 2.0_
 
 Using libraries allows also for a more accurate data exchange with the Collaboration Server as library data will not be exchanged but 
