@@ -15,7 +15,7 @@ In this case study, we'll model the life cycle of a pack of oat milk compared to
 ![](./media/database_navigation_cg.png)
 <br>_Agribalyse as active database in openLCA_
 
-Check the ["Databases"](./databases/README.md) section to learn more.
+Check the ["Databases"](./databases/index.md) section to learn more.
 
 ## Creating a process
 
@@ -28,7 +28,7 @@ _Process representing the production of an oat milk pack, with its input and out
 
 To model the entire life cycle of this product, we'll also create the distribution phase, use phase, and end-of-life processes (you can find details about end-of-life modeling in [this](./waste_modelling.md) section).
 
-Check the ["Flows"](./flows/README.md) and ["Processes"](./processes/README.md) sections to learn more.
+Check the ["Flows"](./flows/index.md) and ["Processes"](./processes/index.md) sections to learn more.
 
 ## Creating a product system
 
@@ -42,7 +42,7 @@ Following the same steps, we'll also create the product system of a cow milk pac
 ![](./media/cowmilk_modelgraph.png)
 _Life cycle model of a cow milk pack, with all it interconnected processes_
 
-Check the ["Product system"](./prod_sys/README.md) section to learn more.
+Check the ["Product system"](./prod_sys/index.md) section to learn more.
 
 ## Calculating the Life Cycle Inventory (LCI) and Life Cycle Impact Assessment (LCIA) 
 
@@ -57,7 +57,7 @@ To generate the Life Cycle Impact Assessment (LCIA), you need to add an LCIA met
 ![](./media/step17.png)
 _Calculation results window_
 
-Check the ["LCIA methods and categories"](./lcia_methods/README.md) and ["Calculation and Results Analysis"](./res_analysis/README.md) sections to learn more.
+Check the ["LCIA methods and categories"](./lcia_methods/index.md) and ["Calculation and Results Analysis"](./res_analysis/index.md) sections to learn more.
 
 <details>
 <summary><b>If you are interested to display impacts per life cycle stage click here</b></summary>
@@ -86,7 +86,7 @@ When you create a project, you can add the product systems you want to compare a
 ![](./media/project_relative_results_cg.png)
 _Relative impact results of one pack of oat milk vs one pack of cow milk, obtaind using EF Method_
 
-Check the ["Project"](./projects/README.md) section to learn more.
+Check the ["Project"](./projects/index.md) section to learn more.
 
 **Congratulations!** You have successfully gone through the key steps in openLCA. With this knowledge, you can now start making informed decisions to improve the environmental performance of your products and processes. Happy analyzing!
 
