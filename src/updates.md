@@ -2,17 +2,24 @@
 
 In this section you can check what the major manual updates were about and when they were released.
 
+## 17.02.2025
+
+- Fixed bugs in:
+    - [openLCA key features with an LCA case study](./conceptual_guideline.md)
+    - [Libraries](./libraries/index.md)
+- Minor updates
+
 ## 31.01.2025
 
 - Updated/added sections affected by the release of openLCA new version 2.4:
     - [Analysis groups](./res_analysis/res_analysis_groups.md) newly added
-    - [Databases](./databases/README.md) updated
+    - [Databases](./databases/index.md) updated
     - [Model graph](./prod_sys/model_graph.md) updated
     - Other updates (e.g. "child categories" are now called "categories" and new screenshots reflect this change)
 - Chapters restructured:
-    - [Running openLCA for the first time](./running_olca/README.md)
-    - [Processes](./processes/README.md)
-    - [Calculation and Result Analysis](./res_analysis/README.md)
+    - [Running openLCA for the first time](./running_olca/index.md)
+    - [Processes](./processes/index.md)
+    - [Calculation and Result Analysis](./res_analysis/index.md)
 - The chapters in the sidebar are now collapsed bu default at the first level when opening the manual. They can be expanded manually or browsed in the new TOC (see point below).
 - Added [Table of content](./toc.md)
 - [Latest manual updates](./updates.md) section can now be fount a the bottom of the of the manual. 
