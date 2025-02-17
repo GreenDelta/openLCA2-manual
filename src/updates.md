@@ -7,6 +7,7 @@ In this section you can check what the major manual updates were about and when 
 - Fixed bugs in:
     - [openLCA key features with an LCA case study](./conceptual_guideline.md)
     - [Libraries](./libraries/index.md)
+- Minor updates
 
 ## 31.01.2025
 
