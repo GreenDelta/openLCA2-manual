@@ -15,7 +15,7 @@ If an exchange does not occur in a certain process, the value in the square matr
 All columns and rows are labeled numerically. These labels act as IDs and link to their respective process-flow 
 pairs reference IDs in the file indexA.csv.
 
-    ![](../media/library_a_matrix.PNG)
+    ![](../media/library_a_matrix.png)
     <br>_Schematic representation of the A matrix saved in a numpy file in an openLCA library zip file_
 
 - **B.npy**: This file stores the B matrix. This matrix is not square. The columns mirror the rows of the A matrix. 
