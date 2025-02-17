@@ -12,10 +12,10 @@ The essential first step in LCA modeling using openLCA is the selection of a bac
 
 In this case study, we'll model the life cycle of a pack of oat milk compared to the life cycle of a pack of cow milk, using core processes from the Agribalyse database, freely available on [Nexus](https://nexus.openlca.org/).
 
-![](../media/database_navigation_cg.png)
+![](./media/database_navigation_cg.png)
 <br>_Agribalyse as active database in openLCA_
 
-Check the ["Databases"](../databases/index.html) section to learn more.
+Check the ["Databases"](./databases/README.md) section to learn more.
 
 ## Creating a process
 
@@ -23,26 +23,26 @@ Now, we can design the life cycle phases, or **processes**, of our product (in t
 
 Below, you can see the process that model the production phase of an oat milk pack, with its input and output flows. 
 
-![](../media/step3.png)
+![](./media/step3.png)
 _Process representing the production of an oat milk pack, with its input and output_
 
-To model the entire life cycle of this product, we'll also create the distribution phase, use phase, and end-of-life processes (you can find details about end-of-life modeling in [this](../waste_modelling.md) section).
+To model the entire life cycle of this product, we'll also create the distribution phase, use phase, and end-of-life processes (you can find details about end-of-life modeling in [this](./waste_modelling.md) section).
 
-Check the ["Flows"](../flows/index.html) and ["Processes"](../processes/index.html) sections to learn more.
+Check the ["Flows"](./flows/README.md) and ["Processes"](./processes/README.md) sections to learn more.
 
 ## Creating a product system
 
 We will integrate the processes we just created into a life cycle model by creating a **product system**.
 
-![](../media/step12.png)
+![](./media/step12.png)
 _Life cycle model of an oat milk pack, with all its interconnected processes_
 
 Following the same steps, we'll also create the product system of a cow milk pack. This way, we can compare them and draw some considerations about their different environmental impact.
 
-![](../media/cowmilk_modelgraph.png)
+![](./media/cowmilk_modelgraph.png)
 _Life cycle model of a cow milk pack, with all it interconnected processes_
 
-Check the ["Product system"](../prod_sys/index.html) section to learn more.
+Check the ["Product system"](./prod_sys/README.md) section to learn more.
 
 ## Calculating the Life Cycle Inventory (LCI) and Life Cycle Impact Assessment (LCIA) 
 
@@ -50,29 +50,29 @@ With your life cycle model ready, it's time to calculate the inventory of your p
 
 The "Inventory Results" tab will open and contain a table with input and output flows of the product system, showing amounts and units for each of them.
 
-![](../media/inventory_result.png)
+![](./media/inventory_result.png)
 
 To generate the Life Cycle Impact Assessment (LCIA), you need to add an LCIA method to the calculation. After clicking on "Calculate" in the product system window, you need to choose an "Impact assessment method" from the drop-down menu, which will calculate the environmental impact from the life cycle inventory.
 
-![](../media/step17.png)
+![](./media/step17.png)
 _Calculation results window_
 
-Check the ["LCIA methods and categories"](../lcia_methods/index.html) and ["Calculation and Results Analysis"](../res_analysis/index.html) sections to learn more.
+Check the ["LCIA methods and categories"](./lcia_methods/README.md) and ["Calculation and Results Analysis"](./res_analysis/README.md) sections to learn more.
 
 <details>
 <summary><b>If you are interested to display impacts per life cycle stage click here</b></summary>
 
 For a detailed analysis of the impacts of the individual life cycle stages in openLCA, you have to slightly modify the modelling approach which will lead to the following model graph:
 
-![](../media/lifecycleoatmodel.png)
+![](./media/lifecycleoatmodel.png)
 
 This will allow you to assess the impacts per life cycle stage as displayed in the Sankey diagram here:
 
-![](../media/lifecycleoatGWP.png) 
+![](./media/lifecycleoatGWP.png) 
 
 And in a similar fashion in the Contribution tree:
 
-![](../media/lifecycleoatcontribution.png)
+![](./media/lifecycleoatcontribution.png)
 
 
 </details>
@@ -83,10 +83,10 @@ Comparing life cycle model results, i.e. product systems, can provide valuable i
 
 When you create a project, you can add the product systems you want to compare and generate insights and graphs for both of them.
 
-![](../media/project_relative_results_cg.png)
+![](./media/project_relative_results_cg.png)
 _Relative impact results of one pack of oat milk vs one pack of cow milk, obtaind using EF Method_
 
-Check the ["Project"](../projects/index.html) section to learn more.
+Check the ["Project"](./projects/README.md) section to learn more.
 
 **Congratulations!** You have successfully gone through the key steps in openLCA. With this knowledge, you can now start making informed decisions to improve the environmental performance of your products and processes. Happy analyzing!
 
