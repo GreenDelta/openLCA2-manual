@@ -8,8 +8,7 @@ To do so:
 2.	select "Add a library". 
 
     ![](../media/library_right_click_menu_2.png)
-
-_Right-click menu data appear in openLCA 2.0 when you click on an existing database_
+    <br/>_Right-click menu data appear in openLCA 2.0 when you click on an existing database_
 
 A window will appear in which you can select what library you wish to import into the database. 
 The drop-down menu allows you to choose one of the openLCA libraries. If you wish to import an external library, 
@@ -18,8 +17,7 @@ This will open a conventional explorer window from which you can import a zip-fo
 For more information about zip-formatted library files, read the section "[Library file system](./file_system.md)".
 
 ![](../media/library_dialog_box_2.png)
-
-_The dialog box that will open when selecting to add a library to a database in openLCA 2.0. 
+<br/>_The dialog box that will open when selecting to add a library to a database in openLCA 2.0. 
 A drop-down menu allows one to select from the set of libraries saved._
 
 Before finalizing the library import into the database, you will be asked if you wish to really add the library to the database.
@@ -31,7 +29,6 @@ If you open a library-derived process, be aware that you will be unable to alter
 If you wish to do so, you will need to copy the process in question and make your alterations to the copy. In every other respect, however, you can use processes, flows etc. from libraries just as you would with those native to the database.
 
 ![](../media/library_example_4.png)
-
-_Example of a library that was added to a database in openLCA 2.0_
+<br/>_Example of a library that was added to a database in openLCA 2.0_
 
 </div>
