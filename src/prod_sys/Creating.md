@@ -49,7 +49,7 @@ The following options are available upon selecting "auto-linking" option:
 
 	-   **Ignore default providers**: openLCA completely disregards the default providers during the auto-linking process. The first suitable process connection found will be used then in each case. 
 
-	After creating a product system, it is possible to add and delete connections in theit is possible to add and delete connections in the ["Model graph"](../prod_sys/model_graph.md) tab.
+	After creating a product system, it is possible to add and delete connections in the ["Model graph"](../prod_sys/model_graph.md) tab.
 
 </details>
 
