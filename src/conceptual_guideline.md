@@ -32,7 +32,7 @@ Check the ["Flows"](./flows/index.md) and ["Processes"](./processes/index.md) se
 
 ## Creating a product system
 
-We will integrate the processes we just created into a life cycle model by creating a **product system**.
+We will integrate all the processes we just created into a life cycle model by creating a **product system** from the process with the respective reference flow (oat milk, consumed). openLCA will connect the supply chain for you.
 
 ![](./media/step12.png)
 _Life cycle model of an oat milk pack, with all its interconnected processes_
@@ -40,7 +40,7 @@ _Life cycle model of an oat milk pack, with all its interconnected processes_
 Following the same steps, we'll also create the product system of a cow milk pack. This way, we can compare them and draw some considerations about their different environmental impact.
 
 ![](./media/cowmilk_modelgraph.png)
-_Life cycle model of a cow milk pack, with all it interconnected processes_
+_Life cycle model of a cow milk pack, with all its interconnected processes_
 
 Check the ["Product system"](./prod_sys/index.md) section to learn more.
 
