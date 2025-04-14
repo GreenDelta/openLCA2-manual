@@ -58,8 +58,7 @@ Be reminded that also recycling processes are multi-output processes as they tre
 ![](./media/allocation_recycling.png)
 <br>_As the recycling process is a multi-output process allocation is needed! Here, physical allocation was applied._
 
-
-
+_**Note:**_ Here we allocated 50% of the impacts to the recyclate and the waste. This is only one option. However, if you are not modeling a closed-loop scenario this can be a relevant detail you should consider.
 
 ### System Expansion
 
