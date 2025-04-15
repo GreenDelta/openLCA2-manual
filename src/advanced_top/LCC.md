@@ -9,7 +9,7 @@ Life Cycle Costing (LCC) aims to assess the costs of a product over its entire l
 Costs are modelled in the software as associated with products, waste or
 elementary flows, which are inputs and outputs of processes. They can be
 positive or negative while a negative cost is regarded as an added value. In general, there is no need
-for the creation of a method for the LCC calculation.
+for the creation of a method for the LCC calculation. [Have also a look at our LCC documentation](https://www.openlca.org/wp-content/uploads/2025/03/Life-Cycle-Costing-in-openLCA.pdf).
 
 The implementation in openLCA follows the proposal of the SETAC working group, for costs, with some modifications, as follows:
 	
