@@ -20,7 +20,7 @@ Moreover, we also provide the following technical solutions:
 
 -   **As defined in processes**: this option will perform allocation according to the method used in each individual process along the supply chain.
 
-- **None**: if none is selected, no allocation will be applied, even for multifunctional processes.
+- **None**: if none is selected, no allocation will be applied, even for multifunctional processes. Hence, each product of a process gets the entire impacts of this process and its supply chain.
 
 Below is an example illustrating how the three different methods are applied in openLCA. In this example, 1 kg of wood and 0.3 kg of bark are produced from 1 kg of saw log (measured as solid wood under bark).
 
