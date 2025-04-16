@@ -39,7 +39,7 @@ Extract the tar.gz into your home folder and double-click on the executable to r
 
 ## Running openLCA with installation (only Windows)
 
-**Windows:** Download the installer file from the [download page](http://www.openlca.org/downloads) of the openLCA website and run it. You can choose whether openLCA will be available only for the user who installs it, or for anybody working on the computer. For the installation, you will need admin rights. The folder where openLCA stores its databases will be created for the user who is running the installation. 
+**Windows:** Download the installer file from the [download page](http://www.openlca.org/download) of the openLCA website and run it. You can choose whether openLCA will be available only for the user who installs it, or for anybody working on the computer. For the installation, you will need admin rights. The folder where openLCA stores its databases will be created for the user who is running the installation. 
 
 It is therefore not a good idea to ask an admin to install openLCA via the installer when you are not the admin yourself, since you will not have access to the database folder afterwards, and also not to the folder where openLCA stores the configuration file, which means you will not be able to change the settings after the installation. 
 
