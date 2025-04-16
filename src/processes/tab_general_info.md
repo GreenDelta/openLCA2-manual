@@ -38,6 +38,13 @@ In the Technology section, users have an add a description about the technology 
 
 ## Data quality
 
-Here you can define the data quality flow schema for your process. Check [Data Quality](../advanced_top/data_quality.md) section for details.
+Here you can define the data quality flow schema for your process on process and flow level.
+
+![](../media/general_information_process_DQ.png)  
+_Options for data quality in a process_
+
+ The process data quality will be filled in the "Data quality entry" whereas flow data quality will be filled in at the Inputs/Outputs tab next to the respective flows. Check [Data Quality](../advanced_top/data_quality.md) section for details. Further a "Social schema" can be filled.
+
+
 
 </div>

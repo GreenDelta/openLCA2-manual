@@ -43,6 +43,8 @@ _Defined logarithmic normal distributed uncertainty of a flow as found in the in
 
 These are mostly based on a certain base uncertainty which is merged by with an additional uncertainty derived from the data quality and can be used directly for the Monte Carlo Simulation.
 
+If you use the ecoinvent database, we highly recommend the respective chapter about uncertainty [Uncertainties - ecoinvent Support](https://support.ecoinvent.org/uncertainties).
+
 ### Deriving uncertainty from Data Quality Pedigree Matrices
 
 An alternative approach to setting exchange uncertainties is to make us of the data quality pedigree matrices that come with the openLCA reference data. The predefined data quality pedigree matrices can be used to set the uncertainty of processes according to the confidence in collected data. To use this feature, the flow data quality has to be defined see "[Data Quality](../advanced_top/data_quality)". Following that the button "use as uncertainty value" makes it possible to use the documented data quality uncertainty as defined in the data quality system (ecoinvent or Weida/Müller/Ciroth/Lesage).
@@ -67,7 +69,7 @@ _Starting a Monte Carlo Simulation_
 
 ### Monte Carlo Results
 
-The results will be display live and provide you information about:
+The results will be displayed live and provide you with information about:
 
 ![](../media/MC_result.png)  
 

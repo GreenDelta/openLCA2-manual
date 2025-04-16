@@ -2,7 +2,7 @@
 
 # Download and installation
 
-openLCA natively runs in Linux, Mac, and Windows. For all operation systems, you can [download](<http://www.openlca.org/downloads>) the respective archive (zip/dmg/tar.gz). For Windows, there is also an installer. Using the zip archive in Windows is typically more convenient than the classic installation in Windows. It is quick and easy and the least "intrusive" method, helping you maintaining a clean system.
+openLCA natively runs in Linux, Mac, and Windows. For all operation systems, you can [download](<http://www.openlca.org/download>) the respective archive (zip/dmg/tar.gz). For Windows, there is also an installer. Using the zip archive in Windows is typically more convenient than the classic installation in Windows. It is quick and easy and the least "intrusive" method, helping you maintaining a clean system.
 
 To get openLCA running, first step is to download openLCA from the download page (via openLCA.org). The installation process then slightly differs depending on your operating system -Windows, Mac, or Linux. Below, there are instructions for setting up openLCA on your specific platform.
 
@@ -39,7 +39,7 @@ Extract the tar.gz into your home folder and double-click on the executable to r
 
 ## Running openLCA with installation (only Windows)
 
-**Windows:** Download the installer file from the [download page](http://www.openlca.org/downloads) of the openLCA website and run it. You can choose whether openLCA will be available only for the user who installs it, or for anybody working on the computer. For the installation, you will need admin rights. The folder where openLCA stores its databases will be created for the user who is running the installation. 
+**Windows:** Download the installer file from the [download page](http://www.openlca.org/download) of the openLCA website and run it. You can choose whether openLCA will be available only for the user who installs it, or for anybody working on the computer. For the installation, you will need admin rights. The folder where openLCA stores its databases will be created for the user who is running the installation. 
 
 It is therefore not a good idea to ask an admin to install openLCA via the installer when you are not the admin yourself, since you will not have access to the database folder afterwards, and also not to the folder where openLCA stores the configuration file, which means you will not be able to change the settings after the installation. 
 

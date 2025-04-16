@@ -20,7 +20,7 @@ Moreover, we also provide the following technical solutions:
 
 -   **As defined in processes**: this option will perform allocation according to the method used in each individual process along the supply chain.
 
-- **None**: if none is selected, no allocation will be applied, even for multifunctional processes.
+- **None**: if none is selected, no allocation will be applied, even for multifunctional processes. Hence, each product of a process gets the entire impacts of this process and its supply chain.
 
 Below is an example illustrating how the three different methods are applied in openLCA. In this example, 1 kg of wood and 0.3 kg of bark are produced from 1 kg of saw log (measured as solid wood under bark).
 
@@ -58,8 +58,7 @@ Be reminded that also recycling processes are multi-output processes as they tre
 ![](./media/allocation_recycling.png)
 <br>_As the recycling process is a multi-output process allocation is needed! Here, physical allocation was applied._
 
-
-
+_**Note:**_ Here we allocated 50% of the impacts to the recyclate and the waste. This is only one option. However, if you are not modeling a closed-loop scenario this can be a relevant detail you should consider.
 
 ### System Expansion
 
