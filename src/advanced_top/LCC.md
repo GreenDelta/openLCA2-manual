@@ -237,9 +237,9 @@ When the product system is calculated, several summaries of results for costs an
 _Value added and net-costs in the process contributions tab_
 
 For the production of the chair, for example, net costs are (5 + 10) € - 25 € = -10€; for 5 chairs required in the product system, the amount is -50 €. 
-In the contribution tree, value added and life cycle costs are available as new section, in addition to LCIA categories and elementary flows. 
+In the contribution tree, value added and life cycle costs are available as new section, in addition to LCIA categories and elementary flows.
 
-**_openLCA offers a detailed document on how to conduct LCC studies in openLCA free [here](<https://www.openlca.org/wp-content/uploads/2016/08/Life-Cycle-Costing-in-openLCA.pdf>). The database with the case study is available for download [here](http://www.openlca.org/case_studies)_**
+**_openLCA offers a detailed document on how to conduct LCC studies in openLCA free [here](<https://www.openlca.org/wp-content/uploads/2025/03/Life-Cycle-Costing-in-openLCA.pdf>). The database with the case study is available for download [here](https://www.openlca.org/case-studies/)_**
 
 </div>
 
