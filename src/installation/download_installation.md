@@ -2,7 +2,7 @@
 
 # Download and installation
 
-openLCA natively runs in Linux, Mac, and Windows. For all operation systems, you can [download](<http://www.openlca.org/downloads>) the respective archive (zip/dmg/tar.gz). For Windows, there is also an installer. Using the zip archive in Windows is typically more convenient than the classic installation in Windows. It is quick and easy and the least "intrusive" method, helping you maintaining a clean system.
+openLCA natively runs in Linux, Mac, and Windows. For all operation systems, you can [download](<http://www.openlca.org/download>) the respective archive (zip/dmg/tar.gz). For Windows, there is also an installer. Using the zip archive in Windows is typically more convenient than the classic installation in Windows. It is quick and easy and the least "intrusive" method, helping you maintaining a clean system.
 
 To get openLCA running, first step is to download openLCA from the download page (via openLCA.org). The installation process then slightly differs depending on your operating system -Windows, Mac, or Linux. Below, there are instructions for setting up openLCA on your specific platform.
 
