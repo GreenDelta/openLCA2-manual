@@ -2,6 +2,10 @@
 
 In this section you can check what the major manual updates were about and when they were released.
 
+## 16.04.2025
+
+- Minor updates
+
 ## 17.02.2025
 
 - Fixed bugs in:
