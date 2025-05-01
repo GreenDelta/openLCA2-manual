@@ -37,6 +37,6 @@ CHANGE IMAGE
 ![](../media/administrative_information.png)  
 _Administrative information of a process_
 
-The definitions of data set owner, data generator, and data documentation are not fixed. However, data owner can be the "Contact data set" of the person or entity who owns this data set. A data generator can be an expert who compiled and modelled the data set as well as internal administrative information linked to the data generation activity. And data documentor can be the contact of the responsible person or entity that has documented this data set, i.e. entered the data and the descriptive information.
+The definitions of data set owner, data generator, and data documentation are not fixed. However, data owner can be the contacts of the person or entity who owns this dataset. A data generator can be an expert who compiled and modelled the data set as well as internal administrative information linked to the data generation activity. And the data documentor can be the contact of the responsible person or entity that has documented this data set, i.e., entered the data and the descriptive information.
 
 </div>
