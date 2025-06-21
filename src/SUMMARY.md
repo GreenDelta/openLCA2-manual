@@ -126,7 +126,10 @@
 	- [Direct impact calculations in processes](cheat/direct.md)
 	- [openLCA and Excel](cheat/import_export.md)
 	- [Tags](cheat/tags.md)
-	- [Constants, operators and functions for formulas in openLCA](cheat/formulas_in_openlca.md)	
+	- [Constants, operators and functions for formulas in openLCA](cheat/formulas_in_openlca.md)
+	- [Shortcuts in openLCA](cheat/key_short_cuts.md)	
+
+	
 
 -----------	
 # Manual updates
