@@ -4,7 +4,7 @@
 
 In openLCA, you can export your product system in different ways, according to your needs.
 
-## Saving product systems as a system processes
+## Saving a product system as a system process
 
 The first method for saving a product system is to calculate its Life Cycle Inventory and then save the results as a System Process. 
 

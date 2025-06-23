@@ -36,7 +36,7 @@ In the "documentation tab", former "modeling and validation" and "administrative
 	
 - Define details about compliance
 - Mentioning applicable standards or regulatory frameworks the dataset complies with, such as ISO14040, ILCD, or sector-specific requirements. Further if it is self-declared or verified by an external body.
-- You can detail in overall compliance, nomenclature, methodological, review, doducmentation and quality compliance.
+- You can detail in overall compliance, nomenclature, methodological, review, documentation and quality compliance.
 	
 	![](../media/source_compliance.png)  
 
