@@ -28,18 +28,22 @@ In the "documentation tab", former "modeling and validation" and "administrative
 
 - Compliance declarations:
 	- Define details about compliance
+	- Mentioning applicable standards or regulatory frameworks the dataset complies with, such as ISO14040, ILCD, or sector-specific requirements. Further if it is self-declared or verified by an external body.
+	- You can detail in overall compliance, nomenclature, methodological, review, doducmentation and quality compliance.
 	
 ![](../media/source_compliance.png)  
 
 
 - Completeness:
-	- Helps the user do identify the completeness of a process in logic with ISO14040
+	- Helps the user do identify the completeness of a process in the logic of ISO14040.
+	- Per flow you can identify if it is missing, not relevant or fully quantified.
 	
 ![](../media/source_completeness.png)  
 
 
 
 - Sources:
+	- Here dataset detail their literature source or methodological references.
 	- To add a data source, click on the green "+" icon in the "Sources" section. If the required source is not listed, you can add a new one by right-clicking on the "Sources" folder in the Navigation and selecting "New source."
 	
 ![](../media/source_sources.png)  
