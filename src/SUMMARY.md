@@ -133,9 +133,9 @@
 	
 
 -----------	
-# Manual updates
+# Updates
 - [Latest manual updates](updates.md)
-
+- [Latest software updates](software_updates.md)
 -----------
 -----------
 [Contact](./contact.md)
