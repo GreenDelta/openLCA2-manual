@@ -52,12 +52,12 @@ In the "documentation tab", former "modeling and validation" and "administrative
 
 The definitions of data set owner, data generator, and data documentation are not fixed. However, data owner can be the contacts of the person or entity who owns this dataset. A data generator can be an expert who compiled and modelled the data set as well as internal administrative information linked to the data generation activity. And the data documentor can be the contact of the responsible person or entity that has documented this data set, i.e., entered the data and the descriptive information. Some guidance is also provided in the ILCD handbook.
 
-	- You can also include reviewers by clicking the blue "Add actors" icon within this section. If the actor you want to add isn't listed under "Actors," you can create a new one by right-clicking on the "Actor" folder in the Navigation panel and selecting "New actor."
+You can also include reviewers by clicking the blue "Add actors" icon within this section. If the actor you want to add isn't listed under "Actors," you can create a new one by right-clicking on the "Actor" folder in the Navigation panel and selecting "New actor."
 
 ![](../media/add_actor.png)  
 
 
-It's important to note that the entries in the modeling and validation section do not have any impact on the actual calculations.
+**_Note_**: It's important to note that the entries in the modeling and validation section do not have any impact on the actual calculations.
 
 
 
