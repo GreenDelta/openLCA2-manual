@@ -1,40 +1,78 @@
 <div style='text-align: justify;'>
 
-# Documentation
+# Documentation tab
 
-## Modeling and validation
+In the "documentation tab", former "modeling and validation" and "administrative information", you will find all details related to your process. It is divided into seven subsections:
 
-The "Modeling and validation" tab is where you can input or find details on modeling and data and process validation.
-
-![](../media/sources_1.png) 
-_Modeling and validation tab_
-
-The "Modeling and validation" tab is allows users to:
+## LCI method: 
 
 - Specify the process type, whether it is a unit or system process.
 - Describe the Life Cycle Inventory (LCI) method used.
 - Note any modeling constants utilized in the analysis.
+
+	![](../media/sources_0.png) 
+
+ ## Data source information:
+
 - Provide information about data completeness.
 - Discuss the data selection process if relevant to your study.
 - Detail the data treatment methods applied.
 - Discuss the sampling procedure employed for data collection.
 - Define and document the data collection period.
-- To add a data sources, click on the green "+" icon in the "Sources" section. If the required source is not listed, you can add a new one by right-clicking on the "Sources" folder in the Navigation and selecting "New source."
+
+	![](../media/sources_1.png) 
+
+
+
+
+## Reviews:
+
+- Define reviewers of the process and access their review reports. Moreover, details about the review method and qualtiy assessment are provided.
+	
+	![](../media/source_review.png)  
+
+
+## Compliance declarations:
+	
+- Define details about compliance
+- Mentioning applicable standards or regulatory frameworks the dataset complies with, such as ISO14040, ILCD, or sector-specific requirements. Further if it is self-declared or verified by an external body.
+- You can detail in overall compliance, nomenclature, methodological, review, documentation and quality compliance.
+	
+	![](../media/source_compliance.png)  
+
+## Completeness:
+
+- Helps the user do identify the completeness of a process in the logic of ISO14040.
+- Per flow you can identify if it is missing, not relevant or fully quantified.
+	
+	![](../media/source_completeness.png)  
+
+
+## Sources:
+
+- Here dataset detail their literature source or methodological references.
+- To add a data source, click on the green "+" icon in the "Sources" section. If the required source is not listed, you can add a new one by right-clicking on the "Sources" folder in the Navigation and selecting "New source."
+	
+	![](../media/source_sources.png)  
+
+
+## Administrative information:
+
+- The "Administrative Information" subsection is where you can input or find dataset-related details such as ownership, publication, access and use restrictions, and more. It's important to note that the entries in the administrative information section do not have any impact on the actual calculations.
+
+	![](../media/administrative_information.png)  
+
+
+- The definitions of data set owner, data generator, and data documentation are not fixed. However, data owner can be the contacts of the person or entity who owns this dataset. A data generator can be an expert who compiled and modelled the data set as well as internal administrative information linked to the data generation activity. And the data documentor can be the contact of the responsible person or entity that has documented this data set, i.e., entered the data and the descriptive information. Some guidance is also provided in the ILCD handbook.
+
 - You can also include reviewers by clicking the blue "Add actors" icon within this section. If the actor you want to add isn't listed under "Actors," you can create a new one by right-clicking on the "Actor" folder in the Navigation panel and selecting "New actor."
 
-![](../media/add_actor.png)  
-_Adding a new actor in the navigation panel_
+	![](../media/add_actor.png)  
 
-It's important to note that the entries in the modeling and validation section do not have any 
-impact on the actual calculations.
 
-## Administrative information
+**_Note_**: It's important to note that the entries in the modeling and validation section do not have any impact on the actual calculations.
 
-The "Administrative Information" tab is where you can input or find dataset-related details such as ownership, publication, access and use restrictions, and more. It's important to note that the entries in the administrative information section do not have any impact on the actual calculations.
 
-CHANGE IMAGE
 
-![](../media/administrative_information.png)  
-_Administrative information of a process_
 
 </div>

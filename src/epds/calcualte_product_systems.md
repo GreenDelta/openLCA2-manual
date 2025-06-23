@@ -1,1 +1,0 @@
-# Calculate the impact assessment

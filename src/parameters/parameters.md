@@ -21,22 +21,22 @@ To create a **Global parameter**:
  2.	select "New parameter". 
  3. Enter the name (see rules below), description (optional), type (input or dependent parameter) and amount, then click on "Finish". 
 
-![](../media/create_global_parameter.png)  
-_Creation of a global parameter_
+    ![](../media/create_global_parameter.png)  
+    _Creation of a global parameter_
 
 4. After creating a global parameter, a general information window will open up in the Editor, and you can add tags and uncertainty (**_new!_**).
 
 5. To load in a process the global parameter you’ve created, select the "reload" button in the "Global parameters" section in the "Parameters" tab in a process or impact assessment method.
 
-![](../media/global_parameter_information.png)  
-_Global parameter - general information_
+    ![](../media/global_parameter_information.png)  
+    _Global parameter - general information_
 
 6. The global parameters can also be viewed and edited by clicking on "Parameters" under "Database" &#8594; "Content". This opens up the window below which as a (**_new!_**) feature allows editing of uncertainty by double-clicking in the "Uncertainty cell".
 
-![](../media/parameters_tools.png)
-![](../media/editing_uncertainty_in_the_global_parameter_table_2_new.png)
-![](../media/editing_uncertainty_in_the_global_parameter_table.png)
-<br>_View and edit Parameters under Database &#8594; Content_
+    ![](../media/parameters_tools.png)
+    ![](../media/editing_uncertainty_in_the_global_parameter_table_2_new.png)
+    ![](../media/editing_uncertainty_in_the_global_parameter_table.png)
+    <br>_View and edit Parameters under Database &#8594; Content_
 
 To create an **Input and Dependent parameter**:
 

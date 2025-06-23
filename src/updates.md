@@ -2,6 +2,17 @@
 
 In this section you can check what the major manual updates were about and when they were released.
 
+## 23.06.2025
+
+- allow [(EPD) results as default providers in processes](./epds/life_cycle_models.md)
+- updated ["soda4LCA"](./epds/soda4lca.md) feature 
+- updated [Analysis groups](./res_analysis/res_analysis_groups.md)
+- New chapter about our experimental feature [Parameter´ Analysis](./parameters/parameter_analysis.md)
+- New chapter about updates on openLCA software [Latest software updates](software_updates.md)
+- [Dependent parameters](parameters/dependent_parameter.md) section moved from "Advanced Topics" to "Parameters"
+- Updated [Exporting/saving product systems](./prod_sys/exporting.md)
+- Minor updates
+
 ## 16.04.2025
 
 - Minor updates

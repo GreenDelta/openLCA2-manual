@@ -63,7 +63,7 @@
 	- [Model graph](prod_sys/model_graph.md)
 	- [Advanced product systems features](prod_sys/nested.md)
 	- [Calculating a product system](prod_sys/calculating.md)
-	- [Exporting product systems](prod_sys/exporting.md)
+	- [Exporting/saving product systems](prod_sys/exporting.md)
 - [LCIA methods and categories](lcia_methods/README.md)
    	- [Importing LCIA methods and categories into openLCA](lcia_methods/importing_lcia_methods.md)
    	- [Creating a new impact assessment method, category and characterization factor](lcia_methods/creating_new_impact_assessment_method.md)
@@ -95,6 +95,8 @@
 	- [Parameter types](parameters/parameters.md)
 	- [Parameter hierarchy](parameters/hierarchy.md)
 	- [Parameter sets](parameters/parameter_sets.md)
+	- [Parameter analysis](parameters/parameter_analysis.md)
+	- [Advanced: Dependent parameters](parameters/dependent_parameter.md)
 - [Background data](background.md)	
 
 -----------	
@@ -104,8 +106,7 @@
 	- [Life Cycle Costing](advanced_top/LCC.md)
 	- [Social aspects](advanced_top/social_aspects.md)
 	- [Data Quality](advanced_top/data_quality.md)
-	- [Monte Carlo simulation](advanced_top/monte_carlo.md)
-	- [Dependent parameters](advanced_top/dependent_parameter.md)	
+	- [Monte Carlo simulation](advanced_top/monte_carlo.md)	
 - [Environmental Product Declarations (EPDs)](epds/README.md)
 	- [Creating new processes for target products](epds/create_processes_for_target_products.md)
 	- [Create product systems from your processes](epds/create_product_systems_from_processess.md)
@@ -126,12 +127,15 @@
 	- [Direct impact calculations in processes](cheat/direct.md)
 	- [openLCA and Excel](cheat/import_export.md)
 	- [Tags](cheat/tags.md)
-	- [Constants, operators and functions for formulas in openLCA](cheat/formulas_in_openlca.md)	
+	- [Constants, operators and functions for formulas in openLCA](cheat/formulas_in_openlca.md)
+	- [Shortcuts in openLCA](cheat/key_short_cuts.md)	
+
+	
 
 -----------	
-# Manual updates
+# Updates
 - [Latest manual updates](updates.md)
-
+- [Latest software updates](software_updates.md)
 -----------
 -----------
 [Contact](./contact.md)

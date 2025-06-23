@@ -40,4 +40,32 @@ The EPD and the results per group shall appear in their respective locations, as
 
 ![](../media/analysis_groups_9.png)
 
+## Focus: Are group analysis results same as the contribution tree? 
+
+In openLCA, when you're analyzing the environmental impact of a product or process, you can view the results in two different ways: **contribution trees** and **analysis groups**. These help you understand which parts of the supply chain are responsible for which portions of the total impact.
+
+Now, the results from these two views only match exactly when there are no overlapping groups along a supply chain path. If one group contains another (like a group within a group), it can count the same impact more than once, which causes differences in the totals.
+
+**Simple example:**
+
+Imagine a product system with 5 steps, from E (raw material) to A (final product). Each step contributes an equal impact of 1. So the total impact is 5.
+We also assign some of these steps to analysis groups:
+
+- B is in group **g1**
+- D is in group **g2**
+
+In the contribution tree, the numbers just add up along the path:
+
+![](../media/analysis_groups_10.png)
+
+But for **analysis groups**, we have to be careful not to double-count:
+
+- **g2** (D and everything below) = **2**
+- **g1** (B and its upstream) = 4, but since D is already counted in g2, we subtract that: 4 – 2 = **2**
+- The **top level** (A) = total – g1 = 5 – 2 = **1**
+
+![](../media/analysis_groups_11.png)
+
+Still totals to 5, but **we avoided double-counting** by subtracting the already-included impacts.
+
 </div>
