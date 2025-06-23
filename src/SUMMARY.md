@@ -96,6 +96,7 @@
 	- [Parameter hierarchy](parameters/hierarchy.md)
 	- [Parameter sets](parameters/parameter_sets.md)
 	- [Parameter analysis](parameters/parameter_analysis.md)
+	- [Advanced: Dependent parameters](parameters/dependent_parameter.md)
 - [Background data](background.md)	
 
 -----------	
@@ -105,8 +106,7 @@
 	- [Life Cycle Costing](advanced_top/LCC.md)
 	- [Social aspects](advanced_top/social_aspects.md)
 	- [Data Quality](advanced_top/data_quality.md)
-	- [Monte Carlo simulation](advanced_top/monte_carlo.md)
-	- [Dependent parameters](advanced_top/dependent_parameter.md)	
+	- [Monte Carlo simulation](advanced_top/monte_carlo.md)	
 - [Environmental Product Declarations (EPDs)](epds/README.md)
 	- [Creating new processes for target products](epds/create_processes_for_target_products.md)
 	- [Create product systems from your processes](epds/create_product_systems_from_processess.md)
