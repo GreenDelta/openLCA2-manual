@@ -40,6 +40,10 @@ Eventually, you will be able to set-up the model graph using product system of e
 
 ![](../media/epd_lcs4.png)
 
+**_Note_**: The picture above represent a simplification. In a real-life scenario you would most likely model the life cycle with items and product flows, therefore the graph would look more like the picture below:
+
+![](../media/epd_extended_graph.png)
+
 Results for the calculated product system of “Lifecycle” can then be viewed in the following format:
 
 ![](../media/epd_lcs5.png)
