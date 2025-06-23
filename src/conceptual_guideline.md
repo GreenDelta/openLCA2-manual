@@ -10,12 +10,15 @@ Let's get started!
 
 The essential first step in LCA modeling using openLCA is the selection of a background database. In the software context, a "database" serves as a repository for the components required for conducting LCAs, therefore, you need to create or import one to work with openLCA. Moreover, it's uncommon to model the entire life cycle from scratch. Instead, you will get common processes from an existing database (these "common" processes typically include electricity production, transport, construction, waste treatment, and so on). You will typically model yourself core, foreground processes specific to the product or service you want to analyze. 
 
-In this case study, we'll model the life cycle of a pack of oat milk compared to the life cycle of a pack of cow milk, using core processes from the Agribalyse database, freely available on [Nexus](https://nexus.openlca.org/).
+In this case study, we'll model the life cycle of a pack of oat milk compared to the life cycle of a pack of cow milk, using core processes from the Agribalyse database, freely available on [Nexus](https://nexus.openlca.org/) for users that have an ecoinvent license. Check the ["Accessing databases from openLCA Nexus"](./resources/nexus.md#accessing-databases-from-openlca-nexus) to learn how to download a database.
+
+![](./media/download_databases.png)
+_Downloading a database from Nexus_
+
+Once you have your database, you can check the ["Databases"](./databases/index.md) section to learn more their properties.
 
 ![](./media/database_navigation_cg.png)
 <br>_Agribalyse as active database in openLCA_
-
-Check the ["Databases"](./databases/index.md) section to learn more.
 
 ## Creating a process
 
