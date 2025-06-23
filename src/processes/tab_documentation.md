@@ -32,8 +32,6 @@ impact on the actual calculations.
 
 The "Administrative Information" tab is where you can input or find dataset-related details such as ownership, publication, access and use restrictions, and more. It's important to note that the entries in the administrative information section do not have any impact on the actual calculations.
 
-CHANGE IMAGE
-
 ![](../media/administrative_information.png)  
 _Administrative information of a process_
 
