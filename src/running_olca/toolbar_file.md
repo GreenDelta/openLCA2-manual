@@ -10,11 +10,13 @@ The following options are available under **File**:
 
 -   **Preferences:** Under preferences, you can customize openLCA upon your needs. Here, you can find settings as memory allocation for openLCA, and language selection.
 
-    -   **Collaboration:** Here, you can select your preferred configurations for working with the collaboration server. 
+    -   **Collaboration:** Here, you can select your preferred configurations for working with the collaboration server. Each bullet point comes already with a description and is not further described here:
 
-        - _Check referenced changes_: if this is checked, openLCA will scan - after selecting datasets for a commit - the database for changes in datasets that are referenced by the selected datasets and suggests to also commit them. E.g. if you want to commit a process dataset, and you have added a newly created flow to the input table, the flow is considered a referenced change.
+        - _Check referenced changes_
 
-        - _Enable comments_: if this is checked, openLCA loads comments that were added to data sets on the LCA Collaboration Server and displays them in the model editors.
+        - _Smart checking_
+		
+		- _Enable comments_
     
             ![](../media/settings_collaboration.png)  
             _Preferences Collaboration_
