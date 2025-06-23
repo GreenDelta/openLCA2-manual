@@ -1,6 +1,25 @@
+<div style='text-align: justify;'>
+
 # Using results of EPDs in the product system
 
-<div style='text-align: justify;'>
+To connect EPD results to your product system, this can be done in two ways (1) adding the result output flow into your respective process (2) adding the result output flow through the model graph.
+
+## Method 1: On process level
+
+In openLCA v2.5.0, within the process, add the product flow corresponding to the EPD result as an input.
+Then, as usual, use the provider dropdown to select the appropriate module (i.e., the process or result) you want to link to your system.
+
+![](../media/epd_res_in_prod_sys_1.png)
+
+![](../media/epd_res_in_prod_sys_2.png)
+
+**Bonus**: if your product flow is connected to normal processes and results, results are indicated by [R] as a prefix. 
+
+![](../media/epd_res_in_prod_sys_3.png)
+
+## Method 2: via modal graph edit mode
+
+You can also add the EPD result’s output flow directly via the model graph edit mode by drawing the connection between your process and the EPD result. This method offers a visual way to integrate the flow into your product system.
 
 The introduced or saved results can be directly used in a supply chain.
 

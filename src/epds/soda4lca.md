@@ -18,6 +18,10 @@ With an active database, it's possible, then, to import the results by right-cli
 
 ![](../media/soda4lca_4.png)
 
-If you have imported an EPD, it shall appear under the "EPD" folder in the working database. If you have imported an impact category, it shall appear under the "impact categories" folder and so on. To integrate results of EPD into the product system, please refer to ["Using results of EPDs in the product systems"](./life_cycle_models.md) section. Make sure that you use the same impact method to calculate impacts as it had been used to generate the EPD. Otherwise the impacts of the EPD will not be taken into accout.
+If you have imported an EPD, it shall appear under the "EPD" folder in the working database. If you have imported an impact category, it shall appear under the "impact categories" folder and so on. To integrate results of EPD into the product system, please refer to ["Using results of EPDs in the product systems"](./life_cycle_models.md) section. Make sure that you use the same impact method to calculate impacts as it had been used to generate the EPD. Otherwise the impacts of the EPD will not be taken into account.
+
+**Tip**: When importing an EPD result to include it in your product system in openLCA, make sure there is a product flow set as the quantitative reference under Inventory result → Outputs (as shown below). If no product flow was available, you can simply create a new one, add it to the outputs, and set it as the quantitative reference. This ensures the EPD integrates correctly into your system model.
+
+![](../media/soda4lca_5.png)
 
 </div>

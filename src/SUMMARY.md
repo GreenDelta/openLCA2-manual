@@ -95,6 +95,7 @@
 	- [Parameter types](parameters/parameters.md)
 	- [Parameter hierarchy](parameters/hierarchy.md)
 	- [Parameter sets](parameters/parameter_sets.md)
+	- [Parameter analysis](parameters/parameter_analysis.md)
 - [Background data](background.md)	
 
 -----------	
