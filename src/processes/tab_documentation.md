@@ -21,7 +21,7 @@ In the "documentation tab", former "modeling and validation" and "administrative
 
 
 - Reviews:
-	- Define reviewers of the process and access their review reports
+	- Define reviewers of the process and access their review reports. Moreover, details about the review method and qualtiy assessment are provided.
 	
 ![](../media/source_review.png)  
 
