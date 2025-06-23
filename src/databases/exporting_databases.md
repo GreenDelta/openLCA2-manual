@@ -4,6 +4,8 @@
 
 Exporting databases in openLCA allows users to extract and save data in various formats for further analysis or sharing.
 
+**_Note_**: The methodologies described in this chapter can be applied to the whole database in use as well as single elements (flows, product systems, results...). You can right click on the element you want to export and select "Export". 
+
 openLCA supports data export in many formats, offering adaptability to different needs:
 
 - **Ecospold:** Allows exporting impact assessment methods and processes.
