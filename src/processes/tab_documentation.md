@@ -8,16 +8,17 @@ In the "documentation tab", former "modeling and validation" and "administrative
 	- Specify the process type, whether it is a unit or system process.
 	- Describe the Life Cycle Inventory (LCI) method used.
 	- Note any modeling constants utilized in the analysis.
-
-![](../media/sources_1.png) 
-
-
 - Data source information:
 	- Provide information about data completeness.
 	- Discuss the data selection process if relevant to your study.
 	- Detail the data treatment methods applied.
 	- Discuss the sampling procedure employed for data collection.
 	- Define and document the data collection period.
+
+![](../media/sources_1.png) 
+
+
+
 
 - Reviews:
 	- Define reviewers of the process and access their review reports
