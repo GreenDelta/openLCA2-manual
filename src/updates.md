@@ -8,6 +8,7 @@ In this section you can check what the major manual updates were about and when 
 - updated ["soda4LCA"](./epds/soda4lca.md) feature 
 - updated [Analysis groups](./res_analysis/res_analysis_groups.md)
 - New chapter about our experimental feature [Parameter´ Analysis](./parameters/parameter_analysis.md)
+- New chapter about updates on openLCA software [Latest software updates](software_updates.md)
 
 ## 16.04.2025
 
