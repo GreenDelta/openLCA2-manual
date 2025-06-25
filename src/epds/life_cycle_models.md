@@ -17,7 +17,7 @@ Then, as usual, use the provider dropdown to select the appropriate module (i.e.
 
 ![](../media/epd_res_in_prod_sys_3.png)
 
-_**Note**_: Make sure that the results you connect it to make use of the same impact assessment method you will use later for your impact assessment. If you choose another method, those results will not be taken into account (only EF 3.1 LCIA results can be used together with the EF 3.1 method; using TRACI will not take those results into account).
+_**Note**_: Make sure that the results you connect it to make use of the same impact assessment method you will use later for your impact assessment. If you choose another method, those results will not be taken into account (only EF 3.1 LCIA results can be used together with the EF 3.1 method; using TRACI will not take those results into account). However, it is not required to fulfill this criteria when the result contains the inventory results, and it will calculate the impacts from this inventory result in that case.
 
 ## Method 2: via modal graph edit mode
 
