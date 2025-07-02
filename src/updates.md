@@ -2,6 +2,11 @@
 
 In this section you can check what the major manual updates were about and when they were released.
 
+## 02.07.2025
+
+- New chapter [Scripting in openLCA](./scripting/index.md) with details on using Jython and the openLCA IPC as we also now provide a [Jython scripting manual](https://greendelta.github.io/openLCAJython-manual/).
+- Minor updates
+
 ## 23.06.2025
 
 - allow [(EPD) results as default providers in processes](./epds/life_cycle_models.md)

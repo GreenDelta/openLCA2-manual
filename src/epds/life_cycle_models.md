@@ -13,9 +13,11 @@ Then, as usual, use the provider dropdown to select the appropriate module (i.e.
 
 ![](../media/epd_res_in_prod_sys_2.png)
 
-**Bonus**: if your product flow is connected to normal processes and results, results are indicated by [R] as a prefix. 
+**Bonus**: If your product flow is connected to normal processes and results, results are indicated by [R] as a prefix. 
 
 ![](../media/epd_res_in_prod_sys_3.png)
+
+_**Note**_: Make sure that the results you connect it to make use of the same impact assessment method you will use later for your impact assessment. If you choose another method, those results will not be taken into account (only EF 3.1 LCIA results can be used together with the EF 3.1 method; using TRACI will not take those results into account). However, it is not required to fulfill this criteria when the result contains the inventory results, and it will calculate the impacts from this inventory result in that case.
 
 ## Method 2: via modal graph edit mode
 
@@ -44,10 +46,9 @@ target flow to the results element.
 
 4.	After all connections are established and the target amounts are set, it is important to save all changes prior performing the impact assessment. Then, the results can be analyzed as usual.
 
-<br>_**Notes:**_ 
 
-**For users using the Ecoinvent v3.9 EN15804+A2 add-on database or previous versions:** EPDs imported via ILCD formats cannot be integrated into the results of the EPD when utilized as part of a product system that is created on openLCA. Therefore, you must [manually add the EPD results](./adding_results_3rd_sources.md#adding-epds-manually) OR map the impact categories of the EPD results by creating a new process and adding suitable elementary flows representing each impact category. 
-
-**For users using the Ecoinvent v3.10 EN15804+A2 add-on database with openLCA v2.2:** EPDs imported via the ILCD format can now be directly integrated into the product system. You should use openLCA v2.2 with the v3.10 add-on to import the EPDs and map them to the impact categories. However, we advice you to always verify that the impact categories are mapped correctly, as the online repository from which the EPD is imported does not always link the impact categories to their corresponding unique identifiers accurately.
+>_**Notes:**_ 
+<br><br>**For users using the Ecoinvent v3.9 EN15804+A2 add-on database or previous versions:** EPDs imported via ILCD formats cannot be integrated into the results of the EPD when utilized as part of a product system that is created on openLCA. Therefore, you must [manually add the EPD results](./adding_results_3rd_sources.md#adding-epds-manually) OR map the impact categories of the EPD results by creating a new process and adding suitable elementary flows representing each impact category. 
+<br><br>**For users using the Ecoinvent v3.10 EN15804+A2 add-on database with openLCA v2.2:** EPDs imported via the ILCD format can now be directly integrated into the product system. You should use openLCA v2.2 with the v3.10 add-on to import the EPDs and map them to the impact categories. However, we advice you to always verify that the impact categories are mapped correctly, as the online repository from which the EPD is imported does not always link the impact categories to their corresponding unique identifiers accurately.
 
 </div>
