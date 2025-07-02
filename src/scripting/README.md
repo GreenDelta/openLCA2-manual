@@ -5,16 +5,18 @@ life cycle data into external tools or workflows. There are two main approaches 
 
 - Jython (Python) scripting within the openLCA application itself
 
-- Inter-process communication (IPC) using the openLCA API
+- Inter-process communication (IPC) using the openLCA IPC API
 
 Both approaches enable automation and interaction with openLCA models, but they differ significantly
 in how and where scripts are executed, their use cases, and their limitations.
 
 ## Jython
 
-[Jython](https://www.jython.org/) is a dynamic language that is embedded within the openLCA
-application. It allows you to write scripts in Python that can be converted to Java (the language
-used by openLCA) and executed within the openLCA application.
+[Jython](https://www.jython.org/) is a Python interpreter for the Java platform, and its interpreter
+is embedded within the openLCA application. Python scripts are compiled to Java bytecode and
+executed in the same Java runtime environment in which openLCA runs. This allows the scripts to
+directly access and interact with openLCA’s internal resources—such as the user interface, the
+current database connection, and other Java components.
 
 It’s ideal for small tasks, data extraction, custom calculations, or batch modifications within the
 openLCA GUI. Since Jython runs inside openLCA, you have access to internal variables like the
@@ -28,13 +30,13 @@ You can also check out some examples on our
 
 ## Inter-process communication (IPC)
 
-The IPC (Inter-Process Communication) protocol allows you to control openLCA from an external script
-or application. This is especially useful for integrating LCA calculations into automated workflows,
-external tools, or larger systems. The IPC protocol is language-agnostic and can be used by any
-application written in any programming language (e.g. Python, JavaScript/TypeScript, .Net, Go,
-etc.).
+The openLCA IPC (Inter-process communication) protocol allows you to control openLCA from an
+external script or application. This is especially useful for integrating LCA calculations into
+automated workflows, external tools, or larger systems. The IPC protocol is language-agnostic and
+can be used by any application written in any programming language (e.g. Python,
+JavaScript/TypeScript, .Net, Go, etc.).
 
-This protocol is provided by an openLCA server, which can either be a running instance of the
+This protocol is provided by an openLCA IPC server, which can either be a running instance of the
 desktop application or a web server with an openLCA back-end. An application can connect to such an
 IPC server to call functions in openLCA, perform calculations, or interact with the database
 remotely.
@@ -53,21 +55,25 @@ openLCA or from an external environment, the level of integration needed, and ho
 set up.
 
 To help you decide, we've created a comparison table that highlights the key differences between the
-different approaches:
+different approaches.
 
-|                                                                            | openLCA          | Jython       | IPC               |
-| -------------------------------------------------------------------------- | ---------------- | ------------ | ----------------- |
-| Can I use this without writing any code?                                   | ✅ Yes           | ❌ No        | ❌ No             |
-| Can I use it directly inside the openLCA desktop application?              | ✅ Obviously     | ✅ Yes       | ⚠️ Only as server |
-| Can I automate repetitive tasks inside openLCA?                            | ❌ No            | ✅ Yes       | ✅ Yes            |
-| Can I import data from Excel files (e.g. `.xlsx`) programmatically?        | ⚠️ Manual via UI | ✅ Yes       | ✅ Yes            |
-| Can I export data or results to Excel automatically?                       | ⚠️ Manual via UI | ✅ Yes       | ✅ Yes            |
-| Can I generate custom reports (e.g. Excel summaries, Word reports, etc.)?  | ❌ No            | ✅ Yes       | ✅ Yes            |
-| Can I create/modify processes, flows programmatically without persisting?  | ❌ No            | ✅ Yes       | ✅ Yes            |
-| Can I run SQL commands directly on the openLCA database?                   | ❌ No            | ✅ Yes       | ❌ No             |
-| Can I use modern Python libraries like `NumPy`, `SciPy`, `pandas`?         | ❌ No            | ❌ No        | ✅ Yes            |
-| Can I run scripts from outside openLCA (e.g. from VS Code)?                | ❌ No            | ❌ No        | ✅ Yes            |
-| Can I integrate openLCA with other tools or workflows (e.g. REST APIs)?    | ❌ No            | ⚠️ Difficult | ✅ Yes            |
-| Can I schedule calculations or run them in the cloud?                      | ❌ No            | ❌ No        | ✅ Yes            |
-| Can I use it with other languages than Python (e.g. JavaScript, Go, .NET)? | ❌ No            | ❌ No        | ✅ Yes            |
-| Does it integrate autocompletion and type annotations?                     | ❌ No            | ❌ No        | ✅ Yes            |
+|                                                                            | Jython       | IPC               |
+| -------------------------------------------------------------------------- | ------------ | ----------------- |
+| Can I use this without writing any code?                                   | ❌ No        | ❌ No             |
+| Can I use it directly inside the openLCA desktop application?              | ✅ Yes       | ⚠️ Only as server |
+| Can I automate repetitive tasks inside openLCA?                            | ✅ Yes       | ✅ Yes            |
+| Can I import data from Excel files (e.g. `.xlsx`) programmatically?        | ✅ Yes       | ✅ Yes            |
+| Can I export data or results to Excel automatically?                       | ✅ Yes       | ✅ Yes            |
+| Can I generate custom reports (e.g. Excel summaries, Word reports, etc.)?  | ✅ Yes       | ✅ Yes            |
+| Can I create/modify processes, flows programmatically without persisting?  | ✅ Yes       | ✅ Yes            |
+| Can I run SQL commands directly on the openLCA database?                   | ✅ Yes       | ❌ No             |
+| Can I use modern Python libraries like `NumPy`, `SciPy`, `pandas`?         | ❌ No        | ✅ Yes            |
+| Can I run scripts from outside openLCA (e.g. from VS Code)?                | ⚠️ Difficult | ✅ Yes            |
+| Can I integrate openLCA with other tools or workflows (e.g. REST APIs)?    | ⚠️ Difficult | ✅ Yes            |
+| Can I schedule calculations or run them in the cloud?                      | ❌ No        | ✅ Yes            |
+| Can I use it with other languages than Python (e.g. JavaScript, Go, .NET)? | ❌ No        | ✅ Yes            |
+| Does it integrate autocompletion and type annotations?                     | ⚠️ Difficult | ✅ Yes            |
+
+> **_NOTE:_** Some of the features above can also be done in openLCA without the need for any
+> additional scripting. For example, you can use the openLCA GUI to import and export data from/to
+> Excel files or run SQL commands directly on the database.
