@@ -41,10 +41,13 @@ The allocation factors for physical, causal and economic allocation can be viewe
 
 - In the case of economic allocation, we assume a revenue of 1$/kg for wood and 0.4$/kg for bark.
 
+_**Important:**_ openLCA does not automatically update the allocation factors prior calculation of a product system. Hence, it always uses the last saved allocation factors. So, if you work with allocation in your study, make sure that the allocation factors are in the most recent state prior to creating a product system.
+
+
 ![](./media/allocation_example_calculated_factors.png)
 <br>_Calculated allocation factors. Causal allocation has to be inserted manually, else it will by default get the physical allocation factors._
 
-_**Note:**_ For allocation to work, the main product and the by-products need to have the same flow property.
+_**Note:**_ For allocation to work, the main product and the by-products need to have the same flow property. But openLCA will tell you if this is not the case.
 
 _**Note:**_ When a currency is unavailable, a new currency can be created under "Currencies" under the "Background data" in the Navigation plane. A conversion factor can be added according to whatever reference currency is set.
 
