@@ -41,10 +41,13 @@ The allocation factors for physical, causal and economic allocation can be viewe
 
 - In the case of economic allocation, we assume a revenue of 1$/kg for wood and 0.4$/kg for bark.
 
+_**Important:**_ openLCA does not automatically update the allocation factors prior calculation of a product system. Hence, it always uses the last saved allocation factors. So, if you work with allocation in your study, make sure that the allocation factors are in the most recent state prior to creating a product system.
+
+
 ![](./media/allocation_example_calculated_factors.png)
 <br>_Calculated allocation factors. Causal allocation has to be inserted manually, else it will by default get the physical allocation factors._
 
-_**Note:**_ For allocation to work, the main product and the by-products need to have the same flow property.
+_**Note:**_ For allocation to work, the main product and the by-products need to have the same flow property. But openLCA will tell you if this is not the case.
 
 _**Note:**_ When a currency is unavailable, a new currency can be created under "Currencies" under the "Background data" in the Navigation plane. A conversion factor can be added according to whatever reference currency is set.
 
@@ -62,16 +65,25 @@ _**Note:**_ Here we allocated 50% of the impacts to the recyclate and the waste.
 
 ### System Expansion
 
-Applying system expansion means that the process you are modeling is credited with the impact that is avoided by supplying the by-product. For example: if a process produces electricity and has heat as a by-product, it can be credited with the load that would appear if this heat was supplied from elsewhere. In openLCA, this can be performed by checking the box of "Avoided product" for the by-product.
+Another way to address multi-output product systems is via System Expansion. In system expansion, the inventory associated with the production of a by-product is subtracted from the total inventory of the multi-output product system. This “avoided impact” is calculated based on an additional, single-output product system that “expands” the system boundaries. 
+
+According to ISO 14044, system expansion should be the preferred approach for handling multi-output processes, as it avoids allocation by accounting for the impacts that would be generated if the by-product were produced by an alternative process.
+
+![](./media/allocation_vs_se.png)
+<br>_Expanding the system boundaries to subtract the impact of a by-product from the product system_
+
+For example, if a process produces electricity and heat (such as in a co-generation setup), and you want to isolate the impacts of producing the electricity, the heat can be treated as an avoided product. This means that the environmental impact of producing the same amount of heat via another process (e.g., “Heat, gas heating”) is subtracted from the total impacts of the co-generation system. Effectively, the modeled system is "credited" for offsetting that external heat production.
+
+In openLCA, system expansion can be implemented by checking the “Avoided product” box for the by-product as seen below:
 
 ![](./media/avoided_example_check.png)
 <br>_Avoided product check box highlighted in the Inputs/Outputs tab_
 
-It is important that a process providing the avoided product flow exists. This provider then occurs in the "[Model graph](./prod_sys/model_graph.md)" when creating the "[Product system](./prod_sys/Creating.md)", but as a supplier of the output side of our example process.
+It is important that a process providing the avoided product flow exists in the database. When creating the [Product system](./prod_sys/Creating.md), this provider will appear in the [Model graph](./prod_sys/model_graph.md) as a supplier on the output side of the original process.
 
 ![](./media/avoided_example_model_graph.png)
-<br>_The model graph where heat is accounted for as avoided and has a respective provider besides it is an output of the process_
+<br>_The model graph showing heat as an avoided product, with a respective provider for the output_
 
-Note that the flow which is avoided is displayed in the process but also in the product system italic. In complex models this can help you to differentiate between common flows and avoided flows.
+>**_Note_**: In the model graph, avoided flows are displayed in *italics*, making it easier to distinguish them from regular flows, especially in more complex systems.
 
 </div>

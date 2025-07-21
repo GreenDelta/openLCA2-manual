@@ -14,10 +14,12 @@ You can search the library by "EPD", "impact category", and more.
 
 ![](../media/soda4lca_3.png)
 
-With an active database, it's possible, then, to import the results by right-clicking on the desired entry and selecting "import selected". 
+With an active database, it's possible, then, to import the results by right-clicking on the desired entry and selecting "import selected". To ensure a smooth integration of the EPD in your database, make sure that you use an EN15804-compatible database like the [EN15804 version of ecoinvent](https://nexus.openlca.org/database/EN15804%20add-on). If your active database does not hold the required impact methods, as in the EN15804 version, openLCA might download them from the respective soda4LCA node, which will take time.
+
 
 ![](../media/soda4lca_4.png)
 
+ 
 If you have imported an EPD, it shall appear under the "EPD" folder in the working database. If you have imported an impact category, it shall appear under the "impact categories" folder and so on. To integrate results of EPD into the product system, please refer to ["Using results of EPDs in the product systems"](./life_cycle_models.md) section. Make sure that you use the same impact method to calculate impacts as it had been used to generate the EPD. Otherwise the impacts of the EPD will not be taken into account.
 
 **Tip**: When importing an EPD result to include it in your product system in openLCA, make sure there is a product flow set as the quantitative reference under Inventory result → Outputs (as shown below). If no product flow was available, you can simply create a new one, add it to the outputs, and set it as the quantitative reference. This ensures the EPD integrates correctly into your system model.
