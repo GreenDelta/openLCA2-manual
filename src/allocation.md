@@ -65,16 +65,20 @@ _**Note:**_ Here we allocated 50% of the impacts to the recyclate and the waste.
 
 ### System Expansion
 
-Applying system expansion means that the process you are modeling is credited with the impact that is avoided by supplying the by-product. For example: if a process produces electricity and has heat as a by-product, it can be credited with the load that would appear if this heat was supplied from elsewhere. In openLCA, this can be performed by checking the box of "Avoided product" for the by-product.
+System Expansion is a method used in life cycle modeling to account for multiple outputs of a process as an alternative to allocation. Instead of allocating environmental burdens between outputs, system expansion gives credit to the process for avoiding the impacts of producing one of the by-products somewhere else.
+
+For example, if a process produces electricity and heat (such as in a co-generation setup), and you want to focus on the electricity, the heat can be treated as an avoided product. This means the environmental impact of producing the same amount of heat via another process (e.g., “Heat, gas heating”) is subtracted from the total impacts of the co-generation system. Effectively, the modeled system is "credited" for offsetting that external heat production.
+
+In openLCA, this can be implemented by checking the “Avoided product” box for the by-product.
 
 ![](./media/avoided_example_check.png)
 <br>_Avoided product check box highlighted in the Inputs/Outputs tab_
 
-It is important that a process providing the avoided product flow exists. This provider then occurs in the "[Model graph](./prod_sys/model_graph.md)" when creating the "[Product system](./prod_sys/Creating.md)", but as a supplier of the output side of our example process.
+It is important that a process providing the avoided product flow exists in the database. When creating the [Product system](./prod_sys/Creating.md), this provider will appear in the [Model graph](./prod_sys/model_graph.md) as a supplier on the output side of the original process.
 
 ![](./media/avoided_example_model_graph.png)
-<br>_The model graph where heat is accounted for as avoided and has a respective provider besides it is an output of the process_
+<br>_The model graph showing heat as an avoided product, with a respective provider for the output_
 
-Note that the flow which is avoided is displayed in the process but also in the product system italic. In complex models this can help you to differentiate between common flows and avoided flows.
+>**_Note_**: In the model graph, avoided flows are displayed in *italics*, making it easier to distinguish them from regular flows, especially in more complex systems.
 
 </div>
