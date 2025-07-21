@@ -67,7 +67,7 @@ _**Note:**_ Here we allocated 50% of the impacts to the recyclate and the waste.
 
 Another way to address multi-output product systems is via System Expansion. In system expansion, the inventory associated with the production of a by-product is subtracted from the total inventory of the multi-output product system. This “avoided impact” is calculated based on an additional, single-output product system that “expands” the system boundaries. 
 
-According to ISO 14044, system expansion should be the preferred approach for handling multi-output processes, as it avoids allocation by accounting for the avoided impacts of by-products.
+According to ISO 14044, system expansion should be the preferred approach for handling multi-output processes, as it avoids allocation by accounting for the impacts that would be generated if the by-product were produced by an alternative process.
 
 ![](./media/allocation_vs_se.png)
 <br>_Expanding the system boundaries to subtract the impact of a by-product from the product system_
