@@ -65,7 +65,7 @@ _**Note:**_ Here we allocated 50% of the impacts to the recyclate and the waste.
 
 ### System Expansion
 
-System Expansion is a method used in life cycle modeling to account for multiple outputs of a process as an alternative to allocation. Instead of allocating environmental burdens between outputs, system expansion gives credit to the process for avoiding the impacts of producing one of the by-products somewhere else.
+System Expansion is a method used in life cycle modeling to account for multiple outputs of a process as described in ISO14040/44. Instead of allocating environmental burdens between outputs, system expansion gives credit to the process for avoiding the impacts of producing one of the by-products somewhere else.
 
 For example, if a process produces electricity and heat (such as in a co-generation setup), and you want to focus on the electricity, the heat can be treated as an avoided product. This means the environmental impact of producing the same amount of heat via another process (e.g., “Heat, gas heating”) is subtracted from the total impacts of the co-generation system. Effectively, the modeled system is "credited" for offsetting that external heat production.
 
