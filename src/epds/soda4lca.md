@@ -14,7 +14,7 @@ You can search the library by "EPD", "impact category", and more.
 
 ![](../media/soda4lca_3.png)
 
-With an active database, it's possible, then, to import the results by right-clicking on the desired entry and selecting "import selected". 
+With an active database, it's possible, then, to import the results by right-clicking on the desired entry and selecting "import selected". To ensure an smooth integration of the EPD in your database make sure that you use a EN15804-compatible database like the [EN15804 version of ecoinvent](https://nexus.openlca.org/database/EN15804%20add-on). 
 
 ![](../media/soda4lca_4.png)
 
