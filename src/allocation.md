@@ -65,9 +65,14 @@ _**Note:**_ Here we allocated 50% of the impacts to the recyclate and the waste.
 
 ### System Expansion
 
-As outlined in ISO 14044, system expansion avoids allocation by including a functionally equivalent product system within the system boundary, which is assumed to be replaced by the co-product. Rather than dividing environmental burdens among all products, system expansion allows for isolating the inputs and outputs of the main product by treating the by-products as avoided.
+In system expansion, the impacts associated with the production of a by-product are subtracted from the total impacts of the multi-output product system. This “avoided impact” is calculated based on an additional, single-output product system that “expands” the system boundaries. 
+
+![](./media/allocation_vs_se.png)
+<br>_Expanding the system boundaries to subtract the impact of a by-product from the product system_
 
 For example, if a process produces electricity and heat (such as in a co-generation setup), and you want to isolate the burdens of producing the electricity, the heat can be treated as an avoided product. Technically, this means the environmental impact of producing the same amount of heat via another process (e.g., “Heat, gas heating”) is subtracted from the total impacts of the co-generation system. Effectively, the modeled system is "credited" for offsetting that external heat production.
+
+According to ISO 14044, system expansion should be the preferred approach for handling multi-output processes, as it avoids allocation by accounting for the avoided impacts of substituted products.
 
 In openLCA, this can be implemented by checking the “Avoided product” box for the by-product.
 
