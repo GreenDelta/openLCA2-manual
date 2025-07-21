@@ -65,7 +65,7 @@ _**Note:**_ Here we allocated 50% of the impacts to the recyclate and the waste.
 
 ### System Expansion
 
-In system expansion, the impacts associated with the production of a by-product are subtracted from the total impacts of the multi-output product system. This “avoided impact” is calculated based on an additional, single-output product system that “expands” the system boundaries. 
+In system expansion, the inventory associated with the production of a by-product is subtracted from the total inventory of the multi-output product system. This “avoided product” is calculated based on an additional, single-output product system that “expands” the system boundaries. 
 
 ![](./media/allocation_vs_se.png)
 <br>_Expanding the system boundaries to subtract the impact of a by-product from the product system_
