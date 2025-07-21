@@ -65,9 +65,9 @@ _**Note:**_ Here we allocated 50% of the impacts to the recyclate and the waste.
 
 ### System Expansion
 
-System Expansion is a method used in life cycle modeling to account for multiple outputs of a process as described in ISO14040/44. Instead of allocating environmental burdens between outputs, system expansion gives credit to the process for avoiding the impacts of producing one of the by-products somewhere else.
+As outlined in ISO 14044, system expansion avoids allocation by including a functionally equivalent product system within the system boundary, which is assumed to be replaced by the co-product. Rather than dividing environmental burdens among all products, system expansion allows for isolating the inputs and outputs of the main product by treating the by-products as avoided.
 
-For example, if a process produces electricity and heat (such as in a co-generation setup), and you want to focus on the electricity, the heat can be treated as an avoided product. This means the environmental impact of producing the same amount of heat via another process (e.g., “Heat, gas heating”) is subtracted from the total impacts of the co-generation system. Effectively, the modeled system is "credited" for offsetting that external heat production.
+For example, if a process produces electricity and heat (such as in a co-generation setup), and you want to isolate the burdens of producing the electricity, the heat can be treated as an avoided product. Technically, this means the environmental impact of producing the same amount of heat via another process (e.g., “Heat, gas heating”) is subtracted from the total impacts of the co-generation system. Effectively, the modeled system is "credited" for offsetting that external heat production.
 
 In openLCA, this can be implemented by checking the “Avoided product” box for the by-product.
 
