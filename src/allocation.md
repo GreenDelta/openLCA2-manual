@@ -65,16 +65,16 @@ _**Note:**_ Here we allocated 50% of the impacts to the recyclate and the waste.
 
 ### System Expansion
 
-In system expansion, the inventory associated with the production of a by-product is subtracted from the total inventory of the multi-output product system. This “avoided product” is calculated based on an additional, single-output product system that “expands” the system boundaries. 
+Another way to address multi-output product systems is via System Expansion. In system expansion, the inventory associated with the production of a by-product is subtracted from the total inventory of the multi-output product system. This “avoided impact” is calculated based on an additional, single-output product system that “expands” the system boundaries. 
+
+According to ISO 14044, system expansion should be the preferred approach for handling multi-output processes, as it avoids allocation by accounting for the avoided impacts of by-products.
 
 ![](./media/allocation_vs_se.png)
 <br>_Expanding the system boundaries to subtract the impact of a by-product from the product system_
 
-For example, if a process produces electricity and heat (such as in a co-generation setup), and you want to isolate the burdens of producing the electricity, the heat can be treated as an avoided product. Technically, this means the environmental impact of producing the same amount of heat via another process (e.g., “Heat, gas heating”) is subtracted from the total impacts of the co-generation system. Effectively, the modeled system is "credited" for offsetting that external heat production.
+For example, if a process produces electricity and heat (such as in a co-generation setup), and you want to isolate the impacts of producing the electricity, the heat can be treated as an avoided product. This means that the environmental impact of producing the same amount of heat via another process (e.g., “Heat, gas heating”) is subtracted from the total impacts of the co-generation system. Effectively, the modeled system is "credited" for offsetting that external heat production.
 
-According to ISO 14044, system expansion should be the preferred approach for handling multi-output processes, as it avoids allocation by accounting for the avoided impacts of substituted products.
-
-In openLCA, this can be implemented by checking the “Avoided product” box for the by-product.
+In openLCA, system expansion can be implemented by checking the “Avoided product” box for the by-product as seen below:
 
 ![](./media/avoided_example_check.png)
 <br>_Avoided product check box highlighted in the Inputs/Outputs tab_
