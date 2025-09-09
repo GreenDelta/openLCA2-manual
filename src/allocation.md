@@ -22,7 +22,7 @@ Moreover, we also provide the following technical solutions:
 
 - **None**: if none is selected, no allocation will be applied, even for multifunctional processes. Hence, each product of a process gets the entire impacts of this process and its supply chain.
 
-Below is an example illustrating how the three different methods are applied in openLCA. In this example, 1 kg of wood and 0.3 kg of bark are produced from 1 kg of saw log (measured as solid wood under bark).
+Below is an example illustrating how the three different methods are applied in openLCA. In this example, 1.0 kg of wood and 0.3 kg of bark are produced from 1.0 kg of saw log (measured as solid wood under bark).
 
 ![](./media/allocation_example_inputs_outputs.png)
 <br>_Inputs and Outputs for our example, note that economic properties have been added_
@@ -35,21 +35,21 @@ The allocation factors for physical, causal and economic allocation can be viewe
 ![](./media/allocation_example_calculation_tab.png)
 <br>_Calculate factors_
 
-- The physical allocation factors are calculated based on the ratio between the products (wood and bark) physical unit. Since the output of wood and bark is 1 kg and 0.3 kg respectively, the allocation factors become 0.77 and 0.23.
+- The physical allocation factors are calculated based on the ratio between the products (wood and bark) physical unit. Since the output of wood and bark is 1.0 kg and 0.3 kg respectively, the allocation factors become 0.77 and 0.23.
 
 - For causal allocation an assumed ratio can be inserted. In this example, we assume that the wood is responsible for 60% of the impacts, whereas bark is responsible for 40%. 
 
-- In the case of economic allocation, we assume a revenue of 1$/kg for wood and 0.4$/kg for bark.
+- In the case of economic allocation, we assume a revenue of 1.0$/kg for wood and 0.4$/kg for bark.
 
-_**Important:**_ openLCA does not automatically update the allocation factors prior calculation of a product system. Hence, it always uses the last saved allocation factors. So, if you work with allocation in your study, make sure that the allocation factors are in the most recent state prior to creating a product system.
+_**Important:**_ openLCA does not automatically update the allocation factors prior calculation of a product system. Hence, it always uses the last saved allocation factors. So, if you work with allocation in your study, make sure that the allocation factors are in the most recent state prior to creating a product system. However, it is possible to use [Parameters](./parameters/parameters.md) and [Formulas](./cheat/formulas_in_openlca.md) in allocation factors, which are updated during the calculation of the respective product system.
 
 
 ![](./media/allocation_example_calculated_factors.png)
 <br>_Calculated allocation factors. Causal allocation has to be inserted manually, else it will by default get the physical allocation factors._
 
-_**Note:**_ For allocation to work, the main product and the by-products need to have the same flow property. But openLCA will tell you if this is not the case.
+_**Note:**_ For the automated calculation of the allocation factors, the main product and the by-products need to have the same flow property. But openLCA will tell you if this is not the case. However, if you manually fill in the allocation factors (physical, economic or causal) or formulas, openLCA will refer to those.
 
-_**Note:**_ When a currency is unavailable, a new currency can be created under "Currencies" under the "Background data" in the Navigation plane. A conversion factor can be added according to whatever reference currency is set.
+_**Note:**_ When a currency is unavailable, a new currency can be created under "Currencies" under the "Background data" in the Navigation panel. A conversion factor can be added according to whatever reference currency is set.
 
 #### Allocation for Recycling
 
@@ -65,9 +65,9 @@ _**Note:**_ Here we allocated 50% of the impacts to the recyclate and the waste.
 
 ### System Expansion
 
-Another way to address multi-output product systems is via System Expansion. In system expansion, the inventory associated with the production of a by-product is subtracted from the total inventory of the multi-output product system. This “avoided impact” is calculated based on an additional, single-output product system that “expands” the system boundaries. 
+Another way to address multi-output product systems is through System Expansion. In system expansion, the inventory associated with the production of a by-product is subtracted from the total inventory of the multi-output product system. This “avoided impact” is calculated based on an additional, single-output product system that “expands” the system boundaries. 
 
-According to ISO 14044, system expansion should be the preferred approach for handling multi-output processes, as it avoids allocation by accounting for the impacts that would be generated if the by-product were produced by an alternative process.
+According to ISO 14044, system expansion should be the preferred approach for handling multi-output processes, as it avoids allocation by accounting for the impacts that would be generated if an alternative process supplied the by-product.
 
 ![](./media/allocation_vs_se.png)
 <br>_Expanding the system boundaries to subtract the impact of a by-product from the product system_

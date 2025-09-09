@@ -2,7 +2,7 @@
 
 <div style="text-align: justify;">
 
-With openLCA v2.2, you can now access a wide range of ILCD nodes through the soda4LCA tool. This includes also various EPD-focused nodes, e.g. International EPD, ÖKOBAUDAT... The soda4LCA tool can be accessed by going to Tools > soda4LCA as seen below:
+With openLCA v2.2, you can now access a wide range of ILCD nodes through the soda4LCA tool. This also includes various EPD-focused nodes, e.g. International EPD, ÖKOBAUDAT... The soda4LCA tool can be accessed by going to Tools > soda4LCA as seen below:
 
 ![](../media/soda4lca_1.png)
 
@@ -14,7 +14,7 @@ You can search the library by "EPD", "impact category", and more.
 
 ![](../media/soda4lca_3.png)
 
-With an active database, it's possible, then, to import the results by right-clicking on the desired entry and selecting "import selected". To ensure a smooth integration of the EPD in your database, make sure that you use an EN15804-compatible database like the [EN15804 version of ecoinvent](https://nexus.openlca.org/database/EN15804%20add-on). If your active database does not hold the required impact methods, as in the EN15804 version, openLCA might download them from the respective soda4LCA node, which will take time.
+With an active database, it's possible, then, to import the results by right-clicking on the desired entry and selecting "import selected". To ensure a smooth integration of the EPD in your database, make sure that you use an EN15804-compatible database like the [EN15804 version of ecoinvent](https://nexus.openlca.org/database/EN15804%20add-on) or the EN15804-compatible method package, which is available for free on the same page. If your active database does not hold the required impact methods, e.g. as in the EN15804 version, openLCA might download them from the respective soda4LCA node, which will take time. Further, this can lead to corrupted EPDs in openLCA, as not all soda4LCA instances contain the referenced indicators and flows.
 
 
 ![](../media/soda4lca_4.png)
