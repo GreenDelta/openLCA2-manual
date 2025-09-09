@@ -4,6 +4,7 @@ In this section, you can check what the major manual updates were about and when
 
 ## 09.09.2025
 
+- Updated [Using results of EPDs in the product system](./epds/life_cycle_models.md)
 - Minor updates
 
 ## 21.07.2025
