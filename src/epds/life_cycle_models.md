@@ -6,7 +6,7 @@ To connect EPD results to your product system, this can be done in two ways (1) 
 
 ## Method 1: On process level
 
-In openLCA v2.5.0, within the process, add the product flow corresponding to the EPD result as an input.
+In openLCA v2.5.0, within the process, you can add the product flow corresponding to the EPD result as an input.
 Then, as usual, use the provider dropdown to select the appropriate module (i.e., the process or result) you want to link to your system.
 
 ![](../media/epd_res_in_prod_sys_1.png)
@@ -17,7 +17,7 @@ Then, as usual, use the provider dropdown to select the appropriate module (i.e.
 
 ![](../media/epd_res_in_prod_sys_3.png)
 
-_**Important**_: Make sure that the results you connect it to are holding the same impact assessment categories from a method you will use later for your impact assessment. If you choose another method, **those results will not be taken into account** (e.g. only EF 3.1 LCIA results can be used together with the EF 3.1 method; using TRACI will not take those results into account as the UUIDs of the categories are not matching). You can add categories from more than one impact method and fill the LCIA results manually to prevent this (e.g. full sets of impact categories for both EF 3.1 and TRACI). However, it is not required to fulfill this criterion when the result contains the inventory results, and **it will calculate the impacts from these inventory result** in that case. In case LCIA results and inventory results are present, openLCA will use the inventory results in all cases over the LCIA results, independent of the chosen impact assessment method.
+_**Important**_: Make sure that the results you connect are holding the same impact assessment categories of the method you plan to use later for your impact assessment. If you choose another method, **those results will not be taken into account** (e.g. only EF 3.1 LCIA results can be used together with the EF 3.1 method; using TRACI will not take those results into account as the UUIDs of the categories do not match). You can, however, add categories from multiple impact methods and manually fill in the LCIA results to prevent issues (e.g. full sets of impact categories for both EF 3.1 and TRACI). This step is optional if the result already contains the inventory results, and **it will calculate the impacts from these inventory result** in that case. If both LCIA results and inventory results are available, openLCA will always prioritize the inventory results, regardless of the chosen impact assessment method.
 
 ## Method 2: via modal graph edit mode
 
