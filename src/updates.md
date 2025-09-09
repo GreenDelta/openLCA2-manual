@@ -2,6 +2,10 @@
 
 In this section, you can check what the major manual updates were about and when they were released.
 
+## 09.09.2025
+
+- Minor updates
+
 ## 21.07.2025
 
 - Clarification on the wording for system expansion in the [allocation](./allocation.md) chapter.
