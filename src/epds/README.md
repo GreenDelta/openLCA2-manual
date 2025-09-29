@@ -10,7 +10,7 @@ In brief, openLCA allows users to perform versatility of functions that makes it
 
 ![](../media/epd2.png)
 
-Users are always recommended to download and use the recent version of the [EN15804 add-on for ecoinvent](https://nexus.openlca.org/database/EN15804%20add-on), created by GreenDelta GmbH in accordance with the EN15804 norm, and read the release notes, especially to note changes on the impact method calculations.  
+Users are always recommended to download and use the recent version of the [EN15804+A2 add-on](https://nexus.openlca.org/database/EN15804%20add-on), created by GreenDelta GmbH in accordance with the EN15804 norm, and read the release notes, especially to note changes on the impact method calculations.  
 
 ![](../media/epd_intro.png)
 
