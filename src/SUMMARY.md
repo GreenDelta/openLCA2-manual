@@ -119,7 +119,7 @@
   - [Calculate the impact assessment](epds/calculate_impact_assessment.md)
   - [Save your results](epds/save_results.md)
   - [Creating EPDs in openLCA](epds/creating_epd_olca.md)
-  - [Adding EPD results from various sources](epds/adding_results_3rd_sources.md)
+  - [Importing EPD results from various sources](epds/adding_results_3rd_sources.md)
   - [Get EPDs from EC3](epds/ec3.md)
   - [Using results of EPDs in life cycle models](epds/life_cycle_models.md)
   - [Using soda4LCA](epds/soda4lca.md)
