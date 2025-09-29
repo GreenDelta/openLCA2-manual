@@ -1,4 +1,4 @@
-# Adding EPD results from various sources
+# Importing EPD results from various sources
 
 <div style='text-align: justify;'>
 
