@@ -87,4 +87,4 @@ openLCA offers the option for users to access and edit the database directly via
 However, an Apache Derby database engine is used. As such, SQL queries you write must be valid according to Derby’s SQL syntax. Some features or functions that exist in other databases may not be available or may require different syntax.
 
 
-**_NOTE:_** Don't try to open an active database with external SQL clients. Importantly, when adding new database elements, the SEQ_COUNT of the database needs to be updated to reflect the number of elements added. This could be solved through simple queries like (for an example of adding 20 new elements): UPDATE SEQUENCE SET SEQ_COUNT = SEQ_COUNT + 20
+>**_Note:_** Don't try to open an active database with external SQL clients. Importantly, when adding new database elements, the SEQ_COUNT of the database needs to be updated to reflect the number of elements added. This could be solved through simple queries like (for an example of adding 20 new elements): UPDATE SEQUENCE SET SEQ_COUNT = SEQ_COUNT + 20
