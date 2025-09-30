@@ -2,11 +2,12 @@
 
 In this section, you can check what the major manual updates were about and when they were released.
 
-## 10.2025
+## 30.09.2025
 
-- Updated and reorganized [EPDs](./epds/index.md) section
-- Created section [Uploading EPDs on SmartEPD](./epds/smartepd.md)
-- Added SQL paragraph to [Scripting in openLCA](./scripting/index.md) section 
+- Updated and reorganized [EPDs](./epds/index.md) chapter
+- Created [Uploading EPDs on SmartEPD](./epds/smartepd.md) section
+- Created [Modelling with time parameter](./advanced_top/time.md) section
+- Added SQL paragraph to [Scripting in openLCA](./scripting/index.md) chapter 
 - [Impact assessment category tab contents](./lcia_methods/impact_methods_tab_contents.md) section reorganized
 
 ## 09.09.2025
