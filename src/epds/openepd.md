@@ -5,7 +5,7 @@
 With openLCA 2 it is now possible to download or upload EPDs to EC3 (Embodied Carbon in Construction Calculator) 
 by [Building Transparency](<https://www.buildingtransparency.org/>); requires access (account) to the respective OpenEPD API.
 
-To access the EC3 with openLCA, open under Tools &#8594; Get EPDs from EC3. The following window will open:
+To access the EC3 with openLCA, go to  under Tools → API Clients → Get EPDs from EC3. The following window will appear:
 
 ![](../media/ec3_login.png)  
 

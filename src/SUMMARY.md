@@ -125,6 +125,7 @@
     - [Import EPDs from openEPD](epds/openepd.md)
     - [Using ILCD import](epds/epds_ilcd.md)
   - [Using results of EPDs in life cycle models](epds/life_cycle_models.md)
+  - [Uploading EPDs on SmartEPD](epds/smartepd.md)
 - [Libraries](libraries/README.md)
   - [Adding a library to a database](libraries/adding_library_database.md)
   - [Exporting a database as a library](libraries/exporting_database_as_library.md)

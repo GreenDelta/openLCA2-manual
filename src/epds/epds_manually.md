@@ -2,7 +2,7 @@
 
 ## Adding EPDs manually
 
-1.	To do so, you need to create a custom set of results by clicking on the "Results folder" and then "New results". It will create a template that needs to be filled with additional information. 
+1.	To do so, you need to create a custom set of results by right-clicking on the "Results folder" and then "New results". In the pop-up box, insert the name of the life cycle module.
 
     ![](../media/epd_creation_results.png)
     _Creation of the result example_
