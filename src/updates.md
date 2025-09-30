@@ -4,7 +4,8 @@ In this section, you can check what the major manual updates were about and when
 
 ## 10.2025
 
-- Updated [EPDs](./epds/README.md) section
+- Updated and reorganized [EPDs](./epds/README.md) section
+- Created section [Uploading EPDs on SmartEPD](./epds/smartepd.md)
 
 ## 09.09.2025
 
