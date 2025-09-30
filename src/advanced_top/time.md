@@ -1,6 +1,6 @@
 <div style='text-align: justify;'>
 
-# Modelling with time parameter
+# Impact analysis with a time parameter
 
 Under Tools → Parameter analysis is a feature that allows you to change given parameter variable(s) across different iterations.
 
