@@ -7,6 +7,8 @@ life cycle data into external tools or workflows. There are two main approaches 
 
 - Inter-process communication (IPC) using the openLCA IPC API
 
+- Using Structured Query Language (SQL) queries in openLCA
+
 Both approaches enable automation and interaction with openLCA models, but they differ significantly
 in how and where scripts are executed, their use cases, and their limitations.
 
@@ -62,10 +64,10 @@ different approaches.
 | Can I use this without writing any code?                                   | ❌ No        | ❌ No             | ❌ No            |
 | Can I use it directly inside the openLCA desktop application?              | ✅ Yes       | ⚠️ Only as server |✅ Yes            |
 | Can I automate repetitive tasks inside openLCA?                            | ✅ Yes       | ✅ Yes            |✅ Yes            |
-| Can I import data from Excel files (e.g. `.xlsx`) programmatically?        | ✅ Yes       | ✅ Yes            |✅ Yes            |
+| Can I import data from Excel files (e.g. `.xlsx`) programmatically?        | ✅ Yes       | ✅ Yes            |❌ No             |
 | Can I export data or results to Excel automatically?                       | ✅ Yes       | ✅ Yes            | ⚠️ Difficult     |
 | Can I generate custom reports (e.g. Excel summaries, Word reports, etc.)?  | ✅ Yes       | ✅ Yes            |  ❌ No           |
-| Can I create/modify processes, flows programmatically without persisting?  | ✅ Yes       | ✅ Yes            |  ✅ Yes          |
+| Can I create/modify processes, flows programmatically without persisting?  | ✅ Yes       | ✅ Yes            |  ❌ No          |
 | Can I run SQL commands directly on the openLCA database?                   | ✅ Yes       | ❌ No             | ✅ Yes       |
 | Can I use modern Python libraries like `NumPy`, `SciPy`, `pandas`?         | ❌ No        | ✅ Yes            | ❌ No        |
 | Can I run scripts from outside openLCA (e.g. from VS Code)?                | ⚠️ Difficult | ✅ Yes            |  ✅ Yes            | 
