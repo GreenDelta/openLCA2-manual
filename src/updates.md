@@ -2,6 +2,10 @@
 
 In this section, you can check what the major manual updates were about and when they were released.
 
+## 10.2025
+
+- Updated [EPDs](./epds/README.md) section
+
 ## 09.09.2025
 
 - Updated [Using results of EPDs in the product system](./epds/life_cycle_models.md)

@@ -2,7 +2,7 @@
 
 This section summarises different ways to produce impact assessment results using EPD format. There are three different methods:
 
-- Calculate the results of a product system
+- Calculate the results of a product system (EPD Module)
 - Calculating the results using lifecycle stages as product systems
 - Calculating the results using projects
 
