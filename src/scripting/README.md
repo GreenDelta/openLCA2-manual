@@ -1,7 +1,7 @@
 # Scripting in openLCA
 
 openLCA provides powerful scripting capabilities to automate tasks, analyze models, and integrate
-life cycle data into external tools or workflows. There are the following approaches for scripting:
+life cycle data into external tools or workflows. There are two main approaches for scripting:
 
 - Jython (Python) scripting within the openLCA application itself
 
