@@ -6,6 +6,7 @@ In this section, you can check what the major manual updates were about and when
 
 - Updated and reorganized [EPDs](./epds/README.md) section
 - Created section [Uploading EPDs on SmartEPD](./epds/smartepd.md)
+- Added SQL paragraph to [Scripting in openLCA](./scripting/README.md) section 
 
 ## 09.09.2025
 
