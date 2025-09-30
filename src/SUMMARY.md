@@ -73,6 +73,7 @@
   - [Exporting/saving product systems](prod_sys/exporting.md)
 - [LCIA methods and categories](lcia_methods/README.md) - [Importing LCIA methods and categories into openLCA](lcia_methods/importing_lcia_methods.md) - [Creating a new impact assessment method, category and characterization factor](lcia_methods/creating_new_impact_assessment_method.md) - [Methods tabs](lcia_methods/impact_methods_tab_contents.md)
   - [Category tabs](lcia_methods/impact_categories_tab_contents.md)
+    - [General information (including impact direction)](lcia_methods/impcat_gen_info.md)
   - [Overview impact methods](lcia_methods/impact_methods_overview.md)
 - [Calculation and Result Analysis](res_analysis/README.md)
   - [Lazy vs Eager calculation](res_analysis/lazy_eager.md)
