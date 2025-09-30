@@ -20,5 +20,7 @@ The results will then appear in a table format for each impact category of the s
 
 ![](../media/parameter_analysis_4.png)
 
+You can check this topic in details in [Modelling with time paramenter section](../advanced_top/time.md)
+
 
 </div>

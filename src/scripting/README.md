@@ -57,23 +57,34 @@ set up.
 To help you decide, we've created a comparison table that highlights the key differences between the
 different approaches.
 
-|                                                                            | Jython       | IPC               |
-| -------------------------------------------------------------------------- | ------------ | ----------------- |
-| Can I use this without writing any code?                                   | ❌ No        | ❌ No             |
-| Can I use it directly inside the openLCA desktop application?              | ✅ Yes       | ⚠️ Only as server |
-| Can I automate repetitive tasks inside openLCA?                            | ✅ Yes       | ✅ Yes            |
-| Can I import data from Excel files (e.g. `.xlsx`) programmatically?        | ✅ Yes       | ✅ Yes            |
-| Can I export data or results to Excel automatically?                       | ✅ Yes       | ✅ Yes            |
-| Can I generate custom reports (e.g. Excel summaries, Word reports, etc.)?  | ✅ Yes       | ✅ Yes            |
-| Can I create/modify processes, flows programmatically without persisting?  | ✅ Yes       | ✅ Yes            |
-| Can I run SQL commands directly on the openLCA database?                   | ✅ Yes       | ❌ No             |
-| Can I use modern Python libraries like `NumPy`, `SciPy`, `pandas`?         | ❌ No        | ✅ Yes            |
-| Can I run scripts from outside openLCA (e.g. from VS Code)?                | ⚠️ Difficult | ✅ Yes            |
-| Can I integrate openLCA with other tools or workflows (e.g. REST APIs)?    | ⚠️ Difficult | ✅ Yes            |
-| Can I schedule calculations or run them in the cloud?                      | ❌ No        | ✅ Yes            |
-| Can I use it with other languages than Python (e.g. JavaScript, Go, .NET)? | ❌ No        | ✅ Yes            |
-| Does it integrate autocompletion and type annotations?                     | ⚠️ Difficult | ✅ Yes            |
+|                                                                            | Jython       | IPC               | SQL               |
+| -------------------------------------------------------------------------- | ------------ | ----------------- | ----------------- |
+| Can I use this without writing any code?                                   | ❌ No        | ❌ No             | ❌ No            |
+| Can I use it directly inside the openLCA desktop application?              | ✅ Yes       | ⚠️ Only as server |✅ Yes            |
+| Can I automate repetitive tasks inside openLCA?                            | ✅ Yes       | ✅ Yes            |✅ Yes            |
+| Can I import data from Excel files (e.g. `.xlsx`) programmatically?        | ✅ Yes       | ✅ Yes            |✅ Yes            |
+| Can I export data or results to Excel automatically?                       | ✅ Yes       | ✅ Yes            | ⚠️ Difficult     |
+| Can I generate custom reports (e.g. Excel summaries, Word reports, etc.)?  | ✅ Yes       | ✅ Yes            |  ❌ No           |
+| Can I create/modify processes, flows programmatically without persisting?  | ✅ Yes       | ✅ Yes            |  ✅ Yes          |
+| Can I run SQL commands directly on the openLCA database?                   | ✅ Yes       | ❌ No             | ✅ Yes       |
+| Can I use modern Python libraries like `NumPy`, `SciPy`, `pandas`?         | ❌ No        | ✅ Yes            | ❌ No        |
+| Can I run scripts from outside openLCA (e.g. from VS Code)?                | ⚠️ Difficult | ✅ Yes            |  ✅ Yes            | 
+| Can I integrate openLCA with other tools or workflows (e.g. REST APIs)?    | ⚠️ Difficult | ✅ Yes            | ⚠️ Difficult |
+| Can I schedule calculations or run them in the cloud?                      | ❌ No        | ✅ Yes            |  ❌ No        |
+| Can I use it with other languages than Python (e.g. JavaScript, Go, .NET)? | ❌ No        | ✅ Yes            | ❌ No        |
+| Does it integrate autocompletion and type annotations?                     | ⚠️ Difficult | ✅ Yes            | ❌ No        |
 
 > **_NOTE:_** Some of the features above can also be done in openLCA without the need for any
 > additional scripting. For example, you can use the openLCA GUI to import and export data from/to
 > Excel files or run SQL commands directly on the database.
+
+## SQL
+
+openLCA offers the option for users to access and edit the database directly via SQL queries, either from the integrated SQL Query Browser (Tools --> Developer Tools --> SQL) or by establishing a connection to external SQL clients. Through SQL, modellers can make mass changes to database elements, such as adding parameters, adding exchanges and editing processes, for instance. 
+
+![](../media/SQL_browser.png)  
+
+However, an Apache Derby database engine is used. As such, SQL queries you write must be valid according to Derby’s SQL syntax. Some features or functions that exist in other databases may not be available or may require different syntax.
+
+
+**_NOTE:_** Don't try to open an active database with external SQL clients. Importantly, when adding new database elements, the SEQ_COUNT of the database needs to be updated to reflect the number of elements added. This could be solved through simple queries like (for an example of adding 20 new elements): UPDATE SEQUENCE SET SEQ_COUNT = SEQ_COUNT + 20
