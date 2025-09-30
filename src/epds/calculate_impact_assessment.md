@@ -5,6 +5,7 @@ This section summarises different ways to produce impact assessment results usin
 - Calculate the results of a product system (EPD Module)
 - Calculating the results using lifecycle stages as product systems
 - Calculating the results using projects
+- Calculating results using Analysis group
 
 ## Calculate results of a single product system
 
