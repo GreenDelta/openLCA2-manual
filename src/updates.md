@@ -8,7 +8,7 @@ In this section, you can check what the major manual updates were about and when
 - Created [Uploading EPDs on SmartEPD](./epds/smartepd.md) section
 - Created [Modelling with time parameter](./advanced_top/time.md) section
 - Added SQL paragraph to [Scripting in openLCA](./scripting/index.md) chapter 
-- [Impact assessment category tab contents](./lcia_methods/impact_methods_tab_contents.md) section reorganized
+- [Impact assessment category tab contents](./lcia_methods/impact_categories_tab_contents.md) section reorganized
 
 ## 09.09.2025
 

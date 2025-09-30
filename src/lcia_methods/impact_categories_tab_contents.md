@@ -11,7 +11,7 @@ indicators" in the navigation.
 >_**Note**_: As LCIA categories in different LCIA methods
 often have the same name, there are also LCIA categories with the same name in
 this folder. This can be easily changed by giving these LCIA
-categories more descriptive names.>
+categories more descriptive names.
 
 ![](../media/lcia_category_window.png)  
 _LCIA category - General information tab_
