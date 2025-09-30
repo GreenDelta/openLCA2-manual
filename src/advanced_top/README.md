@@ -11,8 +11,10 @@ The follow topics will be covered:
 - [**Life Cycle Costing**](./LCC.md)
 - [**Data Quality**](./data_quality.md)
 - [**Social aspects**](./social_aspects.md)
+- [**Modelling with time parameter**](./time.md)
 
 
 _Take a look at our interactive forum [ask.openLCA](https://ask.openlca.org/) where you will find the latest user questions and our answers._
+
 
 </div>
