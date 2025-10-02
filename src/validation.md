@@ -23,23 +23,23 @@ Beyond highlighting contributors, openLCA also lets you probe the structure of t
 ![](./media/guidance_1.png)  
 ![](./media/guidance_2.png)  
 
-The respective inventory will display the amount of needed energy or transport over the whole supply chain as the processes have been removed from the whole supply chain.
+The respective inventory will display the amount of needed energy or transport over the whole supply chain, as the processes have been removed from the whole supply chain.
 
 ![](./media/guidance_3.png)  
 
-This logic allows you to investigate the disaggregated life cycle inventory in detail but also to review mass and energy balances if you consider the whole life cycle of a product. As seen here, the sum of product flows equals to the sum of the waste flow:
+This logic allows you to investigate the disaggregated life cycle inventory in detail, but also to review mass and energy balances if you consider the whole life cycle of a product. As seen here, the sum of product flows equals to the sum of the waste flow:
 
 ![](./media/guidance_4.png)  
 
 ## Consistency check
 
-The consistency check ensures that the assumptions, methods and data are applied in a coherent manner throughout the study. This involves verifying that differences in data quality are justified by the goal and scope, that regional and temporal aspects are handled in a uniform way and that system boundaries and allocation rules are applied consistently across all modeled systems. The same principle applies to the use of impact assessment methods, which should be applied consistently across the study. openLCA facilitates the consistency check by helping practitioners verify that methodological choices and data are applied in a coherent way across the study. This includes ensuring that numeric cut-off rules (product system process setup) and allocation settings (e.g. economic throughout all process) are defined uniformly within the product system:
+The consistency check ensures that the assumptions, methods and data are applied in a coherent manner throughout the study. This involves verifying that differences in data quality are justified by the goal and scope, that regional and temporal aspects are handled in a uniform way and that system boundaries and allocation rules are applied consistently across all modeled systems. The same principle applies to the use of impact assessment methods, which should be applied consistently across the study. openLCA facilitates the consistency check by helping practitioners verify that methodological choices and data are applied in a coherent way across the study. This includes ensuring that numeric cut-off rules (see [**product system process setup**](./prod_sys/Creating.md)) and allocation settings (e.g. economic throughout all processes in [**calculation setup**](./prod_sys/calculating.md)) are defined uniformly within the product system:
 
 ![](./media/guidance_5.png)  
 ![](./media/guidance_6.png)  
 
-openLCA supports the user further by handling units and flow properties consistently throughout the database. This avoids errors caused by mismatched units or flow definitions and ensures that all data can be compared and aggregated reliably, for example by automatically converting grams to kilograms or kWh to MJ when needed. Further, tools such as the Parameter sets and the scenario definitions within Projects allow users to systematically review and confirm that assumptions are applied consistently across all model variants. This means that when exploring alternative scenarios (e.g., different energy mixes, technologies, or allocation rules), openLCA helps ensure that changes are applied in a controlled and transparent way, making comparisons between scenarios more robust.
-Further, assessing the data quality of your inventory and impact results can be performed adding data quality assessment during the calculation phase. This provides an indication of whether the flows and processes that contribute most to the results are supported by high-quality data, helping practitioners identify hotspots where data may need to be improved or replaced.
+openLCA supports the user further by handling units and flow properties consistently throughout the database. This avoids errors caused by mismatched units or flow definitions and ensures that all data can be compared and aggregated reliably, for example, by automatically converting grams to kilograms or kWh to MJ when needed. Further, tools such as the [**Parameter Sets**](./parameters/parameter_sets.md) and the scenario definitions within [**Projects**](./projects/new_proj.md) allow users to systematically review and confirm that assumptions are applied consistently across all model variants. This means that when exploring alternative scenarios (e.g., different energy mixes, technologies, or allocation rules), openLCA helps ensure that changes are applied in a controlled and transparent way, making comparisons between scenarios more robust.
+Further, assessing the data quality of your inventory and impact results can be performed by adding [**Data Quality**](./advanced_top/data_quality.md) assessment during the calculation phase. This indicates whether the flows and processes that contribute most to the results are supported by high-quality data, helping practitioners identify hotspots where data may need to be improved or replaced.
 
 ![](./media/data_quality_inventory_analysis.png)  
 
@@ -52,7 +52,7 @@ A relevant example could be to prove your assumption that the catalyst within th
 ![](./media/guidance_7.png)  
 
 As visualized, in most impact categories the change of impacts was rather marginal. Hence, this backs the previously made assumption. However, if this would be more drastic, the outcomes of the sensitivity analysis would imply to redesign the LCA studies’ assumptions. 
-Uncertainty analysis in openLCA is done by allowing uncertainty information to be stored with input and output data that can be applied during calculations. Then, Monte Carlo simulations can be performed directly in the software to generate a distribution of results rather than a single point value. The outcomes can then be visualized, making it possible to evaluate how stable the study’s conclusions are when accounting for uncertainties.
+Uncertainty analysis in openLCA is done by allowing uncertainty information to be stored with input and output data that can be applied during calculations. Then, [**Monte Carlo Simulation**](./advanced_top/monte_carlo.md) simulations can be performed directly in the software to generate a distribution of results rather than a single point value. The outcomes can then be visualized, making it possible to evaluate how stable the study’s conclusions are when accounting for uncertainties.
 
 ![](./media/montecarlo.png)  
 
