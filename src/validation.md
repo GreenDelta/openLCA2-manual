@@ -62,7 +62,7 @@ Uncertainty analysis in openLCA is done by allowing uncertainty information to b
 
 ## Completeness check 
 
-A completeness check verifies that all the necessary data and information are available for the calculation of results. If important processes or flows are missing, you need to evaluate whether they are critical to fulfilling the goal and scope of the study. This can be performed in certain ways in openLCA. After you finished modelling, you should check that the validation of your database does not return any errors and that all providers are set across your entire database. openLCA supports this process through database validation and the "Check linking properties" function. The latter scans the database for unlinked product flows and waste flows. Running this check helps ensure that all exchanges are properly connected. Databases provided on openLCA Nexus are offered with a clean validation check and in cases of high-quality databases, also the “Linking Properties” of the database looks like this:
+A completeness check verifies that all the necessary data and information are available for the calculation of results. If important processes or flows are missing, you need to evaluate whether they are critical to fulfilling the goal and scope of the study. This can be performed in certain ways in openLCA. After you finished modelling, you should check that the validation of your database does not return any errors and that all providers are set across your entire database. openLCA supports this process through database validation and the "Check linking properties" function. The latter scans the database for unlinked product flows and waste flows. Running this check helps ensure that all exchanges are properly connected. Databases provided on openLCA Nexus are offered with a clean validation check and in cases of high-quality databases, also the “Linking Properties” of the database look like this:
 
 ![](./media/guidance_8.png)  
 
@@ -71,11 +71,11 @@ Another layer of completeness is required to be tested on the LCI and LCIA level
 
 ![](./media/results_inventory.png)  
 
-Once done, you have to make sure that during the impact assessment, undefined or unmapped elementary flows are minimized as they can compromise the completeness and reliability of the results. Here, openLCA supports you here with the “LCIA checks” tab of the “Result” window in post-calculation by displaying all the flows that are not assessed in the respective impact category.
+Once done, you have to make sure that during the impact assessment, undefined or unmapped elementary flows are minimized as they can compromise the completeness and reliability of the results. Here, openLCA supports you here with the [**LCIA Checks**](./res_analysis/res_lcia_checks.md) tab of the “Result” window in post-calculation by displaying all the flows that are not assessed in the respective impact category.
 
 ![](./media/checks.png)  
 
-If you find here elementary flows that should be assessed, you have to provide them a characterization factor in the method or exchange them in the respective process. This can occur due to mis-mapping of flows, e.g. carbon dioxide (fossil) vs. carbon dioxide, fossil. Only one of them is assessed commonly.
+If you find here elementary flows that should be assessed, you have to provide them a characterization factor in the method or exchange them in the respective process. This can occur due to mis-mapping of flows, e.g. carbon dioxide (fossil) vs. carbon dioxide, fossil. Only one of them is commonly assessed.
 
 </div>
 
