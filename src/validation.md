@@ -18,7 +18,7 @@ The first step in interpretation is to structure the LCI and LCIA results to hig
 ![](./media/contribution_tree.png)  
 
 
-Beyond highlighting contributors, openLCA also lets you probe the structure of the product system directly. For example, you can disconnect selected processes to test for inconsistencies in mass or energy balances, or to explore the role of specific flows such as energy use or transport demand.
+Beyond highlighting contributors, openLCA also lets you probe the structure of the product system directly. For example, you can disconnect selected processes, see [**Model Graph**](./prod_sys/model_graph.md), to test for inconsistencies in mass or energy balances, or to explore the role of specific flows such as energy use or transport demand:
 
 ![](./media/guidance_1.png)  
 ![](./media/guidance_2.png)  
