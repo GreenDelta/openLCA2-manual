@@ -41,14 +41,15 @@ Fullfiling this criteria is intrinstincally integrated in openLCA. It ensures th
 ![](./media/guidance_5.png)  
 ![](./media/guidance_6.png)  
 
-openLCA supports the user further by handling units and flow properties consistently throughout the database, see [**Background data**](./databases/database_elements.md). Databased that are obtained from openLCA Nexus already hold harmonized units and flow properties. This avoids errors caused by mismatched units or flow definitions and ensures that all data can be compared and aggregated reliably, for example, by automatically converting grams to kilograms or kWh to MJ when needed. 
-Further, tools such as the [**Parameter Sets**](./parameters/parameter_sets.md) and the scenario definitions within [**Projects**](./projects/new_proj.md) allow users to systematically review and confirm that assumptions are applied consistently across all model variants. This means that when exploring alternative scenarios (e.g., different energy mixes, technologies, or allocation rules), openLCA helps ensure that changes are applied in a controlled and transparent way, making comparisons between scenarios more robust.
-To ensure that regional and temporal aspects are handled in a uniform way, assessing the data quality of your inventory and impact results can be performed by adding [**Data Quality**](./advanced_top/data_quality.md) assessment during the calculation phase. 
+Furthermore, openLCA supports the user by handling units and flow properties consistently throughout the database, see [**Background data**](./databases/database_elements.md). Databases that are obtained from openLCA Nexus and new databases ('from scratch') already hold harmonized units and flow properties. This avoids errors caused by mismatched units or flow definitions and ensures that all data can be compared and aggregated reliably, for example, by automatically converting grams to kilograms or kWh to MJ when needed. 
+
+Further, functions such as the [**Parameter Sets**](./parameters/parameter_sets.md) allow users to systematically review and confirm that assumptions are applied consistently across all model variants. This means that when exploring alternative scenarios (e.g., different energy mixes, technologies, or allocation rules), openLCA helps ensure that changes are applied in a controlled and transparent way, making comparisons between scenarios more robust.
+
+However, to ensure that the required regional and temporal aspects are represented in the [**Data Quality**](./advanced_top/data_quality.md) in a uniform way, the data quality of your inventory and impact results can be assessed during the calculation phase. The results indicate whether the flows and processes that contribute most to the results are supported by high-quality data in regional and temporal context, helping practitioners identify hotspots where data may need to be improved or replaced. 
 
 ![](./media/data_quality_inventory_analysis.png)  
 
-The results indicate whether the flows and processes that contribute most to the results are supported by high-quality data in regional and temporal context, helping practitioners identify hotspots where data may need to be improved or replaced.
-
+Large differences of data quality in processes or flows, in particular in the foreground model, should be justified in the LCA study. 
 
 ## Sensitivity checks and uncertainty analysis
 
