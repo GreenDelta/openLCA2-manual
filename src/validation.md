@@ -36,7 +36,7 @@ Hence, you could consider that the masses in your investigated part are balanced
 ## Consistency check
 
 The consistency check ensures that the assumptions, methods and data are applied in a coherent manner throughout the study. This involves verifying that differences in data quality are justified by the goal and scope, that regional and temporal aspects are handled in a uniform way and that system boundaries and allocation rules are applied consistently across all modeled systems. The same principle applies to the use of impact assessment methods, which should be applied consistently across the study. 
-Fullfiling this criteria is intrinstincally integrated in openLCA. It ensures that the same physical units, conversion factors, allocation principles and impact assessment methods are used througout the product system. This includes ensuring that allocation settings (e.g. economic throughout all processes in [**calculation setup**](./prod_sys/calculating.md)) or numeric cut-off rules (see [**product system setup**](./prod_sys/Creating.md)) are defined uniformly within the product system:
+openLCA ensures this criterion is met by default, guiding users toward consistent and reliable modeling. openLCA safeguards that the same physical units, conversion factors, allocation principles and impact assessment methods are used througout the product system. This includes ensuring that allocation settings (e.g. economic throughout all processes in [**calculation setup**](./prod_sys/calculating.md)) or numeric cut-off rules (see [**product system setup**](./prod_sys/Creating.md)) are defined uniformly within the product system:
 
 ![](./media/guidance_5.png)  
 ![](./media/guidance_6.png)  
