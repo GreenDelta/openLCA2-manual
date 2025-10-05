@@ -5,11 +5,15 @@
 In a life cycle assessment (LCA), it is not enough to simply construct a model and calculate results. According to the ISO 14040/14044 standards, the study must also be validated to ensure that it reflects the intended goal and scope. Validation is about confirming that the model is complete, consistent, and reliable. openLCA provides several features to help practitioners perform this step systematically.
 
 openLCA supports LCA practitioners in conforming to the ISO14040/14044 by:
-- Validation of data
-- Identification of significant issues (Gravity/Pareto Analysis)
-- Consistency check
-- Completeness check
-- Sensitivity check and Uncertainty analysis
+
+| **ISO 14040/14044 Requirement**                | **openLCA Functions / Features Supporting It**                                                                                                                                                                                                                                                                                                                                                                            |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Validation of data**                         | - Model Graph (to visualize product system structure) <br> - Disconnection of individual processes to test mass/energy balance <br> - Review of life cycle inventory (LCI) for mass and energy balance completeness                                                                                                                                                                      |
+| **Identification of significant issues**       | - Contribution Tree (to identify dominant processes and flows) <br> - Sankey Diagram (to visualize flow magnitudes and environmental hotspots) <br> - Navigation through subprocesses for hotspot detection                                                                                                                                                                                                   |
+| **Consistency check**                          | - Consistent use of physical units, conversion factors, and flow properties <br> - Same allocation rules and numerical cut-off consistent throughout the product system <br> - "Parameter Sets" for scenario consistency <br> - Data Quality analysis to assess regional/temporal representativeness <br> |
+| **Completeness check**                         | - Database Validation (detects errors and missing links) <br> - “Check linking properties” function (detects unlinked product and waste flows) <br> - "LCIA Checks" tab in Results window (detects unmapped or undefined flows) <br>                                                                |
+| **Sensitivity check and Uncertainty analysis** | - Parameter variation via Parameter Sets <br> - Scenario comparison in "Projects" module <br> - Hierarchical parameter adjustments in database structure <br> - "Monte Carlo Simulation" for uncertainty propagation <br> - Visualization of data quality in results                                                                                                                                        |
+
 
 ## Validation of data
 
