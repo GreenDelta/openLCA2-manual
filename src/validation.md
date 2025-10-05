@@ -5,20 +5,15 @@
 In a life cycle assessment (LCA), it is not enough to simply construct a model and calculate results. According to the ISO 14040/14044 standards, the study must also be validated to ensure that it reflects the intended goal and scope. Validation is about confirming that the model is complete, consistent, and reliable. openLCA provides several features to help practitioners perform this step systematically.
 
 openLCA supports LCA practitioners in conforming to the ISO14040/14044 by:
+- Validation of data
 - Identification of significant issues (Gravity/Pareto Analysis)
 - Consistency check
 - Completeness check
 - Sensitivity check and Uncertainty analysis
 
+## Validation of data
 
-## Identification of significant issues
-
-The goal here is to identify key issues by organizing the LCI and LCIA results in a way that emphasizes the most relevant aspects of the study. Significant issues may include disproportional large contributions of certain flows (e.g., energy, emissions, waste) to specific impact categories (climate change, resource use, etc.) or particular life-cycle stages and processes (transport, energy supply, production steps). openLCA supports this step through the [**Contribution Tree**](./res_analysis/res_contribution_tree.md) and [**Sankey Diagram**](./res_analysis/res_sankey.md), which visualize dominant processes and flows. Users can interactively navigate through subprocesses to identify environmental hotspots of their product system which is helpful for the intepretetion of the results.
-
-![](./media/contribution_tree.png)  
-
-
-Beyond highlighting contributors, openLCA also lets you probe the structure of the product system directly. For example, you can disconnect selected processes, see [**Model Graph**](./prod_sys/model_graph.md), to test for inconsistencies in mass or energy balances, or to explore the role of specific flows such as energy use or transport demand:
+Already during the data collection, data validation and mass/energy balance must be ensured in LCA studies. However, LCA models can be complex and after building the product system, practitioners should analyze if those balances are still given. To conduct this but also to get an overrview, openLCA lets you probe the structure of the product system directly. For example, you can disconnect selected processes, see [**Model Graph**](./prod_sys/model_graph.md), to test for inconsistencies in mass or energy balances, or to explore the role of specific flows such as energy use or transport demand to cross-check with your data entries:
 
 ![](./media/guidance_1.png)  
 ![](./media/guidance_2.png)  
@@ -27,16 +22,22 @@ The respective inventory will display the amount of needed energy or transport o
 
 ![](./media/guidance_3.png)  
 
-This logic allows you further to investigate the disaggregated life cycle inventory in detail, but also to review mass and energy balances if you consider the whole life cycle of a product. However, by partly disconnecting relevant product flows, it allowes you to proof that the the sum of product flows equals to the sum of the waste flow:
+This logic allows you to further investigate the disaggregated life cycle inventory in detail, but also to review mass and energy balances if you consider the whole life cycle of a product. However, by partly disconnecting relevant product flows, it allows you to prove that the sum of product flows equals the sum of the waste flow:
 
 ![](./media/guidance_4.png)  
 
 Hence, you could consider that the masses in your investigated part are balanced. 
 
+## Identification of significant issues
+
+The goal here is to identify key issues by organizing the LCI and LCIA results in a way that emphasizes the most relevant aspects of the study. Significant issues may include disproportionate contributions of certain flows (e.g., energy, emissions, waste), impact categories (such as climate change, resource use, etc.) or particular life-cycle stages and processes (e.g., transport, energy supply, production steps). To conduct this step, openLCA supports the user through the [**Contribution Tree**](./res_analysis/res_contribution_tree.md) and [**Sankey Diagram**](./res_analysis/res_sankey.md), which visualize dominant processes and flows. Users can interactively navigate through subprocesses to identify environmental hotspots of their product system, which is are not only helpful for the interpretation of the results but also to comply with the identification of significant issues.
+
+![](./media/contribution_tree.png)  
+
 ## Consistency check
 
 The consistency check ensures that the assumptions, methods and data are applied in a coherent manner throughout the study. This involves verifying that differences in data quality are justified by the goal and scope, that regional and temporal aspects are handled in a uniform way and that system boundaries and allocation rules are applied consistently across all modeled systems. The same principle applies to the use of impact assessment methods, which should be applied consistently across the study. 
-openLCA inherently supports this criterion, so users do not need to worry about enforcing it themselves. openLCA supports the usage of the same physical units, conversion factors, allocation principles and impact assessment methods througout the product system. This includes ensuring that allocation settings (e.g. economic throughout all processes in [**calculation setup**](./prod_sys/calculating.md)) or numeric cut-off rules (see [**product system setup**](./prod_sys/Creating.md)) are defined uniformly within the product system:
+openLCA inherently supports this criterion, so users do not need to worry about enforcing it themselves. openLCA supports the usage of the same physical units, conversion factors, allocation principles and impact assessment methods throughout the product system. This includes ensuring that allocation settings (e.g. economic throughout all processes in [**calculation setup**](./prod_sys/calculating.md)) or numeric cut-off rules (see [**product system setup**](./prod_sys/Creating.md)) are defined uniformly within the product system:
 
 ![](./media/guidance_5.png)  
 ![](./media/guidance_6.png)  
@@ -71,17 +72,19 @@ Uncertainty analysis in openLCA is done by allowing uncertainty information to b
 
 ## Completeness check 
 
-A completeness check verifies that all the necessary data and information are available for the calculation of results. If important processes or flows are missing, you need to evaluate whether they are critical to fulfilling the goal and scope of the study. This can be performed in certain ways in openLCA. After you finished modelling, you should check that the validation of your database does not return any errors and that all providers are set across your entire database. openLCA supports this process through database validation and the 'Check linking properties' function, see [**Toolbar**](./running_olca/toolbar_database.md) . The latter scans the database for unlinked product flows and waste flows. Running this check helps ensure that all exchanges are properly connected. Databases provided on openLCA Nexus are offered with a clean validation check and in cases of high-quality databases, also the “Linking Properties” of the database look like this:
+A completeness check verifies that all the necessary data and information are available for the calculation of results. If important processes or flows are missing, you need to evaluate whether they are critical to fulfilling the goal and scope of the study. This can be performed in certain ways in openLCA. 
+
+First, after you have finished modelling, you should check that the validation of your database does not return any errors and that all providers are set across your entire database. openLCA supports this process through database validation and the 'Check linking properties' function, see [**Toolbar**](./running_olca/toolbar_database.md). The latter scans the database for unlinked product flows and waste flows. Running this check helps ensure that all exchanges are properly connected. Databases provided on openLCA Nexus are offered with a clean validation check and, in cases of high-quality databases, also the “Linking Properties” of the database look like this:
 
 ![](./media/guidance_8.png)  
 
-If you run into linking errors, analyze the reasons. If it is due to data you changed in the background data, you can export your foreground model and re-imported into a new database. Some background databases hold flows with several providers which is not a problem just should be taken care of that in the procecces are respetive 'default provider' is set to prevent ambiguity.
+If you run into linking errors, analyze the reasons. If it is due to data you changed in the background data, you can export your foreground model and re-import it into a new database. Some background databases hold flows with several providers, which is not a problem, just should be taken care of that in the processes, are respective 'default provider' is set to prevent ambiguity.
 
-Another layer of completeness is required to be tested on the LCI and LCIA level. Initially, you have to make sure that your life cycle inventory does not hold any product flows anymore, as they will not be characterized by the LCIA method.
+Another layer of completeness is required to be tested on the LCI and LCIA levels. Initially, you have to make sure that your life cycle inventory does not hold any product flows anymore, as they will not be characterized by the LCIA method.
 
 ![](./media/results_inventory.png)  
 
-Once done, you have to make sure that during the impact assessment, undefined or unmapped elementary flows are minimized as they can compromise the completeness and reliability of the results. Here, openLCA supports you here with the [**LCIA Checks**](./res_analysis/res_lcia_checks.md) tab of the [**Result**](./res_analysis/analysis.md) window in post-calculation by displaying all the flows that are not assessed in the respective impact category.
+Once done, you have to make sure that during the impact assessment, undefined or unmapped elementary flows are minimized as they can compromise the completeness and reliability of the results. Here, openLCA supports you with the [**LCIA Checks**](./res_analysis/res_lcia_checks.md) tab of the [**Result**](./res_analysis/analysis.md) window in post-calculation by displaying all the flows that are not assessed in the respective impact category.
 
 ![](./media/checks.png)  
 
