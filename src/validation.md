@@ -13,12 +13,12 @@ openLCA supports LCA practitioners in conforming to the ISO14040/14044 by:
 
 ## Validation of data
 
-Already during the data collection, data validation and mass/energy balance must be ensured in LCA studies. However, LCA models can be complex and after building the product system, practitioners should analyze if those balances are still given. To conduct this but also to get an overrview, openLCA lets you probe the structure of the product system directly. For example, you can disconnect selected processes, see [**Model Graph**](./prod_sys/model_graph.md), to test for inconsistencies in mass or energy balances, or to explore the role of specific flows such as energy use or transport demand to cross-check with your data entries:
+Already during the data collection, data validation and mass/energy balance must be ensured in LCA studies. However, LCA models can be complex and after building the product system, practitioners should analyze if those balances are still given. To conduct this but also to get an overview, openLCA lets you probe the structure of the product system directly. For example, you can disconnect selected processes, see [**Model Graph**](./prod_sys/model_graph.md), to test for inconsistencies in mass or energy balances, or to explore the role of specific flows such as energy use or transport demand to cross-check with your data entries:
 
 ![](./media/guidance_1.png)  
 ![](./media/guidance_2.png)  
 
-The respective inventory will display the amount of needed energy or transport over the whole supply chain, as the processes have been removed from the whole supply chain.
+The respective inventory will display the amount of needed energy or transport over the whole supply chain, as the processes have been removed from the supply chain. This helps you understand how much each process contributes to the overall resource demand and highlights potential data gaps or imbalances that may require correction or further justification.
 
 ![](./media/guidance_3.png)  
 
