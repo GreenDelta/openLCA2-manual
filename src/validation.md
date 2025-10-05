@@ -13,7 +13,7 @@ openLCA supports LCA practitioners in conforming to the ISO14040/14044 by:
 
 ## Identification of significant issues
 
-The first step in interpretation is to structure the LCI and LCIA results to highlight the most relevant aspects of the study. Significant issues may include large contributions of certain flows (e.g., energy, emissions, waste), specific impact categories (climate change, resource use, etc.), or particular life-cycle stages and processes (transport, energy supply, production steps). openLCA supports this step through the [**Contribution Tree**](./res_analysis/res_contribution_tree.md) and [**Sankey Diagram**](./res_analysis/res_sankey.md), which visualize dominant processes and flows. Users can interactively navigate through subprocesses to identify environmental hotspots of their product system which is helpful for the intepretetion of the results.
+The goal here is to identify key issues by organizing the LCI and LCIA results in a way that emphasizes the most relevant aspects of the study. Significant issues may include disproportional large contributions of certain flows (e.g., energy, emissions, waste) to specific impact categories (climate change, resource use, etc.) or particular life-cycle stages and processes (transport, energy supply, production steps). openLCA supports this step through the [**Contribution Tree**](./res_analysis/res_contribution_tree.md) and [**Sankey Diagram**](./res_analysis/res_sankey.md), which visualize dominant processes and flows. Users can interactively navigate through subprocesses to identify environmental hotspots of their product system which is helpful for the intepretetion of the results.
 
 ![](./media/contribution_tree.png)  
 
