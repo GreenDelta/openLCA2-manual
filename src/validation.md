@@ -34,7 +34,7 @@ Hence, you could consider that the masses in your investigated part are balanced
 
 ## Identification of significant issues
 
-The goal here is to identify key issues by organizing the LCI and LCIA results in a way that emphasizes the most relevant aspects of the study. Significant issues may include disproportionate contributions of certain flows (e.g., energy, emissions, waste), impact categories (such as climate change, resource use, etc.) or particular life-cycle stages and processes (e.g., transport, energy supply, production steps). To conduct this step, openLCA supports the user through the [**Contribution Tree**](./res_analysis/res_contribution_tree.md) and [**Sankey Diagram**](./res_analysis/res_sankey.md), which visualize dominant processes and flows. Users can interactively navigate through subprocesses to identify environmental hotspots of their product system, which is are not only helpful for the interpretation of the results but also to comply with the identification of significant issues.
+The goal here is to identify key issues by organizing the LCI and LCIA results in a way that emphasizes the most relevant aspects of the study. Significant issues may include disproportionate contributions of certain flows (e.g., energy, emissions, waste), impact categories (such as climate change, resource use, etc.) or particular life-cycle stages and processes (e.g., transport, energy supply, production steps). To conduct this step, openLCA supports the user through the [**Contribution Tree**](./res_analysis/res_contribution_tree.md) and [**Sankey Diagram**](./res_analysis/res_sankey.md), which visualize dominant processes and flows. Users can interactively navigate through subprocesses to identify environmental hotspots of their product system, which is not only helpful for the interpretation of the results but also to comply with the identification of significant issues.
 
 ![](./media/contribution_tree.png)  
 
@@ -50,7 +50,7 @@ Furthermore, openLCA supports the user by handling units and flow properties con
 
 Further, functions such as the [**Parameter Sets**](./parameters/parameter_sets.md) allow users to systematically review and confirm that assumptions are applied consistently across all model variants. This means that when exploring alternative scenarios (e.g., different energy mixes, technologies, or allocation rules), openLCA helps ensure that changes are applied in a controlled and transparent way, making comparisons between scenarios more robust.
 
-However, to ensure that the required regional and temporal aspects are represented in the [**Data Quality**](./advanced_top/data_quality.md) in a uniform way, the data quality of your inventory and impact results can be assessed during the calculation phase. The results indicate whether the flows and processes that contribute most to the results are supported by high-quality data in regional and temporal context, helping practitioners identify hotspots where data may need to be improved or replaced. 
+However, to ensure that the required regional and temporal aspects are represented in the [**Data Quality**](./advanced_top/data_quality.md) in a uniform way, the data quality of your inventory and impact results can be assessed during the calculation phase. The results indicate whether the flows and processes that contribute most to the results are supported by high-quality data in the regional and temporal context, helping practitioners identify hotspots where data may need to be improved or replaced. 
 
 ![](./media/data_quality_inventory_analysis.png)  
 
@@ -61,7 +61,7 @@ Large differences of data quality in processes or flows, in particular in the fo
 The sensitivity check examines how robust the results are when faced with uncertainties in data, modeling choices, or calculation procedures. This means testing whether the conclusions change significantly if input data varies, if allocation methods are adjusted, or if certain assumptions are altered. openLCA supports this by allowing you to perform **sensitivity** and **uncertainty** analyses and observe how the results respond.
 
 openLCA ensures sensitivity checks by offering integrated options for parameter and scenario variation. You can use parameters in your foreground model and adjust these at several stages of the openLCA database [**Hierarchy**](./parameters/hierarchy.md). In the product system, you can then adjust them systematically via parameter sets and rerun the calculations to observe changes in results. [**Projects**](./projects/new_proj.md) in openLCA make it easy to compare different scenarios side by side, allowing the re-definition of parameters between scenarios of the same product system.
-A relevant example could be to prove your assumption that the catalyst within the PET granulate product could be omitted in your LCA study as they fall under your cut-off criteria (<1% of mass inputs). To later demonstrate this assumption, you perform a sensitivity analysis using openLCA’s project function.
+A relevant example could be to prove your assumption that the catalyst within the PET granulate product could be omitted in your LCA study, as they fall under your cut-off criteria (<1% of mass inputs). To later demonstrate this assumption, you perform a sensitivity analysis using openLCA’s project function.
 
 ![](./media/guidance_7.png)  
 
