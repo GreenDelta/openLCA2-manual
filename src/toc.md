@@ -110,6 +110,12 @@
 
 -----------
 
+# Guidance for LCA practitioners to openLCA
+
+- [Model validation in openLCA](validation.md)
+
+-----------
+
 # The advanced knowledge base
 
 - [Advanced Topics](advanced_top/README.md)
@@ -158,3 +164,4 @@
 ---
 
 [Contact](./contact.md)
+

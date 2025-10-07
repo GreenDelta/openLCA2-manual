@@ -2,7 +2,7 @@
 
 <div style='text-align: justify;'>
 
-Data quality is a critical aspect of life cycle assessment (LCA) studies, and it is addressed in ISO 14040 and ISO 14044 standards. openLCA offers a broad support for entering, managing, and calculating data quality in LCA models. Before we start, let’s remind us that in ISO 14040, data quality is defined as fitness for purpose.
+Data quality is a critical aspect of life cycle assessment (LCA) studies, and it is addressed in ISO 14040 and ISO 14044 standards. openLCA offers broad support for entering, managing, and calculating data quality in LCA models. Before we start, let’s remind us that in ISO 14040, data quality is defined as fitness for purpose.
 
 Below, we describe how to work with data quality in openLCA.
 
@@ -11,7 +11,7 @@ Below, we describe how to work with data quality in openLCA.
 First you need do define a data quality flow schema. If you generate a database with complete reference data, we provide you with two data quality systems. You can choose one of them in the "General information" tab, see "[Process tab content](../processes/process_tab_content.md)":
 
 ![](../media/data_quality_system.png)  
-_Available data quality systems in an database with complete reference data in openLCA_
+_Available data quality systems in a database with complete reference data in openLCA_
 
 You can also create your own data quality system or modify existing quality systems according to your own criteria. In openLCA, it is assumed that all data quality systems follow a pedigree matrix "style", i.e. there are data quality indicators that are evaluated in classes, from good to bad. These pedigree matrices can be defined from scratch, but openLCA contains some predefined data quality systems already. 
 
@@ -48,12 +48,12 @@ active database.
 ![](../media/data_quality_navigation_window.png)  
 _Data quality systems directory in an active database_
 
-You can access existing data quality system in the folder "Data quality system" in the navigation panel. You can use for example the ecoinvent data quality system improved by dr. Andreas Ciroth (click [here](https://www.greendelta.com/wp-content/uploads/2017/03/Pedigree_report_final_May2012.pdf) to read the complete report) When you open a data quality system in the Editor, you’ll see a "General information" tab. This tab displays scores for various indicators and provides options to assign uncertainty values to these indicators, as illustrated below. 
+You can access the existing data quality system in the folder "Data quality system" in the navigation panel. You can use for example, the ecoinvent data quality system improved by Dr. Andreas Ciroth (click [here](https://www.greendelta.com/wp-content/uploads/2017/03/Pedigree_report_final_May2012.pdf) to read the complete report). When you open a data quality system in the Editor, you’ll see a "General information" tab. This tab displays scores for various indicators and provides options to assign uncertainty values to these indicators, as illustrated below. 
 
 ![](../media/quality_score.png)  
 _Data quality systems, indicators and scores_
 
-As visualized above, adding uncertainty values allows to perform "[Monte Carlo Simulations](../advanced_top/monte_carlo.md)" in openLCA.
+As visualized above, adding uncertainty values allows for performing "[Monte Carlo Simulations](../advanced_top/monte_carlo.md)" in openLCA.
 
 ### Setup
 
@@ -67,7 +67,7 @@ Then, click "Next" and the "Data quality properties" window will open, allowing 
 ![](../media/dataquali.png)  
 _Setup for the data quality assessment_
 
-You can choose the aggregation type, a rounding method, and how to handle exchanges that lack data quality values. Then, click on the "Finish" button to start the calculation including the data quality assessment.
+You can choose the aggregation type, a rounding method, and how to handle exchanges that lack data quality values. Then, click on the "Finish" button to start the calculation, including the data quality assessment.
 
 ### Results
 
@@ -78,9 +78,16 @@ _Inventory analysis - data quality information_
 
 The abbreviations for the columns are **R**eliability, **C**ompleteness, **T**emporal correlation, **G**eographical correlation, **F**urther technical correlation as defined in your data quality scheme, see "[Processes](../processes/general_information.md)". 
 
-In a similar fashion, the data quality for the impact analysis tab is displayed after the calculation was performed.
+In a similar fashion, the data quality for the impact analysis tab is displayed after the calculation is performed.
 
 ![](../media/data_quality_impact.png)  
 _Impact Analysis - data quality_
 
+Note: If the data quality is captured on the flow level (e.g. ecoinvent), the assessment and aggregation of data quality up to the impact categories in the results is **based solely on the data quality entries for elementary flows**. However, you can get the aggregated data quality of product flows throughout the supply chain by deleting all links to this product flow in the [Model Graph](../prod_system/model_graph.md). This will give you results like this:
+
+![](../media/data_quality_cut.png)  
+
+
 </div>
+
+
