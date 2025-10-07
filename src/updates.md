@@ -2,6 +2,12 @@
 
 In this section, you can check what the major manual updates were about and when they were released.
 
+
+## 07.10.2025
+
+- Updated and commented the [Data Quality](./advanced_top/data_quality.md) chapter
+- Created a [Model Validation in openLCA](./validation.md) section
+
 ## 30.09.2025
 
 - Updated and reorganized [EPDs](./epds/index.md) chapter
@@ -111,3 +117,4 @@ In this section, you can check what the major manual updates were about and when
 
 - EPD chapter improved with the new section ["Calculate impact assessment"](./epds/calculate_impact_assessment.md), where you can find the different possible ways to calculate the impact assessment in EPD format.
 - Minor updates
+
