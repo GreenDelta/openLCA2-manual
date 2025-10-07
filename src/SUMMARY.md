@@ -31,9 +31,9 @@
 
 -----------
 
-# Guidance for LCA practioners to openLCA
+# Guidance for LCA practitioners to openLCA
 
-- [Model Validation in openLCA](validation.md)
+- [Model validation in openLCA](validation.md)
 
 -----------
 
@@ -165,3 +165,4 @@
 ---
 
 [Contact](./contact.md)
+
