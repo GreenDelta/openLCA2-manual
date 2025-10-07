@@ -31,6 +31,13 @@
 
 -----------
 
+# Guidance for LCA practitioners to openLCA
+
+- [Model validation in openLCA](validation.md)
+
+-----------
+
+
 # The basics for openLCA
 
 - [Running openLCA for the first time](running_olca/README.md)
@@ -158,3 +165,4 @@
 ---
 
 [Contact](./contact.md)
+
