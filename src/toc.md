@@ -31,13 +31,6 @@
 
 -----------
 
-# Guidance for LCA practitioners to openLCA
-
-- [Model validation in openLCA](validation.md)
-
------------
-
-
 # The basics for openLCA
 
 - [Running openLCA for the first time](running_olca/README.md)
@@ -114,6 +107,12 @@
   - [Parameter analysis](parameters/parameter_analysis.md)
   - [Advanced: Dependent parameters](parameters/dependent_parameter.md)
 - [Background data](background.md)
+
+-----------
+
+# Guidance for LCA practitioners to openLCA
+
+- [Model validation in openLCA](validation.md)
 
 -----------
 
