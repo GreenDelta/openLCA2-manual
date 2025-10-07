@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://greendelta.github.io/openLCA2-manual/sitemap.xml
