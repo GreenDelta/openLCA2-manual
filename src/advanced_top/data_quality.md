@@ -78,9 +78,12 @@ _Inventory analysis - data quality information_
 
 The abbreviations for the columns are **R**eliability, **C**ompleteness, **T**emporal correlation, **G**eographical correlation, **F**urther technical correlation as defined in your data quality scheme, see "[Processes](../processes/general_information.md)". 
 
-In a similar fashion, the data quality for the impact analysis tab is displayed after the calculation was performed.
+In a similar fashion, the data quality for the impact analysis tab is displayed after the calculation is performed.
 
 ![](../media/data_quality_impact.png)  
 _Impact Analysis - data quality_
+
+Note: If the data quality is captured on the flow level (e.g. ecoinvent), the assessment and aggregation of data quality up to the impact categories in the results is based solely on the entries for elementary flows. 
+
 
 </div>
