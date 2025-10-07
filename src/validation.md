@@ -30,7 +30,7 @@ This logic allows you to further investigate the disaggregated life cycle invent
 
 ![](./media/guidance_4.png)  
 
-Hence, you could consider that the masses in your investigated part are balanced. Combining the approach with assessing the [**Data Quality**](./advanced_top/data_quality.md) allows you to investigate the data quality of the product flows from the whole supply chain (foreground and background).
+Hence, you could consider that the masses in your investigated part are balanced. Combining the approach with assessing the [**Data Quality**](./advanced_top/data_quality.md) of your product system allows you to investigate the foreground and background data quality of the product flows.
 
 ## Identification of significant issues
 
