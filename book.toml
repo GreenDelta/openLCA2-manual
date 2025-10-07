@@ -5,6 +5,12 @@ multilingual = false
 src = "src"
 title = "openLCA 2 manual"
 theme = "Rust"
+description = "The official manual of openLCA"
+
+[output.html]
+git-repository-url = "https://github.com/GreenDelta/openLCA2-manual"
+site-url = "/openLCA2-manual/"
+favicon = "favicon.png"
 
 [output.html.fold]
 enable = true    # whether or not to enable section folding
