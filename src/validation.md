@@ -56,6 +56,10 @@ However, to ensure that the required regional and temporal aspects are represent
 
 Large differences of data quality in processes or flows, in particular in the foreground model, should be justified in the LCA study. 
 
+Some databases, here Carbon Minds, also provide an overview of the reviewer's quality assessment of datasets in the [**Documentation**](./processes/tab_documentation.md) tab. This can further indicate potential issues.
+
+![](./media/Quality_Assessment.png)  
+
 ## Sensitivity checks and uncertainty analysis
 
 The sensitivity check examines how robust the results are when faced with uncertainties in data, modeling choices, or calculation procedures. This means testing whether the conclusions change significantly if input data varies, if allocation methods are adjusted, or if certain assumptions are altered. openLCA supports this by allowing you to perform **sensitivity** and **uncertainty** analyses and observe how the results respond.
