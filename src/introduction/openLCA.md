@@ -2,9 +2,9 @@
 
 <div style='text-align: justify;'>
 
-We started developing openLCA in 2007; a super-long German startup incubation project preparation in the end led to nothing (we needed to specify the number of trainings we will have five years after the project start, per quarter, etc., and were then offered half a million € but only as a loan, to the same conditions as if obtained from a bank, which we declined). But we also had submitted an abstract to the ecobalance conference in Japan, where we presented the idea, and mentioned that we are looking for budget to start. To our surprise, after the presentation, CEOs of PRé and of ecoinvent came and asked how much we need. We did not ask for much, but this funding enabled us to start, initially with a format converter but then also with an LCA software. 
+We started developing openLCA in 2007; a super-long German startup incubation project preparation in the end led to nothing (we needed to specify the number of trainings we will have five years after the project start, per quarter, etc., and were then offered half a million € but only as a loan, to the same conditions as if obtained from a bank, which we declined). But we also had submitted an abstract to the [ecobalance conference in Japan](https://www.greendelta.com/wp-content/uploads/2023/07/OpenSourceForSustainability_Tsukuba15Nov06.pdf), where we presented the idea, and mentioned that we are looking for budget to start. To our surprise, after the presentation, CEOs of PRé and of ecoinvent came and asked how much we need. We did not ask for much, but this funding enabled us to start, initially with a format converter but then also with an LCA software. 
 
-Why we started openLCA is contained in this early presentation, and is still valid today:
+Why we started openLCA is contained in this early presentation, and is still valid today: 
 
 ![](../media/role_of_software.png)  
 _Slide 4 of the presentation._
@@ -35,4 +35,5 @@ the first openlca lca software ("openlca framework") looked like this:
 <img src="../media/olca_framework_logo.png" alt="openlca framework logo">
 
 </div>
+
 
