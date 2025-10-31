@@ -22,7 +22,7 @@ A type of distribution in which the values are concentrated symmetrically around
 </details>
 <details>
 <summary><b>Triangle distribution (Minimum, Mode, Maximum)</b></summary>
-A distribution type in which all values are distributed between a minimum and a maximum. The mode defines the peak of the triangular distribution and this determines, to which of the other parameters the concentration of values is skewed.
+A distribution type in which all values are distributed between a minimum and a maximum. The mode defines the peak of the triangular distribution and this determines to which of the other parameters the concentration of values is skewed.
 </details>
 <details>
 <summary><b>Uniform distribution (Minimum, Maximum)</b></summary>
@@ -35,15 +35,17 @@ _Adding uncertainty to flows_
 
 Likewise, it is also possible to define uncertainty data for parameters as well as for LCIA characterisation factors or to derive the uncertainty values from the respective data quality.
 
-Luckily some databases, e.g. ecoinvent, already provide uncertainty values for flows as visualized below (editing uncertainty as described above in the "Input/Output" tab of a "Process"):
+Luckily, some databases, e.g. ecoinvent, already provide uncertainty values for flows as visualized below (editing uncertainty as described above in the "Input/Output" tab of a "Process"):
 
 ![](../media/MC_example.png)  
    
 _Defined logarithmic normal distributed uncertainty of a flow as found in the input/output tab of a process_
 
-These are mostly based on a certain base uncertainty which is merged by with an additional uncertainty derived from the data quality and can be used directly for the Monte Carlo Simulation.
+These are mostly based on a certain base uncertainty which is merged by with an additional uncertainty derived from the data quality and can be used directly for the Monte Carlo Simulation. However, if you use the ecoinvent database, we highly recommend the respective chapter about uncertainty [Uncertainties - ecoinvent Support](https://support.ecoinvent.org/uncertainties)
 
-If you use the ecoinvent database, we highly recommend the respective chapter about uncertainty [Uncertainties - ecoinvent Support](https://support.ecoinvent.org/uncertainties).
+When you click on the "test" button, openLCA will simulate the uncertainty for this exchange with 1000 runs:
+
+![](../media/test_uncertainty.png)  
 
 ### Deriving uncertainty from Data Quality Pedigree Matrices
 
@@ -101,3 +103,4 @@ It is also possible to compare two processes with a Monte Carlo simulation if yo
 _Creation of a process subtracting one process to the other for future comparison in Monte Carlo simulation_
 
 </div>
+
