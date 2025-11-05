@@ -49,7 +49,7 @@
   - [Creating a new database loading it from file](databases/restore_database.md)
   - [Database update](databases/database_update.md)
   - [Importing data and combining databases](databases/importing_and_combining_databases.md)
-  - [Using mapping files and validate databases](databases/mapping_validation.md)
+  - [Using mapping files and validating databases](databases/mapping_validation.md)
   - [Exporting databases](databases/exporting_databases.md)
 - [Flows](flows/README.md)
   - [Creating a new flow](flows/creating_new_flow.md)
@@ -110,7 +110,7 @@
 
 -----------
 
-# Guidance for LCA practitioners to openLCA
+# Guidance for LCA practitioners
 
 - [Model validation in openLCA](validation.md)
 
@@ -164,4 +164,5 @@
 ---
 
 [Contact](./contact.md)
+
 

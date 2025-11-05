@@ -9,6 +9,8 @@ EPDs are usually stored in a PDF format but now also come with a digital copy th
 3. Using ILCD import
 
 
+![](../media/import_EPD_overview.png)
+
 </div>
 
 

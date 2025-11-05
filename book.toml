@@ -3,7 +3,7 @@ authors = ["GreenDelta"]
 language = "en"
 multilingual = false
 src = "src"
-title = "openLCA 2 manual"
+title = "openLCA manual"
 theme = "Rust"
 description = "The official manual of openLCA"
 

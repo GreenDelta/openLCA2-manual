@@ -30,7 +30,7 @@ This logic allows you to further investigate the disaggregated life cycle invent
 
 ![](./media/guidance_4.png)  
 
-Hence, you could consider that the masses in your investigated part are balanced. 
+Hence, you could consider that the masses in your investigated part are balanced. Combining the approach with assessing the [**Data Quality**](./advanced_top/data_quality.md) of your product system allows you to investigate the foreground and background data quality of the product flows.
 
 ## Identification of significant issues
 
@@ -40,7 +40,7 @@ The goal here is to identify key issues by organizing the LCI and LCIA results i
 
 ## Consistency check
 
-The consistency check ensures that the assumptions, methods and data are applied in a coherent manner throughout the study. This involves verifying that differences in data quality are justified by the goal and scope, that regional and temporal aspects are handled in a uniform way and that system boundaries and allocation rules are applied consistently across all modeled systems. The same principle applies to the use of impact assessment methods, which should be applied consistently across the study. 
+The consistency check ensures that the assumptions, methods and data are applied coherently throughout the study. This involves verifying that differences in data quality are justified by the goal and scope, that regional and temporal aspects are handled in a uniform way and that system boundaries and allocation rules are applied consistently across all modeled systems. The same principle applies to the use of impact assessment methods, which should be applied consistently across the study. 
 openLCA inherently supports this criterion, so users do not need to worry about enforcing it themselves. openLCA supports the usage of the same physical units, conversion factors, allocation principles and impact assessment methods throughout the product system. This includes ensuring that allocation settings (e.g. economic throughout all processes in [**calculation setup**](./prod_sys/calculating.md)) or numeric cut-off rules (see [**product system setup**](./prod_sys/Creating.md)) are defined uniformly within the product system:
 
 ![](./media/guidance_5.png)  
@@ -55,6 +55,10 @@ However, to ensure that the required regional and temporal aspects are represent
 ![](./media/data_quality_inventory_analysis.png)  
 
 Large differences of data quality in processes or flows, in particular in the foreground model, should be justified in the LCA study. 
+
+Some databases, here Carbon Minds, also provide an overview of the reviewer's quality assessment of datasets in the [**Documentation**](./processes/tab_documentation.md) tab. This can further indicate potential issues.
+
+![](./media/Quality_Assessment.png)  
 
 ## Sensitivity checks and uncertainty analysis
 
