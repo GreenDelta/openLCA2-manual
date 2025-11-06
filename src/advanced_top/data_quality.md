@@ -87,8 +87,10 @@ _Impact Analysis - data quality_
 
 ![](../media/data_quality_cut.png)  
 
+_Inventory analysis with data quality of one unconnected flow_
 
 </div>
+
 
 
 
