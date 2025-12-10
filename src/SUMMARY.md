@@ -151,6 +151,7 @@
   - [Tags](cheat/tags.md)
   - [Constants, operators and functions for formulas in openLCA](cheat/formulas_in_openlca.md)
   - [Shortcuts in openLCA](cheat/key_short_cuts.md)
+  - [Searching for CAS numbers in openLCA](cheat/CAS.md)
 
 -----------
 

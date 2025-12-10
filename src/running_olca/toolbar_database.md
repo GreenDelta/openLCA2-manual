@@ -2,6 +2,8 @@
 
 # Toolbar: Database
 
+![](../media/database_toolbar.png)  
+
 _**Note**_: Almost all the functions described here can also be accessed via right click with mouse on the active databases in the navigation panel.
 
 The following options are available under "**Database**" when a database is opened:
@@ -26,6 +28,8 @@ The following options are available under "**Database**" when a database is open
 
 -   **Compress database:** This function will remove deleted datasets from the active database freeing up space in the database. 
     
--	**Contents:** Under the two tabs, "_flows_" and "_processes_" are available. Clicking on them shows a list of all the flows or all the processes within the database. This option allows you to filter all flows using the CAS number or chemical formula.
+-	**Content:** Here, lists of "_Processes_", "_Parameters_", "_Flows_", "_Flow properties_", "_Units_" and "_Currencies_" are available. Clicking on them shows a list of all the flows or all the processes within the database. This option allows you to filter all flows using the CAS number or chemical formula.
+
+![](../media/database_content.png)  
 
 </div>
