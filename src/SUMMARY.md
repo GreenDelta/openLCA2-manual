@@ -45,8 +45,8 @@
 
 - [Databases](databases/README.md)
   - [Database elements](databases/database_elements.md)
-  - [Creating a new database from scratch](databases/create_database.md)
   - [Creating a new database loading it from file](databases/restore_database.md)
+  - [Creating a new database from scratch](databases/create_database.md)
   - [Database update](databases/database_update.md)
   - [Importing data and combining databases](databases/importing_and_combining_databases.md)
   - [Using mapping files and validating databases](databases/mapping_validation.md)
@@ -165,5 +165,6 @@
 ---
 
 [Contact](./contact.md)
+
 
 
