@@ -2,9 +2,9 @@
 
 # First test version of integrating system dynamics into openLCA
 
-System dynamics allows one to model non-linear behavior of complex systems over time using stocks, flows, and feedback loops. It makes it possible to model product systems in broader system surroundings and further define dynamic relationships of system variables. 
+System dynamics allows to model non-linear behavior of complex systems over time using stocks, flows, and feedback loops. It makes it possible to model product systems in broader system surroundings and further define dynamic relationships of system variables. In openLCA you can now link your LCA models to system dynamics models, making it possible to calculate dynamic impact results over time. 
 
-In openLCA you can now link your LCA models to system dynamics models, making it possible to calculate dynamic impact results over time. First, you need to enable "Support for system dynamics models" in the preferences (do not forget to press "Apply" or "Apply & Close" in that dialog):
+First, you need to enable "Support for system dynamics models" in the preferences (do not forget to press "Apply" or "Apply & Close" in that dialog):
 
 ![](../media/sys_dyn_1.png)
 
@@ -12,7 +12,7 @@ Then, refresh the navigation via F5 or the refresh button:
 
 ![](../media/sys_dyn_2.png)
 
-You should see a folder "System dynamics models" in your database folders now:
+You should now see a folder "System dynamics models" in your database folders:
 
 ![](../media/sys_dyn_3.png)
 
@@ -20,7 +20,7 @@ Right click to add a new model:
 
 ![](../media/sys_dyn_4.png)
 
-openLCA does not yet include a system dynamics modelling interface, so the models need to be pre-modelled and exported from a system dynamics software first. You need a XMILE file of your model. Some example models can be found here: [https://exchange.iseesystems.com/directory/isee](https://exchange.iseesystems.com/directory/isee) (but not all of these are supported yet.). 
+openLCA does not yet include a system dynamics modelling interface, so the models need to be first pre-modelled and exported from a system dynamics software. You need a XMILE file of your model. Some example models can be found here: [https://exchange.iseesystems.com/directory/isee](https://exchange.iseesystems.com/directory/isee) (but not all of these are supported yet). 
 
 The pop-up window allows you to give your systems dynamics model a name and select the XMILE file of your model. 
 
