@@ -4,19 +4,19 @@
 
 ## 2.6.0:
 
+- System Dynamics (SD) simulation and modeling (experimental feature)
+- Hestia import functionality with flow mapping selection and data preview
 - Improved Jython/Python integration: CodeMirror 6 editor with code completion and run keymap
-- Allow results as default providers in processes (drag & drop)
-- Allow adding multiple impact categories and flows to results at once
-- Check-box added for Regionalized calculations in the direct impact tab
-- Model Graph/Sankey: country codes displayed before process names (e.g. "CH – Transport...")
-- Social aspects: delete entire set of indicators
-- System Dynamics simulation and modelling (experimental)
-- Hestia import functionality with flow mapping and data preview (experimental)
+- Library signing (experimental)
 - GLAD mapping file import support
-- Fix: direct impacts now consider results linked as default providers
+- Allow results as default providers in processes with drag and drop support
+- Allow adding multiple impact categories and flows to results at once
+- Better provider names in Sankey diagram
+- Improved process names in model graph
+- Social aspects: allow deletion of a set of indicators under social aspects tab
+- Fix: direct impacts of processes
 - Fix: deletion of database repository
 - Fix: library signing UI issues
-- Fix: analysis groups: add multiple selected processes
 
 ## 2.5.0:
 
