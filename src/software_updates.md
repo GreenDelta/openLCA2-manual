@@ -38,7 +38,7 @@
 - Fix: reference data no longer shows errors during database validation.
 - Fix: copy datasets from the library.
 
-# 2.4.0:
+## 2.4.0:
 
 - Fixed allocation factors applied to avoided flows.
 - Improved number generation for log-normal distributions.
