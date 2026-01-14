@@ -16,7 +16,7 @@ A window will appear in which you can choose the name of your library as well as
 3.	**With uncertainty distributions** – includes uncertainty distributions, if available, as defined per flow.
 4.	**Regionalized** – includes regionalized calculations, applicable when the database already contains regionalized flows (i.e., flows associated with specific locations).
 
->**__Note:__** enabling precalculated matrices, regionalization, and uncertainty distributions may significantly increase memory usage. Once all settings have been selected as desired, click “OK” to create the library.
+    >**__Note:__** enabling precalculated matrices, regionalization, and uncertainty distributions may significantly increase memory usage. Once all settings have been selected as desired, click “OK” to create the library.
 
 ![](../media/library_dialog_box.png)
 <br/>_A dialog box which appears in openLCA 2.0 when exporting a database as a library_
