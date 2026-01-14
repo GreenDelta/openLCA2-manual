@@ -2,6 +2,22 @@
 
 # Latest software updates
 
+## 2.6.0:
+
+- Improved Jython/Python integration: CodeMirror 6 editor with code completion and run keymap
+- Allow results as default providers in processes (drag & drop)
+- Allow adding multiple impact categories and flows to results at once
+- Check-box added for Regionalized calculations in the direct impact tab
+- Model Graph/Sankey: country codes displayed before process names (e.g. "CH – Transport...")
+- Social aspects: delete entire set of indicators
+- System Dynamics simulation and modelling (experimental)
+- Hestia import functionality with flow mapping and data preview (experimental)
+- GLAD mapping file import support
+- Fix: direct impacts now consider results linked as default providers
+- Fix: deletion of database repository
+- Fix: library signing UI issues
+- Fix: analysis groups: add multiple selected processes
+
 ## 2.5.0:
 
 - Allow (EPD) results as default providers in processes
