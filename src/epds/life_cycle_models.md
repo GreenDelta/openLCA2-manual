@@ -7,7 +7,7 @@ To connect EPD results to your product system, this can be done in two ways (1) 
 ## Method 1: On process level
 
 In openLCA v2.5.0, within the process, you can add the product flow corresponding to the EPD result as an input.
-Then, as usual, use the provider dropdown to select the appropriate module (i.e., the process or result) you want to link to your system.
+Then, as usual, use the provider dropdown to select the appropriate module (i.e., the process or result) you want to link to your system. Make sure that you still generate a product system prior to the calculations, as the ['direct calculation'](../cheat/direct.md) function does not work for now in combination with results.
 
 ![](../media/epd_res_in_prod_sys_1.png)
 
