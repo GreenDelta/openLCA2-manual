@@ -3,6 +3,12 @@
 In this section, you can check what the major manual updates were about and when they were released.
 
 
+## 01.2026
+- Created [First test version of integrating system dynamics into openLCA](./advanced_top/system_synamics.md) section
+- Updated [Exporting a database as a library](./libraries/exporting_database_as_library.md) section
+- Fixed bug in Summary
+- Changed note style up to "6. Databases" (included)
+
 ## 07.10.2025
 
 - Updated and commented the [Data Quality](./advanced_top/data_quality.md) chapter

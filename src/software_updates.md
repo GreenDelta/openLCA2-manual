@@ -2,6 +2,22 @@
 
 # Latest software updates
 
+## 2.6.0:
+
+- System Dynamics (SD) simulation and modeling (experimental feature)
+- Hestia import functionality with flow mapping selection and data preview
+- Improved Jython/Python integration: CodeMirror 6 editor with code completion and run keymap
+- Library signing (experimental)
+- GLAD mapping file import support
+- Allow results as default providers in processes with drag and drop support
+- Allow adding multiple impact categories and flows to results at once
+- Better provider names in Sankey diagram
+- Improved process names in model graph
+- Social aspects: allow deletion of a set of indicators under social aspects tab
+- Fix: direct impacts of processes
+- Fix: deletion of database repository
+- Fix: library signing UI issues
+
 ## 2.5.0:
 
 - Allow (EPD) results as default providers in processes
@@ -22,7 +38,7 @@
 - Fix: reference data no longer shows errors during database validation.
 - Fix: copy datasets from the library.
 
-2.4.0:
+## 2.4.0:
 
 - Fixed allocation factors applied to avoided flows.
 - Improved number generation for log-normal distributions.

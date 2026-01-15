@@ -37,7 +37,7 @@ The following options are available under **File**:
                 
         - **Download calculation libraries:** This option allows you to integrate fast calculation libraries for openLCA. This function is still developed currently.
     
-        _**Note**_: You need to restart openLCA to activate configuration changes.         
+        >_**Note**_: You need to restart openLCA to activate configuration changes.         
     
            
     - **Experimental features:** These features are still in development, but you can already access them by checking this box. We welcome any feedback to further refine them. Here you can activate the novel social impact assessment feature.

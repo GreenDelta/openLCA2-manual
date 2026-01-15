@@ -36,7 +36,7 @@ For the manual correction of elementary flows or providers, you can also use the
 ![](../media/bulk_replace.png)  
 _Using the bulk-replace function for flows_
 
-_**Note:**_ Please always make sure that your mapping was done correctly using the "Validation" (see below) or after a calculation, having a look into the "LCIA checks" tab. Check out the "[Results Analysis](../res_analysis/analysis.md)" chapter for details.
+>_**Note:**_ Please always make sure that your mapping was done correctly using the "Validation" (see below) or after a calculation, having a look into the "LCIA checks" tab. Check out the "[Results Analysis](../res_analysis/analysis.md)" chapter for details.
 
 # Validation of a database
 

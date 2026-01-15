@@ -9,7 +9,7 @@ When you try to open a database in openLCA with an older database schema, the so
 ![](../media/update_database.png)  
 _Backing up a database before updating to a newer openLCA version_
 
-**_Note:_** Once the database has been updated, it will only be compatible with the newer version of openLCA. It cannot be reverted to be compatible with older versions of openLCA! It is recommended to create a backup of the database before updating it.
+>**_Note:_** Once the database has been updated, it will only be compatible with the newer version of openLCA. It cannot be reverted to be compatible with older versions of openLCA! It is recommended to create a backup of the database before updating it.
 
 After completing these steps, the database will open and automatically become your active database (indicated by the yellow icon and bold text). You will see the navigation panel with various folders:
 

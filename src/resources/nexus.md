@@ -45,7 +45,7 @@ To order and download a database from the openLCA Nexus site, please follow thes
     ![](../media/download_databases.png)
     _Downloading a database from Nexus_
 
-**_Note for macOS users:_** If you are using Safari, the browser will automatically unzip your downloaded zip files. However, you need the zipped file for import in openLCA (e.g. when you want to import JSON-LD, methods packages, ILCD...). You can solve this issue in two ways: 
+>**_Note for macOS users:_** If you are using Safari, the browser will automatically unzip your downloaded zip files. However, you need the zipped file for import in openLCA (e.g. when you want to import JSON-LD, methods packages, ILCD...). You can solve this issue in two ways: 
 
 1. Use another browser for downloads, where the zip-files are not automatically unpacked after successful download.
 

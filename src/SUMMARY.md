@@ -45,8 +45,8 @@
 
 - [Databases](databases/README.md)
   - [Database elements](databases/database_elements.md)
-  - [Creating a new database from scratch](databases/create_database.md)
   - [Creating a new database loading it from file](databases/restore_database.md)
+  - [Creating a new database from scratch](databases/create_database.md)
   - [Database update](databases/database_update.md)
   - [Importing data and combining databases](databases/importing_and_combining_databases.md)
   - [Using mapping files and validating databases](databases/mapping_validation.md)
@@ -71,7 +71,10 @@
   - [Advanced product systems features](prod_sys/nested.md)
   - [Calculating a product system](prod_sys/calculating.md)
   - [Exporting/saving product systems](prod_sys/exporting.md)
-- [LCIA methods and categories](lcia_methods/README.md) - [Importing LCIA methods and categories into openLCA](lcia_methods/importing_lcia_methods.md) - [Creating a new impact assessment method, category and characterization factor](lcia_methods/creating_new_impact_assessment_method.md) - [Methods tabs](lcia_methods/impact_methods_tab_contents.md)
+- [LCIA methods and categories](lcia_methods/README.md) 
+  - [Importing LCIA methods and categories into openLCA](lcia_methods/importing_lcia_methods.md) 
+  - [Creating a new impact assessment method, category and characterization factor](lcia_methods/creating_new_impact_assessment_method.md) 
+  - [Methods tabs](lcia_methods/impact_methods_tab_contents.md)
   - [Category tabs](lcia_methods/impact_categories_tab_contents.md)
     - [General information (including impact direction)](lcia_methods/impcat_gen_info.md)
     - [Characterization factors](lcia_methods/impcat_cfs.md)
@@ -125,6 +128,7 @@
   - [Data Quality](advanced_top/data_quality.md)
   - [Monte Carlo simulation](advanced_top/monte_carlo.md)
   - [Modelling with time parameter](advanced_top/time.md)
+  - [First test version of integrating system dynamics into openLCA](advanced_top/system_synamics.md)
 - [Environmental Product Declarations (EPDs)](epds/README.md)
   - [Creating new processes for target products](epds/create_processes_for_target_products.md)
   - [Create product systems from your processes](epds/create_product_systems_from_processess.md)
@@ -151,6 +155,7 @@
   - [Tags](cheat/tags.md)
   - [Constants, operators and functions for formulas in openLCA](cheat/formulas_in_openlca.md)
   - [Shortcuts in openLCA](cheat/key_short_cuts.md)
+  - [Searching for CAS numbers in openLCA](cheat/CAS.md)
 
 -----------
 
@@ -164,5 +169,6 @@
 ---
 
 [Contact](./contact.md)
+
 
 

@@ -4,7 +4,7 @@
 
 Exporting databases in openLCA allows users to extract and save data in various formats for further analysis or sharing.
 
-**_Note_**: The methodologies described in this chapter can be applied to the whole database in use as well as single elements (flows, product systems, results...). You can right click on the element you want to export and select "Export". 
+>**_Note_**: The methodologies described in this chapter can be applied to the whole database in use as well as single elements (flows, product systems, results...). You can right click on the element you want to export and select "Export". 
 
 openLCA supports data export in many formats, offering adaptability to different needs:
 
@@ -45,7 +45,7 @@ To export data from openLCA, follow these steps:
     ![](../media/jsonld_export.png)
     <br>_Selecting the dataset/s and destination for the JSON-LD export_
 
-_**Note**:_ The option "Export default providers of product inputs and waste outputs" will not only export the provider link but also the linked processes. This is important if you only export the processes but not the whole database.
+>_**Note**:_ The option "Export default providers of product inputs and waste outputs" will not only export the provider link but also the linked processes. This is important if you only export the processes but not the whole database.
 
 <br>For details about JSONLD click [here](<https://www.greendelta.com/wp-content/uploads/2017/03/LCA_XV_JSON-LD_final.pdf>).
 
