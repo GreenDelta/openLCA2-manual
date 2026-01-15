@@ -43,7 +43,7 @@ Extract the tar.gz into your home folder and double-click on the executable to r
 
 It is therefore not a good idea to ask an admin to install openLCA via the installer when you are not the admin yourself, since you will not have access to the database folder afterwards, and also not to the folder where openLCA stores the configuration file, which means you will not be able to change the settings after the installation. 
 
-**_Note:_** You must first uninstall previous versions of openLCA.
+>**_Note:_** You must first uninstall previous versions of openLCA.
 
 ![](../media/openlca_installer.png)  
 
@@ -51,6 +51,6 @@ _Setup screen for installation in Windows_
 
 Follow the installation steps to the end and you can begin working with openLCA.
 
-_**Note:**_ If you encounter any issue with Windows Defender preventing you on installing openLCA, please have a look here (https://support.bemopro.com/hc/en-us/articles/11450999280531-Microsoft-Defender-SmartScreen-blocking-program-installation).
+>_**Note:**_ If you encounter any issue with Windows Defender preventing you on installing openLCA, please have a look here [https://support.bemopro.com/hc/en-us/articles/11450999280531-Microsoft-Defender-SmartScreen-blocking-program-installation](https://support.bemopro.com/hc/en-us/articles/11450999280531-Microsoft-Defender-SmartScreen-blocking-program-installation).
 
 </div>

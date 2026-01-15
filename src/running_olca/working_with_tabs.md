@@ -14,9 +14,9 @@ To show two tabs either underneath or next to each other, drag one tab till a do
 ![](../media/drag.png)
 _Placing tabs underneath or next to each other_  
 
-**_Note:_** An asterisk "*" in front of the tab's name indicates that the data of your tab is
+>**_Note:_** An asterisk "*" in front of the tab's name indicates that the data of your tab is
 not saved and therefore an older state of this tab will be included in any calculation. 
 
-_**Note**_: If you are unhappy with your choice of tabs and windows, you can always reset them under File → Preferences → Configuration → Reset Window. 
+>_**Note**_: If you are unhappy with your choice of tabs and windows, you can always reset them under File → Preferences → Configuration → Reset Window. 
 
 </div>
