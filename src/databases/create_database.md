@@ -26,7 +26,7 @@ In the wizard, you can choose from the following "Database content" options:
 _Difference between the three available new database types_
 
 
-**_Note:_** Typically, you will create the database with the "complete reference data" setting, unless you are importing data sets from external sources with other flows than the openLCA reference flows. E.g., you can import an entire SimaPro database and just use all flows and LCIA methods from there. Units are causing less issues in different database and LCA software systems (every LCA software has a unit "kg"), and you will need units, of course, thus in an empty database, you will need to create everything yourself. Starting with a database that contains most basic content such as units thus saves time. 
+>**_Note:_** Typically, you will create the database with the "complete reference data" setting, unless you are importing data sets from external sources with other flows than the openLCA reference flows. E.g., you can import an entire SimaPro database and just use all flows and LCIA methods from there. Units are causing less issues in different database and LCA software systems (every LCA software has a unit "kg"), and you will need units, of course, thus in an empty database, you will need to create everything yourself. Starting with a database that contains most basic content such as units thus saves time. 
 
 **_New!_** The [ecoinvent geographies](<https://geography.ecoinvent.org/>), along with their respective geometries, are now directly added to the reference data. Hence, if you create a database using the "Complete reference data" template, it will include these geographies.
 

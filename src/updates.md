@@ -7,7 +7,7 @@ In this section, you can check what the major manual updates were about and when
 - Created [First test version of integrating system dynamics into openLCA](./advanced_top/system_synamics.md) section
 - Updated [Exporting a database as a library](./libraries/exporting_database_as_library.md) section
 - Fixed bug in Summary
-- Changed notes style up to "Running openLCA for the first time" (included)
+- Changed note style up to "6. Databases" (included)
 
 ## 07.10.2025
 

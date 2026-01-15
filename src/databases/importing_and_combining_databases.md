@@ -16,7 +16,7 @@ Previously we have described the function "[Creating a new database loading it f
 
 <br>
 
-**_Note for macOS users:_** If you are using Safari, the browser will automatically unzip your downloaded zip files. However, you need the zipped file for import in openLCA (e.g. when you want to import JSON-LD, methods packages, ILCD...). You can solve this issue in two ways: 
+>**_Note for macOS users:_** If you are using Safari, the browser will automatically unzip your downloaded zip files. However, you need the zipped file for import in openLCA (e.g. when you want to import JSON-LD, methods packages, ILCD...). You can solve this issue in two ways: 
 
 1. Use another browser for downloads, where the zip-files are not automatically unpacked after successful download.
 
@@ -55,7 +55,7 @@ The fastest way to open a zolca-format database in openLCA, is outlined in the "
 
 After importing it, the database will be "inactive". To activate it and gain access to its flows, processes, and other components, simply double-click on it.
 
-**_Note:_** The program decompresses the files into a different directory (C:\Users\NAME\openLCA-data-1.4). As a result, the original zolca file remains compressed and won't be directly affected by changes made to the database within the software
+>**_Note:_** The program decompresses the files into a different directory (C:\Users\NAME\openLCA-data-1.4). As a result, the original zolca file remains compressed and won't be directly affected by changes made to the database within the software
 
 </details>
 
@@ -129,7 +129,7 @@ To import GeoJSON files, follow these steps:
 2. Choose the folder where the GeoJSON file is located.
 3. Select the specific GeoJSON file you wish to import.
 
-**_Note:_** If the GeoJSON file is in a zipped format within the selected folder, extract or unzip it before proceeding, as the import wizard can only add uncompressed GeoJSON files. The GeoJSON file may not be visible in the folder view, but it will be visible in the import wizard once the folder is selected.
+>**_Note:_** If the GeoJSON file is in a zipped format within the selected folder, extract or unzip it before proceeding, as the import wizard can only add uncompressed GeoJSON files. The GeoJSON file may not be visible in the folder view, but it will be visible in the import wizard once the folder is selected.
 
 </details>
 

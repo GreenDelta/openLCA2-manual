@@ -44,6 +44,6 @@ Once you opened or created a database, you'll see these elements in the navigati
 
 	- **Locations:** Locations are simply locations, and they can be a region, a country, or any other point on a map. They are important for localizing the supply chain and for calculating regional impacts.
 
-**_Note:_** openLCA utilizes Universally Unique Identifiers (UUIDs) to identify and manage all entities, including processes, flows, product systems, projects, parameters, impact categories, and impact assessment methods. UUIDs are standardized identifiers ensuring uniqueness across systems or databases, even from one user to another.
+>**_Note:_** openLCA utilizes Universally Unique Identifiers (UUIDs) to identify and manage all entities, including processes, flows, product systems, projects, parameters, impact categories, and impact assessment methods. UUIDs are standardized identifiers ensuring uniqueness across systems or databases, even from one user to another.
 
 </div>
