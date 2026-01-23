@@ -4,23 +4,24 @@
 
 ## Background
 
-One of the main challenges in the creation of LCI datasets and databases is the tension between transparency and the need to protect suppliers’ intellectual property. 
-For suppliers, there is very little incentive to share process or product data at the level of granularity required to make a high-quality, transparent LCI dataset. As a result, several strategies for preserving supplier IP in the creation of LCI datasets have been developed, all centred around the concept of aggregation.
-The goal of these aggregation strategies is to ensure that datasets are representative of reality without exposing the process data of any one supplier. This anonymisation is a critical step in the creation of high quality, FAIR, open-access datasets. 
+One of the main challenges in the creation of LCI datasets and databases is the tension between transparency and the need to protect suppliers’ intellectual property. For suppliers, there is very little incentive to share process or product data at the level of granularity required to make a high-quality, transparent LCI dataset. As a result, several strategies for preserving supplier IP in the creation of LCI datasets have been developed, all centred around the concept of aggregation.
+The goal of these aggregation strategies is to ensure that datasets are representative of reality without exposing the process data of any one supplier. This anonymisation is a critical step in the creation of high-quality, FAIR, open-access datasets. openLCA supports you with this in several ways.
 
 ## Vertical vs Horizontal Averaging 
 
-To create a vertically averaged dataset, first the individual production chains for a given product must be modelled. These production chains consist of a sequence of unit process inventories (UPIs) or aggregated processes. Once each production chain has been modelled and calculated, a final weighted average can be calculated based on the production tonnage of each chain. Vertical aggregation provides the datasets with the most realistic representation of production chains while still maintaining supplier confidentiality [1].
+To create a vertically averaged dataset, first, the individual production chains for a given product must be modelled. These production chains consist of a sequence of unit process inventories (UPIs) or aggregated processes (system processes), "[see definition of both](./processes/index.html)". Once each production chain has been modelled and calculated, a final weighted average can be calculated based on the production tonnage of each chain. Vertical aggregation provides the datasets with the most realistic representation of production chains while still maintaining supplier confidentiality [1].
 
 ![](./media/vertical_aggregation.png)  
 _Vertical aggregation across three production sites_
 
-To create a horizontally averaged dataset, multiple UPIs or aggregated processes from different production chains that supply the same reference flows are aggregated. Horizontal averaging can be beneficial for addressing data gaps or creating benchmarks, but is methodologically less robust than vertical averaging due to potential differences in the averaged operations [1]. 
+This has been done in our research project PRIMUS to generate EcoProfiles of plastic recyclates. Have a look at the respective "[ methodology](https://nexus.openlca.org/ws/files/38305)".
+
+To create a horizontally averaged dataset, multiple UPIs or aggregated processes from different production chains that supply the same reference flows are aggregated. Horizontal averaging can be beneficial for addressing data gaps or creating benchmarks, but it is methodologically less robust than vertical averaging due to potential differences in the averaged operations [1]. 
 
 ![](./media/horizontal_aggregation.png)  
 _Horizontal aggregation across three production sites_
 
-Both types of aggregation can be either company specific or an average of different suppliers within an industry [2].  A hybrid of vertical and horizontal averaging approaches is often used in the creation of datasets.
+Both types of aggregation can be either company-specific or an average of different suppliers within an industry [2].  A hybrid of vertical and horizontal averaging approaches is often used in the creation of datasets.
 
 ## Fully vs Partially Terminated Datasets 
 
