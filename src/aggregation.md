@@ -29,7 +29,7 @@ A fully terminated dataset is a dataset that contains the entire product system 
 However, the lack of transparency provided by fully terminated processes means that users lose oversight over the background system and are unable to adapt processes, limiting the flexibility of the model. Furthermore, comparability between system process datasets can be limited due to differing assumptions made regarding allocation, cut-off etc. 
 Historically, system processes have had the added benefit of requiring less computational power in LCA calculations. However, recent technological developments such as precalculated database libraries developed by GreenDelta mean that there is often no longer a meaningful difference in calculation speed between unit and system process datasets.
 
-In addition to fully disaggregated and fully terminated processes, datasets can be created in a “partially terminated” format. Partially terminated datasets consist of an almost completely aggregated dataset with the exception of one or more intermediate exchange listed that the user can connect to background datasets [4].
+In addition to fully disaggregated and fully terminated processes, datasets can be created in a “partially terminated” format. Partially terminated datasets consist of an almost completely aggregated dataset with the exception of one or more intermediate exchanges listed that the user can connect to background datasets [4].
 
 ![](./media/fully_terminated_process.png)  
 _Screenshot from openLCA showing fully terminated process (system process)_
@@ -39,7 +39,7 @@ _Screenshot from openLCA showing partially terminated process_
 
 ## Data Aggregation in openLCA 
 
-To perform this in openLCA, you can calculate the results of your product system and save them as a system process. By clicking the "Save results as..." button in the General information tab of a product system results window. Alternatively, you can select "File" → "Save" above the navigation panel, you can save your results as a system process.
+To perform data aggregation in openLCA, there are several ways. However, the fastest is to calculate the results of your product system and save them as a novel system process by clicking the "Save results as..." button in the "General information" tab of the results window [see process chapter](./res_analysis/analysis.md):
 
 ![](./media/save_as_result_0.png)
 
@@ -47,9 +47,9 @@ Save as result:
 
 ![](./media/save_as_result_system_process.png)  
 
-Then you generate a system process, which can be further exported as ILCD or JSON and shared with other practitioners.
+Then you generate a system process, which can be further exported as ILCD or JSON file and shared with other practitioners.
 
-If you want to produce a partially terminated process from your results, you follow the logic presented in the [Validation Chapter](./validation.html#validation-of-data) by disconnecting respective product flows from your reference process in the model graph or by not setting the provider on process level prior to the product system creation and removing the tick from 'auto-link processes. This will give you an inventory with intermediary flows and direct emissions you can export then.
+If you want to produce a partially terminated process from your results, you follow the logic presented in the [Validation Chapter](./validation.html#validation-of-data) by disconnecting respective product flows from your reference process in the model graph or by not setting the provider on process level prior to the product system creation and removing the tick from 'auto-link processes. This will give you an inventory solely consisting of intermediary flows and direct emissions from this process you can export again.
 
 Relevant sources:
 
