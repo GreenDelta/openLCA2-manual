@@ -37,19 +37,19 @@ _Screenshot from openLCA showing fully terminated process (system process)_
 ![](./media/partial_terminated_process.png)  
 _Screenshot from openLCA showing partially terminated process_
 
-## 
+## Data Aggregation in openLCA 
 
-To perform this in openLCA you can simply calculate the results of your product system and save the results as system process. By clicking the "Save results as..." button in the General information tab of a product system results window. Alternatively, you can select "File" → "Save" above the navigation panel, you can save your results as either a "result" or as a system process.
+To perform this in openLCA, you can calculate the results of your product system and save them as a system process. By clicking the "Save results as..." button in the General information tab of a product system results window. Alternatively, you can select "File" → "Save" above the navigation panel, you can save your results as a system process.
 
-![](../media/save_as_result_0.png)
-<br>_In openLCA 2 you can save results or even create a system process based on the results_
+![](./media/save_as_result_0.png)
 
 Save as result:
 
-![](../media/save_as_result_system_process.png)  
+![](./media/save_as_result_system_process.png)  
 
-Then you generate an system process which can be further exported as ILCD or JSON and shared with other practitioners.
+Then you generate a system process, which can be further exported as ILCD or JSON and shared with other practitioners.
 
+If you want to produce a partially terminated process from your results, you follow the logic presented in the [Validation Chapter](./validation.html#validation-of-data) by disconnecting respective product flows from your reference process in the model graph or by not setting the provider on process level prior to the product system creation and removing the tick from 'auto-link processes. This will give you an inventory with intermediary flows and direct emissions you can export then.
 
 Relevant sources:
 
