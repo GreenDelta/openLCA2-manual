@@ -9,12 +9,12 @@ The goal of these aggregation strategies is to ensure that datasets are represen
 
 ## Vertical vs Horizontal Averaging 
 
-To create a vertically averaged dataset, first, the individual production chains for a given product must be modelled. These production chains consist of a sequence of unit process inventories (UPIs) or aggregated processes (system processes), "[see definition of both](./processes/index.html)". Once each production chain has been modelled and calculated, a final weighted average can be calculated based on the production tonnage of each chain. Vertical aggregation provides the datasets with the most realistic representation of production chains while still maintaining supplier confidentiality [1].
+To create a vertically averaged dataset, first, the individual production chains for a given product must be modelled. These production chains consist of a sequence of unit process inventories (UPIs) or aggregated processes (system processes), [see process chapter](./processes/index.html). Once each production chain has been modelled and calculated, a final weighted average can be calculated based on the production tonnage of each chain. Vertical aggregation provides the datasets with the most realistic representation of production chains while still maintaining supplier confidentiality [1].
 
 ![](./media/vertical_aggregation.png)  
 _Vertical aggregation across three production sites_
 
-This has been done in our research project PRIMUS to generate EcoProfiles of plastic recyclates. Have a look at the respective "[ methodology](https://nexus.openlca.org/ws/files/38305)".
+This has been done in our research project PRIMUS to generate EcoProfiles of plastic recyclates. Have a look at the respective [methodology ](https://nexus.openlca.org/database/EcoProfiles%20Recycled%20Plastics%20)[(download directly)](https://nexus.openlca.org/ws/files/38305).
 
 To create a horizontally averaged dataset, multiple UPIs or aggregated processes from different production chains that supply the same reference flows are aggregated. Horizontal averaging can be beneficial for addressing data gaps or creating benchmarks, but it is methodologically less robust than vertical averaging due to potential differences in the averaged operations [1]. 
 
@@ -36,6 +36,20 @@ _Screenshot from openLCA showing fully terminated process (system process)_
 
 ![](./media/partial_terminated_process.png)  
 _Screenshot from openLCA showing partially terminated process_
+
+## 
+
+To perform this in openLCA you can simply calculate the results of your product system and save the results as system process. By clicking the "Save results as..." button in the General information tab of a product system results window. Alternatively, you can select "File" → "Save" above the navigation panel, you can save your results as either a "result" or as a system process.
+
+![](../media/save_as_result_0.png)
+<br>_In openLCA 2 you can save results or even create a system process based on the results_
+
+Save as result:
+
+![](../media/save_as_result_system_process.png)  
+
+Then you generate an system process which can be further exported as ILCD or JSON and shared with other practitioners.
+
 
 Relevant sources:
 
