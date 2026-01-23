@@ -38,6 +38,8 @@ _Screenshot from openLCA showing fully terminated process (system process)_
 ![](./media/partial_terminated_process.png)  
 _Screenshot from openLCA showing partially terminated process_
 
+In all cases, GreenDelta is happy to provide support for extracting and sharing LCA data using openLCA.
+
 ## Data Aggregation in openLCA 
 
 To perform data aggregation in openLCA, there are several ways. However, the fastest is to calculate the results of your product system and save them as a novel system process by clicking the "Save results as..." button in the "General information" tab of the results window [see process chapter](./res_analysis/analysis.md):
@@ -48,9 +50,9 @@ Save as result:
 
 ![](./media/save_as_result_system_process.png)  
 
-Then you generate a system process, which can be further exported as ILCD or JSON file and shared with other practitioners.
+Then you generate a **system process**, which can be further exported as ILCD or JSON file and shared with other practitioners.
 
-If you want to produce a partially terminated process from your results, you follow the logic presented in the [Validation Chapter](./validation.html#validation-of-data) by disconnecting respective product flows from your reference process in the model graph or by not setting the provider on process level prior to the product system creation and removing the tick from 'auto-link processes. This will give you an inventory solely consisting of intermediary flows and direct emissions from this process you can export again.
+If you want to produce a **partially terminated process** from your results, you need to hold intermediary flows in your calculated flow (the supply chain should not be fully resolved). You can follow the logic presented in the [Validation Chapter](./validation.html#validation-of-data) by disconnecting respective product flows from your reference process in the model graph or by not setting the provider on process level prior to the product system creation and removing the tick from 'auto-link processes. This will give you an inventory solely consisting of intermediary flows and direct emissions from this process you can export again as described above. This can also be done use various scripts, feel free to reach out to us for consultancy on this matter.
 
 Relevant sources:
 
