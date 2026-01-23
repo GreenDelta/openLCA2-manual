@@ -116,6 +116,7 @@
 # Guidance for LCA practitioners
 
 - [Model validation in openLCA](validation.md)
+- [Data aggregation in openLCA](aggregation.md)
 
 -----------
 
