@@ -12,6 +12,9 @@ The goal of these aggregation strategies is to ensure that datasets are represen
 
 To create a vertically averaged dataset, first, the individual production chains for a given product must be modelled. These production chains consist of a sequence of unit process inventories (UPIs) or aggregated processes (system processes), [see process chapter](./processes/index.html). Once each production chain has been modelled and calculated, a final weighted average can be calculated based on the production tonnage of each chain. Vertical aggregation provides the datasets with the most realistic representation of production chains while still maintaining supplier confidentiality [1].
 
+![](./media/vertical_aggregation_2.png)  
+_Three production chains comprised of three individual UPIs_
+
 ![](./media/vertical_aggregation.png)  
 _Vertical aggregation across three production sites_
 
@@ -20,7 +23,7 @@ This has been done in our research project PRIMUS to generate EcoProfiles of pla
 To create a horizontally averaged dataset, multiple UPIs or aggregated processes from different production chains that supply the same reference flows are aggregated. Horizontal averaging can be beneficial for addressing data gaps or creating benchmarks, but it is methodologically less robust than vertical averaging due to potential differences in the averaged operations [1]. 
 
 ![](./media/horizontal_aggregation.png)  
-_Horizontal aggregation across three production sites_
+_Horizontal averaging across three production sites_
 
 Both types of aggregation can be either company-specific or an average of different suppliers within an industry [2].  A hybrid of vertical and horizontal averaging approaches is often used in the creation of datasets.
 
