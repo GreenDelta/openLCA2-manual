@@ -12,8 +12,7 @@ The goal of these aggregation strategies is to ensure that datasets are represen
 
 ## Vertical vs Horizontal Averaging 
 
-
-In vertical aggregation, multiple unit process inventories (UPIs) are combined to create a single dataset representing the entire production chain. A fully vertically aggregated dataset is known as a system process (effectively a life cycle result saved as a process, [see process chapter](./processes/index.html)). Datasets can also be partially vertically aggregated (also known as partially terminated datasets). More details on fully vs partially terminated datasets are provided below.
+In vertical aggregation, multiple **unit process** inventories (UPIs) are combined to create a single dataset representing the entire production chain. A fully vertically aggregated dataset is known as a **system process** (effectively a life cycle result saved as a process, [see process chapter](./processes/index.html)). Datasets can also be partially vertically aggregated (also known as partially terminated datasets). More details on fully vs partially terminated datasets are provided below.
 Vertical aggregation provides the datasets with the most realistic representation of production chains while still maintaining supplier confidentiality [1].
 
 ![](./media/vertical_aggregation_2.png)  
@@ -62,11 +61,14 @@ You can then generate a **system process**, which can be further exported as an 
 
 If you want to produce a **partially terminated process** from your results, you need to hold intermediary flows in your calculated flow (the supply chain should not be fully resolved). You can follow the logic presented in the [Validation Chapter](./validation.html#validation-of-data) by disconnecting respective product flows from your reference process in the model graph or by not setting the provider on process level prior to the product system creation and removing the tick from 'auto-link processes. This will give you an inventory solely consisting of intermediary flows and direct emissions from this process you can export again as described above. This can also be done using various scripts; feel free to reach out to us for consultancy on this matter.
 
-Relevant sources:
+## Relevant sources:
 
 [1]	PlasticsEurope, ‘Eco-profiles program and methodology’. Accessed: Oct. 07, 2025. [Online]. Available: https://plasticseurope.org/wp-content/uploads/2024/03/PlasticsEurope-Ecoprofiles-program-and-methodology_V3.1.pdf
+
 [2]	United Nations Environment Programme and SETAC, Global Guidance Principles for Life Cycle Assessment Databases. 2011. Accessed: Dec. 11, 2025. [Online]. Available: https://www.lifecycleinitiative.org/wp-content/uploads/2012/12/2011%20-%20Global%20Guidance%20Principles.pdf
+
 [3]	‘Life Cycle Terminology 2 - Life Cycle Initiative’. Accessed: Jan. 16, 2026. [Online]. Available: https://www.lifecycleinitiative.org/activities/life-cycle-terminology-2/
+
 [4]	European Commission. Joint Research Centre., Guide for EF compliant data sets. LU: Publications Office, 2020. Accessed: Sep. 25, 2025. [Online]. Available: https://data.europa.eu/doi/10.2760/537292
 
 
