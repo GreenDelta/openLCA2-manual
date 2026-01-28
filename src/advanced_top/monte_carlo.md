@@ -86,7 +86,7 @@ The results will be displayed live and provide you with information about:
 
 However, all results can be exported directly as an Excel document to further assessment. Simply click on the Excel icon on the right-hand side of the editor (see above).
 
-_**Note:**_ Depending on the type of uncertainty distribution most prevalent in the product system, the resulting mean may not match the value calculated in LCIA through regular product system result calculation. This results from a cumulative effect of skewed product system uncertainty distribution types propagating to the reference flow.
+>_**Note:**_ Depending on the type of uncertainty distribution most prevalent in the product system, the resulting mean may not match the value calculated in LCIA through regular product system result calculation. This results from a cumulative effect of skewed product system uncertainty distribution types propagating to the reference flow.
 
 ### Pinning of Monte Carlo Simulation results
 
