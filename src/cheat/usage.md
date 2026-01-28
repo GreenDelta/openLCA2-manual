@@ -12,6 +12,6 @@ After clicking on "Usage", the following window will show where the selected pro
 
 This function it’s helpful for example if you want to delete a connected process/flow. 
 
-**_Note:_** Moreover, the "Used in processes" section in every product or waste flow ([General information tab](../flows/flow_tabs_contents.md)) shows you a more detailed "Usage" information.
+>**_Note:_** Moreover, the "Used in processes" section in every product or waste flow ([General information tab](../flows/flow_tabs_contents.md)) shows you a more detailed "Usage" information.
 
 </div>
