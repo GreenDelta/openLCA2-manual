@@ -29,6 +29,6 @@ We want to emphasize our high variety of graphs for the communication of your re
 
 _Relative LCIA results - Radar chart example (In the software the mouse over allows to access more details)_
 
-**_Note:_** For normalized charts, the normalization method needs to be selected in the "Calculation setup" section of "[Creating a new projet](./new_proj.md)".
+>**_Note:_** For normalized charts, the normalization method needs to be selected in the "Calculation setup" section of "[Creating a new projet](./new_proj.md)".
 
 </div>
