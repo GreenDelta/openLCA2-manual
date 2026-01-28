@@ -10,7 +10,7 @@ For suppliers, there is very little incentive to share process or product data a
 
 The goal of these aggregation strategies is to ensure that datasets are representative of reality without exposing the process data of any one supplier. This anonymisation is a critical step in creating high-quality, FAIR, open-access datasets. openLCA supports you with this in several ways.
 
-## Vertical vs Horizontal Averaging 
+## Vertical Aggregation vs Horizontal Averaging 
 
 In vertical aggregation, multiple **unit process** inventories (UPIs) are combined to create a single dataset representing the entire production chain. A fully vertically aggregated dataset is known as a **system process** (effectively a life cycle result saved as a process, [see process chapter](./processes/index.html), with only elementary flows). Datasets can also be partially vertically aggregated (also known as partially terminated datasets). More details on fully vs partially terminated datasets are provided below.
 
