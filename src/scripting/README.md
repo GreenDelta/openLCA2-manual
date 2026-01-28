@@ -76,7 +76,7 @@ different approaches.
 | Can I use it with other languages than Python (e.g. JavaScript, Go, .NET)? | ❌ No        | ✅ Yes            | ❌ No        |
 | Does it integrate autocompletion and type annotations?                     | ⚠️ Difficult | ✅ Yes            | ❌ No        |
 
-> **_NOTE:_** Some of the features above can also be done in openLCA without the need for any
+> **_Nore:_** Some of the features above can also be done in openLCA without the need for any
 > additional scripting. For example, you can use the openLCA GUI to import and export data from/to
 > Excel files or run SQL commands directly on the database.
 
