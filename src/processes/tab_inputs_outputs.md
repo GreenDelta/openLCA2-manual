@@ -11,7 +11,7 @@ _Inputs/outputs tab window with highlighting on the tools to the right top corne
 
 In the top right corner, you will see several icons: "Refresh" (circled arrow), "Add Flows" (green plus), "Delete Flow" (red x), and a "123"/ "fx" icon you can use to switch between displaying the "Amount" as either a value or formula (when mathematical operations have been applied).
 
-_**Note:**_ A waste can also be designed as an input covering recycling approaches in openLCA. Then it is possible to select "avoid product" to define a supplier. Check ["Waste"](../waste_modelling.md) section for details.
+>_**Note:**_ A waste can also be designed as an input covering recycling approaches in openLCA. Then it is possible to select "avoid product" to define a supplier. Check ["Waste"](../waste_modelling.md) section for details.
 
 <details>
 <summary><b>Flow</b></summary>
@@ -41,10 +41,10 @@ You can enter the amount of the flow as values, formulas, and/or parameters.
 - To view the calculated value, click on the "_123_" icon located in the top right corner.
 - To see the original formula/parameters, click on the icon again, which will change to the "_fx_" icon.
 
-**_Note:_**
-- When a formula and/or parameter is typed in the "Amount" field, the software will calculate the value for the amount automatically.
-- Complex formulas must adhere to a specific format (e.g., Tan(a), trunc(c), etc.). Have a look in ['Constants, operators and functions for formulas in openLCA'](../advanced_top/formulas_in_openlca.md) chapter.
-- You can use the formula interpreter, accessible under "Tools" → "Formula Interpreter", to identify errors within your formulas. 
+>**_Note:_**
+>- When a formula and/or parameter is typed in the "Amount" field, the software will calculate the value for the amount automatically.
+>- Complex formulas must adhere to a specific format (e.g., Tan(a), trunc(c), etc.). Have a look in ['Constants, operators and functions for formulas in openLCA'](../advanced_top/formulas_in_openlca.md) chapter.
+>- You can use the formula interpreter, accessible under "Tools" → "Formula Interpreter", to identify errors within your formulas. 
 
 </details>
 
@@ -66,7 +66,7 @@ openLCA supports a wide range of measurement unit types to represent different p
 
 Units are assigned to the flows based on the flow property defined in the "[Flow properties tab](../flows/flow_tabs_contents.md)" You have the flexibility to change units by clicking on the unit cell and choosing a different unit from the provided list. If a conversion factor is available, the amount will be automatically converted to the newly selected unit.
 
-**_Note:_** openLCA allows users to create **custom/new units**. This can also be done in the "[Flow properties tab](../flows/flow_tabs_contents.md)".
+>**_Note:_** openLCA allows users to create **custom/new units**. This can also be done in the "[Flow properties tab](../flows/flow_tabs_contents.md)".
 
 ![](../media/change_unit_new.png)   
 _Changing flow units within a process editor_
@@ -116,7 +116,7 @@ _Adding uncertainty information, step 1_
 ![](../media/uncertainty.png)  
 _Adding uncertainty information, step 2_
 
-**_Note:_** Uncertainty data can also be defined for parameters and LCIA characterization factors in a similar manner. 
+>**_Note:_** Uncertainty data can also be defined for parameters and LCIA characterization factors in a similar manner. 
 
 </details>
 
@@ -139,7 +139,7 @@ To choose a provider for a flow, follow these steps:
 
 Note that many processes from databases like ecoinvent have predefined default providers. To access detailed information about the provider, simply right-click on a flow and select "Open provider".
 
-**_Note:_** When creating a product system in openLCA, the software can automatically handle flows with multiple providers. It offers several options for auto-linking processes, which are explained in detail in the ["Creating a new product system/Settings for a product system"](../prod_sys/Creating.md#settings-for-a-product-system) section.
+>**_Note:_** When creating a product system in openLCA, the software can automatically handle flows with multiple providers. It offers several options for auto-linking processes, which are explained in detail in the ["Creating a new product system/Settings for a product system"](../prod_sys/Creating.md#settings-for-a-product-system) section.
 
 </details>
 
