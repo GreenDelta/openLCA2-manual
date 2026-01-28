@@ -2,10 +2,10 @@
 
 In this section, you can check what the major manual updates were about and when they were released.
 
-## 02.2026
+## 28.02.2026
 - Created [Creating Data Sets in openLCA - Data Aggregation](./aggregation.md) section
 
-## 01.2026
+## 15.01.2026
 - Created [First test version of integrating system dynamics into openLCA](./advanced_top/system_synamics.md) section
 - Updated [Exporting a database as a library](./libraries/exporting_database_as_library.md) section
 - Fixed bug in Summary
