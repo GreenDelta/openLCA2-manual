@@ -47,9 +47,9 @@ _**Important:**_ openLCA does not automatically update the allocation factors pr
 ![](./media/allocation_example_calculated_factors.png)
 <br>_Calculated allocation factors. Causal allocation has to be inserted manually, else it will by default get the physical allocation factors._
 
-_**Note:**_ For the automated calculation of the allocation factors, the main product and the by-products need to have the same flow property. But openLCA will tell you if this is not the case. However, if you manually fill in the allocation factors (physical, economic or causal) or formulas, openLCA will refer to those.
+>_**Note:**_ For the automated calculation of the allocation factors, the main product and the by-products need to have the same flow property. But openLCA will tell you if this is not the case. However, if you manually fill in the allocation factors (physical, economic or causal) or formulas, openLCA will refer to those.
 
-_**Note:**_ When a currency is unavailable, a new currency can be created under "Currencies" under the "Background data" in the Navigation panel. A conversion factor can be added according to whatever reference currency is set.
+>_**Note:**_ When a currency is unavailable, a new currency can be created under "Currencies" under the "Background data" in the Navigation panel. A conversion factor can be added according to whatever reference currency is set.
 
 #### Allocation for Recycling
 
@@ -61,7 +61,7 @@ Be reminded that also recycling processes are multi-output processes as they tre
 ![](./media/allocation_recycling.png)
 <br>_As the recycling process is a multi-output process allocation is needed! Here, physical allocation was applied._
 
-_**Note:**_ Here we allocated 50% of the impacts to the recyclate and the waste. This is only one option. However, if you are not modeling a closed-loop scenario this can be a relevant detail you should consider.
+>_**Note:**_ Here we allocated 50% of the impacts to the recyclate and the waste. This is only one option. However, if you are not modeling a closed-loop scenario this can be a relevant detail you should consider.
 
 ### System Expansion
 

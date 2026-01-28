@@ -16,9 +16,9 @@ After opening a flow in openLCA, you will find tabs at the bottom of the window 
   ![](../media/versioning.png)  
 
 
-  _**Note on "Version":**_ openLCA performs versioning for you. Every time you save the flow, the version will be updated automatically. Additionally, you can also manually higher the version by clicking on either on "Update major version" or "Update minor version". The version can't be reset or modified downwards within openLCA to keep track of changes.
+  >_**Note on "Version":**_ openLCA performs versioning for you. Every time you save the flow, the version will be updated automatically. Additionally, you can also manually higher the version by clicking on either on "Update major version" or "Update minor version". The version can't be reset or modified downwards within openLCA to keep track of changes.
   
-  _**Note on "Infrastructure flow":**_ This checkbox serves to store whether a flow is infrastructure flow or not (so, the flow is a product with long lifetime and costly – a building, a machinery, …). This is a mandatory field in the EcoSpold1 format and also used by SimaPro e.g.. In openLCA, it has no practical effect.
+  >_**Note on "Infrastructure flow":**_ This checkbox serves to store whether a flow is infrastructure flow or not (so, the flow is a product with long lifetime and costly – a building, a machinery, …). This is a mandatory field in the EcoSpold1 format and also used by SimaPro e.g.. In openLCA, it has no practical effect.
 
 - **Used in Processes (for product and waste flows only):** This section shows the processes that consume or produce the flow. Double-clicking on a process will open it in the editor for further exploration.
 	

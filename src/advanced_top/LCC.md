@@ -79,7 +79,7 @@ In case of multi-output processes in the database, it is important to know what 
 
 _Choosing the allocation method in openLCA during the calculation setup. The box for "Include cost calculation" is checked!_
 
-_**Note:**_ Furthermore, LCC can be performed stand-alone by selecting no method when the impact assessment is run.
+>_**Note:**_ Furthermore, LCC can be performed stand-alone by selecting no method when the impact assessment is run.
 
 Depending on this choice (and depending on what is defined in the processes itself) the following rules will be applied: 
 - _**None:**_ All costs are considered (the price of the by-product as revenue)

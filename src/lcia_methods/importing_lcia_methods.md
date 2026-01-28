@@ -26,7 +26,7 @@ However, some databases require their own specific method pack. In Nexus, you'll
 
 After downloading one or more of these method packs, you can import the  file into an active openLCA database. **Do not extract JSON-LD's .zip files before importing!**
 
-**_Note for macOS users:_** If you are using Safari, the browser will automatically unzip your downloaded zip files. However, you need the zipped file for import in openLCA (e.g., when you want to import JSON-LD, methods packages, ILCD...). You can solve this issue in three ways: 
+>**_Note for macOS users:_** If you are using Safari, the browser will automatically unzip your downloaded zip files. However, you need the zipped file for import in openLCA (e.g., when you want to import JSON-LD, methods packages, ILCD...). You can solve this issue in three ways: 
 
 1. Go to the settings of Safari and unselect the default option "Open "safe" files after downloading".
 
@@ -52,7 +52,7 @@ The import will then start automatically and may take a few minutes. When it is 
 ![](../media/lcia.png)    
 _LCIA methods in openLCA_
 
-_**Note:**_ Note that you can later assess the compatibility of LCIA methods with your database in  [LCIA checks](../res_analysis/analysis.md).
+>_**Note:**_ you can later assess the compatibility of LCIA methods with your database in  [LCIA checks](../res_analysis/analysis.md).
 
 In openLCA 2, the impact categories are independent from the LCIA methods, and the LCIA methods are rather an "umbrella" which can contain several impact categories – this allows you to easily create own methods, e.g. for projects, by simply adding existing impact categories to e.g. a self-created LCIA method.
 

@@ -41,7 +41,7 @@ Users can use the [constants, operators and functions ](../cheat/formulas_in_ope
 ### Extending the formula field character allowance
 
 
-**_Note_**: Often the length of the formula field allowed by the software (150 characters) is insufficient for the formulas users wish to enter. The length of the formulas can be extended using the SQL command below in the SQL query browser of openLCA, found under Tools>developer tools>SQL (select the green icon to run). Users may save this formula under the ‘scripts’ database elements folder as this script has to be applied to each new database in openLCA as it is only used in the active database.
+>**_Note_**: Often the length of the formula field allowed by the software (150 characters) is insufficient for the formulas users wish to enter. The length of the formulas can be extended using the SQL command below in the SQL query browser of openLCA, found under Tools>developer tools>SQL (select the green icon to run). Users may save this formula under the ‘scripts’ database elements folder as this script has to be applied to each new database in openLCA as it is only used in the active database.
 
 ```
 ALTER TABLE tbl_exchanges
@@ -77,7 +77,7 @@ concrete\_amount= if(and(building\_area\<=100;building\_height\<=10);150;if(and(
 
 ![](../media/dependent_para_2.png)  
 
-**_Note_**: openLCA requires precise syntax. If there is any mistake in the syntax—such as incorrect usage of operators, missing parentheses, or improper logical conditions—the software will return an error and the calculation will not proceed. In the example below the bracket was removed before the first ‘if(and’ from the concrete amount formula.*
+>**_Note_**: openLCA requires precise syntax. If there is any mistake in the syntax—such as incorrect usage of operators, missing parentheses, or improper logical conditions—the software will return an error and the calculation will not proceed. In the example below the bracket was removed before the first ‘if(and’ from the concrete amount formula.*
 
 ![](../media/dependent_para_3.png)  
 

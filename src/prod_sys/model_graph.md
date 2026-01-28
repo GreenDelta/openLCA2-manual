@@ -34,7 +34,7 @@ A pop-up window will appear with a list of all possible providers for that flow.
 ![](../media/model_graph_search_providers_connect.png)
 <br>_Model graph - Search providers - Connect_
 
-**_Note_**: If you add processes with this function, the full supply chain will be NOT added. You have to manually add it afterwards, using the "Build flow supply chain" function (see below).
+>**_Note_**: If you add processes with this function, the full supply chain will be NOT added. You have to manually add it afterwards, using the "Build flow supply chain" function (see below).
  
 Moreover, if you want to create/edit the product system graphically, you can **drag and drop processes** from the navigation panel into the model graph void area. Then you can drag a flow to the corresponding one in the provider/receiver process to create the connections between the flows. To connect the newly added process to its supply chain, right-click on it and then select "Build supply chain".
 
@@ -116,7 +116,7 @@ By right-clicking on the background in the model graph, the following options wi
     ![](../media/graph_settings.png)
 
 
-    _**Note**:_ Themes can be modified under "Graphical editor theme" on File > Preferences > Configuration  (check out [Toolbar: File](../running_olca/toolbar_file.md)), and also by editing the .css files under /openLCAdata-1.4/graph-themes. To reset the themes to the original one, simply delete (or rename) this folder before launching openLCA. In addition, the colours of the model graph elements marked with #model (note that #sankey, refers to the Sankey diagram) can be modified by changing the hexadecimal colour codes (using Google colour selector for example). It is very important to keep the same syntax of the document (no changes can be made outside of the bracket {}).
+    >_**Note**:_ Themes can be modified under "Graphical editor theme" on File > Preferences > Configuration  (check out [Toolbar: File](../running_olca/toolbar_file.md)), and also by editing the .css files under /openLCAdata-1.4/graph-themes. To reset the themes to the original one, simply delete (or rename) this folder before launching openLCA. In addition, the colours of the model graph elements marked with #model (note that #sankey, refers to the Sankey diagram) can be modified by changing the hexadecimal colour codes (using Google colour selector for example). It is very important to keep the same syntax of the document (no changes can be made outside of the bracket {}).
 
 - **Save as image**: Saves an image of the model graph as .png file
 
@@ -149,7 +149,7 @@ By right-clicking on a process in the model graph, you find the following additi
     ![](../media/remove_supply_chain.png)
     <br>_Deleting or hiding the supply chain_
 
-    _**Note:**_ Deleting the supply chain when removing the connection of a process, removes it from the product system entirely. The "Hide" option, otherwise, lets you retain the supply chain. This is important when your supply chain has multiple connections within your product system. For instance, if you delete the link to "Electricity, at grid, CN," it will also disappear from other processes using the same electricity source. Therefore, we recommend using "hide" if you're unsure about the supply chain within the whole system (otherwise check with [Usage](../cheat/usage.md)).
+    >_**Note:**_ Deleting the supply chain when removing the connection of a process, removes it from the product system entirely. The "Hide" option, otherwise, lets you retain the supply chain. This is important when your supply chain has multiple connections within your product system. For instance, if you delete the link to "Electricity, at grid, CN," it will also disappear from other processes using the same electricity source. Therefore, we recommend using "hide" if you're unsure about the supply chain within the whole system (otherwise check with [Usage](../cheat/usage.md)).
 
 
     ![](../media/model_graph_remove_connection_before.png)
@@ -168,7 +168,7 @@ By right-clicking on a process in the model graph, you find the following additi
     ![](../media/model_graph_search_providers_connect.png)
     <br>_Model graph - Search providers - Connect_
 
-    **_Note_**: If you add processes with this function, the full supply chain will be NOT added. You have to manually add it afterwards, using the "Build flow supply chain" function (see below).
+    >**_Note_**: If you add processes with this function, the full supply chain will be NOT added. You have to manually add it afterwards, using the "Build flow supply chain" function (see below).
 
     Otherwise, you can also draw connections by dragging from one flow to another flow! To do that, you need to have the respective processes expanded, then click on the provider flow and drag it to the receiver flow:
 
@@ -195,7 +195,7 @@ By right-clicking on a connection in the model graph, the following additional o
     ![](../media/remove_supply_chain.png)
     <br>_Deleting or hiding the supply chain_
 
-_**Note:**_ Deleting the supply chain when removing the connection of a process, removes it from the product system entirely. The "Hide" option, otherwise, lets you retain the supply chain. This is important when your supply chain has multiple connections within your product system. For instance, if you delete the link to "Electricity, at grid, CN," it will also disappear from other processes using the same electricity source. Therefore, we recommend using "hide" if you're unsure about the supply chain within the whole system (otherwise check with [Usage](../cheat/usage.md)).
+>_**Note:**_ Deleting the supply chain when removing the connection of a process, removes it from the product system entirely. The "Hide" option, otherwise, lets you retain the supply chain. This is important when your supply chain has multiple connections within your product system. For instance, if you delete the link to "Electricity, at grid, CN," it will also disappear from other processes using the same electricity source. Therefore, we recommend using "hide" if you're unsure about the supply chain within the whole system (otherwise check with [Usage](../cheat/usage.md)).
 
 ![](../media/model_graph_remove_connection_before.png)
 <br>_Model graph - Example of removing a connection (before)_

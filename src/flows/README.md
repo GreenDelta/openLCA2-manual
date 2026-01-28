@@ -20,6 +20,6 @@ In general, openLCA distinguishes three flow types:
 
 Each flow created in openLCA must be associated with a reference flow property, such as mass, volume, area, and so on. Though, it is also possible to have multiple flow properties for the same flow (e.g. uranium can be measured using both mass and radioactivity units, gasses can be measured using both mass and volume units, etc.)
 
-_**Note**:_ Certain waste flows can also be modelled as product flows. In databases this is usually stated in the name. Waste paper is a great example. As it can be used in the production of paper, waste paper isn’t necessarily modelled as a waste flows but instead as a product flow. 
+>_**Note**:_ Certain waste flows can also be modelled as product flows. In databases this is usually stated in the name. Waste paper is a great example. As it can be used in the production of paper, waste paper isn’t necessarily modelled as a waste flows but instead as a product flow. 
 
 </div>

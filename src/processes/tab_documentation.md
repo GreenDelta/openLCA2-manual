@@ -70,7 +70,7 @@ In the "documentation tab", former "modeling and validation" and "administrative
 	![](../media/add_actor.png)  
 
 
-**_Note_**: It's important to note that the entries in the modeling and validation section do not have any impact on the actual calculations.
+>**_Note_**: It's important to note that the entries in the modeling and validation section do not have any impact on the actual calculations.
 
 
 

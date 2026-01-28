@@ -21,7 +21,7 @@ _Project window_
 
 In the "General information" section you can edit the name of the project and optionally add a description. Moreover, you can add a [tag](../cheat/tags.md) and run the [calculation](../res_analysis/index.html).
 
-_**Note:**_ We recommend to create a report before running the calculation. Click on "Create report" in calculation setup section and then configure it in the new "Report" tab. Check [Report Template](report.md) section for details.
+>_**Note:**_ We recommend to create a report before running the calculation. Click on "Create report" in calculation setup section and then configure it in the new "Report" tab. Check [Report Template](report.md) section for details.
 
 
 </details>

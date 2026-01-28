@@ -45,14 +45,14 @@ To create an **Input and Dependent parameter**:
 3. Assign a name, value, uncertainty (for an input parameter) and description.
 4. In case of a dependent parameter, a formula can be used to link it to the parameters it is dependent on. To write a correct formula, you can check the accepted constants, operators and functions in this [chapter](../advanced_top/formulas_in_openlca.md).
 
-**_Note:_** An input/dependent parameter can be converted into a global parameter by right clicking on it and selecting "convert to global parameter" (**_new!_**).
+>**_Note:_** An input/dependent parameter can be converted into a global parameter by right clicking on it and selecting "convert to global parameter" (**_new!_**).
 
 ![](../media/convert_to_global_parameter.png)
 _Conversion of an input/dependent parameter into a global parameter_
 
 The _use of parameters_ within a database can be checked via the "usage view" feature (right-click on a parameter and select "usage").
 
-_**Note:**_ Use the **formula interpreter** ("Tools" section in "[Running openLCA for the first time](../welcome_to_openLCA.md)") to check the functions you want to include in dependent parameters.
+>_**Note:**_ Use the **formula interpreter** ("Tools" section in "[Running openLCA for the first time](../welcome_to_openLCA.md)") to check the functions you want to include in dependent parameters.
 
 
 ### Parameters Rules

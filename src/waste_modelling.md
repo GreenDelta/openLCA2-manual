@@ -28,7 +28,7 @@ _Waste producing process following the material flow logic_
 ![](media/mfl_i_o_waste_treatment_process.png)  
 _Waste treatment process following the material flow logic_
 
-_**Note:**_ If waste are consumed by a process, system expansion can be applied by checking the box "Avoided waste", as the waste consumed does not need waste treatment elsewhere. A process providing the benefit of using waste as an input can be credited with the avoided impact of having to treat that waste elsewhere. 
+>_**Note:**_ If waste are consumed by a process, system expansion can be applied by checking the box "Avoided waste", as the waste consumed does not need waste treatment elsewhere. A process providing the benefit of using waste as an input can be credited with the avoided impact of having to treat that waste elsewhere. 
 
 ![](media/avoided_waste.png)  
 _Waste input flow is marked as avoided waste_

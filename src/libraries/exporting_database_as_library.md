@@ -7,7 +7,7 @@ To export a database as a library, open the database you wish to export. In the 
 ![](../media/library_menu_bar_2.png)
 <br/>_Menu bar in openLCA 2.6 to carry out a library export_
 
->**__Note:__** The sign ‘(experimental)’ means that the feature is a work in progress at the latest version and hence not fully functional.
+>**_Note:_** The sign ‘(experimental)’ means that the feature is a work in progress at the latest version and hence not fully functional.
 
 A window will appear in which you can choose the name of your library as well as the allocation method. The window includes four additional options:
 
@@ -16,7 +16,7 @@ A window will appear in which you can choose the name of your library as well as
 3.	**With uncertainty distributions** – includes uncertainty distributions, if available, as defined per flow.
 4.	**Regionalized** – includes regionalized calculations, applicable when the database already contains regionalized flows (i.e., flows associated with specific locations).
 
-    >**__Note:__** enabling precalculated matrices, regionalization, and uncertainty distributions may significantly increase memory usage. 
+    >**_Note:_** enabling precalculated matrices, regionalization, and uncertainty distributions may significantly increase memory usage. 
 
 Once all settings have been selected as desired, click “OK” to create the library.
 
