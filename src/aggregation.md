@@ -4,7 +4,7 @@
 
 ## Background
 
-One of the main challenges in the creation of LCI datasets and databases is the tension between transparency and the need to protect suppliers’ intellectual property. 
+One of the main challenges in the creation of LCI datasets and databases is balancing transparency and the protection of suppliers’ intellectual property. 
 
 For suppliers, there is very little incentive to share process or product data at the level of granularity required to make a high-quality, transparent LCI dataset. As a result, several strategies for preserving supplier IP in the creation of LCI datasets have been developed, all centred around the concept of aggregation.
 
