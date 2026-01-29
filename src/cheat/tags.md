@@ -29,7 +29,7 @@ After restart of openLCA, you will be able to analyze your results by the provid
 
 ![](../media/tags_result.png)  
 
-For some databases, e.g. ecoinvent, tags are already provided. Hence, you can analyze your results accordingly. As you can also assign several tags to a flow/process/product system, mutliple mentioning in the "Tags" tab can occur.
+For some databases, e.g. ecoinvent, tags are already provided. Hence, you can analyze your results accordingly. As you can also assign several tags to a flow/process/product system, multiple mentioning in the "Tags" tab can occur.
 
 ### Tags in the Collaboration Server
 In addition, users can filter by tags on the Collaboration Server, which is a great way to locate and organise shared data 

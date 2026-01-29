@@ -4,7 +4,7 @@ In this section, you can check what the major manual updates were about and when
 
 ## 28.02.2026
 - Created [Creating Data Sets in openLCA - Data Aggregation](./aggregation.md) section
-- Changed note style in the whole document
+- Updated note style in the whole document
 
 ## 15.01.2026
 - Created [First test version of integrating system dynamics into openLCA](./advanced_top/system_synamics.md) section
