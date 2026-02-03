@@ -6,7 +6,8 @@ Data quality is a critical aspect of life cycle assessment (LCA) studies, and it
 
 Below, we describe how to work with data quality in openLCA.
 
-### Choosing a data quality system
+<details>
+<summary><b>Choosing a data quality system</b></summary>
 
 First you need do define a data quality flow schema. If you generate a database with complete reference data, we provide you with two data quality systems. You can choose one of them in the "General information" tab, see "[Process tab content](../processes/process_tab_content.md)":
 
@@ -27,7 +28,10 @@ _Step 1: Creating a new data quality system_
 ![](../media/trial_dqs_2.png)  
 _Step 2: Setup a new data quality system_
 
-### Working with data quality
+</details>
+
+<details>
+<summary><b>Working with data quality</b></summary>
 
 Now you can select a data quality system for the process, flows and social aspects.
 
@@ -55,7 +59,10 @@ _Data quality systems, indicators and scores_
 
 As visualized above, adding uncertainty values allows for performing "[Monte Carlo Simulations](../advanced_top/monte_carlo.md)" in openLCA.
 
-### Setup
+</details>
+
+<details open>
+<summary><b>Setup of Data Quality Calculation</b></summary>
 
 To access the data quality during a calculation, check the box "Assess data quality" when setting the calculation properties.
 
@@ -69,7 +76,10 @@ _Setup for the data quality assessment_
 
 You can choose the aggregation type, a rounding method, and how to handle exchanges that lack data quality values. Then, click on the "Finish" button to start the calculation, including the data quality assessment.
 
-### Results
+</details>
+
+<details open>
+<summary><b>Results of Data Quality Calculation</b></summary>
 
 When the calculations are done, the results window will open in the Editor. You will notice that the data quality of the inventory analysis is now shown in the inventory analysis tab with color-coded numbers.
 
@@ -88,6 +98,8 @@ _Impact Analysis - data quality_
 ![](../media/data_quality_cut.png)  
 
 _Inventory analysis with data quality of one unconnected flow_
+
+</details>
 
 </div>
 
