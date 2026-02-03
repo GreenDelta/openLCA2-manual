@@ -101,7 +101,7 @@ _Inventory analysis with data quality of one unconnected flow_
 
  >**_Note:_** If the data quality is captured on the process level (e.g. environmental footprint database), the total requirements in respect to the reference flow of the product system are displayed:
 
-![](../media/data_quality_cut.png)  
+![](../media/dataquali_total_requirements.png)  
 
 _Inventory analysis with data quality of one unconnected flow_
 
