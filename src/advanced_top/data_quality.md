@@ -69,6 +69,9 @@ openLCA allows to quantify the data quality of a calculations. This can occur on
 ![](../media/dataqualisetup.png)  
 _Checking the box for including a data quality assessment_
 
+ >**_Note:_** The system process version of ecoinvent does not allow the calculation of data quality as no data quality is provided on flow level.
+
+
 Then, click "Next" and the "Data quality properties" window will open, allowing you to access the details on the data quality assessment.
 
 ![](../media/dataquali.png)  
