@@ -88,7 +88,7 @@ _Inventory analysis - data quality information_
 
 The abbreviations for the columns are **R**eliability, **C**ompleteness, **T**emporal correlation, **G**eographical correlation, **F**urther technical correlation as defined in your data quality scheme, see "[Processes](../processes/general_information.md)". 
 
-In a similar fashion, the data quality for the impact analysis tab is displayed after the calculation is performed.
+In a similar fashion, the data quality for the impact analysis tab is displayed after the calculation is performed on **flow level**.
 
 ![](../media/data_quality_impact.png)  
 _Impact Analysis - data quality_
@@ -99,11 +99,11 @@ _Impact Analysis - data quality_
 
 _Inventory analysis with data quality of one unconnected flow_
 
- >**_Note:_** If the data quality is captured on the process level (e.g. environmental footprint database), the total requirements in respect to the reference flow of the product system are displayed:
+If the data quality is captured on the **process level** (e.g. environmental footprint database), the total requirements in respect to the reference flow of the product system are displayed:
 
 ![](../media/dataquali_total_requirements.png)  
 
-_Inventory analysis with data quality of one unconnected flow_
+_Total requirements_
 
 </details>
 
