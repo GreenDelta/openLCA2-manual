@@ -64,7 +64,7 @@ As visualized above, adding uncertainty values allows for performing "[Monte Car
 <details open>
 <summary><b>Setup of Data Quality Calculation</b></summary>
 
-To access the data quality during a calculation, check the box "Assess data quality" when setting the calculation properties.
+openLCA allows to quantify the data quality of a calculations. This can occur on flow level or on process level (see above). In case the data quality is provided on flow level, e.g. the **unit process version of ecoinvent**, or process level, e.g. the environmental footprint database, the data quality of the inventory and impact assessment (flow level) or the total requirements (process level) can be assessed. To access the data quality during a calculation, check the box "Assess data quality" when setting the calculation properties.
 
 ![](../media/dataqualisetup.png)  
 _Checking the box for including a data quality assessment_
