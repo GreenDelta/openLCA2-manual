@@ -93,17 +93,17 @@ In a similar fashion, the data quality for the impact analysis tab is displayed 
 ![](../media/data_quality_impact.png)  
 _Impact Analysis - data quality_
 
- >**_Note:_** If the data quality is captured on the flow level (e.g. ecoinvent, unit process database only), the assessment and aggregation of data quality up to the impact categories in the results   is **based solely on the data quality entries for intervention flows** (flows that cross the boundaries of the system, mostly elementary flows). However, you can get the aggregated data quality of product flows throughout the supply chain by deleting all links to this product flow in the [Model Graph](../prod_system/model_graph.md). This will give you results like this:
+ >**_Note:_** If the data quality is captured on the flow level (e.g. unit process database of ecoinvent), the assessment and aggregation of data quality up to the impact categories in the results   is **based solely on the data quality entries for intervention flows** (flows that cross the boundaries of the system, mostly elementary flows). However, you can get the aggregated data quality of product flows throughout the supply chain by deleting all links to this product flow in the [Model Graph](../prod_system/model_graph.md). This will give you results like this:
 
 ![](../media/data_quality_cut.png)  
 
 _Inventory analysis with data quality of one unconnected flow_
 
-If the data quality is captured on the **process level** (e.g. environmental footprint database), the total requirements in respect to the reference flow of the product system are displayed:
+If the data quality is captured on the **process level** (e.g. environmental footprint database), the total requirements in respect to the reference flow of the product system are displayed. The abbreviations are **T**echnological representativeness, **T**ime representativeness **G**eographical representativeness, **C**ompleteness, **P**recision, **M**ethodological appropriateness and **O**verall quality:
 
 ![](../media/dataquali_total_requirements.png)  
 
-_Total requirements_
+_Total requirements and data quality using the ILCD data quality scheme_
 
 </details>
 
