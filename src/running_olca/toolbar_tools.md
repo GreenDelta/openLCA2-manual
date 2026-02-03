@@ -31,7 +31,7 @@ _Options under Tools_
         - _Navigation:_ The Navigation window displays the databases you have imported
     into openLCA and all the data sets they include.
 
-- **Developer Tools:** 
+- **Developer Tools (details  have a look at [the openLCA scripting manual](<https://greendelta.github.io/openLCAJython-manual/introduction/index.html>):** 
 
     -   _SQL_: A tool that can be used to carry out SQL queries in openLCA.
     -   _Console_: The console tool is the live feed of our program with the same content as our log-file.
@@ -49,7 +49,7 @@ _Options under Tools_
 
 - **Parameter analysis:** See the respective chapter on [Impact analysis with a parameter](../advanced_top/time.md).
 
-- ** API Clients:**
+- **API Clients:**
 
 	- **CS Servers:** See [the collaboration server manual](<https://manuals.openlca.org/lca-collaboration-server/>).
 	- **soda4LCA:** See [soda4LCA](../epds/soda4lca.md) chapter.
