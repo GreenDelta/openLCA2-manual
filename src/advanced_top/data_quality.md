@@ -102,7 +102,7 @@ _Impact Analysis - data quality_
 
 _Inventory analysis with data quality of one unconnected flow_
 
-If the data quality is captured on the **process level** (e.g. environmental footprint database), the total requirements in respect to the reference flow of the product system are displayed. The abbreviations are **T**echnological representativeness, **T**ime representativeness **G**eographical representativeness, **C**ompleteness, **P**recision, **M**ethodological appropriateness and **O**verall quality:
+If the data quality is captured on the **process level** (e.g. environmental footprint database), the total requirements in respect to the reference flow of the product system are displayed. The abbreviations are **T**echnological representativeness, **T**ime representativeness, **G**eographical representativeness, **C**ompleteness, **P**recision, **M**ethodological appropriateness and **O**verall quality:
 
 ![](../media/dataquali_total_requirements.png)  
 

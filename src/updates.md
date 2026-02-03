@@ -2,7 +2,11 @@
 
 In this section, you can check what the major manual updates were about and when they were released.
 
-## 28.02.2026
+## XX.XX.2026
+- Updated and commented the [Data Quality](./advanced_top/data_quality.md) chapter
+- Updated the toolbar content [Toolbar Content](./running_olca/toolbar_tools.md) chapter
+
+## 28.01.2026
 - Created [Creating Data Sets in openLCA - Data Aggregation](./aggregation.md) section
 - Updated note style in the whole document
 

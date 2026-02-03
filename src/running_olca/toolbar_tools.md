@@ -45,15 +45,17 @@ _Options under Tools_
     
 - **Flow mapping (experimental):** Still under development but already available for you!
 
-- **Library export (experimental):** Still under development but already available for you!
+- **Libraries:** See the respective chapter on [libraries](../libraries/index.html).
 
-- **Parameter analysis (experimental):** Still under development but already available for you!
+- **Parameter analysis (experimental):** See the respective chapter on [Impact analysis with a parameter](../advanced_top/time.md).
 
-- **soda4LCA:** See [soda4LCA](../epds/soda4lca.md) chapter.
+- ** API Clients:**
 
-- **CS Servers:** See [the collaboration server manual](<https://manuals.openlca.org/lca-collaboration-server/>).
-
-- **Get EPDs from EC3:** With openLCA 2 it is now possible to download or download EPDs from EC3 (Embodied Carbon in Construction Calculator) by [Building Transparency](<https://www.buildingtransparency.org/>). This requires access to the Building Transparancy server. Also an upload is possible.
+	- **CS Servers:** See [the collaboration server manual](<https://manuals.openlca.org/lca-collaboration-server/>).
+	- **soda4LCA:** See [soda4LCA](../epds/soda4lca.md) chapter.
+	- **Get EPDs from EC3:** With openLCA 2 it is now possible to download or download EPDs from EC3 (Embodied Carbon in Construction Calculator) by [Building Transparency](<https://www.buildingtransparency.org/>). This requires access to the Building Transparancy server. Also an upload is possible.
+	- **SmartEPD**: API connection for [SmartEPD](<https://smartepd.com/api/public/docs>). Still under development but already available for you!
+	- **Hestia**: API connection for [hestia](<https://www.hestia.earth/>). Still under development but already available for you!
 
 - **Formula interpreter:** Use this interpreter to check if your formulas are correct. More information on the interpreter is accessible by opening the formula interpreter and typing "help" in the command line.
 
