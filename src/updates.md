@@ -2,7 +2,11 @@
 
 In this section, you can check what the major manual updates were about and when they were released.
 
-## 28.02.2026
+## 04.02.2026
+- Updated and commented the [Data Quality](./advanced_top/data_quality.md) chapter
+- Updated the toolbar content [Toolbar Content](./running_olca/toolbar_tools.md) chapter
+
+## 28.01.2026
 - Created [Creating Data Sets in openLCA - Data Aggregation](./aggregation.md) section
 - Updated note style in the whole document
 
@@ -126,6 +130,7 @@ In this section, you can check what the major manual updates were about and when
 
 - EPD chapter improved with the new section ["Calculate impact assessment"](./epds/calculate_impact_assessment.md), where you can find the different possible ways to calculate the impact assessment in EPD format.
 - Minor updates
+
 
 
 

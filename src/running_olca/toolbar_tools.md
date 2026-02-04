@@ -31,7 +31,7 @@ _Options under Tools_
         - _Navigation:_ The Navigation window displays the databases you have imported
     into openLCA and all the data sets they include.
 
-- **Developer Tools:** 
+- **Developer Tools (details  have a look at [the openLCA scripting manual](<https://greendelta.github.io/openLCAJython-manual/introduction/index.html>):** 
 
     -   _SQL_: A tool that can be used to carry out SQL queries in openLCA.
     -   _Console_: The console tool is the live feed of our program with the same content as our log-file.
@@ -43,17 +43,19 @@ _Options under Tools_
 - **Bulk-replace:** It is a tool that allows the replacement of a flow or product
     provider with another flow or provider. To find out more details on bulk-replace see "[Using mapping files in openLCA](../databases/mapping_validation.md)" chapter.
     
-- **Flow mapping (experimental):** Still under development but already available for you!
+- **Flow mapping (experimental):** Still under development but already available for you! Contact us if you want to learn more about this feature.
 
-- **Library export (experimental):** Still under development but already available for you!
+- **Libraries:** See the respective chapter on [libraries](../libraries/index.html).
 
-- **Parameter analysis (experimental):** Still under development but already available for you!
+- **Parameter analysis:** See the respective chapter on [Impact analysis with a parameter](../advanced_top/time.md).
 
-- **soda4LCA:** See [soda4LCA](../epds/soda4lca.md) chapter.
+- **API Clients:**
 
-- **CS Servers:** See [the collaboration server manual](<https://manuals.openlca.org/lca-collaboration-server/>).
-
-- **Get EPDs from EC3:** With openLCA 2 it is now possible to download or download EPDs from EC3 (Embodied Carbon in Construction Calculator) by [Building Transparency](<https://www.buildingtransparency.org/>). This requires access to the Building Transparancy server. Also an upload is possible.
+	- **CS Servers:** See [the collaboration server manual](<https://manuals.openlca.org/lca-collaboration-server/>).
+	- **soda4LCA:** See [soda4LCA](../epds/soda4lca.md) chapter.
+	- **Get EPDs from EC3:** With openLCA 2 it is now possible to download or download EPDs from EC3 (Embodied Carbon in Construction Calculator) by [Building Transparency](<https://www.buildingtransparency.org/>). This requires access to the Building Transparancy server. Also an upload is possible.
+	- **SmartEPD**: API connection for [SmartEPD](<https://smartepd.com/api/public/docs>). Still under development but already available for you! Contact us if you want to learn more about this feature.
+	- **Hestia**: API connection for [hestia](<https://www.hestia.earth/>). Still under development but already available for you! Contact us if you want to learn more about this feature.
 
 - **Formula interpreter:** Use this interpreter to check if your formulas are correct. More information on the interpreter is accessible by opening the formula interpreter and typing "help" in the command line.
 

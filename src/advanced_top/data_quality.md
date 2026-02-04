@@ -6,7 +6,8 @@ Data quality is a critical aspect of life cycle assessment (LCA) studies, and it
 
 Below, we describe how to work with data quality in openLCA.
 
-### Choosing a data quality system
+<details>
+<summary><b>Choosing a data quality system</b></summary>
 
 First you need do define a data quality flow schema. If you generate a database with complete reference data, we provide you with two data quality systems. You can choose one of them in the "General information" tab, see "[Process tab content](../processes/process_tab_content.md)":
 
@@ -27,7 +28,10 @@ _Step 1: Creating a new data quality system_
 ![](../media/trial_dqs_2.png)  
 _Step 2: Setup a new data quality system_
 
-### Working with data quality
+</details>
+
+<details>
+<summary><b>Working with data quality</b></summary>
 
 Now you can select a data quality system for the process, flows and social aspects.
 
@@ -55,12 +59,18 @@ _Data quality systems, indicators and scores_
 
 As visualized above, adding uncertainty values allows for performing "[Monte Carlo Simulations](../advanced_top/monte_carlo.md)" in openLCA.
 
-### Setup
+</details>
 
-To access the data quality during a calculation, check the box "Assess data quality" when setting the calculation properties.
+<details open>
+<summary><b>Setup of Data Quality Calculation</b></summary>
+
+openLCA allows to quantify the data quality of a calculations. This can occur on flow level or on process level (see above). In case the data quality is provided on flow level, e.g. the **unit process version of ecoinvent**, or process level, e.g. the environmental footprint database, the data quality of the inventory and impact assessment (flow level) or the total requirements (process level) can be assessed. To access the data quality during a calculation, check the box "Assess data quality" when setting the calculation properties.
 
 ![](../media/dataqualisetup.png)  
 _Checking the box for including a data quality assessment_
+
+ >**_Note:_** The system process version of ecoinvent does not allow the calculation of data quality as no data quality is provided on flow level.
+
 
 Then, click "Next" and the "Data quality properties" window will open, allowing you to access the details on the data quality assessment.
 
@@ -69,7 +79,10 @@ _Setup for the data quality assessment_
 
 You can choose the aggregation type, a rounding method, and how to handle exchanges that lack data quality values. Then, click on the "Finish" button to start the calculation, including the data quality assessment.
 
-### Results
+</details>
+
+<details open>
+<summary><b>Results of Data Quality Calculation</b></summary>
 
 When the calculations are done, the results window will open in the Editor. You will notice that the data quality of the inventory analysis is now shown in the inventory analysis tab with color-coded numbers.
 
@@ -78,16 +91,24 @@ _Inventory analysis - data quality information_
 
 The abbreviations for the columns are **R**eliability, **C**ompleteness, **T**emporal correlation, **G**eographical correlation, **F**urther technical correlation as defined in your data quality scheme, see "[Processes](../processes/general_information.md)". 
 
-In a similar fashion, the data quality for the impact analysis tab is displayed after the calculation is performed.
+In a similar fashion, the data quality for the impact analysis tab is displayed after the calculation is performed on **flow level**.
 
 ![](../media/data_quality_impact.png)  
 _Impact Analysis - data quality_
 
- >**_Note:_** If the data quality is captured on the flow level (e.g. ecoinvent), the   assessment and aggregation of data quality up to the impact categories in the results   is **based solely on the data quality entries for intervention flows** (flows that cross the boundaries of the system, mostly elementary flows). However, you can get the aggregated data quality of product flows throughout the supply chain by deleting all links to this product flow in the [Model Graph](../prod_system/model_graph.md). This will give you results like this:
+ >**_Note:_** If the data quality is captured on the flow level (e.g. unit process database of ecoinvent), the assessment and aggregation of data quality up to the impact categories in the results   is **based solely on the data quality entries for intervention flows** (flows that cross the boundaries of the system, mostly elementary flows). However, you can get the aggregated data quality of product flows throughout the supply chain by deleting all links to this product flow in the [Model Graph](../prod_system/model_graph.md). This will give you results like this:
 
 ![](../media/data_quality_cut.png)  
 
 _Inventory analysis with data quality of one unconnected flow_
+
+If the data quality is captured on the **process level** (e.g. environmental footprint database), the total requirements in respect to the reference flow of the product system are displayed. The abbreviations are **T**echnological representativeness, **T**ime representativeness, **G**eographical representativeness, **C**ompleteness, **P**recision, **M**ethodological appropriateness and **O**verall quality:
+
+![](../media/dataquali_total_requirements.png)  
+
+_Total requirements and data quality using the ILCD data quality scheme_
+
+</details>
 
 </div>
 
