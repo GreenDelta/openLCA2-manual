@@ -32,7 +32,7 @@ In the "General information" section you can edit the name of the project and op
 <summary><b>Calculation setup</b></summary>
 
 
-In the "Calculation setup" section you can select the impact assessment method for the calculation, as well as normalization and weighting set, if applicable (you can select a set from the methods you've imported in the database, but only if the method you chose include one or you've created it yourself). You also have the option to select "Regionalized LCIA" and "Include cost calculation".
+In the "Calculation setup" section, you can select the impact assessment method for the calculation, as well as normalization and weighting set, if applicable (you can select a set from the methods you've imported in the database, but only if the method you chose includes one or you've created it yourself). You also have the option to select "Regionalized LCIA" and "Include cost calculation".
 
 ![](../media/project_setup.png)
 _Project setup, Calculation setup_
@@ -61,14 +61,15 @@ _Project setup, Variants_
 
 In the "Parameters" section, it is possible to change parameter values for variants. For example, we can compare the impacts of a PET bottle production based on the transportation distance of the PET Granulates: 200, 350 and 500 km. In the "Compare product systems" section, you can select three times a product system for PET Bottle that contains a parameter for the transport distance (‘distance_A’).
 
-Then rename each variant and in add the parameter ‘distance_A’ in the "Parameters" section by clicking on the green "+" button on the right and selecting it from those available. Eventually, enter a new parameter value for each variant.
+Then, rename each variant and add the parameter ‘distance_A’ in the "Parameters" section by clicking on the green "+" button on the right and selecting it from those available. Eventually, enter a new parameter value for each variant.
 
 ![](../media/project_parameter.png)
 _Project setup, Parameters_
 
-Once you have configured your project in the "Project setup" click on "Create a report" to configure the report.
+Once you have configured your project in the "Project setup" click on "Calculate" to obtain the results for different parameter variations.
 
 </details>
+
 
 
 </div>
