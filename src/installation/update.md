@@ -13,23 +13,17 @@ Depending on the distribution you downloaded (see [Download and installation](..
 
 After starting the new version, your existing databases will still be visible and can be opened from the database list.
 
-## Installing a new openLCA Version
-
-To update openLCA, download the desired version from the openLCA website and extract the zip archive to a new folder. This installation does not overwrite existing versions, allowing you to keep several openLCA versions available if required.
-
-After installing the new version, start the software normally. All previously used database folders will still be visible in the database list.
-
-## Opening an existing Database in a newer Version
+## Opening an existing Database in a newer version
 
 When opening a database created with an older openLCA version, the software checks whether the database structure matches the version requirements. If the structure differs, openLCA will prompt you to [update the database](../databases/database_update.md).
 
 Before performing the update, openLCA may ask whether you want to create a backup of the database. Creating a backup is recommended for important projects but can be skipped if a backup already exists.
 
-During the update, openLCA modifies only the **database structure**, not the actual data. All processes, flows, product systems, and results remain unchanged.
+During the update, openLCA modifies only the **database structure**, not the actual data. All processes, flows, product systems, and results remain **unchanged**.
 
 However, after the update is completed, the database **cannot be opened with older versions of openLCA** anymore.
 
-## Compatibility Considerations
+## Compatibility considerations
 
 The database update process is generally reliable for **incremental updates**, such as moving from one minor version to the next.
 
