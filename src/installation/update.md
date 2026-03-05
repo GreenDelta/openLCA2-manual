@@ -17,7 +17,11 @@ After starting the new version, your existing databases will still be visible an
 
 When opening a database created with an older openLCA version, the software checks whether the database structure matches the version requirements. If the structure differs, openLCA will prompt you to [update the database](../databases/database_update.md).
 
-Before performing the update, openLCA may ask whether you want to create a backup of the database. Creating a backup is recommended for important projects but can be skipped if a backup already exists.
+Before performing the update, openLCA may ask whether you want to create a backup of the database. 
+
+![](../media/update_database.png)
+
+Creating a backup is recommended for important projects but can be skipped if a backup already exists.
 
 During the update, openLCA modifies only the **database structure**, not the actual data. All processes, flows, product systems, and results remain **unchanged**.
 
