@@ -2,14 +2,14 @@
 
 <div style='text-align: justify;'>
 
-To update openLCA, simply download the latest version from the openLCA website. You do **not need to remove older versions** of the software before installing a new one.
+To update openLCA, simply download the latest version from the openLCA website. You do **not need to remove older versions** of the software before installing a new one if you are using the Zip archive but you will have to uninstall previous versions of openLCA if you used the installer. openLCA software operates independently from its databases, which means that multiple software versions can coexist on the same system. This makes upgrading straightforward and allows you to keep older versions available if needed.
 
-openLCA software operates independently from its databases, which means that multiple software versions can coexist on the same system. This makes upgrading straightforward and allows you to keep older versions available if needed.
+![](../media/installation_readme.png)
 
-Depending on the distribution you downloaded (see [Download and installation](../installation/download_installation.md):
+Depending on the distribution you downloaded (see [Download and installation](../installation/download_installation.md)):
 
 - **Zip archive**: Extract the archive to a folder of your choice and start openLCA directly from that folder. No installation is required.
-- **Installer version**: Run the installer and follow the installation steps. The installer will create a standard application installation on your system.
+- **Installer version**: You must first uninstall previous versions of openLCA. Then ,run the installer and follow the installation steps. The installer will create a standard application installation on your system.
 
 After starting the new version, your existing databases will still be visible and can be opened from the database list.
 
