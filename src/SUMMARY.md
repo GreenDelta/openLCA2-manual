@@ -18,6 +18,7 @@
   - [Download and installation](installation/download_installation.md)
   - [Adjust memory](installation/memory.md)
   - [Download fast libraries](installation/fast_libraries.md)
+  - [Update openLCA to the lastest version](installation/update.md)
 - [Resources](resources/README.md)
   - [openLCA.org](resources/openlca.org.md)
   - [openLCA Nexus](resources/nexus.md)
