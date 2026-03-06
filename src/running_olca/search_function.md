@@ -12,4 +12,7 @@ When you search for a term, you can even filter the results:
 ![](../media/search_function_filter.png)  
 _Filtering after using the search function in openLCA_  
 
+>_**Note**_: 'AND' combines words in the search bar, e.g. ethylene and market. 
+
+
 </div>

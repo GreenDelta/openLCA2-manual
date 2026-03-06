@@ -2,6 +2,9 @@
 
 In this section, you can check what the major manual updates were about and when they were released.
 
+## 06.03.2026
+- Created [Update openLCA to the latest version](./installation/update.md) section
+
 ## 04.02.2026
 - Updated and commented the [Data Quality](./advanced_top/data_quality.md) chapter
 - Updated the toolbar content [Toolbar Content](./running_olca/toolbar_tools.md) chapter
