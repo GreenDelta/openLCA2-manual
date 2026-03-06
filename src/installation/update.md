@@ -1,4 +1,4 @@
-# Update openLCA to the lastest version
+# Update openLCA to the latest version
 
 <div style='text-align: justify;'>
 
