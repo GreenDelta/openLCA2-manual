@@ -114,7 +114,7 @@ directly to it.
 
 ### Available Data
 
-Ecoinvent database v. 3.3 in openLCA format provides prices for all products except for waste materials and their disposal. Otherwise, prices can be inserted manually in the input/output section for each process.
+From ecoinvent database v3.3 onwards, the openLCA format provides prices for all products except for waste materials and their disposal. Otherwise, prices can be inserted manually in the input/output section for each process.
 
 >_**Note:**_ In the ecoinvent database, price data are not intended to enforce economic balance at the level of individual unit processes. Prices are mainly used to support economic allocation. Hence, their role is to express the relative market value of the reference product and any co-products produced by the same activity to distribute environmental burdens across the different outputs of multi-functional processes. Because of this purpose, the prices assigned to outputs are not expected to equal the total cost of inputs calculated as price multiplied by quantity.
 
@@ -246,5 +246,6 @@ In the contribution tree, value added and life cycle costs are available as new 
 **_openLCA offers a detailed document on how to conduct LCC studies in openLCA free [here](<https://www.openlca.org/wp-content/uploads/2025/03/Life-Cycle-Costing-in-openLCA.pdf>). The database with the case study is available for download [here](https://www.openlca.org/case-studies/)_**.
 
 </div>
+
 
 
