@@ -2,19 +2,21 @@
 
 <div style='text-align: justify;'>
 
-After the installation, openLCA can use a quite moderate amount of memory (RAM) from your computer, to allow use and installation on many, also weaker, computers. It is typically useful, however, to expand the memory, especially if you plan to use modern, larger background databases such as ecoinvent 3. The approach for expanding the memory is slightly different in Windows and Apple systems. 
+After the installation, openLCA can use a moderate amount of memory (RAM) from your computer, to allow use and installation on many, also weaker, computers. It is typically useful, however, to expand the memory, especially if you plan to use modern, larger background databases such as ecoinvent 3. The approach for expanding the memory is slightly different in Windows and Apple systems. 
 Check please the minimum requirements for allocated memory here (#link); as a general rule, 16GB RAM is sufficient. 
 
 >_**Note:**_ You cannot allocate more memory than what is installed on your computer. You need to leave some memory for the operation system and other software as well. In order to see the available memory, check e.g the task manager in Windows.
 
 ## Expanding memory under Windows
 
-To increase memory allocation on Windows, open "File" then "Preferences" and the tab "Configuration". Here you can select the maximum memory usage. It is recommended to increase this value for calculating very complex product systems. In the picture below, we show how to assign 30 GB to openLCA on a system that has 64 GB of accessible memory.
+To increase memory allocation on Windows, open "File" then "Preferences" and the tab "Configuration". Here you can select the maximum memory usage. It is recommended to increase this value for calculating very complex product systems. In the picture below, we show how to assign 30 GB to openLCA on a system that has 64 GB of accessible memory. >Any changes made to the configuration settings will require restarting openLCA to apply. 
 	
 ![](../media/settings_configuration.png)  
 _Preferences Configuration_
 
->_**Note**_: Any changes made to the configuration settings will require to restart openLCA in order to apply. 
+>_**Note**_: Increasing the memory allocation does not necessarily improve performance. When openLCA is assigned a large amount of memory, the Java garbage collector may run less frequently. Hence, the collection cycle can take longer and may temporarily affect the application. As a result, openLCA may appear slower for short periods even when more memory has been allocated. For this reason, memory should be increased only as needed. 
+>
+
 
 ## Expanding memory under macOS 
 
@@ -47,6 +49,7 @@ _Expanding the memory on macOS_
 
 
 </details> 
+
 
 
 </div>
