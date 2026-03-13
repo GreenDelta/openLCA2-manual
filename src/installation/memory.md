@@ -14,7 +14,7 @@ To increase memory allocation on Windows, open "File" then "Preferences" and the
 ![](../media/settings_configuration.png)  
 _Preferences Configuration_
 
->_**Note**_: Increasing the memory allocation does not necessarily improve performance. When openLCA is assigned a large amount of memory, the Java garbage collector may run less frequently. Hence, the collection cycle can take longer and may temporarily affect the application. As a result, openLCA may appear slower for short periods even when more memory has been allocated. For this reason, memory should be increased only as needed. 
+>_**Note**_: Increasing the memory allocation does not necessarily improve performance. When openLCA is assigned a large amount of memory, the Java garbage collector may run less frequently. Hence, the collection cycle can take longer and may temporarily affect the application. As a result, openLCA may appear slower for short periods even when more memory has been allocated. You can check memory usage in the Task Manager. Finally, memory should be increased only as needed.  
 >
 
 
@@ -53,3 +53,4 @@ _Expanding the memory on macOS_
 
 
 </div>
+
