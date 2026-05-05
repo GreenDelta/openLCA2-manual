@@ -144,20 +144,6 @@ By right-clicking on a process in the model graph, you find the following additi
     ![](../media/model_graph_delte_after.png)
     <br>_Model graph - Example of deleting a process (after)_
 
-- **Remove connections**: The same can be achieved by right-clicking on a connection and selecting delete. When removing a connection, the software will also ask you if you also want to delete or hide the supply chain.
-
-    ![](../media/remove_supply_chain.png)
-    <br>_Deleting or hiding the supply chain_
-
-    >_**Note:**_ Deleting the supply chain when removing the connection of a process, removes it from the product system entirely. The "Hide" option, otherwise, lets you retain the supply chain. This is important when your supply chain has multiple connections within your product system. For instance, if you delete the link to "Electricity, at grid, CN," it will also disappear from other processes using the same electricity source. Therefore, we recommend using "hide" if you're unsure about the supply chain within the whole system (otherwise check with [Usage](../cheat/usage.md)).
-
-
-    ![](../media/model_graph_remove_connection_before.png)
-    <br>_Model graph - Example of removing a connection (before)_
-
-    ![](../media/model_graph_remove_connection_after.png)
-    <br>_Model graph - Example of removing a connection (after)_
-
     To add a provider to a flow that is missing one, right-click on the respective flow and select "Search providers".
 
     ![](../media/model_graph_search_providers.png)
@@ -180,8 +166,7 @@ By right-clicking on a process in the model graph, you find the following additi
     ![](../media/model_graph_build_next_tier.png)
     <br>_Model graph - Build next tier_
 
-- **Remove supply chain**: This option will remove all processes and respective connections prior to the selected process. The option does not ask if you are sure to do this. If you click on it by accident close the product system on the tab and do not save the changes made.
- 
+- **Remove supply chain**: This option will remove all processes and respective connections prior to the selected process. The option does not ask if you are sure to do this. If you click on it by accident, close the product system on the tab and do not save the changes made.
 
 </details>
 
@@ -193,9 +178,9 @@ By right-clicking on a connection in the model graph, the following additional o
 - **Delete**: **Removes only the selected process!**
 
     ![](../media/remove_supply_chain.png)
-    <br>_Deleting or hiding the supply chain_
+    <br>_Deleting the supply chain_
 
->_**Note:**_ Deleting the supply chain when removing the connection of a process, removes it from the product system entirely. The "Hide" option, otherwise, lets you retain the supply chain. This is important when your supply chain has multiple connections within your product system. For instance, if you delete the link to "Electricity, at grid, CN," it will also disappear from other processes using the same electricity source. Therefore, we recommend using "hide" if you're unsure about the supply chain within the whole system (otherwise check with [Usage](../cheat/usage.md)).
+>_**Note:**_ Deleting the supply chain when removing the connection of a process removes it from the product system entirely.
 
 ![](../media/model_graph_remove_connection_before.png)
 <br>_Model graph - Example of removing a connection (before)_
