@@ -43,7 +43,7 @@ Moreover, if you want to create/edit the product system graphically, you can **d
 
 You can also remove connection by right-clicking on a process and choosing "Remove connections" or by clicking on a connection and then selecting "Delete". The software will ask you if you also want to delete or hide the supply chain. Choose "No" to solely remove the connection. The result is shown below:
 
-![](../media/model_graph_remove_connection_before.png)
+![](../media/model_graph_delte_before.png)
 <br>_Model graph - Example of removing a connection (before)_
 
 ![](../media/model_graph_remove_connection_after.png)
@@ -186,7 +186,7 @@ By right-clicking on a connection in the model graph, the following additional o
 
 This results in a flow that is not connected to a supply chain.
 
-![](../media/model_graph_remove_connection_before.png)
+![](../media/model_graph_delte_before.png)
 <br>_Model graph - Example of removing a connection (before)_
 
 ![](../media/model_graph_remove_connection_after.png)
