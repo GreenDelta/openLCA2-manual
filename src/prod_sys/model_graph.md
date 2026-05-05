@@ -189,7 +189,7 @@ This results in a flow that is not connected to a supply chain.
 ![](../media/model_graph_remove_connection_before.png)
 <br>_Model graph - Example of removing a connection (before)_
 
-![](../media/model_graph_remove_connection_after_2.png)
+![](../media/model_graph_remove_connection_after.png)
 <br>_Model graph - Example of removing a connection (after)_
 
 To add a provider again to a flow that is missing one, right-click on the respective flow and select "Search providers". 
