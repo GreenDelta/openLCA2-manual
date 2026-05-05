@@ -134,7 +134,11 @@ By right-clicking on a process in the model graph, you find the following additi
 
 - **Open in editor: Process**: This option will lead you to the general information tab of the selected process.
 
+- **Add Process**: This option allows you to add a process to the model graph. It will not be conntected directly.
+
 - _**New!**_ **Set analysis group**: This new function of openLCA 2.4 allows you to conveniently categorize your LCA product system results into various categories, such as the EN15804+A2 modules. Instead of setting up specific processes, you can easily group results. Check the [dedicated section](../res_analysis/res_analysis_groups.md) for details.
+
+- **Add Sticky Note**: For documentation reasons you can add a sticky note to the process.
 
 - **Delete**: Removes not only the selected process but all the processes that are linked only to it. Here is an example of deleting the process "Printed wiring board". 
 
@@ -175,7 +179,7 @@ By right-clicking on a process in the model graph, you find the following additi
 
 By right-clicking on a connection in the model graph, the following additional options will appear:
 
-- **Delete**: **Removes only the selected process!**
+- **Delete**: 
 
     ![](../media/remove_supply_chain.png)
     <br>_Deleting the supply chain_
