@@ -41,7 +41,7 @@ Moreover, if you want to create/edit the product system graphically, you can **d
 ![](../media/drag_drop_after.png)
 <br>_Model graph - After a drag and drop of a process, the flows are connected manually_
 
-You can also remove connection by right-clicking on a process and choosing "Remove connections" or by clicking on a connection and then selecting "Delete". The software will ask you if you also want to delete or hide the supply chain. Choose "No" to solely remove the connection. The result is shown below:
+You can also remove a connection by right-clicking on a process and choosing "Remove connections" or by clicking on a connection and then selecting "Delete". The result is shown below:
 
 ![](../media/model_graph_delte_before.png)
 <br>_Model graph - Example of removing a connection (before)_
