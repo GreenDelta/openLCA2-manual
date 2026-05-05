@@ -179,12 +179,10 @@ By right-clicking on a process in the model graph, you find the following additi
 
 By right-clicking on a connection in the model graph, the following additional options will appear:
 
-- **Delete**: 
+- **Delete**: Removes only the selected process.
 
     ![](../media/remove_supply_chain.png)
     <br>_Deleting the supply chain_
-
->_**Note:**_ Deleting the supply chain when removing the connection of a process removes it from the product system entirely.
 
 ![](../media/model_graph_remove_connection_before.png)
 <br>_Model graph - Example of removing a connection (before)_
