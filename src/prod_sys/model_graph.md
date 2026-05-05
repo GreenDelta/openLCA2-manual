@@ -179,20 +179,20 @@ By right-clicking on a process in the model graph, you find the following additi
 
 By right-clicking on a connection in the model graph, the following additional options will appear:
 
-- **Delete**: 
+- **Delete**: **Removes only the link to the selected processes**
 
     ![](../media/remove_supply_chain.png)
-    <br>_Deleting the supply chain_
+    <br>_Removing the link to the supply chain_
 
->_**Note:**_ Deleting the supply chain when removing the connection of a process removes it from the product system entirely.
+This results in a flow that is not connected to a supply chain.
 
 ![](../media/model_graph_remove_connection_before.png)
 <br>_Model graph - Example of removing a connection (before)_
 
-![](../media/model_graph_remove_connection_after.png)
+![](../media/model_graph_remove_connection_after_2.png)
 <br>_Model graph - Example of removing a connection (after)_
 
-To add a provider to a flow that is missing one, right-click on the respective flow and select "Search providers". 
+To add a provider again to a flow that is missing one, right-click on the respective flow and select "Search providers". 
 
 ![](../media/model_graph_search_providers.png)
 <br>_Model graph - Search providers_
