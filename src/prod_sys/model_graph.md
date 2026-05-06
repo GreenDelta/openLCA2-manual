@@ -41,7 +41,7 @@ Moreover, if you want to create/edit the product system graphically, you can **d
 ![](../media/drag_drop_after.png)
 <br>_Model graph - After a drag and drop of a process, the flows are connected manually_
 
-You can also remove a connection by clicking on a connection and then selecting "Delete". The result is shown below:
+You can also remove a connection by clicking it and selecting "Delete". The result is shown below:
 
 ![](../media/model_graph_delte_before.png)
 <br>_Model graph - Example of removing a connection (before)_
@@ -51,7 +51,24 @@ You can also remove a connection by clicking on a connection and then selecting 
 
 Removing a connection can be useful when you want to assess the impact of your product system without a particular process, e.g. "printing wiring board" in the example, or more broadly, without considering a specific phase like the "use phase" of a product.
 
->_**Note:**_ In a previous version, we also allowed to "hide" the supply chain. However with openLCA 2.6.1 this got removed for clarity. 
+>_**Note:**_ In a previous version, we also allowed to "hide" the supply chain. However with openLCA 2.6.1 this got removed for clarity.
+
+To add a provider to a flow that is missing one, right-click on the respective flow and select "Search providers".
+
+    ![](../media/model_graph_search_providers.png)
+    <br>_Model graph - Search providers_
+
+    A pop-up window will appear with a list of all possible providers for that flow. You can select in the table which provider you would like to add to the model graph and check off "Connect" to automatically connect the process to the flow. Likewise, it is possible to search for recipients for specific outputs.
+
+    ![](../media/model_graph_search_providers_connect.png)
+    <br>_Model graph - Search providers - Connect_
+
+    >**_Note_**: If you add processes with this function, the full supply chain will be NOT added. You have to manually add it afterwards, using the "Build flow supply chain" function (see below).
+
+    Otherwise, you can also draw connections by dragging from one flow to another flow! To do that, you need to have the respective processes expanded, then click on the provider flow and drag it to the receiver flow:
+
+    ![](../media/drag_drop_model.png)
+    <br>_Manually connection flows_
 
 **This was a glimpse of how you can use the model graph. See below for more details:**
 
