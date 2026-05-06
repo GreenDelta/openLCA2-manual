@@ -41,7 +41,7 @@ Moreover, if you want to create/edit the product system graphically, you can **d
 ![](../media/drag_drop_after.png)
 <br>_Model graph - After a drag and drop of a process, the flows are connected manually_
 
-You can also remove a connection by right-clicking on a process and choosing "Remove connections" or by clicking on a connection and then selecting "Delete". The result is shown below:
+You can also remove a connection by clicking on a connection and then selecting "Delete". The result is shown below:
 
 ![](../media/model_graph_delte_before.png)
 <br>_Model graph - Example of removing a connection (before)_
@@ -51,7 +51,7 @@ You can also remove a connection by right-clicking on a process and choosing "Re
 
 Removing a connection can be useful when you want to assess the impact of your product system without a particular process, e.g. "printing wiring board" in the example, or more broadly, without considering a specific phase like the "use phase" of a product.
 
->_**Note:**_ In previous version, we also allowed to "hide" the supply chain. However with openLCA 2.6.1 this got removed for clarity. 
+>_**Note:**_ In a previous version, we also allowed to "hide" the supply chain. However with openLCA 2.6.1 this got removed for clarity. 
 
 **This was a glimpse of how you can use the model graph. See below for more details:**
 
@@ -60,7 +60,7 @@ Removing a connection can be useful when you want to assess the impact of your p
 <details>
 <summary><b>Zoom bar (new)</b></summary>
 
-A new feature in openLCA 2 is the zoom bar on the right bottom, which allows adjusting the reading size and display section by zooming in and out. You can either use the zoom bar directly or scroll with the mouse to zoom in and out. Holding the keyboard space bar while scrolling allows vertical movements, and pressing alt + SHIFT while scrolling allows horizontal moving. In addition, you can reposition the graph by clicking and dragging it on the screen. Holding the space bar while clicking and dragging a process will result in the movement of the whole graph.
+A new feature in openLCA 2 is the zoom bar on the bottom right, which allows adjusting the reading size and display section by zooming in and out. You can either use the zoom bar directly or scroll with the mouse to zoom in and out. Holding the keyboard space bar while scrolling allows vertical movements, and pressing alt + SHIFT while scrolling allows horizontal movements. In addition, you can reposition the graph by clicking and dragging it on the screen. Holding the space bar while clicking and dragging a process will result in the movement of the whole graph.
 
 </details>
 
@@ -140,9 +140,9 @@ By right-clicking on a process in the model graph, you find the following additi
 
 - _**New!**_ **Set analysis group**: This new function of openLCA 2.4 allows you to conveniently categorize your LCA product system results into various categories, such as the EN15804+A2 modules. Instead of setting up specific processes, you can easily group results. Check the [dedicated section](../res_analysis/res_analysis_groups.md) for details.
 
-- **Add Sticky Note**: For documentation reasons you can add a sticky note to the process.
+- **Add Sticky Note**: For documentation reasons, you can add a sticky note to the process.
 
-- **Delete**: Removes not only the selected process but all the processes that are linked only to it. Here is an example of deleting the process "Printed wiring board". 
+- **Delete**: Removes only the selected process but all the processes that are linked only to it. Here is an example of deleting the process "Printed wiring board". 
 
     ![](../media/model_graph_delte_before.png)
     <br>_Model graph - Example of deleting a process (before)_ 
