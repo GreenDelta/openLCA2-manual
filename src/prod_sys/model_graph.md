@@ -51,24 +51,21 @@ You can also remove a connection by clicking it and selecting "Delete". The resu
 
 Removing a connection can be useful when you want to assess the impact of your product system without a particular process, e.g. "printing wiring board" in the example, or more broadly, without considering a specific phase like the "use phase" of a product.
 
->_**Note:**_ In a previous version, we also allowed to "hide" the supply chain. However with openLCA 2.6.1 this got removed for clarity.
+To add a provider again to a flow that is missing one, right-click on the respective flow and select "Search providers". 
 
-To add a provider to a flow that is missing one, right-click on the respective flow and select "Search providers".
+![](../media/model_graph_search_providers.png)
+<br>_Model graph - Search providers_
 
-    ![](../media/model_graph_search_providers.png)
-    <br>_Model graph - Search providers_
+A pop-up window will appear with a list of all possible providers for that flow. You can select in the table which provider you would like to add to the model graph and check off "Connect" to automatically connect the process to the flow. Likewise, it is possible to search for recipients for specific outputs.
 
-    A pop-up window will appear with a list of all possible providers for that flow. You can select in the table which provider you would like to add to the model graph and check off "Connect" to automatically connect the process to the flow. Likewise, it is possible to search for recipients for specific outputs.
+![](../media/model_graph_search_providers_connect.png)
+<br>_Model graph - Search providers - Connect_
 
-    ![](../media/model_graph_search_providers_connect.png)
-    <br>_Model graph - Search providers - Connect_
+Otherwise, you can also draw connections by dragging from one flow to another flow! To do that, you need to have the respective processes expanded, then click on the provider flow and drag it to the receiver flow:
 
-    >**_Note_**: If you add processes with this function, the full supply chain will be NOT added. You have to manually add it afterwards, using the "Build flow supply chain" function (see below).
+![](../media/drag_drop_model.png)
+<br>_Manually connection flows_
 
-    Otherwise, you can also draw connections by dragging from one flow to another flow! To do that, you need to have the respective processes expanded, then click on the provider flow and drag it to the receiver flow:
-
-    ![](../media/drag_drop_model.png)
-    <br>_Manually connection flows_
 
 **This was a glimpse of how you can use the model graph. See below for more details:**
 
