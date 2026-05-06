@@ -145,30 +145,15 @@ By right-clicking on a process in the model graph, you find the following additi
 
 - **Add Sticky Note**: For documentation reasons, you can add a sticky note to the process.
 
-- **Delete**: Removes only the selected process but all the processes that are linked only to it. Here is an example of deleting the process "Printed wiring board". 
+- **Delete**: Removes only the selected process but keeps all the processes that were linked to it. This facilitates modelling in the foreground of your product system and exchanging processes: 
 
-    ![](../media/model_graph_delte_before.png)
+    ![](../media/model_graph_delete_before.png)
     <br>_Model graph - Example of deleting a process (before)_ 
 
-    ![](../media/model_graph_delte_after.png)
+    ![](../media/model_graph_delete_after.png)
     <br>_Model graph - Example of deleting a process (after)_
 
-    To add a provider to a flow that is missing one, right-click on the respective flow and select "Search providers".
-
-    ![](../media/model_graph_search_providers.png)
-    <br>_Model graph - Search providers_
-
-    A pop-up window will appear with a list of all possible providers for that flow. You can select in the table which provider you would like to add to the model graph and check off "Connect" to automatically connect the process to the flow. Likewise, it is possible to search for recipients for specific outputs.
-
-    ![](../media/model_graph_search_providers_connect.png)
-    <br>_Model graph - Search providers - Connect_
-
-    >**_Note_**: If you add processes with this function, the full supply chain will be NOT added. You have to manually add it afterwards, using the "Build flow supply chain" function (see below).
-
-    Otherwise, you can also draw connections by dragging from one flow to another flow! To do that, you need to have the respective processes expanded, then click on the provider flow and drag it to the receiver flow:
-
-    ![](../media/drag_drop_model.png)
-    <br>_Manually connection flows_
+    
 
 - **Build supply chain**: Allows you to connect processes in the model graph. You can then select whether to build the complete supply chain for the process or just the next tier. Next tier means adding one provider without its supply chain.
 
