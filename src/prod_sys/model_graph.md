@@ -51,6 +51,8 @@ You can also remove a connection by right-clicking on a process and choosing "Re
 
 Removing a connection can be useful when you want to assess the impact of your product system without a particular process, e.g. "printing wiring board" in the example, or more broadly, without considering a specific phase like the "use phase" of a product.
 
+>_**Note:**_ In previous version, we also allowed to "hide" the supply chain. However with openLCA 2.6.1 this got removed for clarity. 
+
 **This was a glimpse of how you can use the model graph. See below for more details:**
 
 </details>

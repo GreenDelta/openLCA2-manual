@@ -2,6 +2,15 @@
 
 # Latest software updates
 
+## 2.6.1:
+
+- Improved user interface, including a resized search box for certain display resolutions and a refined dark mode theme
+- Major memory reduction for regionalized LCIA, resulting in smoother performance and making calculations more accessible for users with limited system resources
+- Faster calculations overall, including direct impact calculations
+- Bug fixes from v2.6.0 for a smoother user experience
+- Easier deletion of process chains in the graphical editor (Model Graph)
+- Better support for opening Python scripts on macOS and Linux
+
 ## 2.6.0:
 
 - System Dynamics (SD) simulation and modeling (experimental feature)
