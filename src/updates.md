@@ -1,6 +1,9 @@
 # Latest manual updates
 
-In this section, you can check what the major manual updates were about and when they were released.
+In this section, you can check what the major manual updates were about and when they were released, see [Update openLCA to the latest version](./installation/update.md)
+
+## 06.05.2026
+- Integrated changed workflow for deleting connections/processes in the model graph as per version 2.6.1 [Model Graph](./prod_sys/model_graph.md)
 
 ## 06.03.2026
 - Created [Update openLCA to the latest version](./installation/update.md) section
