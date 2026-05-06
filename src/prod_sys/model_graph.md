@@ -174,7 +174,13 @@ By right-clicking on a process in the model graph, you find the following additi
     ![](../media/model_graph_build_next_tier.png)
     <br>_Model graph - Build next tier_
 
-- **Remove supply chain**: This option will remove all processes and respective connections prior to the selected process. The option does not ask if you are sure to do this. If you click on it by accident, close the product system on the tab and do not save the changes made.
+- **Remove supply chain**: This action removes the selected process and its entire process chain from the product system. It includes all upstream product providers and downstream waste treatment processes that are not used by any other processes in the system.
+
+    ![](../media/model_graph_delete_proc_before.png)
+    <br>_Model graph - Example of removing the supply chain (before)_ 
+
+    ![](../media/model_graph_delete_proc_after.png)
+    <br>_Model graph - Example of removing the supply chain (after)_  
 
 </details>
 
