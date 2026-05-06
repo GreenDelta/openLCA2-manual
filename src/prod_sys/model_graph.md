@@ -86,14 +86,17 @@ By right-clicking on the background in the model graph, the following options wi
 ![](../media/model_graph_options_back.png)
 <br>_Model graph - Options (background)_
 
-- **Open in editor: Product system:** Brings you to the "General information" tab of your product system.
 - **Add process**: Adds a process to the model graph without connecting it.
 - **Add a sticky note**: You can add sticky notes to your graph. They will be stored locally in the openLCA-data-1.4 folder and not in the database itself.
 
     ![](../media/model_graph_sticky_note.png)
     <br>_Model graph - Sticky note_
 
-- **Update**: With "Update" you can reset the connections between processes. In the popup window, you have the option to choose between the same "provider selection" and "preferred process type" options that are available when calculating a product system. Additionally, you can select "Keep all existing links" and "Prefer links within the same location."
+- **Update process links**: With this option, you can reset the connections between processes. In the pop-up window, you have the option to choose between the same "provider selection" and "preferred process type" options that are available when calculating a product system. Additionally, you can select "Keep all existing links" and "Prefer links within the same location."
+
+ ![](../media/model_graph_update.png)
+    <br>_Model graph - Update links_
+  
 
 - **Focus**: Positions the reference process in the middle of the view window. 
 
