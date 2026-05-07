@@ -34,22 +34,38 @@ A pop-up window will appear with a list of all possible providers for that flow.
 ![](../media/model_graph_search_providers_connect.png)
 <br>_Model graph - Search providers - Connect_
 
->**_Note_**: If you add processes with this function, the full supply chain will be NOT added. You have to manually add it afterwards, using the "Build flow supply chain" function (see below).
+>**_Note_**: If you add processes with this function, the full supply chain will NOT be added. You have to manually add it afterwards, using the "Build supply chain" function (see below).
  
 Moreover, if you want to create/edit the product system graphically, you can **drag and drop processes** from the navigation panel into the model graph void area. Then you can drag a flow to the corresponding one in the provider/receiver process to create the connections between the flows. To connect the newly added process to its supply chain, right-click on it and then select "Build supply chain".
 
 ![](../media/drag_drop_after.png)
 <br>_Model graph - After a drag and drop of a process, the flows are connected manually_
 
-You can also remove connection by right-clicking on a process and choosing "Remove connections" or by clicking on a connection and then selecting "Delete". The software will ask you if you also want to delete or hide the supply chain. Choose "No" to solely remove the connection. The result is shown below:
+You can also remove a connection by clicking it and selecting "Delete". The result is shown below:
 
-![](../media/model_graph_remove_connection_before.png)
+![](../media/model_graph_delte_before.png)
 <br>_Model graph - Example of removing a connection (before)_
 
 ![](../media/model_graph_remove_connection_after.png)
 <br>_Model graph - Example of removing a connection (after)_
 
 Removing a connection can be useful when you want to assess the impact of your product system without a particular process, e.g. "printing wiring board" in the example, or more broadly, without considering a specific phase like the "use phase" of a product.
+
+To add a provider again to a flow that is missing one, right-click on the respective flow and select "Search providers". 
+
+![](../media/model_graph_search_providers.png)
+<br>_Model graph - Search providers_
+
+A pop-up window will appear with a list of all possible providers for that flow. You can select in the table which provider you would like to add to the model graph and check off "Connect" to automatically connect the process to the flow. Likewise, it is possible to search for recipients for specific outputs.
+
+![](../media/model_graph_search_providers_connect.png)
+<br>_Model graph - Search providers - Connect_
+
+Otherwise, you can also draw connections by dragging from one flow to another flow! To do that, you need to have the respective processes expanded, then click on the provider flow and drag it to the receiver flow:
+
+![](../media/drag_drop_model.png)
+<br>_Manually connection flows_
+
 
 **This was a glimpse of how you can use the model graph. See below for more details:**
 
@@ -58,7 +74,7 @@ Removing a connection can be useful when you want to assess the impact of your p
 <details>
 <summary><b>Zoom bar (new)</b></summary>
 
-A new feature in openLCA 2 is the zoom bar on the right bottom, which allows adjusting the reading size and display section by zooming in and out. You can either use the zoom bar directly or scroll with the mouse to zoom in and out. Holding the keyboard space bar while scrolling allows vertical movements, and pressing alt + SHIFT while scrolling allows horizontal moving. In addition, you can reposition the graph by clicking and dragging it on the screen. Holding the space bar while clicking and dragging a process will result in the movement of the whole graph.
+A new feature in openLCA 2 is the zoom bar on the bottom right, which allows adjusting the reading size and display section by zooming in and out. You can either use the zoom bar directly or scroll with the mouse to zoom in and out. Holding the keyboard space bar while scrolling allows vertical movements, and pressing alt + SHIFT while scrolling allows horizontal movements. In addition, you can reposition the graph by clicking and dragging it on the screen. Holding the space bar while clicking and dragging a process will result in the movement of the whole graph.
 
 </details>
 
@@ -84,14 +100,17 @@ By right-clicking on the background in the model graph, the following options wi
 ![](../media/model_graph_options_back.png)
 <br>_Model graph - Options (background)_
 
-- **Open in editor: Product system:** Brings you to the "General information" tab of your product system.
 - **Add process**: Adds a process to the model graph without connecting it.
 - **Add a sticky note**: You can add sticky notes to your graph. They will be stored locally in the openLCA-data-1.4 folder and not in the database itself.
 
     ![](../media/model_graph_sticky_note.png)
     <br>_Model graph - Sticky note_
 
-- **Update**: With "Update" you can reset the connections between processes. In the popup window, you have the option to choose between the same "provider selection" and "preferred process type" options that are available when calculating a product system. Additionally, you can select "Keep all existing links" and "Prefer links within the same location."
+- **Update process links**: With this option, you can reset the connections between processes. In the pop-up window, you have the option to choose between the same "provider selection" and "preferred process type" options that are available when calculating a product system. Additionally, you can select "Keep all existing links" and "Prefer links within the same location."
+
+ ![](../media/model_graph_update.png)
+    <br>_Model graph - Update links_
+  
 
 - **Focus**: Positions the reference process in the middle of the view window. 
 
@@ -134,54 +153,34 @@ By right-clicking on a process in the model graph, you find the following additi
 
 - **Open in editor: Process**: This option will lead you to the general information tab of the selected process.
 
+- **Add Process**: This option allows you to add a process to the model graph. It will not be conntected directly.
+
 - _**New!**_ **Set analysis group**: This new function of openLCA 2.4 allows you to conveniently categorize your LCA product system results into various categories, such as the EN15804+A2 modules. Instead of setting up specific processes, you can easily group results. Check the [dedicated section](../res_analysis/res_analysis_groups.md) for details.
 
-- **Delete**: Removes not only the selected process but all the processes that are linked only to it. Here is an example of deleting the process "Printed wiring board". 
+- **Add Sticky Note**: For documentation reasons, you can add a sticky note to the process.
 
-    ![](../media/model_graph_delte_before.png)
+- **Delete**: Removes only the selected process but keeps all the processes that were linked to it. Those Tier-1 processes will then be displayed in the model graph. This facilitates modelling in the foreground of your product system and exchanging processes: 
+
+    ![](../media/model_graph_delete_before.png)
     <br>_Model graph - Example of deleting a process (before)_ 
 
-    ![](../media/model_graph_delte_after.png)
+    ![](../media/model_graph_delete_after.png)
     <br>_Model graph - Example of deleting a process (after)_
 
-- **Remove connections**: The same can be achieved by right-clicking on a connection and selecting delete. When removing a connection, the software will also ask you if you also want to delete or hide the supply chain.
-
-    ![](../media/remove_supply_chain.png)
-    <br>_Deleting or hiding the supply chain_
-
-    >_**Note:**_ Deleting the supply chain when removing the connection of a process, removes it from the product system entirely. The "Hide" option, otherwise, lets you retain the supply chain. This is important when your supply chain has multiple connections within your product system. For instance, if you delete the link to "Electricity, at grid, CN," it will also disappear from other processes using the same electricity source. Therefore, we recommend using "hide" if you're unsure about the supply chain within the whole system (otherwise check with [Usage](../cheat/usage.md)).
-
-
-    ![](../media/model_graph_remove_connection_before.png)
-    <br>_Model graph - Example of removing a connection (before)_
-
-    ![](../media/model_graph_remove_connection_after.png)
-    <br>_Model graph - Example of removing a connection (after)_
-
-    To add a provider to a flow that is missing one, right-click on the respective flow and select "Search providers".
-
-    ![](../media/model_graph_search_providers.png)
-    <br>_Model graph - Search providers_
-
-    A pop-up window will appear with a list of all possible providers for that flow. You can select in the table which provider you would like to add to the model graph and check off "Connect" to automatically connect the process to the flow. Likewise, it is possible to search for recipients for specific outputs.
-
-    ![](../media/model_graph_search_providers_connect.png)
-    <br>_Model graph - Search providers - Connect_
-
-    >**_Note_**: If you add processes with this function, the full supply chain will be NOT added. You have to manually add it afterwards, using the "Build flow supply chain" function (see below).
-
-    Otherwise, you can also draw connections by dragging from one flow to another flow! To do that, you need to have the respective processes expanded, then click on the provider flow and drag it to the receiver flow:
-
-    ![](../media/drag_drop_model.png)
-    <br>_Manually connection flows_
+    
 
 - **Build supply chain**: Allows you to connect processes in the model graph. You can then select whether to build the complete supply chain for the process or just the next tier. Next tier means adding one provider without its supply chain.
 
     ![](../media/model_graph_build_next_tier.png)
     <br>_Model graph - Build next tier_
 
-- **Remove supply chain**: This option will remove all processes and respective connections prior to the selected process. The option does not ask if you are sure to do this. If you click on it by accident close the product system on the tab and do not save the changes made.
- 
+- **Remove supply chain**: This action removes the selected process and its entire process chain from the product system. It includes all upstream product providers and downstream waste treatment processes that are not used by any other processes in the system.
+
+    ![](../media/model_graph_delete_proc_before.png)
+    <br>_Model graph - Example of removing the supply chain (before)_ 
+
+    ![](../media/model_graph_delete_proc_after.png)
+    <br>_Model graph - Example of removing the supply chain (after)_  
 
 </details>
 
@@ -190,20 +189,20 @@ By right-clicking on a process in the model graph, you find the following additi
 
 By right-clicking on a connection in the model graph, the following additional options will appear:
 
-- **Delete**: **Removes only the selected process!**
+- **Delete**: **Removes only the link to the selected processes**
 
     ![](../media/remove_supply_chain.png)
-    <br>_Deleting or hiding the supply chain_
+    <br>_Removing the link to the supply chain_
 
->_**Note:**_ Deleting the supply chain when removing the connection of a process, removes it from the product system entirely. The "Hide" option, otherwise, lets you retain the supply chain. This is important when your supply chain has multiple connections within your product system. For instance, if you delete the link to "Electricity, at grid, CN," it will also disappear from other processes using the same electricity source. Therefore, we recommend using "hide" if you're unsure about the supply chain within the whole system (otherwise check with [Usage](../cheat/usage.md)).
+This results in a flow that is not connected to a supply chain.
 
-![](../media/model_graph_remove_connection_before.png)
+![](../media/model_graph_delte_before.png)
 <br>_Model graph - Example of removing a connection (before)_
 
 ![](../media/model_graph_remove_connection_after.png)
 <br>_Model graph - Example of removing a connection (after)_
 
-To add a provider to a flow that is missing one, right-click on the respective flow and select "Search providers". 
+To add a provider again to a flow that is missing one, right-click on the respective flow and select "Search providers". 
 
 ![](../media/model_graph_search_providers.png)
 <br>_Model graph - Search providers_

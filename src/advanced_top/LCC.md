@@ -8,7 +8,7 @@ Life Cycle Costing (LCC) aims to assess the costs of a product over its entire l
 
 Costs are modelled in the software as associated with products, waste or
 elementary flows, which are inputs and outputs of processes. They can be
-positive or negative while a negative cost is regarded as an added value. In general, there is no need
+positive or negative, while a negative cost is regarded as an added value. In general, there is no need
 for the creation of a method for the LCC calculation. [Have also a look at our LCC documentation](https://www.openlca.org/wp-content/uploads/2025/03/Life-Cycle-Costing-in-openLCA.pdf).
 
 The implementation in openLCA follows the proposal of the SETAC working group, for costs, with some modifications, as follows:
@@ -22,7 +22,7 @@ Value added builds on this concept, taking value added as "negative costs", i.e.
 
 ###	A closer look at how costs are specified in the process editor  
 
-Starting point for the cost model and LCC calculation in openLCA are the costs for process data sets. In the process editor, costs can be entered for each exchange, i.e. for each input and output, of a process. Both costs and revenues can be considered:  
+The starting point for the cost model and LCC calculation in openLCA are the costs for process data sets. In the process editor, costs can be entered for each exchange, i.e. for each input and output, of a process. Both costs and revenues can be considered:  
   
  ![](../media/lcc_process.png)
 _Costs and revenues for flows in a process_ 
@@ -114,7 +114,9 @@ directly to it.
 
 ### Available Data
 
-Ecoinvent database v. 3.3 in openLCA format provides prices for all products except for waste materials and their disposal. Otherwise, prices can be inserted manually in the input/output section for each process.
+From ecoinvent database v3.3 onwards, the openLCA format provides prices for all products except for waste materials and their disposal. Otherwise, prices can be inserted manually in the input/output section for each process.
+
+>_**Note:**_ In the ecoinvent database, price data are not intended to enforce economic balance at the level of individual unit processes. Prices are mainly used to support economic allocation. Hence, their role is to express the relative market value of the reference product and any co-products produced by the same activity to distribute environmental burdens across the different outputs of multi-functional processes. Because of this purpose, the prices assigned to outputs are not expected to equal the total cost of inputs calculated as price multiplied by quantity.
 
 Several currencies are available in the database and for an entire database, one
 currency can be selected as a reference for all the others.
@@ -124,6 +126,8 @@ different processes or countries, as the price per reference unit associated wit
 the material is open and can be changed in the processes of the product system.
 In this way, there is no need for the creation of the same material with a
 different name and price associated.
+
+
 
 
 ### A small case study example 
@@ -242,4 +246,6 @@ In the contribution tree, value added and life cycle costs are available as new 
 **_openLCA offers a detailed document on how to conduct LCC studies in openLCA free [here](<https://www.openlca.org/wp-content/uploads/2025/03/Life-Cycle-Costing-in-openLCA.pdf>). The database with the case study is available for download [here](https://www.openlca.org/case-studies/)_**.
 
 </div>
+
+
 
