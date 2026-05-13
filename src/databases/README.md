@@ -25,4 +25,8 @@ _**New!**_ Now in openLCA 2 you are able to sort your databases in folders. Righ
 
 After your folder is created you can add also other databases in it just dragging and dropping them.
 
+>**_Note:_** The databases of openLCA are stored by default on C:\Users\NAME\openLCA-data-1.4 (sWindows). If you are considering to change this defaul folder, follow this [instruction](<https://ask.openlca.org/20/how-to-change-the-folder-in-which-openlca-saves-databasess>) .
+
+
+
 </div>
