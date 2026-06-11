@@ -2,6 +2,13 @@
 
 # Latest software updates
 
+## 2.6.2
+- Better system dynamics tooling (needs to be enabled under experimental features File > Preferences > Experimental features)
+	- Full graphical editor for variables and product system bindings
+	- Usage of XMILE as data exchange format
+- Fix: Regionalized LCIA missed some flows with some location combinations
+- Fix: Monte Carlo Simulation did not include linked results. Further the respective error dialog got improved
+
 ## 2.6.1:
 
 - Improved user interface, including a resized search box for certain display resolutions and a refined dark mode theme
