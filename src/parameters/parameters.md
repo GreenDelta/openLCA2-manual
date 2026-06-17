@@ -31,13 +31,6 @@ To create a **Global parameter**:
     ![](../media/global_parameter_information.png)  
     _Global parameter - general information_
 
-6. The global parameters can also be viewed and edited by clicking on "Parameters" under "Database" &#8594; "Content". This opens up the window below which as a (**_new!_**) feature allows editing of uncertainty by double-clicking in the "Uncertainty cell".
-
-    ![](../media/parameters_tools.png)
-    ![](../media/editing_uncertainty_in_the_global_parameter_table_2_new.png)
-    ![](../media/editing_uncertainty_in_the_global_parameter_table.png)
-    <br>_View and edit Parameters under Database &#8594; Content_
-
 To create an **Input and Dependent parameter**:
 
 1. Open the "Parameters" tab of an open process.
@@ -54,6 +47,14 @@ The _use of parameters_ within a database can be checked via the "usage view" fe
 
 >_**Note:**_ Use the **formula interpreter** ("Tools" section in "[Running openLCA for the first time](../welcome_to_openLCA.md)") to check the functions you want to include in dependent parameters.
 
+### Visualize the list of all parameters
+
+The list of all parameters inside the database can be viewed and edited by clicking on "Parameters" under "Database" → "Content". This opens up the window below which as a (new!) feature allows editing of uncertainty by double-clicking in the "Uncertainty cell". The value and formula of parameters can also be edited here. 
+
+![](../media/global_parameter_1.png)
+![](../media/global_parameter_2.png)
+![](../media/global_parameter_3.png)
+</br>*View and edit Parameters under Database → Content*
 
 ### Parameters Rules
 
