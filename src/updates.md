@@ -2,6 +2,10 @@
 
 In this section, you can check what the major manual updates were about and when they were released, see [Update openLCA to the latest version](./installation/update.md)
 
+## 18.06.2026
+- Updated [System dynamics](./advanced_top/system_dynamics.md) chapter
+- Updated [Types of parameters](./parameters/parameters.md) chapter
+
 ## 11.06.2026
 - Minor updates
 
