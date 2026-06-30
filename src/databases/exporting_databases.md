@@ -25,11 +25,18 @@ To export data from openLCA, follow these steps:
 
 3. Here we provide specific instructions for exporting different data types:
 
-- **Ecospold:** Choose either "Impact method"s or "Processes" after clicking on
-"EcoSpold". Select the destination directory and the datasets to export, then click "Finish".
+- **Ecospold:** Select either "Impact method" or "Processes" after clicking on "EcoSpold". Select the destination directory and the datasets to export, then click "Next" which leads to the **ecospold1 configuration setup**.
 
     ![](../media/export_ecospold_process.png)  
     _Selecting data/processes to be exported_
+
+    When processes are to be exported, the next step is to select which processes you would like to export. Once selected, click on "Next" to "EcoSpold Configuration" and customize the export.
+
+    ![](../media/export_ecospold_process_2.png)
+
+    Under "EcoSpold Configuration" you can check general export settings to align with the required schema, as well as amendments to the exported product names. 
+
+    ![](../media/export_ecospold_process_3.png)
 
 - **Excel:** To export processes as Excel files, select "Processes" after clicking on "Excel". Specify the export directory and the processes to export, then click "Finish". Each process will be saved as an individual Excel file.
 
