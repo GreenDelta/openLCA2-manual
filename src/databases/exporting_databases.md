@@ -23,34 +23,63 @@ To export data from openLCA, follow these steps:
     ![](../media/export_wizard.png)  
     _Exporting data from an active database_
 
-3. Here we provide specific instructions for exporting different data types:
+3. Here we provide specific instructions for exporting different data types (see sections below).
 
-- **Ecospold:** Select either "Impact method" or "Processes" after clicking on "EcoSpold". Select the destination directory and the datasets to export, then click "Next" which leads to the **ecospold1 configuration setup**.
+## Ecospold
 
-    ![](../media/export_ecospold_process.png)  
-    _Selecting data/processes to be exported_
+Select either "Impact method" or "Processes" after clicking on "EcoSpold". Select the destination directory and the datasets to export, then click "Next" which leads to the **ecospold1 configuration setup**.
 
-    When processes are to be exported, the next step is to select which processes you would like to export. Once selected, click on "Next" to "EcoSpold Configuration" and customize the export.
+![](../media/export_ecospold_process.png)  
+_Selecting data/processes to be exported_
 
-    ![](../media/export_ecospold_process_2.png)
+When processes are to be exported, the next step is to select which processes you would like to export. Once selected, click on "Next" to "EcoSpold Configuration" and customize the export.
 
-    Under "EcoSpold Configuration" you can check general export settings to align with the required schema, as well as amendments to the exported product names. 
+![](../media/export_ecospold_process_2.png)
 
-    ![](../media/export_ecospold_process_3.png)
+Under "EcoSpold Configuration" you can check general export settings to align with the required schema, as well as amendments to the exported product names. 
 
-- **Excel:** To export processes as Excel files, select "Processes" after clicking on "Excel". Specify the export directory and the processes to export, then click "Finish". Each process will be saved as an individual Excel file.
+![](../media/export_ecospold_process_3.png)
 
-- **ILCD ZIP-file:** Select "ILCD Zip-File" in the export wizard. Choose an export directory and the database elements to export in ILCD format. Click "Finish".
+### General export settings
 
-    ![](../media/export_ilcd.png)  
-    _Selecting the destination and the data set for the ILCD export_ 
+-	**Autofill missing schema with missing values** – this ensures that all fields, required by the ecospold1 format, are filled with default values 
+-	**Export all datasets into one file** – by selecting this, all ecospold1 files will be exported as one large file, else each process dataset is exported as an individual ecocpold1 file
+-	**Create categories file** – where relevant this file bridges the 2-level category structure available in the ecospold1 file with the rest of its associated category hierarchy in the database in categories.xml file, as shown in the snippet below.
 
-- **SimaPRo CSV**: You can choose between exporting LCIA methods or processes in SimaPro CSV. Then click on "Next" to select the elements you whant to export, select a recipient folder for the CSV and and eventually click on "Finish".
+    ![](../media/export_ecospold_process_4.png)
 
-- **JSON-LD:** openLCA allows to export your database as JSON-LD. This allows you to efficiently export selected datasets (processes, product systems etc even on a folder level). Also, you can export the default provider for product inputs and waste outputs. For this, select "JSON-LD" in the export wizard. Choose an export directory and the database elements to export, then click "Finish". 
+- **Add export information with dataset ID to general comment**_
+    - when *selected*, the ID information is integrated into the general comment of the process information. (For example: The inventory refers to the production of a greenhouse with glass walls with a lifespan of 20 years&#10;&#10; openLCA export&#10;This data set was exported from openLCA. The UUID of the data set in openLCA was:&#10;66d8967f-879f-3094-889c-f69a3e520fc0)
+    - when *deselected*, the UUID of each process is included in the file name. For example: file name ***process_66d8967f-879f-3094-889c-f69a3e520fc0.xml***
 
-    ![](../media/jsonld_export.png)
-    <br>_Selecting the dataset/s and destination for the JSON-LD export_
+### Exported product names
+
+-	**Append process name** – The process name is appended to the existing one following the structure of ‘process name | process name’
+-	**Append location codes** - The process name is appended to the existing one following the structure of ‘process name {location code}’
+-	**Append process type** – By checking this, the name is appended with ‘***, S***’ or ’***, U***’
+
+
+## Excel:
+
+ To export processes as Excel files, select "Processes" after clicking on "Excel". Specify the export directory and the processes to export, then click "Finish". Each process will be saved as an individual Excel file.
+
+## ILCD ZIP-file: 
+
+Select "ILCD Zip-File" in the export wizard. Choose an export directory and the database elements to export in ILCD format. Click "Finish".
+
+![](../media/export_ilcd.png)  
+_Selecting the destination and the data set for the ILCD export_ 
+
+## SimaPRo CSV: 
+
+You can choose between exporting LCIA methods or processes in SimaPro CSV. Then click on "Next" to select the elements you whant to export, select a recipient folder for the CSV and and eventually click on "Finish".
+
+## JSON-LD: 
+
+openLCA allows to export your database as JSON-LD. This allows you to efficiently export selected datasets (processes, product systems etc even on a folder level). Also, you can export the default provider for product inputs and waste outputs. For this, select "JSON-LD" in the export wizard. Choose an export directory and the database elements to export, then click "Finish". 
+
+![](../media/jsonld_export.png)
+<br>_Selecting the dataset/s and destination for the JSON-LD export_
 
 >_**Note**:_ The option "Export default providers of product inputs and waste outputs" will not only export the provider link but also the linked processes. This is important if you only export the processes but not the whole database.
 
