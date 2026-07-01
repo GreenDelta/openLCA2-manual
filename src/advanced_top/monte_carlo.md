@@ -2,7 +2,7 @@
 
 <div style='text-align: justify;'>
 
-As life cycle assessment models typically rely on many assumptions, methods to determine the associated uncertainty in life cycle inventory and life cycle impact assessment can be helpful to communicate the effect of those assumptions on the communicated results. Hence, openLCA supports to perform Monte Carlo Simulation (MCS) within a product system using per-exchange uncertainty information. The produced MCS result will display values such as the mean result from the number of calculations performed along a standard deviation, 5th percentile and 95th percentile boundaries as well as the median value of the simulated results. Particularly the standard deviation can be useful for expressing the overall uncertainty in product system results. For further investigation and interpretation, exporting the results of the MCS to Excel may be useful.	
+As life cycle assessment models typically rely on many assumptions, methods to determine the associated uncertainty in life cycle inventory and life cycle impact assessment can be helpful to communicate the effect of those assumptions on the communicated results. Hence, openLCA supports to perform Monte Carlo Simulation (MCS) within a product system using per-exchange uncertainty information. The produced MCS result will display values from the number of calculations performed such as the mean, the standard deviation, the median, and the 2.5th percentile, as well as the 97.5th percentile to get the range for the 95% confindence intervall. Particularly the standard deviation can be useful for expressing the overall uncertainty in product system results. For further investigation and interpretation, exporting the results of the MCS to Excel may be useful.	
 
 ### Principle
 
