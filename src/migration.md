@@ -13,9 +13,9 @@ In order to use the tool, you first open the database with the product system or
 
 ![](../media/placeholder.png)  
 
-In the migration tool, you can then select the models (projects and product systems) you want to migrate. You can also select the option "Copy all foreground processes" here. Then you select a target database and strategies how providers of product outputs and waste inputs (typically processes, but could also be pre-calculated results) will be matched in the models between the source and target database. If the tool finds matching providers, the corresponding process links will be updated to link to the new provider of a flow in the target database.
+In the migration tool, you can then select the models (projects and product systems) you want to migrate. You can also select the option "Copy all foreground processes" here. Then you select a target database and strategies how providers of product outputs and waste inputs (typically processes, but could also be pre-calculated results) will be matched in the models between the source and target database, details below. If the tool finds matching providers for one product/waste flow that is present in both databases, the corresponding process links will be updated to link to the new provider of a flow in the target database. Product or waste flows that don't exist in the target database will just be copied.
 
->**_Note:_** There is also the possibility to migrate LCIA methods from the existing to the newer database. The migration tool focuses on linking product and waste flows to a novel provider but elementary flows are not changed. However, if both databases share the same reference flow system, there is no need to map the elementary flows.
+>**_Note:_** There is also the possibility to migrate LCIA methods from the existing to the newer database. The migration tool focuses on linking product and waste flows to a novel provider, but the elementary flows of the foreground processes are not changed. However, if both databases share the same reference flow system, there is no need to map the elementary flows.
 
 
 The linking or matching strategies for finding these providers are executed in order, as listed in the dialog. You can change that order or remove specific strategies with the context menu:
@@ -27,7 +27,7 @@ The linking or matching strategies for finding these providers are executed in o
 
 Currently, the following strategies are implemented:
 
--	"Match by flow and exact provider ID": A provider can be linked, if it has a product output or waste input of the exact same flow (identified by ID) and also the provider ID is exactly the same. This is useful when migrating specific models to the same version of the database or migrating to a library-based version of the background database.
+-	"Match by flow and exact provider ID": A provider can be linked if it has a product output or waste input of the exact same flow (identified by ID) and also the provider ID is exactly the same. This is useful when migrating specific models to the same version of the database or migrating to a library-based version of the background database.
 -	"Match by flow, provider name and location":  This option has the same flow logic as above but providers are matched by name and locations. In this matching strategy, typical suffixes like "APOS" or "Cutoff" are ignored, thus, this strategy is useful when, for example, changing the system model or updating an ecoinvent database.
 -	"Match by flow (take any available provider)": With this strategy, any provider can be linked that has a product output or waste input with exactly the same flow.
 
