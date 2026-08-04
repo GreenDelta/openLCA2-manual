@@ -83,35 +83,42 @@ By following these steps, you can import databases in various formats into exist
 
 Here are some notes on specific formats, be aware that this is not an exhaustive guidance but provides just some key aspects:
 
-- For **SimaPro CSV files**, add a flow in the window and optionally select a [flow mapping file](./mapping_validation.md). If you are importing multiple CSV files without a mapping file, import all the CSV files together to ensure correct mapping.
+- **Entire database** (*.zolca) you can select an existing database which is already loaded into openLCA or an *.zolca file that is not yet in openLCA.
 
-    ![](../media/import_csv_file_new.png)  
-
-
-- For **ILCD files**, select the import file from the directory and optionally a [flow mapping file](./mapping_validation.md). ILCD databases have to be in .zip format to be imported.
-
-    ![](../media/import_ilcd.png)  
-
-
-- **For Ecospold1 files**, ensure to check and assign units using a [flow mapping file](./mapping_validation.md).
-
-- **Processes from Excel files**, allows to imported processes into openLCA that are present in a specific form as Excel file. More details are found [here](<https://github.com/GreenDelta/olca-process-xls/tree/main>).
- 
+	![](../media/database_import.png)  
+	
 - **JSON-LD** is the in-house format for openLCA. You can import entire databases, LCIA methods or any other database element to import. JSON-LD data has to be in .zip format.  
 
     When importing JSON files, you have three options for the case of already existing datasets:
 
     ![](../media/lcia_methods_zip.png)
 
-- **Never update a data set that already exists**: The system will check for matching UUIDs. If a match is found, the existing dataset will remain as it is.
+	- **Never update a data set that already exists**: The system will check for matching UUIDs. If a match is found, the existing dataset will remain as it is.
 
-- **Update data sets with newer versions**: If matching UUIDs are found, the system will update the existing datasets only if the imported version is newer (the version can be checked in the "General information" tab of every dataset).
+	- **Update data sets with newer versions**: If matching UUIDs are found, the system will update the existing datasets only if the imported version is newer (the version can be checked in the "General information" tab of every dataset).
 
-- **Overwrite all existing data sets**: If matching UUIDs are found, the system will replace the existing datasets automatically with the imported ones irrespective of versioning.
+	- **Overwrite all existing data sets**: If matching UUIDs are found, the system will replace the existing datasets automatically with the imported ones irrespective of versioning.
 
     Datasets with UUIDs that are not present in the current database will be imported anyway, regardless of the option you choose.
 
     On the [dedicated chapter](../lcia_methods/importing_lcia_methods.md), you can find more details about importing LCIA methods in JSON-LD format into openLCA, as the [openLCA LCIA methods pack](https://nexus.openlca.org/database/openLCA%20LCIA%20methods).
+
+- **Processes from Excel files**, allows to imported processes into openLCA that are present in a specific form as Excel file. More details are found [here](<https://github.com/GreenDelta/olca-process-xls/tree/main>).
+
+	![](../media/import_excel.png)  
+	
+	
+- For **Ecospold1 files**, ensure to check and assign units using a [flow mapping file](./mapping_validation.md).
+
+- For **ILCD files**, select the import file from the directory and optionally a [flow mapping file](./mapping_validation.md). ILCD databases have to be in .zip format to be imported.
+
+    ![](../media/import_ilcd.png)  
+
+- For **SimaPro CSV files**, add a flow in the window and optionally select a [flow mapping file](./mapping_validation.md). If you are importing multiple CSV files without a mapping file, import all the CSV files together to ensure correct mapping.
+
+    ![](../media/import_csv_file_new.png)  
+
+- For **Geometries from GeoJSON** see below. 
 
 
 5. Click "Finish" to initiate the data import process. 
