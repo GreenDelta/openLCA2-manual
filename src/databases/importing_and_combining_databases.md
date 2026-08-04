@@ -94,6 +94,9 @@ Here are some notes on specific formats, be aware that this is not an exhaustive
 
 
 - **For Ecospold1 files**, ensure to check and assign units using a [flow mapping file](./mapping_validation.md).
+
+- **Processes from Excel files**, allows to imported processes into openLCA that are present in a specific form as Excel file. More details are found [here](<https://github.com/GreenDelta/olca-process-xls/tree/main>).
+ 
 - **JSON-LD** is the in-house format for openLCA. You can import entire databases, LCIA methods or any other database element to import. JSON-LD data has to be in .zip format.  
 
     When importing JSON files, you have three options for the case of already existing datasets:
