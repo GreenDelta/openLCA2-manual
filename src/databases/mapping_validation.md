@@ -14,7 +14,7 @@ _Location of mapping files in the navigation panel_
 ![](../media/mapping_file.png)  
 _Example of a mapping file_
 
-The mapping file is required while "[importing a database](../databases/importing_and_combining_databases.md)" with different data formats, e.g. SimaPro, EcosPold1 or ILCD, see the figure below.
+The mapping file is required while "[importing a database](../databases/importing_and_combining_databases.md)" with different data formats, e.g. SimaPro, EcosPold1 (default or BAFU) or ILCD, see the figure below.
 
 ![](../media/mapping_2.png)  
 _Importing a database using a mapping file_
