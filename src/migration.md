@@ -11,7 +11,7 @@ Use cases for such a migration are:
 
 In order to use the tool, you first open the database with the product system or project you want to migrate. You can then find the tool under Database > Migrate content: 
 
-![](../media/db_migration_1.png)  
+![](./media/db_migration_1.png)  
 
 In the migration tool, you can then select the models (projects and product systems) you want to migrate. You can also select the option "Copy all foreground processes" here. Then you select a target database and strategies for how providers of product outputs and waste inputs (typically processes, but could also be pre-calculated results) will be matched in the models between the source and target database; details below. If the tool finds matching providers for one product/waste flow that is present in both databases, the corresponding process links will be updated to link to the new provider of a flow in the target database. Product or waste flows that don't exist in the target database will just be copied.
 
@@ -20,7 +20,7 @@ In the migration tool, you can then select the models (projects and product syst
 
 The linking or matching strategies for finding these providers are executed in order, as listed in the dialog. You can change that order or remove specific strategies with the context menu:
 
-![](../media/db_migration_2.png)  
+![](./media/db_migration_2.png)  
 
 
 ## Migration strategies
@@ -32,16 +32,16 @@ Currently, the following strategies are implemented:
 -	"Match by flow (take any available provider)": With this strategy, any provider can be linked that has a product output or waste input with exactly the same flow.
 
 Based on the selection, the tool will then create a migration plan and open it:
-![](../media/db_migration_3.png)  
+![](./media/db_migration_3.png)  
 
 In the plan, you see the models that will be migrated and how providers will be linked. Providers that cannot be linked/matched are copied to the target database. These are typically the processes of the foreground system. For the matched providers, you see in the table "Provider matches" which provider in the source database will be replaced with which provider in the target database. In the "Status" column, you see which linking/matching strategy was applied and how many options for a possible other provider are in the target database. When there are multiple options for a matching target provider, you can change the provider mapping in the table:
 
-![](../media/db_migration_4.png)  
+![](./media/db_migration_4.png)  
 
 >**_Note:_** For the ease of the  workflow, you can filter the status of the migration per flow. This allows to focus on problematic flows. 
 
 Finally, you can run the migration by pressing the "Run migration" button in the setup. After the migration, you should see this message:
 
-![](../media/db_migration_5.png)  
+![](./media/db_migration_5.png)  
 
 >**_Note:_** We allow importing and exporting flow mapping (button in the setup). Moreover, you can also copy the "Providers matched" to the clipboard to copy it, e.g., to Excel.
