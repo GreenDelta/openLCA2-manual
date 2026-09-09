@@ -2,10 +2,9 @@
 
 # Social aspects
 
-In this tab you will find the social aspects of the process itself (without the supply chain) and further information such as data quality, reference year and source. It works in the social LCA databases such as soca or PSILCA.
+Information regarding the social indicator according to a process can be viewed in the "Social Aspects" tab. Information on the raw values, risk level (evaluated according to the amount of the "raw value"), activity variable, data quality, comment and source can all be displayed. The risk-assessed indicators are characterised by the activity variable. For instance, for the time being, all indicators use working hours as an activity variable. To learn more about this and about each social indicator, it is recommended to visit the PSILICA manual, which is available on the Nexus website. This tab only shows values if you are using a database with social information (soca, PSILCA).
 
-![](../media/social_aspects_tab.png)
-_Social aspects tab_
+![](../media/social_process.png)  
 
 Check out the "[Social aspects](../advanced_top/social_aspects.md)" section. 
 
