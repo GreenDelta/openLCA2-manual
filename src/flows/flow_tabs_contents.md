@@ -24,7 +24,7 @@ After opening a flow in openLCA, you will find tabs at the bottom of the window 
 	
 - **Additional Information:** You can use this section to include extra details like CAS number, chemical formula, location, and synonyms to facilitate search and identification of the flow.
 
-- **Using the PubChem API:** With openLCA versions >2.6.1, we implemented an automatic match function using the PubChem API. openLCA will search for details of the chemical name if you click the button:
+- * **Using the PubChem API:** With openLCA versions >2.6.1, we implemented an automatic match function using the PubChem API. When you click the button, openLCA searches PubChem for information about the chemical using its **name, synonyms, CAS number, or chemical formula**. These attributes must be explicitly listed as synonyms in the respective PubChem records to be used for the search:
 
 ![](../media/pubchem_1.png)
 

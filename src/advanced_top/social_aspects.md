@@ -5,7 +5,7 @@
 
 openLCA can also be used to conduct social lifecycle assessments (SLCA) for any product or project. SLCA is a part of a sustainability assessment that focuses on the social impacts throughout a product's lifecycle. Guidelines for carrying out SLCA were developed (and were last updated in 2020) by the United Nations Environment Programme (UNEP) and can be freely accessed on their website.
 
-Similar to conventional environmental LCA, there are background databases used for SLCA. In openLCA, PSILCA and SHDB are examples of social databases that can be used. You can also integrate SOCA, which is an add-on for ecoinvent LCI databases to carry out SLCA. Social LCA databases are available on openLCA Nexus, under the Database section.' This section will display content only if processes have social-related information. 
+Similar to conventional environmental LCA, there are background databases used for SLCA. In openLCA, PSILCA and SHDB are examples of social databases that can be used. You can also integrate soca, which is an add-on for ecoinvent LCI databases to carry out SLCA. Social LCA databases are available on openLCA Nexus, under the Database section.' This section will display content only if processes have social-related information. 
 
 In an active social database, you can find the "Social Indicators" in the "Indicators and parameters" directory. 
 
@@ -23,7 +23,7 @@ Information regarding the social indicator according to each process can be view
 
 </div>
 
-However, once you have calculated your product system, you will see, with openLCA versions >2.7, the "Social assessment" tab:
+With openLCA 2.7, we have also added the Social assessment tab, which allows you to assess the social aspects of your product system. Once you have calculated your product system, the assessment is presented by stakeholder groups and subcategories, showing the associated opportunities and risks based on the raw values.
 
 ![](../media/social_assessment.png)  
 
