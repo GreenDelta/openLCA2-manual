@@ -116,7 +116,9 @@ Here are some notes on specific formats, be aware that this is not an exhaustive
 
 - For **SimaPro CSV files**, add a flow in the window and optionally select a [flow mapping file](./mapping_validation.md). If you are importing multiple CSV files without a mapping file, import all the CSV files together to ensure correct mapping.
 
-    ![](../media/import_csv_file_new.png)  
+    ![](../media/import_csv_file_new.png)
+
+  >**_Note:_** If you want to use SimaPro data in openLCA without mapping it to openLCA's reference system, you can export the entire project with library, including the LCIA methods, and import it into an empty database. Due to the lack of mapping, the database cannot be used with other databases offered on openLCA Nexus and does not provide various benefits (such as parameters, data quality information, and locations etc). However, it will produce the correct calculation results.
 
 - For **Geometries from GeoJSON** see below. 
 
