@@ -5,6 +5,7 @@ In this section, you can check what the major manual updates were about and when
 ## XX.XX.2026
 - New section about [Migration](../migration.md) between database versions
 - Updated [Importing databases](databases/importing_and_combining_databases.md) chapter
+- Rescaled some figures
 
 ## 01.07.2026
 - Updated [Exporting databases](databases/exporting_databases.md) chapter (in particular Export in __ecospold__ format)
