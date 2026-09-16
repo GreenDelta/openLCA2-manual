@@ -21,5 +21,5 @@ The implementation of libraries brings various advantages to the users of openLC
 - Importing and exporting foreground data is easier because shared background data remains in the library.
 - Libraries can be protected with usernames and passwords.
 
-Another advantage of using libraries is more efficient data exchange using the openLCA [Collaboration Server](<https://manuals.openlca.org/lca-collaboration-server/>), as library data is transferred only once and can then be referenced by multiple databases, rather than being transferred separately for each database.
+Another advantage of using libraries is more efficient data exchange using the openLCA [Collaboration Server](<https://manuals.openlca.org/lca-collaboration-server/>), as library data is transferred only once and can then be referenced to multiple databases instead of being transferred separately for each database.
 </div>
