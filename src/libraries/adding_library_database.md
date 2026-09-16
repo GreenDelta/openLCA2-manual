@@ -1,9 +1,27 @@
-# Downloading and adding a library to a database
+## Adding libraries into openLCA
+
+Libraries can be downloaded from the openLCA Nexus and then added 
 
 <div style='text-align: justify;'>
     
-Libraries can be downloaded from the openLCA Nexus and then added to an existing database.
-You can add a library to an existing database. 
+Libraries can be downloaded from the openLCA Nexus or selfgenerated and then added to an existing database.
+Intially, you have login into openLCA Nexus and choose the respective library. 
+
+![](../media/library_nexus_1.png)
+
+The moment you accept the license agreement, the EULA and hit "Download" another window will appear asking you to set a password for the library:
+
+![](../media/library_nexus_2.png)
+
+After entering the password, the download starts. Once finished, you can import the library into an empty openLCA database:
+
+![](../media/library_nexus_3.png)
+
+It will ask you for the password you set up prior..
+
+
+
+Alternatively, you can add a library to an already existing database. 
 To do so: 
 1.	right-click on the database you wish to add a library to 
 2.	select "Add a library". 
