@@ -1,14 +1,14 @@
-# Adding a library to a database
+# Downloading and adding a library to a database
 
 <div style='text-align: justify;'>
-
+Libraries can be downloaded from the openLCA Nexus and then added to an existing database.
 You can add a library to an existing database. 
 To do so: 
 1.	right-click on the database you wish to add a library to 
 2.	select "Add a library". 
 
     ![](../media/library_right_click_menu_2.png)
-    <br/>_Right-click menu data appear in openLCA 2.0 when you click on an existing database_
+    <br/>_Right-click menu data appears in openLCA >2.0 when you click on an existing database_
 
 A window will appear in which you can select what library you wish to import into the database. 
 The drop-down menu allows you to choose one of the openLCA libraries. If you wish to import an external library, 
