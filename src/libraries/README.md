@@ -9,7 +9,7 @@ the accuracy of the impact calculations.
 
 
 ![](../media/library_example.png)
-</br>_Example of a library product system displayed in the graphical editor of openLCA 2.0_
+</br>_Example of a library product system displayed in the model graph of openLCA (process from the library are indicated as grey)_
 
 The implementation of libraries brings various advantages to the users of openLCA:
 
@@ -17,7 +17,7 @@ The implementation of libraries brings various advantages to the users of openLC
 - A single library can be added to several compatible or empty databases. This ensures that the same background data sets are used across different models.
 - A library is stored in a single file and can therefore be reviewed, certified, and versioned if needed.
 - Calculations are much faster because inventories are precalculated and require significantly less memory.
-- Foreground and background data are clearly separated. The foreground database contains the processes and assumptions specific to a study, while the library provides the common background data.
+- Foreground and background data are clearly separated. The foreground database contains the processes and assumptions specific to a study, while the library provides the common background data. This works well together with onlineLCA.
 - Importing and exporting foreground data is easier because shared background data remains in the library.
 - Libraries can be protected with usernames and passwords.
 
