@@ -16,7 +16,7 @@ The implementation of libraries brings various advantages to the users of openLC
 - Libraries are not editable, meaning that the background data is write protected.
 - A single library can be added to several compatible or empty databases. This ensures that the same background data sets are used across different models.
 - A library is stored in a single file and can therefore be reviewed, certified, and versioned if needed.
-- Calculations are much faster because inventories are precalculated. Calculations also require significantly less memory.
+- Calculations are much faster because inventories are precalculated and require significantly less memory.
 - Foreground and background data are clearly separated. The foreground database contains the processes and assumptions specific to a study, while the library provides the common background data.
 - Importing and exporting foreground data is easier because shared background data remains in the library.
 - Libraries can be protected with usernames and passwords.
