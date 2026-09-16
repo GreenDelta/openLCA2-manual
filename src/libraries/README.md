@@ -11,6 +11,6 @@ the accuracy of the impact calculations.
 ![](../media/library_example.png)
 </br>_Example of a library product system displayed in the graphical editor of openLCA 2.0_
 
-Another advantage of using libraries is more efficient data exchange with the Collaboration Server. Library data is transferred only once and can then be referenced by multiple databases, rather than being transferred separately for each database.
+Another advantage of using libraries is more efficient data exchange using the openLCA [Collaboration Server](<https://manuals.openlca.org/lca-collaboration-server/>), as library data is transferred only once and can then be referenced by multiple databases, rather than being transferred separately for each database.
 
 </div>
