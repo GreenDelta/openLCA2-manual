@@ -1,6 +1,7 @@
 # Downloading and adding a library to a database
 
 <div style='text-align: justify;'>
+    
 Libraries can be downloaded from the openLCA Nexus and then added to an existing database.
 You can add a library to an existing database. 
 To do so: 
