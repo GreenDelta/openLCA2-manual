@@ -6,6 +6,7 @@ In this section, you can check what the major manual updates were about and when
 - New section about [Migration](../migrating.md) between database versions
 - Updated [Importing databases](databases/importing_and_combining_databases.md) chapter
 - Updated [Social aspects](flows/flow_tabs_contents.md) chapter
+- Updated the [Library](libraries/adding_library_database.md) chapter
 - Rescaled some figures
 
 ## 01.07.2026
