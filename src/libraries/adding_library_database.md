@@ -1,11 +1,8 @@
 ## Adding libraries into openLCA
 
-Libraries can be downloaded from the openLCA Nexus and then added 
-
 <div style='text-align: justify;'>
     
-Libraries can be downloaded from the openLCA Nexus or selfgenerated and then added to an existing database.
-Intially, you have login into openLCA Nexus and choose the respective library. 
+Libraries can be downloaded from the openLCA Nexus and then added to an existing database. Intially, you have login into openLCA Nexus and choose the respective library. 
 
 ![](../media/library_nexus_1.png)
 
@@ -43,12 +40,12 @@ Simply press enter to proceed.
 
 Once added to the database, the processes, flows etc. will be available in the database. You can recognize everything that was added from the library by its cursive font.
 
-![](../media/library_example_7.png)
+![](../media/library_nexus_7.png)
 <br/>_Example of a library that was added to a database in openLCA 2.0_
 
 If you open a library-derived process, you will have to activate the library using your email and the set password.
 
-![](../media/library_example_7_PW.png)
+![](../media/library_nexus_7_PW.png)
 
 Once you openend a process, be aware that you will be unable to alter the amounts of the inputs or outputs. 
 If you wish to do so, you will need to copy the process in question and make your alterations to the copy. In every other respect, however, you can use processes, flows etc. from libraries just as you would with those native to the database.
