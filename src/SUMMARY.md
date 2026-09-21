@@ -149,6 +149,7 @@
   - [Exporting a database as a library](libraries/exporting_database_as_library.md)
   - [Library file system](libraries/file_system.md)
 - [Scripting in openLCA](scripting/README.md)
+- [Updating background of databases](migration.md)
 - [Collaboration in Teams](collaboserver.md)
 - [openLCA cheat sheet](cheat/README.md)
   - [Usage](cheat/usage.md)
