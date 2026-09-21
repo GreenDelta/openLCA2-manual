@@ -2,7 +2,7 @@
 
 <div style="text-align: justify;">
 
-With openLCA v2.2, you can now access a wide range of ILCD nodes through the soda4LCA tool. This also includes various EPD-focused nodes, e.g. International EPD, ÖKOBAUDAT... The soda4LCA tool can be accessed by going to Tools > soda4LCA as seen below:
+With openLCA v2.2, you can now access a wide range of ILCD nodes through the soda4LCA tool. This also includes various EPD-focused nodes, e.g. EPD International, ÖKOBAUDAT... The soda4LCA tool can be accessed by going to Tools > soda4LCA as seen below:
 
 ![](../media/soda4lca_1.png)
 

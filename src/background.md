@@ -3,7 +3,6 @@
 in "Background data" you can find all the elements that users typically don't engage with often, like units, sources, locations and so on. You can freely explore this section on your active database.
 
 ![](./media/background.png)  
-_Background information in a database_
 
 ## Locations
 

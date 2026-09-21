@@ -2,6 +2,20 @@
 
 # Latest software updates
 
+## 2.7.0
+
+- Database migration tool
+	- Create and run migration plans for part or all of a source database
+	- Initial support for migrating ecoinvent databases to newer versions
+- Flow Mappings for EcoSpold 1
+	- Flow mappings can now be applied when exporting EcoSpold 1
+	- Official BAFU flow mappings added for EcoSpold 1 import and export
+- Social Assessment Tree is now a standard feature
+	- No longer experimental
+	- Automatically appears in results when the model contains processes with social aspects
+- Parameter names are checked during validation
+- Support for data releases in the HESTIA client tool
+
 ## 2.6.2
 - Better system dynamics tooling (needs to be enabled under experimental features File > Preferences > Experimental features)
 	- Full graphical editor for variables and product system bindings

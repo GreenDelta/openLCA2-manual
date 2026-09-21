@@ -2,6 +2,13 @@
 
 In this section, you can check what the major manual updates were about and when they were released, see [Update openLCA to the latest version](./installation/update.md)
 
+## 21.09.2026
+- New section about [Migration](./migration.md) between database versions
+- Updated [Importing databases](databases/importing_and_combining_databases.md) chapter
+- Updated [Social aspects](flows/flow_tabs_contents.md) chapter
+- Updated the [Library](libraries/adding_library_database.md) chapter
+- Rescaled some figures
+
 ## 01.07.2026
 - Updated [Exporting databases](databases/exporting_databases.md) chapter (in particular Export in __ecospold__ format)
 
