@@ -8,7 +8,7 @@ Previously we have described the function "[Creating a new database loading it f
 - EcoSpold1
 - ILCD
 - Excel
-- SimaPro CSV
+- SimaPro CSV (allowing the transfer of databases from SimaPro software to openLCA)
 - Zolca
 - JSON-LD
 
