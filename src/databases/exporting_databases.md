@@ -32,9 +32,10 @@ Select either "Impact method" or "Processes" after clicking on "EcoSpold". Selec
 ![](../media/export_ecospold_process.png)  
 _Selecting data/processes to be exported_
 
-When processes are to be exported, the next step is to select which processes you would like to export. Once selected, click on "Next" to "EcoSpold Configuration" and customize the export.
+When processes are to be exported, the next step is to select which processes you would like to export. Once selected, (***openLCA 2.7 onwards***) select a mapping file if required, ths has been added to openLCA in the context of the BAFU database.
+Finally, click on "Next" to "EcoSpold Configuration" and customize the export.
 
-![](../media/export_ecospold_process_2.png)
+![](../media/export_ecospold_process_2_with_flow_mapping)
 
 Under "EcoSpold Configuration" you can check general export settings to align with the required schema, as well as amendments to the exported product names. 
 
