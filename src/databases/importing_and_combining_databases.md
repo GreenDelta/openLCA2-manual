@@ -112,7 +112,7 @@ To import **ILCD files**, select the import file from the directory:
 
     ![](../media/import_ilcd.png)  
 
->**_Note:_** ILCD is a data format but can also represent a data scheme. This implies that the reference system is not the native openLCA one and optionally a [flow mapping file](./mapping_validation.md) has to be applied.
+**_Note:_** ILCD is a data format but can also represent a data scheme. This implies that the reference system is not the native openLCA one and optionally a [flow mapping file](./mapping_validation.md) has to be applied.
 
 During the import processes, flows, flow properties, methods, unit groups, sources, and contacts (imported as actors) are created in the active database. Data sets are identified by their UUIDs. If a data set with the same UUID already exists in the database, the existing one is used instead of creating a duplicate. This is why importing ILCD data into a database that already contains the matching reference system (e.g. the EF reference package from openLCA Nexus when importing EF-compliant data) avoids duplicate elementary flows and ensures that the LCIA methods work correctly.
 	
