@@ -2,12 +2,12 @@
 
 <div style='text-align: justify;'>
 
-openLCA can connect directly to external servers and data platforms via their APIs (Application Programming Interfaces). With these API clients, you can search, import, and in some cases upload data without leaving openLCA. All API clients can be found under "Tools" → "API Clients"; most of them require an account and an API key or login for the respective platform.
+openLCA can connect directly to external servers and data platforms via their APIs (Application Programming Interfaces). With these API clients, you can search, import, and in some cases upload data without leaving openLCA. This gives you direct access to a growing ecosystem of LCA data, from EPD databases to agri-food data, and lets you collaborate in teams, all from within your familiar openLCA workspace. All API clients can be found under "Tools" → "API Clients"; most of them require an account and an API key or login for the respective platform.
 
 ![](../media/hestia_menu.png)
 <br>_API clients in the "Tools" menu_
 
-<details open>
+<details>
 <summary><b>CS Servers</b></summary>
 
 The LCA Collaboration Server is a server application that complements openLCA and allows you to work on LCA models together in teams. Similar to version control in software development, users commit their changes from their local openLCA database to a shared repository on the server and fetch the changes of others. This also makes it easy to distribute reference data and to have models reviewed. Under "CS Servers", you can manage your connections to Collaboration Servers; a database is connected to a repository by right-clicking on it and choosing "Repository" → "Connect...".
@@ -19,7 +19,7 @@ For more information, see [Collaboration in Teams](../collaboserver.md) and the 
 
 </details>
 
-<details open>
+<details>
 <summary><b>soda4LCA</b></summary>
 
 Since openLCA 2.2, you can access a wide range of ILCD data nodes through the soda4LCA client. This includes various EPD-focused nodes, e.g. EPD International and ÖKOBAUDAT. The client can be found under "Tools" → "API Clients" → "soda4LCA". A window appears in which you can select the desired data node (host); then click "OK".
@@ -39,14 +39,14 @@ With an active database, you can import a search result by right-clicking on it 
 
 To ensure a smooth integration of EPDs, use an EN15804-compatible database like the [EN15804 version of ecoinvent](https://nexus.openlca.org/database/EN15804%20add-on) or the EN15804-compatible method package, which is available for free on the same page. If your active database does not contain the required impact methods, openLCA might download them from the respective soda4LCA node. This takes time and can lead to corrupted EPDs, as not all soda4LCA nodes contain the referenced indicators and flows. Also make sure to calculate impacts with the same impact method that was used to create the EPD; otherwise the impacts of the EPD will not be taken into account.
 
->**_Tip:_** To use an imported EPD result in a product system, make sure a product flow is set as the quantitative reference under "Inventory result" → "Outputs". If there is none, create a new product flow, add it to the outputs, and set it as the quantitative reference. See also [Using results of EPDs in life cycle models](../epds/life_cycle_models.md).
+>**_Note:_** To use an imported EPD result in a product system, make sure a product flow is set as the quantitative reference under "Inventory result" → "Outputs". If there is none, create a new product flow, add it to the outputs, and set it as the quantitative reference. See also [Using results of EPDs in life cycle models](../epds/life_cycle_models.md).
 
 ![](../media/soda4lca_5.png)
 <br>_Setting a product flow as quantitative reference of an EPD result_
 
 </details>
 
-<details open>
+<details>
 <summary><b>Get EPDs from EC3</b></summary>
 
 With this client, you can download EPDs from and upload EPDs to EC3 (Embodied Carbon in Construction Calculator) by [Building Transparency](<https://www.buildingtransparency.org/>). This requires an account, which you can create on the [Building Transparency website](<https://buildingtransparency.org/auth/login>). Go to "Tools" → "API Clients" → "Get EPDs from EC3", insert your user name, click "Login" and enter your EC3 password.
@@ -81,7 +81,7 @@ In the window that appears, click "Upload (Update)". You can then check your upl
 
 </details>
 
-<details open>
+<details>
 <summary><b>SmartEPD</b></summary>
 
 Since openLCA 2.5.0, you can upload EPD results to [SmartEPD](<https://smartepd.com/>). The client can be found under "Tools" → "API Clients" → "SmartEPD (experimental)". To use it, you first need to [request access](<https://www.smartepd.com/request-access>) to SmartEPD; you then find your API key in your profile.
@@ -110,7 +110,7 @@ To upload EPD results from your database, right-click on the EPD icon in the Sma
 
 </details>
 
-<details open>
+<details>
 <summary><b>HESTIA</b></summary>
 
 [HESTIA](<https://www.hestia.earth/>) is an online platform providing agri-food data, such as data on crop and livestock production. Since openLCA 2.6.0, you can search the HESTIA datasets directly in openLCA and import them as process datasets into your active database. The HESTIA API client can be found under "Tools" → "API Clients" → "Hestia (experimental)". As indicated in the menu, it is still an experimental feature.
@@ -185,11 +185,7 @@ If errors occur during the import, the "Import finished" dialog shows how many d
 ![](../media/hestia_import_errors.png)
 <br>_Summary of the import with the option to show error details_
 
-**Known limitations**
-
-- Aggregated datasets often contain the same emission several times as separate outputs.
-- Practices from HESTIA are currently not mapped to exchanges in openLCA.
-- Additional flow information available via the HESTIA API is not yet used in the import. For example, HESTIA flows already include a mapping to ecoinvent flows (see e.g. [this flow](<https://www.hestia.earth/term/beefCattleSolidManureDryKgN>)).
+>**_Note:_** The HESTIA API client currently has some limitations. Aggregated datasets often contain the same emission several times as separate outputs, and practices from HESTIA are not yet mapped to exchanges in openLCA. In addition, further flow information available via the HESTIA API is not yet used in the import; for example, HESTIA flows already include a mapping to ecoinvent flows (see e.g. [this flow](<https://www.hestia.earth/term/beefCattleSolidManureDryKgN>)).
 
 </details>
 
