@@ -32,10 +32,10 @@ Select either "Impact method" or "Processes" after clicking on "EcoSpold". Selec
 ![](../media/export_ecospold_process.png)  
 _Selecting data/processes to be exported_
 
-When processes are to be exported, the next step is to select which processes you would like to export. Once selected, (***openLCA 2.7 onwards***) select a mapping file if required, ths has been added to openLCA in the context of the BAFU database.
+When processes are to be exported, the next step is to select which processes you would like to export. Once selected, (***openLCA 2.7 onwards***) select a mapping file if required; this has been added to openLCA in the context of the BAFU database.
 Finally, click on "Next" to "EcoSpold Configuration" and customize the export.
 
-![](../media/export_ecospold_process_2_with_flow_mapping)
+![](../media/export_ecospold_process_2_with_flow_mapping.png)
 
 Under "EcoSpold Configuration" you can check general export settings to align with the required schema, as well as amendments to the exported product names. 
 
@@ -43,9 +43,9 @@ Under "EcoSpold Configuration" you can check general export settings to align wi
 
 ### General export settings
 
--	**Autofill missing schema with missing values** – this ensures that all fields, required by the ecospold1 format, are filled with default values 
+-	**Autofill missing schema with missing values** – this ensures that all fields required by the ecospold1 format, are filled with default values 
 -	**Export all datasets into one file** – by selecting this, all ecospold1 files will be exported as one large file, else each process dataset is exported as an individual ecocpold1 file
--	**Create categories file** – where relevant this file bridges the 2-level category structure available in the ecospold1 file with the rest of its associated category hierarchy in the database in categories.xml file, as shown in the snippet below.
+-	**Create categories file** – where relevant, this file bridges the 2-level category structure available in the ecospold1 file with the rest of its associated category hierarchy in the database in categories.xml file, as shown in the snippet below.
 
     ![](../media/export_ecospold_process_4.png)
 
@@ -71,7 +71,7 @@ Select "ILCD Zip-File" in the export wizard. Choose an export directory and the 
 ![](../media/export_ilcd.png)  
 _Selecting the destination and the data set for the ILCD export_ 
 
-## SimaPRo CSV: 
+## SimaPro CSV: 
 
 You can choose between exporting LCIA methods or processes in SimaPro CSV. Then click on "Next" to select the elements you whant to export, select a recipient folder for the CSV and and eventually click on "Finish".
 
