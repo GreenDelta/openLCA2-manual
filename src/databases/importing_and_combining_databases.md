@@ -2,7 +2,7 @@
 
 <div style='text-align: justify;'>
 
-Previously we have described the function "[Creating a new database loading it from file](./restore_database.md)", which is specifically intended for zolca files. As working with data, in particular during the life cycle inventory data collection phase, is rather complex, openLCA supports various data formats to work with.
+Previously, we described the function "[Creating a new database loading it from file](./restore_database.md)", which is specifically intended for zolca files. As working with data, in particular during the life cycle inventory data collection phase, is rather complex, openLCA supports various data formats to work with.
 
 ### Supported Import and Export formats:
 - EcoSpold1
@@ -80,7 +80,7 @@ By following these steps, you can import databases in various formats into exist
 3. Navigate to the "File" menu and select "Import". Choose "Other" from the options.
 4. Select the specific format of the database you want to import (e.g., Ecospold, Excel, ILCD, SimaPro CSV, or JSON-LD).
 
-Here are some notes on specific formats, be aware that this is not an exhaustive guidance but provides just some key aspects:
+Here are some notes on specific formats, be aware that this is not exhaustive guidance but provides just some key aspects:
 
 <details>
 <summary><b>SimaPro CSV</b></summary>
@@ -106,9 +106,15 @@ The file can be imported with or without a [flow mapping file](./mapping_validat
 <summary><b>ILCD</b></summary>
 
 ## ILCD
-- For **ILCD files**, select the import file from the directory and optionally a [flow mapping file](./mapping_validation.md). ILCD databases have to be in .zip format to be imported.
+ILCD databases and datasets must be in .zip format to be imported. The archive should contain the usual ILCD folder structure (e.g. ILCD/processes, ILCD/flows, ILCD/flowproperties, ILCD/unitgroups, ...), as provided by data portals or by the openLCA ILCD export.
+
+To import **ILCD files**, select the import file from the directory:
 
     ![](../media/import_ilcd.png)  
+
+>**_Note:_** ILCD is a data format but can also represent a data scheme. This implies that the reference system is not the native openLCA one and optionally a [flow mapping file](./mapping_validation.md) has to be applied.
+
+During the import processes, flows, flow properties, methods, unit groups, sources, and contacts (imported as actors) are created in the active database. Data sets are identified by their UUIDs. If a data set with the same UUID already exists in the database, the existing one is used instead of creating a duplicate. This is why importing ILCD data into a database that already contains the matching reference system (e.g. the EF reference package from openLCA Nexus when importing EF-compliant data) avoids duplicate elementary flows and ensures that the LCIA methods work correctly.
 	
 </details>
 
