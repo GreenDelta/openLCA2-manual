@@ -3,6 +3,7 @@
 <div style='text-align: justify;'>
 
 openLCA can connect directly to external servers and data platforms via their APIs (Application Programming Interfaces). With these API clients, you can search, import, and in some cases upload data without leaving openLCA. All API clients can be found under "Tools" → "API Clients"; most of them require an account and an API key or login for the respective platform. Some API clients are described in other chapters of this manual: [CS Servers](../collaboserver.md), [soda4LCA](../epds/soda4lca.md).
+
 ![](../media/hestia_menu.png)
 <br>_API clients in the "Tools" menu_
 
