@@ -2,13 +2,13 @@
 
 <div style='text-align: justify;'>
 
-Previously we have described the function "[Creating a new database loading it from file](./restore_database.md)", which is specifically intended for zolca files. As working with data, in particular during the life cycle inventory data collection phase, is rather complex, openLCA supports various data formats to work with.
+Previously, we described the function "[Creating a new database loading it from file](./restore_database.md)", which is specifically intended for zolca files. As working with data, in particular during the life cycle inventory data collection phase, is rather complex, openLCA supports various data formats to work with.
 
 ### Supported Import and Export formats:
 - EcoSpold1
 - ILCD
 - Excel
-- SimaPro CSV
+- SimaPro CSV (allowing the transfer of databases from SimaPro software to openLCA)
 - Zolca
 - JSON-LD
 
@@ -71,8 +71,7 @@ In openLCA, an existing database refers to a database that has already been impo
 
 </details>
 
-<details>
-<summary><b>Importing databases and data sets as Ecospold, Excel, ILCD, SimaPro CSV, and JSON-LD</b></summary>
+Importing databases and data sets as Ecospold, Excel, ILCD, SimaPro CSV, and JSON-LD
 
 By following these steps, you can import databases in various formats into existing openLCA databases, allowing you to expand and enhance your data resources:
 
@@ -81,46 +80,77 @@ By following these steps, you can import databases in various formats into exist
 3. Navigate to the "File" menu and select "Import". Choose "Other" from the options.
 4. Select the specific format of the database you want to import (e.g., Ecospold, Excel, ILCD, SimaPro CSV, or JSON-LD).
 
-Here are some notes on specific formats, be aware that this is not an exhaustive guidance but provides just some key aspects:
+Here are some notes on specific formats, be aware that this is not exhaustive guidance but provides just some key aspects:
 
-- **Entire database** (*.zolca) you can select an existing database which is already loaded into openLCA or an *.zolca file that is not yet in openLCA.
+<details>
+<summary><b>SimaPro CSV</b></summary>
 
-	![](../media/database_import.png)  
+The file can be imported with or without a [flow mapping file](./mapping_validation.md).
+* Importing without a mapping file
+    - If you are importing multiple CSV files without a mapping file, import all the CSV files together to ensure correct mapping of the flow systems within these files to each other.
+    - When users migrate their original SimaPro datasets without mapping, the implication is that these databases can be exported as SimaPro CSV and reimported into SimaPro for use there
+
+* Importing with a mapping file
+    - If you would like to map to the reference system of openLCA or another database, use the appropriate mapping file during the import.
+    - If you want to export the same database to SimaPro, a reverse mapping will have to be applied during the export, described further in the export section.
+
+![](../media/import_csv_file_new.png)
+
+**As an experimental feature, from openLCA 2.6 onwards**, users can migrate their SimaPro foreground ecoinvent models into openLCA and automatically connect their databases to the ecoinvent version offered by GreenDelta to use openLCA functionalities to their fullest capability.
+- Export your foreground processes from SimaPro as a CSV file for import into openLCA. Include only the project data, not the libraries
+- Import into openLCA containing the instance of the background database you want to connect to, for example, ecoinvent 3.12 unit processes cut-off, using the SimaPro CSV import feature, and selecting **Link to ecoinvent** during the import.
+
+</details>
+
+<details>
+<summary><b>ILCD</b></summary>
+
+## ILCD
+ILCD databases and datasets must be in .zip format to be imported. The archive should contain the usual ILCD folder structure (e.g. ILCD/processes, ILCD/flows, ILCD/flowproperties, ILCD/unitgroups, ...), as provided by data portals or by the openLCA ILCD export.
+
+To import **ILCD files**, select the import file from the directory:
+
+![](../media/import_ilcd.png)  
+
+>**_Note:_** ILCD is a data format but can also represent a data scheme. This implies that the reference system is not the native openLCA one and optionally a [flow mapping file](./mapping_validation.md) has to be applied.
+
+During the import processes, flows, flow properties, methods, unit groups, sources, and contacts (imported as actors) are created in the active database. Data sets are identified by their UUIDs. If a data set with the same UUID already exists in the database, the existing one is used instead of creating a duplicate. This is why importing ILCD data into a database that already contains the matching reference system (e.g. the EF reference package from openLCA Nexus when importing EF-compliant data) avoids duplicate elementary flows and ensures that the LCIA methods work correctly.
 	
+</details>
+
+<details>
+<summary><b>Ecospold1</b></summary>
+
+## Ecospold1
+
+EcoSpold1 is an XML format and flows in EcoSpold1 have no UUIDs. openLCA therefore imports them from flow attributes such as name, category, and unit. 
+
+  ![](../media/import_ecospold1.png)
+
+Ecospold1 files can be imported with a mapping file provided by default in the complete reference database [flow mapping file](./mapping_validation.md). For most EcoSpold1 data, such as ecoinvent 2 data sets, select **EcoSpold1_Import_Default.csv**, which maps the elementary flows to the openLCA reference system so they are characterized correctly by the LCIA methods in your database. For data from the Swiss Federal Office for the Environment (BAFU), use **EcoSpold1_Import_BAFU.csv** instead, which also covers the flows specific to these data sets.
+
+</details>
+
+<details>
+<summary><b>JSON-LD</b></summary>
+
+
+## JSON-LD
 - **JSON-LD** is the in-house format for openLCA. You can import entire databases, LCIA methods or any other database element to import. JSON-LD data has to be in .zip format.  
 
     When importing JSON files, you have three options for the case of already existing datasets:
 
     ![](../media/lcia_methods_zip.png)
 
-	- **Never update a data set that already exists**: The system will check for matching UUIDs. If a match is found, the existing dataset will remain as it is.
+- **Never update a data set that already exists**: The system will check for matching UUIDs. If a match is found, the existing dataset will remain as it is.
 
-	- **Update data sets with newer versions**: If matching UUIDs are found, the system will update the existing datasets only if the imported version is newer (the version can be checked in the "General information" tab of every dataset).
+- **Update data sets with newer versions**: If matching UUIDs are found, the system will update the existing datasets only if the imported version is newer (the version can be checked in the "General information" tab of every dataset).
 
-	- **Overwrite all existing data sets**: If matching UUIDs are found, the system will replace the existing datasets automatically with the imported ones irrespective of versioning.
+- **Overwrite all existing data sets**: If matching UUIDs are found, the system will replace the existing datasets automatically with the imported ones irrespective of versioning.
 
     Datasets with UUIDs that are not present in the current database will be imported anyway, regardless of the option you choose.
 
     On the [dedicated chapter](../lcia_methods/importing_lcia_methods.md), you can find more details about importing LCIA methods in JSON-LD format into openLCA, as the [openLCA LCIA methods pack](https://nexus.openlca.org/database/openLCA%20LCIA%20methods).
-
-- **Processes from Excel files**, allows to imported processes into openLCA that are present in a specific form as Excel file. More details are found [here](<https://github.com/GreenDelta/olca-process-xls/tree/main>).
-
-	![](../media/import_excel.png)  
-	
-	
-- For **Ecospold1 files**, ensure to check and assign units using a [flow mapping file](./mapping_validation.md).
-
-- For **ILCD files**, select the import file from the directory and optionally a [flow mapping file](./mapping_validation.md). ILCD databases have to be in .zip format to be imported.
-
-    ![](../media/import_ilcd.png)  
-
-- For **SimaPro CSV files**, add a flow in the window and optionally select a [flow mapping file](./mapping_validation.md). If you are importing multiple CSV files without a mapping file, import all the CSV files together to ensure correct mapping.
-
-    ![](../media/import_csv_file_new.png)
-
-  >**_Note:_** If you want to use SimaPro data in openLCA without mapping it to openLCA's reference system, you can export the entire project with library, including the LCIA methods, and import it into an empty database. Due to the lack of mapping, the database cannot be used with other databases offered on openLCA Nexus and does not provide various benefits (such as parameters, data quality information, and locations etc). However, it will produce the correct calculation results.
-
-- For **Geometries from GeoJSON** see below. 
 
 
 5. Click "Finish" to initiate the data import process. 

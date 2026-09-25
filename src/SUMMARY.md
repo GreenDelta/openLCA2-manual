@@ -129,6 +129,7 @@
   - [Social aspects](advanced_top/social_aspects.md)
   - [Data Quality](advanced_top/data_quality.md)
   - [Monte Carlo simulation](advanced_top/monte_carlo.md)
+  - [API clients in openLCA](advanced_top/api_clients.md)
   - [Modelling with time parameter](advanced_top/time.md)
   - [System dynamics](advanced_top/system_dynamics.md)
 - [Environmental Product Declarations (EPDs)](epds/README.md)

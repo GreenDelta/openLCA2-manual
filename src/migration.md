@@ -1,10 +1,10 @@
 # Data Migration Tool in openLCA
 
-With version 2.7.0, openLCA provides a powerful data migration tool. Hence, LCA models can be migrated from one database to another by linking them to the corresponding background data in the target database. 
+<div style='text-align: justify;'>
 
-Use cases for such a migration are:
+With version 2.7.0, openLCA provides a powerful data migration tool. Hence, LCA models can be migrated from one database to another by linking them to the corresponding background data in the target database. Use cases for such a migration are:
 
--	updating the background database, e.g., updating to a new ecoinvent version (e.g., 3.11 to 3.12)
+-	**updating the background database, e.g., updating to a new ecoinvent version (e.g., 3.11 to 3.12)**
 -	changing the system model of the background database, e.g., switching from the ecoinvent cutoff to the APOS ecoinvent model
 -	switching to a library-based or precalculated results background database to improve calculation speed
 -	or just migrating the model to a fresh version of the background database or another database (from ecoinvent to soca)
@@ -27,9 +27,9 @@ The linking or matching strategies for finding these providers are executed in o
 
 Currently, the following strategies are implemented:
 
--	"Match by flow and exact provider ID": A provider can be linked if it has a product output or waste input of the same flow (identified by ID) and also the provider ID is the same. This is useful when migrating specific models to the same version of the database or migrating to a library-based version of the background database.
--	"Match by flow, provider name and location":  This option has the same flow logic as above, but providers are matched by name and location. In this matching strategy, typical suffixes like "APOS" or "Cutoff" are ignored, thus, this strategy is useful when, for example, changing the system model or updating an ecoinvent database.
--	"Match by flow (take any available provider)": With this strategy, any provider can be linked that has a product output or waste input with exactly the same flow.
+-	"**Match by flow and exact provider ID**": A provider can be linked if it has a product output or waste input of the same flow (identified by ID) and also the provider ID is the same. This is useful when migrating specific models to the same version of the database or migrating to a library-based version of the background database.
+-	"**Match by flow, provider name and location**":  This option has the same flow logic as above, but providers are matched by name and location. In this matching strategy, typical suffixes like "APOS" or "Cutoff" are ignored, thus, this strategy is useful when, for example, changing the system model or updating an ecoinvent database.
+-	"**Match by flow (take any available provider)**": With this strategy, any provider can be linked that has a product output or waste input with exactly the same flow.
 
 Based on the selection, the tool will then create a migration plan and open it:
 ![](./media/db_migration_3.png)  
@@ -45,3 +45,5 @@ Finally, you can run the migration by pressing the "Run migration" button in the
 ![](./media/db_migration_5.png)  
 
 >**_Note:_** We allow importing and exporting flow mapping (button in the setup). Moreover, you can also copy the "Providers matched" to the clipboard to copy it, e.g., to Excel.
+
+</div>
