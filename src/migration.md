@@ -27,9 +27,9 @@ The linking or matching strategies for finding these providers are executed in o
 
 Currently, the following strategies are implemented:
 
--	"Match by flow and exact provider ID": A provider can be linked if it has a product output or waste input of the same flow (identified by ID) and also the provider ID is the same. This is useful when migrating specific models to the same version of the database or migrating to a library-based version of the background database.
--	"Match by flow, provider name and location":  This option has the same flow logic as above, but providers are matched by name and location. In this matching strategy, typical suffixes like "APOS" or "Cutoff" are ignored, thus, this strategy is useful when, for example, changing the system model or updating an ecoinvent database.
--	"Match by flow (take any available provider)": With this strategy, any provider can be linked that has a product output or waste input with exactly the same flow.
+-	"**Match by flow and exact provider ID**": A provider can be linked if it has a product output or waste input of the same flow (identified by ID) and also the provider ID is the same. This is useful when migrating specific models to the same version of the database or migrating to a library-based version of the background database.
+-	"**Match by flow, provider name and location**":  This option has the same flow logic as above, but providers are matched by name and location. In this matching strategy, typical suffixes like "APOS" or "Cutoff" are ignored, thus, this strategy is useful when, for example, changing the system model or updating an ecoinvent database.
+-	"**Match by flow (take any available provider)**": With this strategy, any provider can be linked that has a product output or waste input with exactly the same flow.
 
 Based on the selection, the tool will then create a migration plan and open it:
 ![](./media/db_migration_3.png)  
