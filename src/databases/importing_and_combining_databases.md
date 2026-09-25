@@ -71,8 +71,7 @@ In openLCA, an existing database refers to a database that has already been impo
 
 </details>
 
-<details>
-<summary><b>Importing databases and data sets as Ecospold, Excel, ILCD, SimaPro CSV, and JSON-LD</b></summary>
+Importing databases and data sets as Ecospold, Excel, ILCD, SimaPro CSV, and JSON-LD
 
 By following these steps, you can import databases in various formats into existing openLCA databases, allowing you to expand and enhance your data resources:
 
@@ -83,7 +82,8 @@ By following these steps, you can import databases in various formats into exist
 
 Here are some notes on specific formats, be aware that this is not an exhaustive guidance but provides just some key aspects:
 
-## SimaPro CSV
+<details>
+<summary><b>SimaPro CSV</b></summary>
 
 The file can be imported with or without a [flow mapping file](./mapping_validation.md).
 * Importing without a mapping file
@@ -98,16 +98,32 @@ The file can be imported with or without a [flow mapping file](./mapping_validat
 
 As an experimental feature, from openLCA 2.6 onwards, users can migrate their SimaPro foreground ecoinvent models into openLCA and automatically connect their databases to the ecoinvent version offered by GreenDelta to use openLCA functionalities to their fullest capability.
 - Export foreground process from SimaPro as CSV to import into openLCA, export only the project and do not include the libraries
-- Import into openLCA containing the instance of the background database you want to connect to, for example ecoinvent 3.12 unit processes cut-off, using the SimaPro CSV import feature, and selecting **Link to ecoinvent**
+- Import into openLCA containing the instance of the background database you want to connect to, for example ecoinvent 3.12 unit processes cut-off, using the SimaPro CSV import feature, and selecting **Link to ecoinvent**.
+
+</details>
+
+<details>
+<summary><b>ILCD</b></summary>
 
 ## ILCD
 - For **ILCD files**, select the import file from the directory and optionally a [flow mapping file](./mapping_validation.md). ILCD databases have to be in .zip format to be imported.
 
     ![](../media/import_ilcd.png)  
+	
+</details>
+
+<details>
+<summary><b>Ecospold1</b></summary>
 
 ## Ecospold1
 
 Ecospold1 files can be imported with a mapping file, now provided by default in the complete reference database [flow mapping file](./mapping_validation.md).
+
+</details>
+
+<details>
+<summary><b>JSON-LD</b></summary>
+
 
 ## JSON-LD
 - **JSON-LD** is the in-house format for openLCA. You can import entire databases, LCIA methods or any other database element to import. JSON-LD data has to be in .zip format.  
