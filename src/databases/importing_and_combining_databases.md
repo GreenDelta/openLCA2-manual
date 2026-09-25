@@ -94,11 +94,11 @@ The file can be imported with or without a [flow mapping file](./mapping_validat
     - If you would like to map to the reference system of openLCA or another database, use the appropriate mapping file during the import.
     - If you want to export the same database to SimaPro, a reverse mapping will have to be applied during the export, described further in the export section.
 
-    ![](../media/import_csv_file_new.png)
+![](../media/import_csv_file_new.png)
 
-As an experimental feature, from openLCA 2.6 onwards, users can migrate their SimaPro foreground ecoinvent models into openLCA and automatically connect their databases to the ecoinvent version offered by GreenDelta to use openLCA functionalities to their fullest capability.
-- Export foreground process from SimaPro as CSV to import into openLCA, export only the project and do not include the libraries
-- Import into openLCA containing the instance of the background database you want to connect to, for example ecoinvent 3.12 unit processes cut-off, using the SimaPro CSV import feature, and selecting **Link to ecoinvent**.
+**As an experimental feature, from openLCA 2.6 onwards**, users can migrate their SimaPro foreground ecoinvent models into openLCA and automatically connect their databases to the ecoinvent version offered by GreenDelta to use openLCA functionalities to their fullest capability.
+- Export your foreground processes from SimaPro as a CSV file for import into openLCA. Include only the project data, not the libraries
+- Import into openLCA containing the instance of the background database you want to connect to, for example, ecoinvent 3.12 unit processes cut-off, using the SimaPro CSV import feature, and selecting **Link to ecoinvent** during the import.
 
 </details>
 
