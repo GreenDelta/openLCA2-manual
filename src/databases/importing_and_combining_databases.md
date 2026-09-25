@@ -86,11 +86,11 @@ Here are some notes on specific formats, be aware that this is not an exhaustive
 ## SimaPro CSV
 
 The file can be imported with or without a [flow mapping file](./mapping_validation.md).
-* Migration without a mapping file
+* Importing without a mapping file
     - If you are importing multiple CSV files without a mapping file, import all the CSV files together to ensure correct mapping of the flow systems within these files to each other.
     - When users migrate their original SimaPro datasets without mapping, the implication is that these databases can be exported as SimaPro CSV and reimported into SimaPro for use there
 
-* Migration with a mapping file
+* Importing with a mapping file
     - If you would like to map to the reference system of openLCA or another database, use the appropriate mapping file during the import.
     - If you want to export the same database to SimaPro, a reverse mapping will have to be applied during the export, described further in the export section.
 
