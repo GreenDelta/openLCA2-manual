@@ -110,9 +110,9 @@ ILCD databases and datasets must be in .zip format to be imported. The archive s
 
 To import **ILCD files**, select the import file from the directory:
 
-    ![](../media/import_ilcd.png)  
+![](../media/import_ilcd.png)  
 
-**_Note:_** ILCD is a data format but can also represent a data scheme. This implies that the reference system is not the native openLCA one and optionally a [flow mapping file](./mapping_validation.md) has to be applied.
+>**_Note:_** ILCD is a data format but can also represent a data scheme. This implies that the reference system is not the native openLCA one and optionally a [flow mapping file](./mapping_validation.md) has to be applied.
 
 During the import processes, flows, flow properties, methods, unit groups, sources, and contacts (imported as actors) are created in the active database. Data sets are identified by their UUIDs. If a data set with the same UUID already exists in the database, the existing one is used instead of creating a duplicate. This is why importing ILCD data into a database that already contains the matching reference system (e.g. the EF reference package from openLCA Nexus when importing EF-compliant data) avoids duplicate elementary flows and ensures that the LCIA methods work correctly.
 	
@@ -123,7 +123,11 @@ During the import processes, flows, flow properties, methods, unit groups, sourc
 
 ## Ecospold1
 
-Ecospold1 files can be imported with a mapping file, now provided by default in the complete reference database [flow mapping file](./mapping_validation.md).
+EcoSpold1 is an XML format and flows in EcoSpold1 have no UUIDs. openLCA therefore imports them from flow attributes such as name, category, and unit. 
+
+  ![](../media/import_ecospold1.png)
+
+Ecospold1 files can be imported with a mapping file provided by default in the complete reference database [flow mapping file](./mapping_validation.md). For most EcoSpold1 data, such as ecoinvent 2 data sets, select **EcoSpold1_Import_Default.csv**, which maps the elementary flows to the openLCA reference system so they are characterized correctly by the LCIA methods in your database. For data from the Swiss Federal Office for the Environment (BAFU), use **EcoSpold1_Import_BAFU.csv** instead, which also covers the flows specific to these data sets.
 
 </details>
 
