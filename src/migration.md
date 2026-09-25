@@ -1,5 +1,7 @@
 # Data Migration Tool in openLCA
 
+<div style='text-align: justify;'>
+
 With version 2.7.0, openLCA provides a powerful data migration tool. Hence, LCA models can be migrated from one database to another by linking them to the corresponding background data in the target database. Use cases for such a migration are:
 
 -	**updating the background database, e.g., updating to a new ecoinvent version (e.g., 3.11 to 3.12)**
@@ -43,3 +45,5 @@ Finally, you can run the migration by pressing the "Run migration" button in the
 ![](./media/db_migration_5.png)  
 
 >**_Note:_** We allow importing and exporting flow mapping (button in the setup). Moreover, you can also copy the "Providers matched" to the clipboard to copy it, e.g., to Excel.
+
+</div>
