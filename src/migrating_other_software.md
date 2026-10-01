@@ -53,6 +53,7 @@ See below [Option 1: Import the complete SimaPro model](#2-option-1-import-the-c
 
 ---
 
+
 ## 2. Option 1: Import the complete SimaPro model
 
 ### Option 1: Import the complete SimaPro model
@@ -67,8 +68,6 @@ This approach is useful when:
 - the existing SimaPro elementary-flow reference system and LCIA methods need to remain available.
 
 ### What is preserved
-
-The imported model keeps:
 
 - the SimaPro model structure;
 - parameters and other general features from SimaPro 
@@ -89,8 +88,7 @@ If several SimaPro CSV files are imported without a mapping file, import them to
 ---
 
 ## 3. Option 2: Import the foreground model and link to openLCA ecoinvent
-
-### When to use this option
+When to use this option?
 
 Export only the user's own project from SimaPro, without its libraries, and connect the foreground model to the corresponding ecoinvent database in openLCA.
 
@@ -141,8 +139,6 @@ In openLCA:
 5. Click **Finish**.
 
 During import, openLCA identifies the ecoinvent processes used by the foreground model from their names.
-
-SimaPro shortens ecoinvent process names to fit its character limits. The openLCA import reconstructs the original names and links the foreground inputs directly to the corresponding processes in the openLCA ecoinvent database.
 
 _Note: No copies of the ecoinvent processes or flows are created when the link is successful; only the foreground model is added to the database._
 
