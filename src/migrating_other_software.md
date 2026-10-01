@@ -266,7 +266,7 @@ Check for:
 
 - After calculating a result, inspect the **LCIA checks** tab.
 - This identifies flows that are not characterized by the selected LCIA method.
-- Uncharacterized flows often indicate that elementary flows still need to be mapped or replaced.
+- Uncharacterized flows often indicate that elementary flows still need to be mapped or replaced. Unless it is a specifically uncharacterized elementary flow represented for informative purposes.
 
 ### 7.3 Compare results with SimaPro
 
@@ -285,21 +285,5 @@ _Note: More advanced features openLA sepcific features may not be exportable, pl
 
 ---
 
-### 10. Additional migration services
-
-Migration requirements can differ substantially between projects, particularly for large models or models containing several background databases. Please contact us dircetly to support you if needed.
-
-Potential additional services include:
-
-1. Updating and combining databases other than ecoinvent.
-2. Developing scripts to update and run parameter sets during calculations.
-3. Migrating data-quality information for foreground data where required.
-4. Supporting openLCA-specific capabilities such as scripting and the collaboration server.
-5. Providing ecoinvent perpetual licenses.
-6. Connecting openLCA to external tools.
-7. Providing access to PSILCA databases, including professional and developer versions.
-8. Addressing other relevant differences between SimaPro and openLCA.
-
----
 
 </div>
