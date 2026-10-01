@@ -4,35 +4,34 @@
 
 Many users come to openLCA with existing models built in other LCA software. openLCA
 can read most common LCA dataset exchange formats, such as JSON-LD, SimaPro CSV, EcoSpold1, ILCD, and
-Excel, so existing work does not have to be rebuilt from scratch. The technical details of
-each import format are described in "Importing data and combining databases". This
+Excel, so existing work does not have to be rebuilt from scratch. The technical details of each import format are described in the official openLCA manual chapter [Importing data and combining databases](https://github.com/GreenDelta/openLCA2-manual/blob/october/src/databases/importing_and_combining_databases.md). This
 chapter focuses on helping you plan the migration based on your needs: which migration path fits your projects, and what you
 need to check so that the migrated models give reliable results in openLCA
 
 The same general principles apply:
 
-1. Determine whether the project is **old/archive**, **ongoing**, or **new**.
-2. Decide whether to migrate the complete model or only the foreground model.
-3. Use a mapping file where required to align elementary flows with the openLCA reference system.
-4. Validate the migrated database.
-5. Check LCIA coverage.
-6. Compare selected results with the source software.
+- Determine whether the project is **old/archive**, **ongoing**, or **new**.
+- Decide whether to migrate the complete model or only the foreground model.
+- Use a mapping file where required to align elementary flows with the openLCA reference system.
+- Validate the migrated database.
+- Check LCIA coverage.
+- Compare selected results with the source software.
 
-The individual import formats and their technical details should be handled according to the corresponding openLCA database import documentation.
+The individual import formats and their technical details should be handled according to the corresponding [openLCA database import documentation](https://github.com/GreenDelta/openLCA2-manual/blob/october/src/databases/importing_and_combining_databases.md).
 
 # Migrating from SimaPro to openLCA
 
-## 1. Choosing a migration path
+## Choosing a migration path
 
 Before migrating a project, classify it according to how it will be used in the future.
 
-### 1.1. New projects
+### New projects
 
 For new projects, start directly in openLCA and use an appropriate database from openLCA Nexus [openLCA Nexus](https://nexus.openlca.org/).
 
 > **Principle:** New modelling should be done in openLCA rather than starting a new project in SimaPro and subsequently migrating it.
 
-### 1.2 Old / archived projects
+### Old / archived projects
 
 **Use case:** Projects that should be retained for reference only.
 
@@ -40,23 +39,21 @@ For new projects, start directly in openLCA and use an appropriate database from
 
 This preserves the original model structure, elementary-flow reference system, and existing LCIA methods. It can also be the fastest approach when a project uses several background databases besides ecoinvent.
 
-### 1.3 Ongoing projects
+### Ongoing projects
 
 For projects that will continue to be developed, there are two possible approaches:
 
 - **Option 1:** Import the complete model, including its libraries/background databases.
 - **Option 2:** Import only the foreground model and connect it to the corresponding openLCA background database.
 
-For models based on **ecoinvent**, as this is the most commonly migrated database, Option 2 is the preferred workflow when the intention is to use the openLCA version of ecoinvent and the openLCA LCIA methods.
+For models based on **ecoinvent**, as this is the most commonly migrated database, moving the foreground model, is the preferred workflow when the intention is to use the openLCA version of ecoinvent and the openLCA LCIA methods.
 
-See below [Option 1: Import the complete SimaPro model](#2-option-1-import-the-complete-simapro-model) and [Option 2: Import the foreground model and link it to openLCA ecoinvent](#3-option-2-import-the-foreground-model-and-link-it-to-openlca-ecoinvent).
-
----
+See below [Import the complete SimaPro model with a SimaPro CSV import](#import-the-complete-simapro-model-with-a-simapro-csv-import) and [Import the foreground model and link it to openLCA ecoinvent](#import-the-foreground-model-and-link-to-openlca-ecoinvent).
 
 
-## 2. Option 1: Import the complete SimaPro model
+## Import the complete SimaPro model with a SimaPro CSV import
 
-### Option 1: Import the complete SimaPro model
+
 When to use this option?
 
 Export the SimaPro project together with its libraries/background databases, such as ecoinvent or other databases, and import everything into a new openLCA database.
@@ -78,16 +75,15 @@ This approach is useful when:
 ### Mapping files
 
 - A mapping file is **not required** if the imported model will use only the SimaPro databases and LCIA methods.
-- If openLCA Nexus LCIA methods are to be used, a mapping file is required to map SimaPro elementary flows to the corresponding openLCA reference flows.
+- If openLCA Nexus LCIA methods are to be used, a mapping file is required to map SimaPro elementary flows to the corresponding openLCA reference flows. See [Using mapping files in openLCA](https://github.com/GreenDelta/openLCA2-manual/blob/october/src/databases/mapping_validation.md).
 
 
 ### Importing multiple CSV files
 
-If several SimaPro CSV files are imported without a mapping file, import them together in one step so that flows shared between the files can be matched consistently.
+If several SimaPro CSV files are imported without a mapping file, import them together in one step so that flows shared between the files can be matched consistently. See [SimaPro CSV import](https://github.com/GreenDelta/openLCA2-manual/blob/october/src/databases/importing_and_combining_databases.md#simapro-csv).
 
----
 
-## 3. Option 2: Import the foreground model and link to openLCA ecoinvent
+## Import the foreground model and link to openLCA ecoinvent
 When to use this option?
 
 Export only the user's own project from SimaPro, without its libraries, and connect the foreground model to the corresponding ecoinvent database in openLCA.
@@ -101,7 +97,7 @@ This workflow:
 
 For ecoinvent-based models, this is the recommended workflow for ongoing modelling. Other databases can also be migrated in a similar manner with support from GreenDelta.
 
-### 3.1 Export the foreground model from SimaPro
+### Export the foreground model from SimaPro
 
 Export the project as a SimaPro CSV file.
 
@@ -113,7 +109,7 @@ Export the project as a SimaPro CSV file.
 
 - SimaPro libraries/background databases.
 
-### 3.2 Prepare the openLCA database
+### Prepare the openLCA database
 
 Obtain from openLCA Nexus the ecoinvent database matching the:
 
@@ -126,9 +122,9 @@ For example, ecoinvent 3.12 cut-off unit-process database with its LCIA methods.
 The ecoinvent database can be used either:
 
 - as a regular openLCA database loaded from a `.zolca` file; or
-- as a library.
+- as a library. See [Adding a library to a database](https://github.com/GreenDelta/openLCA2-manual/blob/october/src/libraries/adding_library_database.md).
 
-### 3.3 Import and link the foreground model
+### Import and link the foreground model
 
 In openLCA:
 
@@ -143,16 +139,16 @@ During import, openLCA identifies the ecoinvent processes used by the foreground
 _Note: No copies of the ecoinvent processes or flows are created when the link is successful; only the foreground model is added to the database._
 
 
-### 3.4 Parameters
+### Parameters
 
-Parameters are migrated as follows:
+Parameters are migrated as follows. See the openLCA manual chapter on [Parameters](https://github.com/GreenDelta/openLCA2-manual/blob/october/src/parameters/README.md) for details.
 
 | SimaPro | openLCA |
 |---|---|
 | Process parameters | Process parameters |
 | Project parameters | Global parameters |
 
-### 3.5 Experimental feature limitation
+### Experimental feature limitation
 
 The **Link ecoinvent processes** option is experimental and is being actively improved.
 
@@ -160,11 +156,10 @@ In larger models, some naming patterns may not yet be recognized. In such cases,
 
 Affected processes should be documented and reported so that the linking feature can be improved.
 
----
 
-## 3.6. LCIA methods
+## LCIA methods
 
-When the foreground model is linked to the openLCA ecoinvent database, the model uses the LCIA methods supplied with that ecoinvent database directly.
+When the foreground model is linked to the openLCA ecoinvent database, the model uses the LCIA methods supplied with that ecoinvent database directly. See [LCIA methods and categories](https://github.com/GreenDelta/openLCA2-manual/blob/october/src/lcia_methods/README.md).
 
 Therefore:
 
@@ -177,9 +172,8 @@ Results may differ slightly from SimaPro.
 
 A useful check is to compare the results of selected background processes with the official ecoinvent LCIA results. If the background results agree, this provides evidence that the corresponding methods are suitable for assessing the migrated foreground model.
 
----
 
-## 3.7 Elementary flows in the foreground model
+## Elementary flows in the foreground model
 
 Elementary flows added directly to foreground processes, such as direct emissions, are imported as SimaPro flows.
 
@@ -189,7 +183,7 @@ These flows are **not part of the openLCA reference system** and therefore may n
 
 #### Option A — Use a mapping file
 
-Use a mapping file during import to map SimaPro elementary flows to openLCA reference flows.
+Use a mapping file during import to map SimaPro elementary flows to openLCA reference flows. See [Using mapping files in openLCA](https://github.com/GreenDelta/openLCA2-manual/blob/october/src/databases/mapping_validation.md).
 
 Another mapping file is to be used when exporting the database back to SimaPro.
 
@@ -199,19 +193,16 @@ If only a small number of elementary flows are affected, use **Tools → Bulk-re
 
 #### Option C — Add characterization factors
 
-Alternatively, add the relevant flows to the LCIA methods by adding characterization factors for them to the appropriate impact categories.
+Alternatively, add the relevant flows to the LCIA methods by adding characterization factors for them to the appropriate impact categories. See [Creating a new impact assessment method, category and characterization factor](https://github.com/GreenDelta/openLCA2-manual/blob/october/src/lcia_methods/creating_new_impact_assessment_method.md).
 
----
 
-## 6. Default providers
+## Default providers
 
 When the foreground model is connected to ecoinvent manually, without the **Link ecoinvent processes** option, product inputs may not have a default provider.
 
-A Jython script can be used in the openLCA Python editor to set the default provider for exchanges whose product flow has a provider in the database.
+A Jython script can be used in the openLCA Python editor to set the default provider for exchanges whose product flow has a provider in the database. See [Scripting in openLCA](https://github.com/GreenDelta/openLCA2-manual/blob/october/src/scripting/README.md).
 
-### Limitation
-
-The script works correctly only for flows with **exactly one provider** in the database.
+The script below works correctly only for flows with **exactly one provider** in the database.
 If several processes produce the same flow, the script simply selects one of them.
 
 ```python
@@ -242,15 +233,14 @@ NativeSql.on(db).updateRows(sql, update_rows_fn)
 print("all done")
 ```
 
----
 
-## 7. Checking the migrated model
+## Checking the migrated model
 
 Regardless of which migration option is used, users are advised to validate the model after migration.
 
-### 7.1 Validate the database
+### Validate the database
 
-Right-click the database and select **Validate**.
+Right-click the database and select **Validate**. See [Using mapping files and validating databases](https://github.com/GreenDelta/openLCA2-manual/blob/october/src/databases/mapping_validation.md).
 
 Check for:
 
@@ -258,28 +248,25 @@ Check for:
 - missing references;
 - other database errors.
 
-### 7.2 Check LCIA coverage
+### Check LCIA coverage
 
-- After calculating a result, inspect the **LCIA checks** tab.
+- After calculating a result, inspect the **LCIA checks** tab. See [LCIA checks](https://github.com/GreenDelta/openLCA2-manual/blob/october/src/res_analysis/res_lcia_checks.md).
 - This identifies flows that are not characterized by the selected LCIA method.
 - Uncharacterized flows often indicate that elementary flows still need to be mapped or replaced. Unless it is a specifically uncharacterized elementary flow represented for informative purposes.
 
-### 7.3 Compare results with SimaPro
+### Compare results with SimaPro
 
 - Compare several key product systems between SimaPro and openLCA.
 - Investigate any differences rather than assuming that the migrated model is equivalent.
 - For ecoinvent-based models, comparison against official ecoinvent LCIA results for background processes is also useful.
 
----
 
-## 8. Exporting back to SimaPro
+## Exporting back to SimaPro
 
-Models in openLCA can be exported as SimaPro CSV files for use in SimaPro.
+Models in openLCA can be exported as SimaPro CSV files for use in SimaPro. See [Exporting databases](https://github.com/GreenDelta/openLCA2-manual/blob/october/src/databases/exporting_databases.md).
 If a mapping file was used during the import, the reverse mapping needs to be applied when exporting back to SimaPro.
 
-_Note: More advanced features openLA sepcific features may not be exportable, please contact GreenDleta dircetly in case you need support with this._
-
----
+_Note: More advanced openLCA-specific features may not be exportable. Please contact GreenDelta directly if you need support with this._
 
 
 </div>
