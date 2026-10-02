@@ -26,6 +26,18 @@ The individual import formats and their technical details should be handled acco
 
 Before migrating a project, classify it according to how it will be used in the future.
 
+'''mermaid
+flowchart TD
+    A{"How will the project be used?"}
+
+    A -->|New| B["Start directly in openLCA"]
+    A -->|Archive / reference| C["Import the complete SimaPro model"]
+    A -->|Continue developing| D{"Migration approach"}
+
+    D -->|Option 1| E["Import the complete SimaPro model"]
+    D -->|Option 2| F["Import the foreground model<br/>and link to the openLCA database"]
+'''
+
 ### New projects
 
 For new projects, start directly in openLCA and use an appropriate database from openLCA Nexus [openLCA Nexus](https://nexus.openlca.org/).
@@ -72,6 +84,8 @@ This approach is useful when:
 - the SimaPro elementary-flow reference system
 - the LCIA methods from SimaPro
 - the limitations of the SimaPro database structure, including lack of data-quality
+
+![](../media/import_csv_file_new.png)
 
 ### Mapping files
 
