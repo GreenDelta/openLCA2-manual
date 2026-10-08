@@ -298,7 +298,7 @@ For ongoing projects, export only the foreground processes, i.e. the processes y
     ![](./media/import_ilcd.png)
     <br>_ILCD import_
 
-During the import, openLCA identifies datasets by their UUIDs. If a dataset with the same UUID already exists in the target database, openLCA uses it instead of creating a duplicate. LCA FE uses ILCD/EF elementary flows, so importing into a database that already contains the matching reference system (for example the EF reference package from openLCA Nexus) avoids duplicate elementary flows and ensures that the LCIA methods characterize them.
+During the import, openLCA identifies datasets by their UUIDs. If a dataset with the same UUID already exists in the target database, openLCA uses it instead of creating a duplicate. LCA FE uses ILCD elementary flows, so importing into a database that already contains the matching reference system avoids duplicate elementary flows and ensures that the LCIA methods characterize them.
 
 If the target database uses the openLCA reference system instead, select the ILCD mapping file during import. The default ILCD mapping file can be found under **Background data → Mapping files** in databases created with complete reference data. It does not cover all flows used in LCA FE, so extend it where needed (see [Using mapping files in openLCA](./databases/mapping_validation.md)).
 
