@@ -272,4 +272,67 @@ _Note: More advanced openLCA-specific features or specific SimaPro workflows may
 
 </details>
 
+<details>
+<summary><b>Migrating from LCA FE (Sphera) to openLCA</b></summary>
+
+## Choosing a migration path
+
+LCA for Experts (LCA FE, formerly GaBi) by Sphera can export processes and flows in the **ILCD** format, which openLCA imports. LCA FE **plans** (the equivalent of openLCA product systems) are not exported as ILCD, so the model structure has to be rebuilt in openLCA as product systems.
+
+The same classification as for SimaPro applies:
+
+- **New projects:** start directly in openLCA with a database from [openLCA Nexus](https://nexus.openlca.org/).
+- **Archived projects:** export the foreground processes together with the background processes they use and import them into [a new empty database created from scratch in openLCA](https://github.com/GreenDelta/openLCA2-manual/blob/main/src/databases/create_database.md). Only processes are migrated; the plans need to be kept as documentation or rebuilt.
+- **Ongoing projects:** export only the foreground processes and connect them to the corresponding background database in openLCA, e.g. the Sphera (Managed LCA Content) or ecoinvent database from openLCA Nexus, depending on your license.
+
+> **Note:** Background datasets from Sphera databases are licensed. Export and transfer them only if your license allows it. If you already have a license, check [openLCA Nexus](https://nexus.openlca.org/) for the openLCA version of the database.
+
+## Export the processes from LCA FE
+
+In LCA FE, export the processes of your model, including the flows, flow properties and unit groups they reference, as an **ILCD zip archive**. Make sure the archive keeps the usual ILCD folder structure (`ILCD/processes`, `ILCD/flows`, `ILCD/flowproperties`, `ILCD/unitgroups`, ...); otherwise openLCA cannot read it.
+
+For ongoing projects, export only the foreground processes, i.e. the processes you created yourself.
+
+## Import the ILCD archive into openLCA
+
+1. Create or activate the target database:
+    - for an archive, a new database created with complete reference data;
+    - for an ongoing project, the database with the background data you want to link to.
+2. Go to **File → Import → Other** and select **ILCD**.
+3. Select the ILCD zip file and click **Finish**.
+
+    ![](./media/import_ilcd.png)
+    <br>_ILCD import_
+
+During the import, datasets are identified by their UUIDs. If a dataset with the same UUID already exists in the target database, openLCA uses it instead of creating a duplicate. LCA FE uses ILCD/EF elementary flows, so importing into a database that already contains the matching reference system (for example the EF reference package from openLCA Nexus) avoids duplicate elementary flows and ensures that the LCIA methods characterize them.
+
+If the target database uses the openLCA reference system instead, select the ILCD mapping file during import. The default ILCD mapping file can be found under **Background data → Mapping files** in databases created with complete reference data. It does not cover all flows used in LCA FE, so extend it where needed (see [Using mapping files in openLCA](https://github.com/GreenDelta/openLCA2-manual/blob/main/src/databases/mapping_validation.md)).
+
+![](./media/mapping_1.png)
+<br>_Location of mapping files in the navigation panel_
+
+## Rebuild the plans as product systems
+
+Because LCA FE plans are not part of the ILCD export, create a product system in openLCA for each plan, using the process that corresponds to the plan's final step as the reference process. See [Creating a product system](https://github.com/GreenDelta/openLCA2-manual/blob/main/src/prod_sys/Creating.md).
+
+![](./media/new_product_system.png)
+<br>_New product system_
+
+Sphera and EF databases often contain several providers for the same flow, so auto-linking can pick an unintended provider. Check the links against the original plan and correct them in the [Model graph](https://github.com/GreenDelta/openLCA2-manual/blob/main/src/prod_sys/model_graph.md), or set default providers in the processes before creating the product system.
+
+![](./media/model_graph_search_providers_connect.png)
+<br>_Connecting a provider in the model graph_
+
+
+## Checking the migrated model
+
+Validate the database, check the **LCIA checks** tab and compare key results with LCA FE, as described in [Checking the migrated model](#checking-the-migrated-model).
+
+![](./media/validate_database.png)
+<br>_Example of errors when validating a database_
+
+Pay particular attention to plans with many alternative providers, since a different provider choice is the most common source of result differences.
+
+</details>
+
 </div>
