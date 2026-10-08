@@ -68,10 +68,8 @@ See below [Import the complete SimaPro model with a SimaPro CSV import](#option-
 
 ## Option 1: Import the complete SimaPro model with a SimaPro CSV import
 
-
-When to use this option?
-
 Export the SimaPro project together with its libraries/background databases, such as ecoinvent or other databases, and import the datasets into [a new empty database created from scratch in openLCA](https://github.com/GreenDelta/openLCA2-manual/blob/main/src/databases/creating_database.md).
+
 This approach is useful when:
 
 - the project is old/archive and only needs to be retained for reference
