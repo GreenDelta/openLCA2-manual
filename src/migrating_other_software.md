@@ -279,12 +279,6 @@ _Note: More advanced openLCA-specific features or specific SimaPro workflows may
 
 LCA for Experts (LCA FE, formerly GaBi) by Sphera can export processes and flows in the **ILCD** format, which openLCA imports. LCA FE **plans** (the equivalent of openLCA product systems) are not exported as ILCD, so the model structure has to be rebuilt in openLCA as product systems.
 
-The same classification as for SimaPro applies:
-
-- **New projects:** start directly in openLCA with a database from [openLCA Nexus](https://nexus.openlca.org/).
-- **Archived projects:** export the foreground processes together with the background processes they use and import them into [a new empty database created from scratch in openLCA](./databases/create_database.md). Only processes are migrated; the plans need to be kept as documentation or rebuilt.
-- **Ongoing projects:** export only the foreground processes and connect them to the corresponding background database in openLCA, e.g. the Sphera (Managed LCA Content) or ecoinvent database from openLCA Nexus, depending on your license.
-
 > **Note:** Background datasets from Sphera databases are licensed. Export and transfer them only if your license allows it. If you already have a license, check [openLCA Nexus](https://nexus.openlca.org/) for the openLCA version of the database.
 
 ## Export the processes from LCA FE
@@ -304,7 +298,7 @@ For ongoing projects, export only the foreground processes, i.e. the processes y
     ![](./media/import_ilcd.png)
     <br>_ILCD import_
 
-During the import, datasets are identified by their UUIDs. If a dataset with the same UUID already exists in the target database, openLCA uses it instead of creating a duplicate. LCA FE uses ILCD/EF elementary flows, so importing into a database that already contains the matching reference system (for example the EF reference package from openLCA Nexus) avoids duplicate elementary flows and ensures that the LCIA methods characterize them.
+During the import, openLCA identifies datasets by their UUIDs. If a dataset with the same UUID already exists in the target database, openLCA uses it instead of creating a duplicate. LCA FE uses ILCD/EF elementary flows, so importing into a database that already contains the matching reference system (for example the EF reference package from openLCA Nexus) avoids duplicate elementary flows and ensures that the LCIA methods characterize them.
 
 If the target database uses the openLCA reference system instead, select the ILCD mapping file during import. The default ILCD mapping file can be found under **Background data → Mapping files** in databases created with complete reference data. It does not cover all flows used in LCA FE, so extend it where needed (see [Using mapping files in openLCA](./databases/mapping_validation.md)).
 
