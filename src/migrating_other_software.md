@@ -277,7 +277,7 @@ _Note: More advanced openLCA-specific features or specific SimaPro workflows may
 
 ## Choosing a migration path
 
-LCA for Experts (LCA FE, formerly GaBi) by Sphera can export processes and flows in the **ILCD** format, which openLCA imports. LCA FE **plans** (the equivalent of openLCA product systems) are not exported as ILCD, so the model structure has to be rebuilt in openLCA as product systems.
+LCA for Experts (LCA FE, formerly GaBi) by Sphera can export processes and flows in the **ILCD** format, which openLCA imports. LCA FE **plans** (the equivalent of openLCA product systems) are not exported as ILCD, so the model structure has to be rebuilt in openLCA as product systems and **providers** may have to be re-linked.
 
 > **Note:** Background datasets from Sphera databases are licensed. Export and transfer them only if your license allows it. If you already have a license, check [openLCA Nexus](https://nexus.openlca.org/) for the openLCA version of the database.
 
