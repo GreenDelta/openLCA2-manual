@@ -317,27 +317,12 @@ Sphera databases often contain several providers for the same flow, so auto-link
 
 ## Checking the migrated model
 
-Validate the database, check the **LCIA checks** tab after calculating an product system and compare results with LCA FE.
+Validate the database to identify. Then, check the **LCIA checks** tab after calculating a product system and also compare results with LCA FE.
 
 ![](./media/validate_database.png)
 <br>_Example of errors when validating a database_
 
 Pay particular attention to plans with many alternative providers, since a different provider choice is the most common source of result differences.
-
-</details>
-
-<details>
-<summary><b>Migrating from Brightway to openLCA</b></summary>
-
-Brightway models can be migrated via the **EcoSpold1** format:
-
-1. Export your foreground database from Brightway as EcoSpold1, using the EcoSpold1 exporter of `bw2io`.
-2. In openLCA, activate the target database (e.g. the openLCA ecoinvent database matching your ecoinvent version and system model) and import the file via **File → Import → Other → EcoSpold 1**, together with the **EcoSpold1_Import_Default.csv** mapping file. See [EcoSpold1 import](./databases/importing_and_combining_databases.md).
-
-3. Link the imported product inputs to the background providers, e.g. with **Tools → Bulk-replace** and the script in [Default providers](#default-providers).
-4. Check the migrated model as described in [Checking the migrated model](#checking-the-migrated-model).
-
-_Note: Brightway parameters are not exported to EcoSpold1, and not all Brightway elementary flows may be covered by the default mapping file. For larger or parameterised models, contact GreenDelta for support._
 
 </details>
 
