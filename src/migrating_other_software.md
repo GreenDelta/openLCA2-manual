@@ -12,7 +12,7 @@ The following general principles apply:
 - Determine whether the project is **old/archived**, **ongoing**, or **new**.
 - Decide whether to migrate the complete model, including background databases, or only the foreground model (then connecting to a background database on openLCA).
 - Use mapping files where necessary to align elementary flows with the reference flow system of the target database in openLCA.
-- Validate the migrated database and check LCIA coverage.
+- Validate the migrated database and check LCIA coverage after an calculation.
 - Compare selected results with those obtained in the source software.
 
 Note: If you already have an active license for the official database you are using, you can transform it for a small fee to the openLCA version; see [openLCA Nexus](https://nexus.openlca.org/faqs).
@@ -275,9 +275,9 @@ _Note: More advanced openLCA-specific features or specific SimaPro workflows may
 <details>
 <summary><b>Migrating from LCA FE (Sphera) to openLCA</b></summary>
 
-## Choosing a migration path
+## LCA FE
 
-LCA for Experts (LCA FE, formerly GaBi) by Sphera can export processes and flows in the **ILCD** format, which openLCA imports. LCA FE **plans** (the equivalent of openLCA product systems) are not exported as ILCD, so the model structure has to be rebuilt in openLCA as product systems and **providers** may have to be re-linked.
+LCA for Experts (LCA FE, formerly GaBi) by Sphera can export processes and flows in the **ILCD** format, which openLCA imports. LCA FE **plans** (the equivalent of openLCA product systems as in the model graph) are not exported as ILCD, so the model structure has to be rebuilt in openLCA as product systems and **providers** may have to be re-linked.
 
 > **Note:** Background datasets from Sphera databases are licensed. Export and transfer them only if your license allows it. If you already have a license, check [openLCA Nexus](https://nexus.openlca.org/) for the openLCA version of the database.
 
@@ -285,11 +285,9 @@ LCA for Experts (LCA FE, formerly GaBi) by Sphera can export processes and flows
 
 In LCA FE, export the processes of your model, including the flows, flow properties and unit groups they reference, as an **ILCD zip archive**. Make sure the archive keeps the usual ILCD folder structure (`ILCD/processes`, `ILCD/flows`, `ILCD/flowproperties`, `ILCD/unitgroups`, ...); otherwise openLCA cannot read it.
 
-For ongoing projects, export only the foreground processes, i.e. the processes you created yourself.
-
 ## Import the ILCD archive into openLCA
 
-1. Create or activate the target database:
+1. Create a database from scratch or activate the target database:
     - for an archive, a new database created with complete reference data;
     - for an ongoing project, the database with the background data you want to link to.
 2. Go to **File → Import → Other** and select **ILCD**.
@@ -312,15 +310,14 @@ Because LCA FE plans are not part of the ILCD export, create a product system in
 ![](./media/new_product_system.png)
 <br>_New product system_
 
-Sphera and EF databases often contain several providers for the same flow, so auto-linking can pick an unintended provider. Check the links against the original plan and correct them in the [Model graph](./prod_sys/model_graph.md), or set default providers in the processes before creating the product system.
+Sphera databases often contain several providers for the same flow, so auto-linking can pick an unintended provider. Hence, if you build product system, you should connect the providers manually or check the links against the original plan and correct them in the [Model graph](./prod_sys/model_graph.md), or set default providers in the processes before creating the product system.
 
 ![](./media/model_graph_search_providers_connect.png)
 <br>_Connecting a provider in the model graph_
 
-
 ## Checking the migrated model
 
-Validate the database, check the **LCIA checks** tab and compare key results with LCA FE, as described in [Checking the migrated model](#checking-the-migrated-model).
+Validate the database, check the **LCIA checks** tab after calculating an product system and compare results with LCA FE.
 
 ![](./media/validate_database.png)
 <br>_Example of errors when validating a database_
