@@ -157,10 +157,9 @@ Parameters are migrated as follows. See the openLCA manual chapter on [Parameter
 | Process parameters | Process parameters |
 | Project parameters | Global parameters |
 
-### Experimental feature limitation
+### Experimental feature
 
 The **Link ecoinvent processes** option is experimental and is being actively improved.
-
 In larger models, some naming patterns may not yet be recognized. In such cases, openLCA may create a copy of an ecoinvent process instead of creating a link.
 Affected processes should be documented and reported so that the linking feature can be improved.
 
@@ -168,7 +167,6 @@ Affected processes should be documented and reported so that the linking feature
 ## LCIA methods
 
 When the foreground model is linked to the openLCA ecoinvent database, the model uses the LCIA methods supplied with that ecoinvent database directly. See [LCIA methods and categories](https://github.com/GreenDelta/openLCA2-manual/blob/main/src/lcia_methods/README.md).
-
 Therefore:
 
 - SimaPro LCIA methods do not need to be imported;
@@ -177,14 +175,12 @@ Therefore:
 ### Checking result differences
 
 Results may differ slightly from SimaPro.
-
 A useful check is to compare the results of selected background processes with the official ecoinvent LCIA results. If the background results agree, this provides evidence that the corresponding methods are suitable for assessing the migrated foreground model.
 
 
 ## Elementary flows in the foreground model
 
 Elementary flows added directly to foreground processes, such as direct emissions, are imported as SimaPro flows.
-
 These flows are **not part of the openLCA reference system** and therefore may not be characterized by the openLCA/eecoinvent LCIA methods.
 
 ### Ways to resolve the issue
@@ -192,7 +188,6 @@ These flows are **not part of the openLCA reference system** and therefore may n
 #### Option A — Use a mapping file
 
 Use a mapping file during import to map SimaPro elementary flows to openLCA reference flows. See [Using mapping files in openLCA](https://github.com/GreenDelta/openLCA2-manual/blob/main/src/databases/mapping_validation.md).
-
 Another mapping file is to be used when exporting the database back to SimaPro.
 
 #### Option B — Bulk-replace the flows
@@ -207,9 +202,7 @@ Alternatively, add the relevant flows to the LCIA methods by adding characteriza
 ## Default providers
 
 When the foreground model is connected to ecoinvent manually, without the **Link ecoinvent processes** option, product inputs may not have a default provider.
-
 A Jython script can be used in the openLCA Python editor to set the default provider for exchanges whose product flow has a provider in the database. See [Scripting in openLCA](https://github.com/GreenDelta/openLCA2-manual/blob/main/src/scripting/README.md).
-
 The script below works correctly only for flows with **exactly one provider** in the database.
 If several processes produce the same flow, the script simply selects one of them.
 
@@ -274,7 +267,7 @@ Check for:
 Models in openLCA can be exported as SimaPro CSV files for use in SimaPro. See [Exporting databases](https://github.com/GreenDelta/openLCA2-manual/blob/main/src/databases/exporting_databases.md).
 If a mapping file was used during the import, the reverse mapping needs to be applied when exporting back to SimaPro.
 
-_Note: More advanced openLCA-specific features may not be exportable. Please contact GreenDelta directly if you need support with this._
+_Note: More advanced openLCA-specific features or specific SimaPro workflows may not be exportable without additional scripting with our free developer tools and API. Please contact GreenDelta directly if you need support with this._
 
 
 </div>
