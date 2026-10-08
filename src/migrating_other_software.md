@@ -142,6 +142,8 @@ In openLCA:
 4. Enable **Link ecoinvent processes (experimental)**.
 5. Click **Finish**.
 
+![](./media/import_SimaPro_CSV_ecoinvent_experimental_feature.png)
+
 During import, openLCA identifies the ecoinvent processes used by the foreground model from their names.
 
 _Note: No copies of the ecoinvent processes or flows are created when the link is successful; only the foreground model is added to the database._
