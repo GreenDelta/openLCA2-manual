@@ -70,7 +70,7 @@ See below [Import the complete SimaPro model with a SimaPro CSV import](#option-
 
 Export the SimaPro project together with its libraries/background databases, such as ecoinvent or other databases, and import the datasets into [a new empty database created from scratch in openLCA](https://github.com/GreenDelta/openLCA2-manual/blob/main/src/databases/creating_database.md).
 
-This approach is useful when:
+### This approach is useful when:
 
 - the project is old/archive and only needs to be retained for reference
 - the SimaPro model structure needs to be preserved
@@ -97,16 +97,14 @@ This approach is useful when:
 If several SimaPro CSV files are imported without a mapping file, import them together in one step so that flows shared between the files can be matched consistently. See [SimaPro CSV import](https://github.com/GreenDelta/openLCA2-manual/blob/main/src/databases/importing_and_combining_databases.md#simapro-csv).
 
 ## Option 2: Import the foreground model and link to openLCA ecoinvent
-When to use this option?
 
 Export only the user's own project from SimaPro, without its libraries, and connect the foreground model to the corresponding ecoinvent database in openLCA.
 
-This workflow:
+When to use this option?
 
-- uses the openLCA version of ecoinvent
-- uses the corresponding ecoinvent LCIA methods
-- avoids importing copies of the ecoinvent background processes
-- allows the migrated model to use openLCA functionality and database structures.
+- to use the openLCA version of ecoinvent
+- to use the corresponding ecoinvent LCIA methods
+- to allow the migrated model to use openLCA functionality and database structures.
 
 For ecoinvent-based models, this is the recommended workflow for ongoing modelling. Other databases can also be migrated in a similar manner with support from GreenDelta.
 
