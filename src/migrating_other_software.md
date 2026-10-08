@@ -28,7 +28,7 @@ Users with specific migration requirements or compatibility issues are encourage
 
 Before migrating a project, classify it according to how it will be used in the future.
 
-'''mermaid
+```mermaid
 flowchart TD
     A{"How will the project be used?"}
 
@@ -37,8 +37,8 @@ flowchart TD
     A -->|Continue developing| D{"Migration approach"}
 
     D -->|Option 1| E["Import the complete SimaPro model"]
-    D -->|Option 2| F["Import the foreground model<br/>and link to the openLCA database"]
-'''
+    D -->|Option 2| F["Import the foreground model and link to the openLCA database"]
+```
 
 ### New projects
 
