@@ -337,8 +337,6 @@ Brightway models can be migrated via the **EcoSpold1** format:
 1. Export your foreground database from Brightway as EcoSpold1, using the EcoSpold1 exporter of `bw2io`.
 2. In openLCA, activate the target database (e.g. the openLCA ecoinvent database matching your ecoinvent version and system model) and import the file via **File → Import → Other → EcoSpold 1**, together with the **EcoSpold1_Import_Default.csv** mapping file. See [EcoSpold1 import](./databases/importing_and_combining_databases.md).
 
-    ![](./media/import_ecospold1.png)
-
 3. Link the imported product inputs to the background providers, e.g. with **Tools → Bulk-replace** and the script in [Default providers](#default-providers).
 4. Check the migrated model as described in [Checking the migrated model](#checking-the-migrated-model).
 
