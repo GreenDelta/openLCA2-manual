@@ -28,18 +28,6 @@ Users with specific migration requirements or compatibility issues are encourage
 
 Before migrating a project, classify it according to how it will be used in the future.
 
-```mermaid
-flowchart TD
-    A{"How will the project be used?"}
-
-    A -->|New| B["Start directly in openLCA"]
-    A -->|Archive / reference| C["Import the complete SimaPro model"]
-    A -->|Continue developing| D{"Migration approach"}
-
-    D -->|Option 1| E["Import the complete SimaPro model"]
-    D -->|Option 2| F["Import the foreground model and link to the openLCA database"]
-```
-
 ### New projects
 
 For new projects, start directly in openLCA and use an appropriate database from openLCA Nexus [openLCA Nexus](https://nexus.openlca.org/).
@@ -65,6 +53,17 @@ For models based on **ecoinvent**, as this is the most commonly migrated databas
 
 See below [Import the complete SimaPro model with a SimaPro CSV import](#option-1-import-the-complete-simapro-model-with-a-simapro-csv-import) and [Import the foreground model and link it to openLCA ecoinvent](#option-2-import-the-foreground-model-and-link-to-openlca-ecoinvent).
 
+```mermaid
+flowchart TD
+    A{"How will the project be used?"}
+
+    A -->|New| B["Start directly in openLCA"]
+    A -->|Archive / reference| C["Import the complete SimaPro model"]
+    A -->|Continue developing| D{"Migration approach"}
+
+    D -->|Option 1| E["Import the complete SimaPro model"]
+    D -->|Option 2| F["Import the foreground model and link to the openLCA database"]
+```
 
 ## Option 1: Import the complete SimaPro model with a SimaPro CSV import
 
