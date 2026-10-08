@@ -3,7 +3,7 @@
 # How to migrate to openLCA from other tools
 
 
-Many users come to openLCA with existing models developed in other LCA software or data stored in different formats. openLCA supports most common LCA data exchange formats, including JSON-LD, SimaPro CSV, EcoSpold1, ILCD, and Excel, allowing users to migrate existing work without rebuilding their models from scratch.
+Many users come to openLCA with existing models developed in other LCA software or data stored in different formats. openLCA supports most common LCA data exchange formats, including JSON-LD, SimaPro CSV, EcoSpold1, ILCD, but also Excel, allowing users to migrate existing work without rebuilding their models from scratch.
 Technical details of the supported import formats are provided in the official openLCA manual chapter [Importing data and combining databases](https://github.com/GreenDelta/openLCA2-manual/blob/main/src/databases/importing_and_combining_databases.md).
 This chapter focuses on selecting an appropriate migration strategy based on the intended use of the project and identifying the checks needed to ensure reliable results after migration.
 
@@ -15,8 +15,7 @@ The following general principles apply:
 - Validate the migrated database and check LCIA coverage.
 - Compare selected results with those obtained in the source software.
 
-
-Note: If you already have an active license for the official database you are using, you can transform it for a small fee to the openLCA version 
+Note: If you already have an active license for the official database you are using, you can transform it for a small fee to the openLCA version; see [openLCA Nexus](https://nexus.openlca.org/faqs).
 
 The individual import formats and their technical details should be handled according to the corresponding [openLCA database import documentation](https://github.com/GreenDelta/openLCA2-manual/blob/main/src/databases/importing_and_combining_databases.md).
 openLCA supports most common LCA data exchange formats and provides extensive functionality for importing, exporting, and working with LCA models. Its advanced, freely available development and scripting capabilities also make it possible to implement additional import/export formats and reproduce specialised workflows from other software.
