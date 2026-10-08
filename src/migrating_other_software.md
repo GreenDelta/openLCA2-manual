@@ -22,7 +22,7 @@ openLCA supports most common LCA data exchange formats and provides extensive fu
 Users with specific migration requirements or compatibility issues are encouraged to contact the software developers for guidance and support.
 
 <details>
-<summary><b>Migrating from SimaPro to openLCA</b></summary>
+<summary open><b>Migrating from SimaPro to openLCA</b></summary>
 
 ## Choosing a migration path
 
