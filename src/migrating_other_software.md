@@ -84,7 +84,7 @@ Export the SimaPro project together with its libraries/background databases, suc
 - the LCIA methods from SimaPro
 - the limitations of the SimaPro database structure, including lack of data-quality
 
-![](../media/import_csv_file_new.png)
+![](./media/import_csv_file_new.png)
 
 ### Mapping files
 
