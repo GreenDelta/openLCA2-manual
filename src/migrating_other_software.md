@@ -28,6 +28,18 @@ Users with specific migration requirements or compatibility issues are encourage
 
 Before migrating a project, classify it according to how it will be used in the future.
 
+```mermaid
+flowchart TD
+    A{"How will the project be used?"}
+
+    A -->|New| B["Start directly in openLCA"]
+    A -->|Archive / reference| C["Import the complete SimaPro model"]
+    A -->|Continue developing| D{"Migration approach"}
+
+    D -->|Option 1| E["Import the complete SimaPro model"]
+    D -->|Option 2| F["Import the foreground model and link to the openLCA database"]
+```
+
 ### New projects
 
 For new projects, start directly in openLCA and use an appropriate database from openLCA Nexus [openLCA Nexus](https://nexus.openlca.org/); if you already have an active license for the database you are using, you can transform to the openLCA version; see [openLCA Nexus](https://nexus.openlca.org/faqs).
@@ -41,7 +53,7 @@ For new projects, start directly in openLCA and use an appropriate database from
 **Recommended approach:** Import the **complete model**, including its background databases/libraries, as-is.
 This preserves the original model structure, elementary-flow reference system, and existing LCIA methods. It can also be the fastest approach when a project uses several background databases besides ecoinvent.
 
-_Note: The database might be not comptabile wit other databases in openLCA but is usable as a standalone database_
+>**_Note:_** The database might not be compatible with other databases in openLCA but is usable as a standalone database_
 
 ### Ongoing projects
 
@@ -54,17 +66,6 @@ For models based on **ecoinvent**, as this is the most commonly migrated databas
 
 See below [Import the complete SimaPro model with a SimaPro CSV import](#option-1-import-the-complete-simapro-model-with-a-simapro-csv-import) and [Import the foreground model and link it to openLCA ecoinvent](#option-2-import-the-foreground-model-and-link-to-openlca-ecoinvent).
 
-```mermaid
-flowchart TD
-    A{"How will the project be used?"}
-
-    A -->|New| B["Start directly in openLCA"]
-    A -->|Archive / reference| C["Import the complete SimaPro model"]
-    A -->|Continue developing| D{"Migration approach"}
-
-    D -->|Option 1| E["Import the complete SimaPro model"]
-    D -->|Option 2| F["Import the foreground model and link to the openLCA database"]
-```
 
 ## Option 1: Import the complete SimaPro model with a SimaPro CSV import
 
