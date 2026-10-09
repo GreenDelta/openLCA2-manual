@@ -30,6 +30,9 @@ Once you opened or created a database, you'll see these elements in the navigati
 
 	- **Data Quality Systems:** Data Quality Systems are matrices designed to evaluate and record the reliability of data across three key levels: overall data quality within a process, data quality for each individual data exchange within a process, and data quality of social aspects. Data quality can be calculated for at the data exchange within processes level, and the score is shown in inventory results, the LCIA results / impact analysis, and sankey diagrams. Furthermore, uncertainty values can also be calculated from the matrices and can be used in the Monte Carlo simulation.
 
+![](../media/background.png)  
+
+
 - **Background Data:** Background data summarize the elements that users typically don't engage with often, like units, locations and so on.
 
 	- **Flow Properties:** Flow properties are characteristics or properties associated with flows, such as length, mass, volume, or other relevant attributes that help in quantifying and analyzing the flows.
@@ -44,6 +47,15 @@ Once you opened or created a database, you'll see these elements in the navigati
 
 	- **Locations:** Locations are simply locations, and they can be a region, a country, or any other point on a map. They are important for localizing the supply chain and for calculating regional impacts.
 
+Here an example of how locations are shown in openLCA when you click on them.
+
+![](../media/location_example_w.png)
+_Example of how locations are shown in openLCA_
+
 >**_Note:_** openLCA utilizes Universally Unique Identifiers (UUIDs) to identify and manage all entities, including processes, flows, product systems, projects, parameters, impact categories, and impact assessment methods. UUIDs are standardized identifiers ensuring uniqueness across systems or databases, even from one user to another.
+
+
+
+
 
 </div>
