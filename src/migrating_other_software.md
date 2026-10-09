@@ -3,7 +3,7 @@
 # How to migrate to openLCA from other tools
 
 
-Many users come to openLCA with existing models developed in other LCA software or data stored in different formats. openLCA supports most common LCA data exchange formats, including JSON-LD, SimaPro CSV, EcoSpold1, ILCD, but also Excel, allowing users to migrate existing work without rebuilding their models from scratch.
+Many users come to openLCA with existing models developed in other LCA software or data stored in different formats. openLCA supports most common LCA data exchange formats, including JSON-LD, SimaPro CSV, EcoSpold1, ILCD, as well as Excel, allowing users to migrate existing work without rebuilding their models from scratch.
 Technical details of the supported import formats are provided in the official openLCA manual chapter [Importing data and combining databases](./databases/importing_and_combining_databases.md).
 This chapter focuses on selecting an appropriate migration strategy based on the intended use of the project and identifying the checks needed to ensure reliable results after migration.
 
@@ -12,10 +12,10 @@ The following general principles apply:
 - Determine whether the project is **old/archived**, **ongoing**, or **new**.
 - Decide whether to migrate the complete model, including background databases, or only the foreground model (then connecting to a background database on openLCA).
 - Use mapping files where necessary to align elementary flows with the reference flow system of the target database in openLCA.
-- Validate the migrated database and check LCIA coverage after an calculation.
+- Validate the migrated database and check LCIA coverage after a calculation.
 - Compare selected results with those obtained in the source software.
 
-Note: If you already have an active license for the official database you are using, you can transform it for a small fee to the openLCA version; see [openLCA Nexus](https://nexus.openlca.org/faqs).
+>**_Note:_** If you already have an active license for the official database you are using, you can transform it for a fee to the openLCA version; see [openLCA Nexus](https://nexus.openlca.org/faqs).
 
 The individual import formats and their technical details should be handled according to the corresponding [openLCA database import documentation](./databases/importing_and_combining_databases.md).
 openLCA supports most common LCA data exchange formats and provides extensive functionality for importing, exporting, and working with LCA models. Its advanced, freely available development and scripting capabilities also make it possible to implement additional import/export formats and reproduce specialised workflows from other software.
@@ -30,7 +30,8 @@ Before migrating a project, classify it according to how it will be used in the 
 
 ### New projects
 
-For new projects, start directly in openLCA and use an appropriate database from openLCA Nexus [openLCA Nexus](https://nexus.openlca.org/).
+For new projects, start directly in openLCA and use an appropriate database from openLCA Nexus [openLCA Nexus](https://nexus.openlca.org/); if you already have an active license for the database you are using, you can transform to the openLCA version; see [openLCA Nexus](https://nexus.openlca.org/faqs).
+
 > **Principle:** New modelling should be done in openLCA rather than starting a new project in another software and subsequently migrating it.
 
 ### Old/archived projects
@@ -49,7 +50,7 @@ For projects that will continue to be developed, there are two possible approach
 - **Option 1:** Import the complete model, including its libraries/background databases.
 - **Option 2:** Import only the foreground model and connect it to the corresponding openLCA background database.
 
-For models based on **ecoinvent**, as this is the most commonly migrated database, moving the foreground model, is the preferred workflow when the intention is to use the openLCA version of ecoinvent and the openLCA LCIA methods.
+For models based on **ecoinvent**, as this is the most commonly migrated database, moving the foreground model is the preferred workflow when the intention is to use the openLCA version of ecoinvent and the openLCA LCIA methods.
 
 See below [Import the complete SimaPro model with a SimaPro CSV import](#option-1-import-the-complete-simapro-model-with-a-simapro-csv-import) and [Import the foreground model and link it to openLCA ecoinvent](#option-2-import-the-foreground-model-and-link-to-openlca-ecoinvent).
 
@@ -82,7 +83,7 @@ Export the SimaPro project together with its libraries/background databases, suc
 - parameters and other general features from SimaPro 
 - the SimaPro elementary-flow reference system
 - the LCIA methods from SimaPro
-- the limitations of the SimaPro database structure, including lack of data-quality
+- the limitations of the SimaPro database structure, including lack of data quality
 
 ![](./media/import_csv_file_new.png)
 
