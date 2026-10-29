@@ -100,13 +100,16 @@ If several SimaPro CSV files are imported without a mapping file, import them to
 
 Export only the user's own project from SimaPro, without its libraries, and connect the foreground model to the corresponding ecoinvent database in openLCA.
 
-When to use this option?
+### This approach is useful when:
 
 - to use the openLCA version of ecoinvent
 - to use the corresponding ecoinvent LCIA methods
 - to allow the migrated model to use openLCA functionality and database structures.
 
 For ecoinvent-based models, this is the recommended workflow for ongoing modelling. Other databases can also be migrated in a similar manner with support from GreenDelta.
+
+### What is preserved
+- the foreground SimaPro model and asscociated parameters and other general features 
 
 ### Step 1: Export the foreground model from SimaPro
 
