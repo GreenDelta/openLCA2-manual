@@ -20,7 +20,6 @@ Note: If you already have an active license for the official database you are us
 
 The individual import formats and their technical details should be handled according to the corresponding [openLCA database import documentation](https://github.com/GreenDelta/openLCA2-manual/blob/main/src/databases/importing_and_combining_databases.md).
 openLCA supports most common LCA data exchange formats and provides extensive functionality for importing, exporting, and working with LCA models. Its advanced, freely available development and scripting capabilities also make it possible to implement additional import/export formats and reproduce specialised workflows from other software.
-Users with specific migration requirements or compatibility issues are encouraged to contact the software developers for guidance and support.
 
 # Migrating from SimaPro to openLCA
 
@@ -142,7 +141,7 @@ In openLCA:
 4. Enable **Link ecoinvent processes (experimental)**.
 5. Click **Finish**.
 
-![](./media/import_SimaPro_CSV_ecoinvent_experimental_feature.png)
+![](./media/import_simapro_csv_ecoinvent_experimental_feature.png)
 
 During import, openLCA identifies the ecoinvent processes used by the foreground model from their names.
 
