@@ -70,14 +70,14 @@ See below [Import the complete SimaPro model with a SimaPro CSV import](#option-
 
 Export the SimaPro project together with its libraries/background databases, such as ecoinvent or other databases, and import the datasets into [a new empty database created from scratch in openLCA](./databases/creating_database.md).
 
-### This approach is useful when:
+### When to use this option?
 
 - the project is old/archive and only needs to be retained for reference
 - the SimaPro model structure needs to be preserved
 - several background databases are used
 - the existing SimaPro elementary-flow reference system and LCIA methods need to remain available
 
-### What is preserved
+### What is preserved?
 
 - the SimaPro model structure
 - parameters and other general features from SimaPro 
@@ -100,7 +100,7 @@ If several SimaPro CSV files are imported without a mapping file, import them to
 
 Export only the user's own project from SimaPro, without its libraries, and connect the foreground model to the corresponding ecoinvent database in openLCA.
 
-### This approach is useful when:
+### When to use this option?
 
 - to use the openLCA version of ecoinvent
 - to use the corresponding ecoinvent LCIA methods
@@ -108,7 +108,7 @@ Export only the user's own project from SimaPro, without its libraries, and conn
 
 For ecoinvent-based models, this is the recommended workflow for ongoing modelling. Other databases can also be migrated in a similar manner with support from GreenDelta.
 
-### What is preserved
+### What is preserved?
 - the foreground SimaPro model and asscociated parameters and other general features 
 
 ### Step 1: Export the foreground model from SimaPro
