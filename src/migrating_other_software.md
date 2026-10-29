@@ -108,32 +108,25 @@ When to use this option?
 
 For ecoinvent-based models, this is the recommended workflow for ongoing modelling. Other databases can also be migrated in a similar manner with support from GreenDelta.
 
-### Export of the foreground model from SimaPro
+### Step 1: Export the foreground model from SimaPro
 
-To migrate only the foreground model, export the project as a SimaPro CSV file.
+1. Open the project you want to migrate in SimaPro.
+2. Export the project in **SimaPro CSV** format.
+3. Select only the project (foreground) data for export. **Do not include the SimaPro libraries or background databases.**
+4. Save the exported CSV file for import into openLCA.
 
-**Include:**
-- project/foreground data.
+### Step 2: Prepare the openLCA database
 
-**Do not include:**
-- SimaPro libraries/background databases.
+Before importing the foreground model, you need to prepare a compatible background database in openLCA.
 
-### Prepare the openLCA database
+1. Go to [openLCA Nexus](https://nexus.openlca.org/) and select the ecoinvent database that corresponds to the one used in SimaPro.
+2. Make sure that the **ecoinvent version**, **system model**, and **process type** match those used in the original SimaPro project. For example, ecoinvent 3.12, cut-off system model, unit processes.
+3. Download the database and make it available in openLCA using one of the following options:
+   - **As a regular database:** Download the `.zolca` file and [import it into openLCA](./databases/importing_and_combining_databases.md).
+   - **As a library:** Download the appropriate library and follow the instructions in [Adding a library to a database](./libraries/adding_library_database.md).
+4. Open the prepared database in openLCA before proceeding with the SimaPro CSV import.
 
-Obtain from openLCA Nexus the ecoinvent database matching the:
-
-- ecoinvent version;
-- system model;
-- process type/model used in SimaPro.
-
-For example, ecoinvent 3.12 cut-off unit-process database with its LCIA methods.
-
-The ecoinvent database can be used either:
-
-- as a regular openLCA database downloaded as a `.zolca` file and [imported into openLCA](./databases/importing_and_combining_databases.md); or
-- as a library. See [Adding a library to a database](./libraries/adding_library_database.md).
-
-### Import and link the foreground model
+### Step 3: Import and link the foreground model
 
 In openLCA:
 
