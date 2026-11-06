@@ -31,12 +31,19 @@ Before migrating a project, classify it according to how it will be used in the 
 flowchart TD
     A{"How will the project be used?"}
 
-    A -->|New| B["Start directly in openLCA"]
+    A -->|New project| B["Start directly in openLCA"]
     A -->|Archive / reference| C["Import the complete SimaPro model"]
-    A -->|Continue developing| D{"Migration approach"}
+    A -->|Continue developing| D{"Target database structure"}
 
-    D -->|Option 1| E["Import the complete SimaPro model"]
-    D -->|Option 2| F["Import the foreground model and link to the openLCA database"]
+    D -->|Option 1: Retain SimaPro database structure| C
+    D -->|Option 2: Adapt to openLCA database structure| E["Import the foreground model and link to the openLCA ecoinvent database"]
+
+    C --> F{"Which LCIA methods will be used?"}
+
+    F -->|openLCA methods| G["Mapping file required for elementary flows"]
+    F -->|SimaPro methods| H["No mapping file required"]
+
+    E --> I["Map foreground elementary flows to the openLCA ecoinvent reference system"]
 ```
 
 ### New projects
