@@ -62,7 +62,7 @@ But for **analysis groups**, we have to be careful not to double-count:
 
 - **g2** (D and everything below) = **2**
 - **g1** (B and its upstream) = 4, but since D is already counted in g2, we subtract that: 4 – 2 = **2**
-- The **top level** (A) = total – g1 = 5 – 2 = **1**
+- The **top level** (A) = total – g1 = 5 – 2 - 2 = **1**
 
 ![](../media/analysis_groups_11.png)
 

@@ -38,10 +38,11 @@ A new window will appear for specifying the currency and the amount costs. The a
 ![](../media/lcc_price.png)
 
 _Entering or editing costs, detail window, with absolute costs (costs for the amount specified for the exchange) and costs per unit which are calculated_ 
-  
+
+ 
 ### Currencies 
 
-As shown in the figures above, costs are expressed in currencies. It is possible to switch for a cost entry between different currencies in the detailed cost window. All currencies available in a database can be found under background data, in the currencies folder. For an entire database, one currency is selected as reference, for the other currencies, an exchange rate is stored to allow recalculation of costs in another currency. The exchange rates are used for calculating the conversion factors which are applied when different currencies in the process are selected.  
+As shown in the figures above, costs are expressed in currencies. It is possible to switch for a cost entry between different currencies in the detailed cost window. All currencies available in a database can be found under background data, in the currencies folder. For an entire database, one currency is selected as reference, for the other currencies, an exchange rate is stored to allow recalculation of costs in another currency. The exchange rates are used for calculating the conversion factors which are applied when different currencies in the process are selected. Results are always shown in the reference currency of the database. If the costs of a process are entered in another currency, the values in the results differ from those in the process editor by the conversion factor.  
   
  ![](../media/lcc_currency.png)
 
@@ -59,6 +60,28 @@ The reference currency can be changed within one currency (click on "set as refe
 _General information on a currency_
   
 When changing the reference currency, all open currency editors will be closed for updating the conversion factors, and the editor of the new reference currency will be opened again. 
+
+### Calculation of net costs and added value
+
+To calculate costs, check the box **Include cost calculation** in the
+calculation setup of the product system. Costs can be calculated together with
+an LCIA method or stand-alone, without selecting an impact assessment method.
+
+![](../media/LCC_setup.png)
+
+When the product system is calculated with costs, the results contain an
+additional section for costs. In the contribution tree (and in the process
+contributions), you can switch the **cost category** between:
+
+- **Net costs**: costs of the inputs minus the revenues of the outputs, and
+- **Added value**: the same result with the opposite sign (added value = −net costs).
+
+![](../media/lcc_valueadded.png)
+
+![](../media/lcc_netcost.png)
+
+_Added value and net costs in the results_
+
 
 ### Multi-output processes (Allocation of costs)
 
@@ -84,8 +107,7 @@ _Choosing the allocation method in openLCA during the calculation setup. The box
 Depending on this choice (and depending on what is defined in the processes itself) the following rules will be applied: 
 - _**None:**_ All costs are considered (the price of the by-product as revenue)
 - _**Physical, causal or economic:**_ The allocation factors are applied to the exchanges and the price of the byproduct is not considered 
-- _**As defined in processes:**_ 	The physical, causal or economic allocation is chosen  as defined in the processes itself. Again, the allocation factors are applied to the exchanges and the price of the by-product is not considered 
-	and no allocation ("none") is selected in the processes, all costs except the one from the by-product are considered 
+- _**As defined in processes:**_ 	The physical, causal or economic allocation is chosen as defined in the process itself. Again, the allocation factors are applied to the exchanges and the price of the by-product is not considered. If no allocation (“none”) is defined in the process, all costs except those of the by-product are considered. 
 
 If you want to apply system expansion, i.e. one of the output products is marked as "avoided product", the calculation is as follows: 
 
@@ -105,7 +127,7 @@ When economic allocation is selected and all output products have an economic va
 
 
 Another important issue is the consideration of market variability through
-uncertainty models. OpenLCA presents a column to assign an uncertainty to the input
+uncertainty models. openLCA presents a column to assign an uncertainty to the input
 and output flows of a process, but not to the price directly. This can be solved
 by making the price a [Parameter](../parameters/parameters.md) and assigning uncertainty
 directly to it.

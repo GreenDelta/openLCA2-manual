@@ -19,7 +19,6 @@ The following general principles apply:
 
 The individual import formats and their technical details should be handled according to the corresponding [openLCA database import documentation](./databases/importing_and_combining_databases.md).
 openLCA supports most common LCA data exchange formats and provides extensive functionality for importing, exporting, and working with LCA models. Its advanced, freely available development and scripting capabilities also make it possible to implement additional import/export formats and reproduce specialised workflows from other software.
-Users with specific migration requirements or compatibility issues are encouraged to contact the software developers for guidance and support.
 
 <details open>
 <summary><b>Migrating from SimaPro to openLCA</b></summary>
@@ -32,12 +31,18 @@ Before migrating a project, classify it according to how it will be used in the 
 flowchart TD
     A{"How will the project be used?"}
 
-    A -->|New| B["Start directly in openLCA"]
+    A -->|New project| B["Start directly in openLCA"]
     A -->|Archive / reference| C["Import the complete SimaPro model"]
-    A -->|Continue developing| D{"Migration approach"}
+    A -->|Continue developing| D{"Target database structure"}
 
-    D -->|Option 1| E["Import the complete SimaPro model"]
-    D -->|Option 2| F["Import the foreground model and link to the openLCA database"]
+    D -->|Option 1: Retain SimaPro database structure| C
+    D -->|Option 2: Adapt to openLCA database structure| E["Import the foreground model and link to the openLCA ecoinvent database"]
+
+    C --> F{"Which LCIA methods will be used?"}
+
+    F -->|SimaPro methods| H["No mapping file required (no mapping required to re-migrate to SimaPro)"]
+
+    E --> I["Map foreground elementary flows to the openLCA ecoinvent reference system"]
 ```
 
 ### New projects
@@ -67,18 +72,18 @@ For models based on **ecoinvent**, as this is the most commonly migrated databas
 See below [Import the complete SimaPro model with a SimaPro CSV import](#option-1-import-the-complete-simapro-model-with-a-simapro-csv-import) and [Import the foreground model and link it to openLCA ecoinvent](#option-2-import-the-foreground-model-and-link-to-openlca-ecoinvent).
 
 
-## Option 1: Import the complete SimaPro model with a SimaPro CSV import
+## Option 1: Retain the SimaPro database structure
 
 Export the SimaPro project together with its libraries/background databases, such as ecoinvent or other databases, and import the datasets into [a new empty database created from scratch in openLCA](./databases/creating_database.md).
 
-### This approach is useful when:
+### When to use this option?
 
 - the project is old/archive and only needs to be retained for reference
 - the SimaPro model structure needs to be preserved
 - several background databases are used
 - the existing SimaPro elementary-flow reference system and LCIA methods need to remain available
 
-### What is preserved
+### What is preserved?
 
 - the SimaPro model structure
 - parameters and other general features from SimaPro 
@@ -97,11 +102,11 @@ Export the SimaPro project together with its libraries/background databases, suc
 
 If several SimaPro CSV files are imported without a mapping file, import them together in one step so that flows shared between the files can be matched consistently. See [SimaPro CSV import](./databases/importing_and_combining_databases.md#simapro-csv).
 
-## Option 2: Import the foreground model and link to openLCA ecoinvent
+## Option 2: Import the foreground model and link to openLCA
 
 Export only the user's own project from SimaPro, without its libraries, and connect the foreground model to the corresponding ecoinvent database in openLCA.
 
-When to use this option?
+### When to use this option?
 
 - to use the openLCA version of ecoinvent
 - to use the corresponding ecoinvent LCIA methods
@@ -109,32 +114,28 @@ When to use this option?
 
 For ecoinvent-based models, this is the recommended workflow for ongoing modelling. Other databases can also be migrated in a similar manner with support from GreenDelta.
 
-### Export of the foreground model from SimaPro
+### What is preserved?
+- the foreground SimaPro model and asscociated parameters and other general features 
 
-To migrate only the foreground model, export the project as a SimaPro CSV file.
+### Step 1: Export the foreground model from SimaPro
 
-**Include:**
-- project/foreground data.
+1. Open the project you want to migrate in SimaPro.
+2. Export the project in **SimaPro CSV** format.
+3. Select only the project (foreground) data for export. **Do not include the SimaPro libraries or background databases.**
+4. Save the exported CSV file for import into openLCA.
 
-**Do not include:**
-- SimaPro libraries/background databases.
+### Step 2: Prepare the openLCA database
 
-### Prepare the openLCA database
+Before importing the foreground model, you need to prepare a compatible background database in openLCA.
 
-Obtain from openLCA Nexus the ecoinvent database matching the:
+1. Go to [openLCA Nexus](https://nexus.openlca.org/) and select the ecoinvent database that corresponds to the one used in SimaPro.
+2. Make sure that the **ecoinvent version**, **system model**, and **process type** match those used in the original SimaPro project. For example, ecoinvent 3.12, cut-off system model, unit processes.
+3. Download the database and make it available in openLCA using one of the following options:
+   - **As a regular database:** Download the `.zolca` file and [import it into openLCA](./databases/importing_and_combining_databases.md).
+   - **As a library:** Download the appropriate library and follow the instructions in [Adding a library to a database](./libraries/adding_library_database.md).
+4. Open the prepared database in openLCA before proceeding with the SimaPro CSV import.
 
-- ecoinvent version;
-- system model;
-- process type/model used in SimaPro.
-
-For example, ecoinvent 3.12 cut-off unit-process database with its LCIA methods.
-
-The ecoinvent database can be used either:
-
-- as a regular openLCA database downloaded as a `.zolca` file and [imported into openLCA](./databases/importing_and_combining_databases.md); or
-- as a library. See [Adding a library to a database](./libraries/adding_library_database.md).
-
-### Import and link the foreground model
+### Step 3: Import and link the foreground model
 
 In openLCA:
 
@@ -144,7 +145,7 @@ In openLCA:
 4. Enable **Link ecoinvent processes (experimental)**.
 5. Click **Finish**.
 
-![](./media/import_SimaPro_CSV_ecoinvent_experimental_feature.png)
+![](./media/import_simapro_csv_ecoinvent_experimental_feature.png)
 
 During import, openLCA identifies the ecoinvent processes used by the foreground model from their names.
 
