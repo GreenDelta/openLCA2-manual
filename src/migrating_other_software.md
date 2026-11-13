@@ -40,7 +40,7 @@ flowchart TD
 
     C --> F{"Which LCIA methods will be used?"}
 
-    F -->|SimaPro methods| H["No mapping file required (no mapping reequired to re-migrate to SimaPro)"]
+    F -->|SimaPro methods| H["No mapping file required (no mapping required to re-migrate to SimaPro)"]
 
     E --> I["Map foreground elementary flows to the openLCA ecoinvent reference system"]
 ```
