@@ -21,7 +21,7 @@ The individual import formats and their technical details should be handled acco
 openLCA supports most common LCA data exchange formats and provides extensive functionality for importing, exporting, and working with LCA models. Its advanced, freely available development and scripting capabilities also make it possible to implement additional import/export formats and reproduce specialised workflows from other software.
 
 <details open>
-<summary><b>Migrating from SimaPro to openLCA</b></summary>
+## <summary><b>Migrating from SimaPro to openLCA</b></summary>
 
 ## Choosing a migration path
 
