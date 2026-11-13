@@ -67,6 +67,8 @@ To calculate costs, check the box **Include cost calculation** in the
 calculation setup of the product system. Costs can be calculated together with
 an LCIA method or stand-alone, without selecting an impact assessment method.
 
+![](../media/LCC_setup.png)
+
 When the product system is calculated with costs, the results contain an
 additional section for costs. In the contribution tree (and in the process
 contributions), you can switch the **cost category** between:
