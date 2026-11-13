@@ -11,7 +11,7 @@ elementary flows, which are inputs and outputs of processes. They can be
 positive or negative, while a negative cost is regarded as an added value. In general, there is no need
 for the creation of a method for the LCC calculation. [Have also a look at our LCC documentation](https://www.openlca.org/wp-content/uploads/2025/03/Life-Cycle-Costing-in-openLCA.pdf).
 
-The implementation in openLCA follows the proposal of the SETAC working group, for costs, with some modifications, as follows:
+The implementation in  follows the proposal of the SETAC working group, for costs, with some modifications, as follows:
 	
 - costs are modelled as properties of exchanges, i.e. of inputs and outputs of processes; 
 - costs can be positive or negative; negative costs are added value 
@@ -105,7 +105,7 @@ When economic allocation is selected and all output products have an economic va
 
 
 Another important issue is the consideration of market variability through
-uncertainty models. OpenLCA presents a column to assign an uncertainty to the input
+uncertainty models. openLCA presents a column to assign an uncertainty to the input
 and output flows of a process, but not to the price directly. This can be solved
 by making the price a [Parameter](../parameters/parameters.md) and assigning uncertainty
 directly to it.
