@@ -73,7 +73,7 @@ For models based on **ecoinvent**, as this is the most commonly migrated databas
 See below [Import the complete SimaPro model with a SimaPro CSV import](#option-1-import-the-complete-simapro-model-with-a-simapro-csv-import) and [Import the foreground model and link it to openLCA ecoinvent](#option-2-import-the-foreground-model-and-link-to-openlca-ecoinvent).
 
 
-## Option 1: Import the complete SimaPro model with a SimaPro CSV import
+## Option 1: Retain the SimaPro database structure
 
 Export the SimaPro project together with its libraries/background databases, such as ecoinvent or other databases, and import the datasets into [a new empty database created from scratch in openLCA](./databases/creating_database.md).
 
@@ -103,7 +103,7 @@ Export the SimaPro project together with its libraries/background databases, suc
 
 If several SimaPro CSV files are imported without a mapping file, import them together in one step so that flows shared between the files can be matched consistently. See [SimaPro CSV import](./databases/importing_and_combining_databases.md#simapro-csv).
 
-## Option 2: Import the foreground model and link to openLCA ecoinvent
+## Option 2: Import the foreground model and link to openLCA
 
 Export only the user's own project from SimaPro, without its libraries, and connect the foreground model to the corresponding ecoinvent database in openLCA.
 
