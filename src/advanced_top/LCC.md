@@ -82,6 +82,13 @@ contributions), you can switch the **cost category** between:
 
 _Added value and net costs in the results_
 
+>_**Note:**_ openLCA calculates the total net costs as the sum of the costs and
+revenues entered directly on the exchanges of each process, each multiplied by
+the scaling factor of the process in the product system. The **direct costs**
+of a process are its own exchange costs (input products as costs, output
+products as revenues) multiplied by its scaling factor; the total net costs
+are the sum of the direct costs of all processes. An input without a cost
+entry counts as 0; it is **not** valued with the price of its provider.
 
 ### Multi-output processes (Allocation of costs)
 
