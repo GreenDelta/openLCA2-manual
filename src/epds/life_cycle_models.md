@@ -17,7 +17,11 @@ Then, as usual, use the provider dropdown to select the appropriate module (i.e.
 
 ![](../media/epd_res_in_prod_sys_3.png)
 
-_**Important**_: Make sure that the results you connect are holding the same impact assessment categories as the method you plan to use later for your impact assessment. If you choose another method, **those results will not be taken into account** (e.g. only EF 3.1 LCIA results can be used together with the EF 3.1 method; using TRACI will not take those results into account as the UUIDs of the categories do not match). You can, however, add categories from multiple impact methods and manually fill in the LCIA results to prevent issues (e.g. full sets of impact categories for both EF 3.1 and TRACI). This step is optional if the result already contains the inventory results, and **it will calculate the impacts from these inventory results** in that case. If both LCIA results and inventory results are available, openLCA will always prioritize the inventory results, regardless of the present LCIA results. You don’t need to fill in the 'LCIA method' field to use an EPD’s LCIA results in product systems. However, if you do select an LCIA method, you will then only be able to choose impact categories from that method.
+_**Important**_: The LCIA results of a connected result are only used if their impact categories match the LCIA method you calculate with, because categories are matched by UUID. For example, EF 3.1 results are ignored when you calculate with TRACI or EF 3.0. To use several methods, add the categories of each method and fill in their results manually. If your results are based on EF 3.0, you can relink them to EF 3.1 with the SQL script “Link EPD Results from EN15804+A2 (EF 3.0) to EN15804+A2 (EF 3.1)”. It is available in the Scripts folder of databases that come with the EN15804+A2 add-on database. 
+
+![](../media/epd_script.png)
+
+> **Note:** This step is optional if the result already contains the inventory results, and **it will calculate the impacts from these inventory results** in that case. If both LCIA results and inventory results are available, openLCA will always prioritize the inventory results, regardless of the present LCIA results. You don’t need to fill in the 'LCIA method' field to use an EPD’s LCIA results in product systems. However, if you do select an LCIA method, you will then only be able to choose impact categories from that method.
 
 ## Method 2: via modal graph edit mode
 
