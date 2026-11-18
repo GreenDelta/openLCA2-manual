@@ -2,7 +2,6 @@
 
 In this section, you can check what the major manual updates were about and when they were released; see [Update openLCA to the latest version](./installation/update.md)
 
-# 18.11.2026
 ## 18.11.2026
 - New section about [Migration from other software](./migrating_other_software.md) between LCA software versions
 - Updated [Life cycle models](./epds/life_cycle_models.md)
