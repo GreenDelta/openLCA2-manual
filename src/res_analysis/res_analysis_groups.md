@@ -68,4 +68,26 @@ But for **analysis groups**, we have to be careful not to double-count:
 
 Still totals to 5, but **we avoided double-counting** by subtracting the already-included impacts.
 
+A practical example: Consider a product system for a concrete plasticiser with two direct inputs: formaldehyde and lorry transport. Each provider process is assigned to an analysis group: the formaldehyde market to the Chemical group (orange) and the lorry transport market to the Transport group (blue).
+
+
+![](../media/res_analy_example_1.png)
+
+The formaldehyde market also uses lorry transport itself (0.1713 t·km), and that transport is supplied by the same transport process that supplies the case study directly. A process may occur only once in a product system, however many processes could demand it: the model graph shows a single Transport node with two links (highlighted in yellow). Analysis groups are assigned to processes, not to positions in the supply chain, so all demand for this process belongs to the Transport group, including the part used by the formaldehyde market.
+
+![](../media/res_analy_example_2.png)
+
+The contribution tree, by contrast, follows supply-chain paths, so the same transport process appears twice: once under the formaldehyde market (0.02581 kg CO2-eq) and once as a direct input to the case study (0.15070 kg CO2-eq). The tree shows the upstream total of each process along its path, not group values. The formaldehyde market, labelled “Chemical :: …”, therefore shows 0.96333 kg CO2-eq, which includes the transport it uses.
+
+![](../media/res_analy_example_3.png)
+
+In the analysis groups tab, the Transport group receives the full result of the transport process across both uses (1.17130 t·km in total): 0.15070 + 0.02581 = 0.17651 kg CO2-eq. As described for nested groups, this share is subtracted from the Chemical group to avoid double counting: 0.96333 − 0.02581 = 0.93752 kg CO2-eq. Both views give the same total of 1.11403 kg CO2-eq; only the split between the groups differs.
+
+![](../media/res_analy_example_4.png)
+
+> **Note:** Database processes, such as those from ecoinvent, are used in many places in the supply chain and form large loops. To keep the calculation fast, openLCA stops separating the groups at some point inside these loops, so the split between groups can be incomplete. For example, if the same lorry transport process also appears deep inside the formaldehyde supply chain, it may stay counted in the Chemical group instead of moving to the Transport group.
+
+> **Tip:** Assign analysis groups to your own foreground processes, not directly to database processes as in the example above (also for EPDs for modules A to D as shown above) . For example, create a “Transport to plant” process with its own output flow that uses the ecoinvent lorry process, and assign the Transport group to it. Transport used inside the formaldehyde market then stays in the Chemical group.
+
+
 </div>
