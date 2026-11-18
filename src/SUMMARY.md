@@ -110,7 +110,6 @@
   - [Parameter sets](parameters/parameter_sets.md)
   - [Parameter analysis](parameters/parameter_analysis.md)
   - [Advanced: Dependent parameters](parameters/dependent_parameter.md)
-- [Background data](background.md)
 
 -----------
 
@@ -151,6 +150,7 @@
   - [Library file system](libraries/file_system.md)
 - [Scripting in openLCA](scripting/README.md)
 - [Updating background of databases](migration.md)
+- [Migrating models from other software to openLCA](migrating_other_software.md)
 - [Collaboration in Teams](collaboserver.md)
 - [openLCA cheat sheet](cheat/README.md)
   - [Usage](cheat/usage.md)

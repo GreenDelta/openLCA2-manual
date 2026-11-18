@@ -15,9 +15,13 @@ _Empty Navigation window following openLCA installation_
 
 openLCA offers the flexibility to have multiple databases imported in the software. Each database functions independently and only one database can be "active" at a time, while the others remain "inactive". This allows you to separate different LCA studies or case studies for better organization and management.
 
-However, with openLCA it is also possible to combine multiple databases, by merging their content. This feature enables comprehensive analysis that incorporates various datasets and LCA models. Check "[importing and combining databases](./importing_and_combining_databases.md)" section for details.
+>**_Error: Could not get the version from the database. Is this an openLCA database?:_** This error message is commonly displayed if you open an already active database in openLCA (using two openLCA applications at the same time) or the database was created with a more recent openLCA version than your current one. You can solve this by cross-checking whether the database is already open or by opening the database with a newer openLCA version, respectively.
 
->_**Note:**_ It is considered good practice to work with **one database for each case study/LCA project** performed in openLCA. 
+However, with openLCA it is also possible to combine multiple databases by merging their content. This feature enables comprehensive analysis that incorporates various datasets and LCA models. Check "[importing and combining databases](./importing_and_combining_databases.md)" section for details.
+
+>_**Note:**_ It is considered good practice to work with **one database for each case study/LCA project** performed in openLCA.
+
+
 
 _**New!**_ Now in openLCA 2 you are able to sort your databases in folders. Right-click on a database and then click on "Set folder", and create your new folder:
 
@@ -25,7 +29,8 @@ _**New!**_ Now in openLCA 2 you are able to sort your databases in folders. Righ
 
 After your folder is created you can add also other databases in it just dragging and dropping them.
 
->**_Note:_** The databases of openLCA are stored by default on C:\Users\NAME\openLCA-data-1.4 (Windows). If you are considering to change this defaul folder, follow this [instruction](<https://ask.openlca.org/20/how-to-change-the-folder-in-which-openlca-saves-databasess>) .
+>**_Note:_** The databases of openLCA are stored by default on C:\Users\NAME\openLCA-data-1.4 (Windows). If you are considering to change this default folder, follow this [instruction](<https://ask.openlca.org/20/how-to-change-the-folder-in-which-openlca-saves-databasess>) .
+
 
 
 

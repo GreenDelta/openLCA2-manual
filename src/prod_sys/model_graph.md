@@ -71,7 +71,10 @@ Otherwise, you can also draw connections by dragging from one flow to another fl
 
 </details>
 
+
+
 <details>
+ 
 <summary><b>Zoom bar (new)</b></summary>
 
 A new feature in openLCA 2 is the zoom bar on the bottom right, which allows adjusting the reading size and display section by zooming in and out. You can either use the zoom bar directly or scroll with the mouse to zoom in and out. Holding the keyboard space bar while scrolling allows vertical movements, and pressing alt + SHIFT while scrolling allows horizontal movements. In addition, you can reposition the graph by clicking and dragging it on the screen. Holding the space bar while clicking and dragging a process will result in the movement of the whole graph.

@@ -7,7 +7,7 @@
     ![](../media/epd_creation_results.png)
     _Creation of the result example_
 
-2.	Next, the results can be completed by adding an impact category from the respective method. It can be done by clicking on "Impact assessment" field and browsing through the list of available categories 
+2.	Next, select the LCIA method so you can only choose impact categories from that method and avoid mixing across impact categories of different methods. The results can be completed by adding an impact category from the respective method. It can be done by clicking on "Impact assessment" field and browsing through the list of available categories,
 
     ![](../media/epd_results_impact_category.png)
     _Adding results to an impact category_
