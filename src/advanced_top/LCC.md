@@ -262,7 +262,7 @@ _The created product system in the model graph in openLCA_
 
   
 One example for a process with costs is already shown in first figure of this page: The production of the chair.  
-When the product system is calculated, several summaries of results for costs and added value are available. For example, in the process contributions tab, a new section "costs/added values" is available, which shows the contribution of different processes to the final cost and added value result. It is possible to switch between costs and value added; costs are value added multiplied by -1, i.e. costs for input products "purchased" for one process, minus price of the generated products.  
+When the product system is calculated, several summaries of results for costs and added value are available. For example, in the process contributions tab, a new section "costs/added values" is available, which shows the contribution of different processes to the final cost and added value result. It is possible to switch between costs and value added; costs are value added multiplied by -1, i.e. costs for input products "purchased" for one process, minus the price of the generated products.  
  
 ![](../media/lcc_valueadded.png)  
 ![](../media/lcc_netcost.png)
@@ -273,6 +273,8 @@ For the production of the chair, for example, net costs are (5 + 10) â‚¬ - 25 â‚
 In the contribution tree, value added and life cycle costs are available as new section, in addition to LCIA categories and elementary flows.
 
 **_openLCA offers a detailed document on how to conduct LCC studies in openLCA free [here](<https://www.openlca.org/wp-content/uploads/2025/03/Life-Cycle-Costing-in-openLCA.pdf>). The database with the case study is available for download [here](https://www.openlca.org/case-studies/)_**.
+
+> **Note:** Costs can also be made time-dependent, for example by using a global `Year` parameter in cost formulas, with nested `if()` conditions to separate investment and operational phases, and an inflation factor that changes with the year. A worked brief example showing this is given at the end of the [modelling with time](./time.md) chapter.
 
 </div>
 
