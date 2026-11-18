@@ -1,6 +1,16 @@
 # Latest manual updates
 
-In this section, you can check what the major manual updates were about and when they were released, see [Update openLCA to the latest version](./installation/update.md)
+In this section, you can check what the major manual updates were about and when they were released; see [Update openLCA to the latest version](./installation/update.md)
+
+# 18.11.2026
+## 18.11.2026
+- New section about [Migration from other software](./migrating_other_software.md) between LCA software versions
+- Updated [Life cycle models](./epds/life_cycle_models.md)
+- Updated [Nested product systems](./prod_sys/nested.md)
+- Added and updated [Analysis groups](./res_analysis/res_analysis_groups.md), including new figures.
+- Updated [EPDs](./epds/epds_manually.md)
+- Updated [Life Cycle Costing](./advanced_top/LCC.md)
+- Updated [Social aspects](./advanced_top/social_aspects.md)
 
 ## 25.09.2026
 - New section about [Migration](./migration.md) between database versions (updating the background data)
