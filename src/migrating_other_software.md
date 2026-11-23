@@ -42,6 +42,7 @@ flowchart TD
 
     F -->|SimaPro methods| H["No mapping file required (no mapping required to re-migrate to SimaPro)"]
 
+    E --> I["openLCA methods will be used - map foreground elementary flows to the openLCA ecoinvent reference system"]
 ```
 
 ### New projects
