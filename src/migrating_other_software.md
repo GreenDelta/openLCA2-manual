@@ -9,11 +9,11 @@ This chapter focuses on selecting an appropriate migration strategy based on the
 
 The following general principles apply:
 
-- Determine whether the project is **old/archived**, **ongoing**, or **new**.
-- Decide whether to migrate the complete model, including background databases, or only the foreground model (then connecting to a background database on openLCA).
-- Use mapping files where necessary to align elementary flows with the reference flow system of the target database in openLCA.
-- Validate the migrated database and check LCIA coverage after a calculation.
-- Compare selected results with those obtained in the source software.
+- Determine whether the project is **old/archived**, **ongoing**, or **new**
+- Decide whether to migrate the complete model, including background databases, or only the foreground model (then connecting to a background database on openLCA)
+- Use mapping files where necessary to align elementary flows with the reference flow system of the target database in openLCA
+- Validate the migrated database and check LCIA coverage after a calculation
+- Compare selected results with those obtained in the source software
 
 >**_Note:_** If you already have an active license for the official database you are using, you can transform it for a fee to the openLCA version; see [openLCA Nexus](https://nexus.openlca.org/faqs).
 
@@ -48,13 +48,12 @@ This preserves the original model structure, elementary-flow reference system, a
 
 For projects that will continue to be developed, there are two possible approaches:
 
-- **Option 1:** Import the complete model, including its libraries/background databases.
-- **Option 2:** Import only the foreground model and connect it to the corresponding openLCA background database.
+- **Option 1:** Import the complete model, including its libraries/background databases
+- **Option 2:** Import only the foreground model and connect it to the corresponding openLCA background database
 
 For models based on **ecoinvent**, as this is the most commonly migrated database, moving the foreground model is the preferred workflow when the intention is to use the openLCA version of ecoinvent and the openLCA LCIA methods.
 
 See below [Import the complete SimaPro model with a SimaPro CSV import](#option-1-import-the-complete-simapro-model-with-a-simapro-csv-import) and [Import the foreground model and link it to openLCA ecoinvent](#option-2-import-the-foreground-model-and-link-to-openlca-ecoinvent).
-
 
 ## Option 1: Retain the SimaPro database structure
 
@@ -164,7 +163,6 @@ Therefore:
 Results may differ slightly from SimaPro.
 A useful check is to compare the results of selected background processes with the official ecoinvent LCIA results. If the background results agree, this provides evidence that the corresponding methods are suitable for assessing the migrated foreground model.
 
-
 ## Elementary flows in the foreground model
 
 Elementary flows added directly to foreground processes, such as direct emissions, are imported as SimaPro flows.
@@ -184,7 +182,6 @@ If only a small number of elementary flows are affected, use **Tools → Bulk-re
 #### Option C — Add characterization factors
 
 Alternatively, add the relevant flows to the LCIA methods by adding characterization factors for them to the appropriate impact categories. See [Creating a new impact assessment method, category and characterization factor](./lcia_methods/creating_new_impact_assessment_method.md).
-
 
 ## Default providers
 
@@ -221,7 +218,6 @@ NativeSql.on(db).updateRows(sql, update_rows_fn)
 print("all done")
 ```
 
-
 ## Checking the migrated model
 
 Regardless of which migration option is used, users are advised to validate the model after migration.
@@ -232,9 +228,9 @@ Right-click the database and select **Validate**. See [Using mapping files and v
 
 Check for:
 
-- broken links;
-- missing references;
-- other database errors.
+- broken links
+- missing references
+- other database errors
 
 ### Check LCIA coverage
 
@@ -244,19 +240,16 @@ Check for:
 
 ### Compare results with SimaPro
 
-- Compare several key product systems between SimaPro and openLCA.
-- Investigate any differences rather than assuming that the migrated model is equivalent.
-- For ecoinvent-based models, comparison against official ecoinvent LCIA results for background processes is also useful.
-
+- Compare several key product systems between SimaPro and openLCA
+- Investigate any differences rather than assuming that the migrated model is equivalent
+- For ecoinvent-based models, comparison against official ecoinvent LCIA results for background processes is also useful
 
 ## Exporting back to SimaPro
 
 Models in openLCA can be exported as SimaPro CSV files for use in SimaPro. See [Exporting databases](./databases/exporting_databases.md).
 If a mapping file was used during the import, the reverse mapping needs to be applied when exporting back to SimaPro.
 
-_Note: More advanced openLCA-specific features or specific SimaPro workflows may not be exportable without additional scripting with our free developer tools and API. Please contact GreenDelta directly if you need support with this._
+>_Note: More advanced openLCA-specific features or specific SimaPro workflows may not be exportable without additional scripting with our free developer tools and API. Please contact GreenDelta directly if you need support with this._
 
 </details>
-
-
 </div>
