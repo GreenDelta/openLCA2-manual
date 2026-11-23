@@ -42,7 +42,7 @@ flowchart TD
 
     F -->|SimaPro methods| H["No mapping file required (no mapping required to re-migrate to SimaPro)"]
 
-    E --> I["Map foreground elementary flows to the openLCA ecoinvent reference system"]
+    E --> I["openLCA methods will be used - map foreground elementary flows to the openLCA ecoinvent reference system"]
 ```
 
 ### New projects
@@ -96,7 +96,6 @@ Export the SimaPro project together with its libraries/background databases, suc
 ### Mapping files
 
 - A mapping file is **not required** if the imported model will use only the SimaPro databases and LCIA methods.
-- If openLCA Nexus LCIA methods are to be used, a mapping file is required to map SimaPro elementary flows to the corresponding openLCA reference flows. See [Using mapping files in openLCA](./databases/mapping_validation.md).
 
 ### Importing multiple CSV files
 
