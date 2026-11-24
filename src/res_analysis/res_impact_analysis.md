@@ -9,4 +9,4 @@ If you checked the box "Assess data Quality" when setting the calculation proper
 ![](../media/results_dq_impact_analysis.png)  
 _Impact Analysis, data quality_
 
-</di>
+</div>

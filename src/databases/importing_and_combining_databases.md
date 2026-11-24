@@ -12,7 +12,6 @@ Previously, we described the function "[Creating a new database loading it from 
 - Zolca
 - JSON-LD
 
-</span>
 
 <br>
 
@@ -190,6 +189,5 @@ To combine databases, follow these steps:
 ![](../media/combining_databases.png)
 <br>_You can decide to combine the active database with another database already present in openLCA or an exported database_
 
-</details>
 
 </div>

@@ -51,7 +51,7 @@ The following options are available upon selecting "auto-linking" option:
 
 	After creating a product system, it is possible to add and delete connections in the ["Model graph"](../prod_sys/model_graph.md) tab.
 
-</details>
+	</details>
 
 
 

@@ -31,3 +31,4 @@ _Adding normalizing and weighting factors to impact categories_
 
 </details>
 
+</div>

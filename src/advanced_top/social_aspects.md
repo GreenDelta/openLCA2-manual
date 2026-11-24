@@ -21,7 +21,6 @@ Information regarding the social indicator according to each process can be view
 
 ![](../media/social_process.png)  
 
-</div>
 
 With openLCA 2.7, we have also added the Social assessment tab, which allows you to assess the social aspects of your product system. Once you have calculated your product system, the assessment is presented by stakeholder groups and subcategories, showing the associated opportunities and risks based on the raw values. Divided into stakeholder groups and subcategories, it will give you the opportunities or risks associated with the product system based on the raw values.
 

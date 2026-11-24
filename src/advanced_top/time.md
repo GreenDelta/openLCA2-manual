@@ -46,3 +46,5 @@ The results then show how the net costs vary along the year, with the first two 
 ![](../media/time9.png)
 
 You can learn more on this example here: https://www.greendelta.com/project/sh2e/ 
+
+</div>

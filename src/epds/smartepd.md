@@ -26,3 +26,5 @@ A pop-up window shall appear where your can click on the EPD along with the resp
 ![](../media/smartepd6.png)
 
 At this stage, you can only upload your results and not import any EPDs from SmartEPDs. 
+
+</div>
