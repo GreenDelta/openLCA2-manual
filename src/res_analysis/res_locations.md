@@ -10,3 +10,5 @@ The location tab illustrates specific information on localized flows and impact 
 The location contributions are only displayed if the database contains the geometries of the locations (e.g. by importing the ecoinvent geometries).
 
 You can adjust the map's position by clicking on it and moving the mouse. To zoom in or out, use the scroll wheel on your mouse.
+
+</div>

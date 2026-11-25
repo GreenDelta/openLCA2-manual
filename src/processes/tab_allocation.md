@@ -6,3 +6,5 @@
 _Allocation tab_
 
 Check out the "[Allocation](../allocation.md)" section. 
+
+</div>

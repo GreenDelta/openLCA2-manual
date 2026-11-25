@@ -17,3 +17,5 @@ To perform the impact assessment, various scientific LCIA methods exist. Dependi
 
 
 As displayed above, some impact methods only cover one specific impact category but represent also the fundation of other methods, e.g. IPCC is used in the Environmental Footprint method.
+
+</div>

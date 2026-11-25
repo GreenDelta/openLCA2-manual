@@ -19,7 +19,6 @@ To restore a complete database, follow these steps:
 
 
 
-</div>
 
 
 

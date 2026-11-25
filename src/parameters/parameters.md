@@ -54,7 +54,7 @@ The list of all parameters inside the database can be viewed and edited by click
 ![](../media/global_parameter_1.png)
 ![](../media/global_parameter_2.png)
 ![](../media/global_parameter_3.png)
-</br>*View and edit Parameters under Database → Content*
+<br>*View and edit Parameters under Database → Content*
 
 ### Parameters Rules
 

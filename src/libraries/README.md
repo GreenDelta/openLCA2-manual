@@ -9,7 +9,7 @@ the accuracy of the impact calculations.
 
 
 ![](../media/library_example.png)
-</br>_Example of a library product system displayed in the model graph of openLCA (process from the library are indicated as grey)_
+<br>_Example of a library product system displayed in the model graph of openLCA (process from the library are indicated as grey)_
 
 The implementation of libraries brings various advantages to the users of openLCA:
 

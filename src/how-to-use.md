@@ -19,10 +19,10 @@ The top menu bar presents icons for interacting with the book. The icons display
 
 | Icon | Description |
 |------|-------------|
-| <i class="fa fa-bars"></i> | Opens and closes the chapter listing sidebar. |
-| <i class="fa fa-paint-brush"></i> | Opens a picker to choose a different color theme. |
-| <i class="fa fa-search"></i> | Opens a search bar for searching within the book. |
-| <i class="fa fa-print"></i> | Instructs the web browser to print the entire book. |
+| <i class="fa-solid fa-bars"></i> | Opens and closes the chapter listing sidebar. |
+| <i class="fa-solid fa-paintbrush"></i> | Opens a picker to choose a different color theme. |
+| <i class="fa-solid fa-magnifying-glass"></i> | Opens a search bar for searching within the book. |
+| <i class="fa-solid fa-print"></i> | Instructs the web browser to print the entire book. |
 | ► | Opens the collapsible sections |
 
 Tapping the top bar will scroll the page to the top.
