@@ -58,7 +58,7 @@ For new projects, start directly in openLCA and use an appropriate database from
 **Recommended approach:** Import the **complete model**, including its background databases/libraries, as-is.
 This preserves the original model structure, elementary-flow reference system, and existing LCIA methods. It can also be the fastest approach when a project uses several background databases besides ecoinvent.
 
->**_Note:_** The database might not be compatible with other databases in openLCA but is usable as a standalone database_
+>**_Note:_** The database might not be compatible with other databases in openLCA but is usable as a standalone database.
 
 ### Ongoing projects
 
@@ -115,7 +115,7 @@ Export only the user's own project from SimaPro, without its libraries, and conn
 For ecoinvent-based models, this is the recommended workflow for ongoing modelling. Other databases can also be migrated in a similar manner with support from GreenDelta.
 
 ### What is preserved?
-- the foreground SimaPro model and asscociated parameters and other general features 
+- the foreground SimaPro model and associated parameters and other general features 
 
 ### Step 1: Export the foreground model from SimaPro
 
@@ -149,7 +149,7 @@ In openLCA:
 
 During import, openLCA identifies the ecoinvent processes used by the foreground model from their names.
 
-_Note: No copies of the ecoinvent processes or flows are created when the link is successful; only the foreground model is added to the database._
+>**_Note:_** No copies of the ecoinvent processes or flows are created when the link is successful; only the foreground model is added to the database.
 
 
 ### Parameters
@@ -271,7 +271,7 @@ Check for:
 Models in openLCA can be exported as SimaPro CSV files for use in SimaPro. See [Exporting databases](./databases/exporting_databases.md).
 If a mapping file was used during the import, the reverse mapping needs to be applied when exporting back to SimaPro.
 
-_Note: More advanced openLCA-specific features or specific SimaPro workflows may not be exportable without additional scripting with our free developer tools and API. Please contact GreenDelta directly if you need support with this._
+>**_Note:_** More advanced openLCA-specific features or specific SimaPro workflows may not be exportable without additional scripting with our free developer tools and API. Please contact GreenDelta directly if you need support with this.
 
 </details>
 
