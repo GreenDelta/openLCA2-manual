@@ -2,7 +2,7 @@
 
 <div style='text-align: justify;'>
 
-To export a database as a library, open the database you wish to export. In the menu bar of openLCA go to "Tools" -> "Libraries" -> "Export (experimental)".
+To export a database as a library, open the database you wish to export. In the menu bar of openLCA go to "Tools" -> "Libraries" -> "Export (experimental)". We strongly recommend converting only the background processes of your database into a library, as functions such as defining parameters or using a process as the reference process in a product system are no longer available once the database has been converted into a library.
 
 ![](../media/library_menu_bar_2.png)
 <br/>_Menu bar in openLCA 2.6 to carry out a library export_
