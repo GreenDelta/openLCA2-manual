@@ -16,7 +16,7 @@ A window will appear in which you can choose the name of your library as well as
 3.	**With uncertainty distributions** – includes uncertainty distributions, if available, as defined per flow.
 4.	**Regionalized** – includes regionalized calculations, applicable when the database already contains regionalized flows (i.e., flows associated with specific locations).
 
-    >**_Note:_** enabling precalculated matrices, regionalization, and uncertainty distributions may significantly increase memory usage. 
+    >**_Note:_** enabling precalculated matrices, regionalization, and uncertainty distributions may significantly increase the size of the database and potentially the memory usage. 
 
 Once all settings have been selected as desired, click “OK” to create the library.
 
