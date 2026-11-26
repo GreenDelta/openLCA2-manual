@@ -2,7 +2,7 @@
 
 <div style='text-align: justify;'>
     
-Libraries can be downloaded from the openLCA Nexus and then added to an existing database. Initially, you have login into openLCA Nexus and choose the respective library. 
+Libraries can be downloaded from the openLCA Nexus and then added to an existing database. Initially, you log in to openLCA Nexus and choose the respective library. 
 
 ![](../media/library_nexus_1.png)
 
@@ -50,6 +50,6 @@ If you open a library-derived process, you will have to activate the library usi
 >**_Note:_** Once you open a process, be aware that you will be unable to alter the amounts of the inputs or outputs. 
 If you wish to do so, you will need to copy the process in question and make your alterations to the copy. In every other respect, however, you can use processes, flows etc. from libraries just as you would with those native to the database.
 
-
+If you want to update your background database of your library, you can do so by using our [migration tool](../migration.md).
 
 </div>
